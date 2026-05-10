@@ -1,0 +1,49 @@
+name: OKX Pump Scanner
+
+on:
+  schedule:
+    # 每5分钟跑一次（cron语法是UTC时间，但*/5对所有时区一样）
+    - cron: '*/5 * * * *'
+  workflow_dispatch:   # 允许手动触发测试
+
+# 防止上一次没跑完时新一轮又启动
+concurrency:
+  group: scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    permissions:
+      contents: write   # 需要写state.json回仓库
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install deps
+        run: pip install requests
+
+      - name: Run scanner
+        env:
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+          # 可选：也可以直接改这里调阈值
+          TOP_N: '100'
+          THRESHOLD: '2.0'
+          MIN_VOL_USDT: '5000'
+          LOOKBACK_BARS: '5'
+        run: python scan.py
+
+      - name: Persist state
+        run: |
+          if [[ -n $(git status -s state.json) ]]; then
+            git config user.name "github-actions"
+            git config user.email "actions@github.com"
+            git add state.json
+            git commit -m "update state [skip ci]"
+            git push
+          fi
