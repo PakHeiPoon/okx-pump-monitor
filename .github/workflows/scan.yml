@@ -2,8 +2,8 @@ name: OKX Pump Scanner
 
 on:
   schedule:
-    # 每5分钟跑一次（cron语法是UTC时间，但*/5对所有时区一样）
-    - cron: '*/5 * * * *'
+    # 每15分钟跑一次（cron语法是UTC时间，但*/15对所有时区一样）
+    - cron: '*/15 * * * *'
   workflow_dispatch:   # 允许手动触发测试
 
 # 防止上一次没跑完时新一轮又启动
@@ -32,10 +32,10 @@ jobs:
         env:
           FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
           # 可选：也可以直接改这里调阈值
-          TOP_N: '100'
-          THRESHOLD: '2.0'
-          MIN_VOL_USDT: '5000'
-          LOOKBACK_BARS: '5'
+          TOP_N: '50'
+          THRESHOLD: '5.0'
+          MIN_VOL_USDT: '50000'
+          LOOKBACK_BARS: '16'
         run: python scan.py
 
       - name: Persist state

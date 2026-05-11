@@ -19,7 +19,7 @@ import requests
 TOP_N = int(os.environ.get("TOP_N", "100"))
 THRESHOLD = float(os.environ.get("THRESHOLD", "2.0"))   # 百分比
 MIN_VOL_USDT = float(os.environ.get("MIN_VOL_USDT", "5000"))
-LOOKBACK_BARS = int(os.environ.get("LOOKBACK_BARS", "5"))  # 检查最近N根1m K线
+LOOKBACK_BARS = int(os.environ.get("LOOKBACK_BARS", "16"))  # 拉取根数，过滤未收盘后约 15 根 = 15 分钟窗口
 
 FEISHU_WEBHOOK = os.environ["FEISHU_WEBHOOK"]
 STATE_FILE = "state.json"   # 记录已提醒，跨runs去重
@@ -76,32 +76,39 @@ def fetch_1m_candles(inst_id, limit=LOOKBACK_BARS):
 
 
 def check_pump(inst_id):
-    """检查最近若干根已收盘的1m K线，找出超阈值的"""
+    """滑动窗口：取最近 LOOKBACK_BARS 根已收盘 1m K线，
+    用最早 open 到最新 close 的累计涨幅判断 pump。
+    返回至多 1 条命中记录。"""
     candles = fetch_1m_candles(inst_id)
-    hits = []
-    for row in candles:
-        # [ts, o, h, l, c, vol, volCcy, volCcyQuote, confirm]
-        ts = int(row[0])
-        o = float(row[1]); c = float(row[4])
-        vol_quote = float(row[7]) if len(row) > 7 else 0
-        confirm = row[8] == "1"
-        if not confirm or o <= 0:
-            continue
-        chg_pct = (c - o) / o * 100
-        if chg_pct >= THRESHOLD and vol_quote >= MIN_VOL_USDT:
-            hits.append({
-                "ts": ts, "open": o, "close": c,
-                "chg_pct": round(chg_pct, 2),
-                "vol_usdt": round(vol_quote, 0),
-            })
-    return hits
+    # OKX 顺序：最新在前。先按 confirm 过滤
+    confirmed = [row for row in candles if len(row) > 8 and row[8] == "1"]
+    if len(confirmed) < 2:
+        return []
+    latest = confirmed[0]
+    earliest = confirmed[-1]
+    open_price = float(earliest[1])
+    close_price = float(latest[4])
+    if open_price <= 0:
+        return []
+    chg_pct = (close_price - open_price) / open_price * 100
+    total_vol = sum(float(r[7]) if len(r) > 7 else 0 for r in confirmed)
+    if chg_pct >= THRESHOLD and total_vol >= MIN_VOL_USDT:
+        return [{
+            "ts": int(latest[0]),
+            "open": open_price,
+            "close": close_price,
+            "chg_pct": round(chg_pct, 2),
+            "vol_usdt": round(total_vol, 0),
+            "bars": len(confirmed),
+        }]
+    return []
 
 
 def send_feishu(signals):
     if not signals:
         return
     # 用一条消息打包多个信号，避免刷屏
-    lines = [f"**🚀 OKX 1分钟涨幅提醒** ({now_cst()} CST)\n"]
+    lines = [f"**🚀 OKX 15分钟涨幅提醒** ({now_cst()} CST)\n"]
     for s in signals:
         bar_time = datetime.fromtimestamp(s["ts"]/1000, CST).strftime("%H:%M")
         lines.append(
