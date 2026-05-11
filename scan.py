@@ -17,7 +17,10 @@ import requests
 
 # ============== 配置 ==============
 TOP_N = int(os.environ.get("TOP_N", "100"))
-THRESHOLD = float(os.environ.get("THRESHOLD", "2.0"))   # 百分比
+# 兼容老 THRESHOLD：如果只设了 THRESHOLD，两个方向都用它
+_LEGACY_THRESHOLD = float(os.environ.get("THRESHOLD", "5.0"))
+PUMP_THRESHOLD = float(os.environ.get("PUMP_THRESHOLD", _LEGACY_THRESHOLD))   # 拉升触发阈值 %
+DUMP_THRESHOLD = float(os.environ.get("DUMP_THRESHOLD", _LEGACY_THRESHOLD))   # 闪崩触发阈值 %（绝对值）
 MIN_VOL_USDT = float(os.environ.get("MIN_VOL_USDT", "5000"))
 LOOKBACK_BARS = int(os.environ.get("LOOKBACK_BARS", "16"))  # 拉取根数，过滤未收盘后约 15 根 = 15 分钟窗口
 
@@ -94,9 +97,9 @@ def check_signal(inst_id):
     total_vol = sum(float(r[7]) if len(r) > 7 else 0 for r in confirmed)
     if total_vol < MIN_VOL_USDT:
         return []
-    if chg_pct >= THRESHOLD:
+    if chg_pct >= PUMP_THRESHOLD:
         direction = "pump"
-    elif chg_pct <= -THRESHOLD:
+    elif chg_pct <= -DUMP_THRESHOLD:
         direction = "dump"
     else:
         return []
