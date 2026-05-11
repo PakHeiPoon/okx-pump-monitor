@@ -1,10 +1,10 @@
 """
-OKX 涨幅榜扫描器（GitHub Actions 版）
-- 拉取24h涨幅榜
-- 对TOP N每个币拉最近的1m K线
-- 涨幅超阈值的发飞书
+OKX 合约涨幅榜扫描器（GitHub Actions 版）
+- 拉取 USDT 本位永续合约 24h 涨幅榜
+- 对 TOP N 每个币拉最近的 1m K 线
+- 15 分钟窗口累计涨/跌幅超阈值的发飞书
 
-无需代理，GitHub Runner 直连OKX。
+无需代理，GitHub Runner 直连 OKX。
 """
 
 import json
@@ -50,14 +50,16 @@ def save_state(state):
 
 
 def fetch_top_gainers():
+    """USDT 本位永续合约 24h 涨幅榜 TOP N"""
     r = requests.get(f"{OKX_BASE}/api/v5/market/tickers",
-                     params={"instType": "SPOT"}, timeout=15)
+                     params={"instType": "SWAP"}, timeout=15)
     r.raise_for_status()
     data = r.json()["data"]
     pairs = []
     for t in data:
         inst = t["instId"]
-        if not inst.endswith("-USDT"):
+        # 只看 USDT 本位永续（-USDT-SWAP），排除币本位（-USD-SWAP）
+        if not inst.endswith("-USDT-SWAP"):
             continue
         last = float(t["last"] or 0)
         open24h = float(t["open24h"] or 0)
@@ -67,6 +69,11 @@ def fetch_top_gainers():
         pairs.append((inst, chg, last))
     pairs.sort(key=lambda x: x[1], reverse=True)
     return pairs[:TOP_N]
+
+
+def display_name(inst):
+    """BTC-USDT-SWAP → BTC-USDT，飞书卡片显示更紧凑"""
+    return inst[:-5] if inst.endswith("-SWAP") else inst
 
 
 def fetch_1m_candles(inst_id, limit=LOOKBACK_BARS):
@@ -120,13 +127,13 @@ def send_feishu(signals):
     pumps = [s for s in signals if s["direction"] == "pump"]
     dumps = [s for s in signals if s["direction"] == "dump"]
 
-    lines = [f"**OKX 15分钟异动提醒** ({now_cst()} CST)\n"]
+    lines = [f"**OKX 合约 15分钟异动提醒** ({now_cst()} CST)\n"]
     if pumps:
         lines.append(f"**🚀 拉升 {len(pumps)} 个**")
         for s in pumps:
             bar_time = datetime.fromtimestamp(s["ts"]/1000, CST).strftime("%H:%M")
             lines.append(
-                f"  **{s['inst']}**  +{s['chg_pct']}%  "
+                f"  **{display_name(s['inst'])}**  +{s['chg_pct']}%  "
                 f"@{bar_time}  vol={s['vol_usdt']:,.0f} U"
             )
     if dumps:
@@ -136,7 +143,7 @@ def send_feishu(signals):
         for s in dumps:
             bar_time = datetime.fromtimestamp(s["ts"]/1000, CST).strftime("%H:%M")
             lines.append(
-                f"  **{s['inst']}**  {s['chg_pct']}%  "
+                f"  **{display_name(s['inst'])}**  {s['chg_pct']}%  "
                 f"@{bar_time}  vol={s['vol_usdt']:,.0f} U"
             )
     content = "\n".join(lines)
@@ -164,9 +171,9 @@ def send_feishu(signals):
                 {"tag": "markdown", "content": content},
                 {"tag": "action", "actions": [{
                     "tag": "button",
-                    "text": {"tag": "plain_text", "content": "查看 OKX 涨幅榜"},
+                    "text": {"tag": "plain_text", "content": "查看 OKX 合约涨幅榜"},
                     "type": "primary",
-                    "url": "https://www.okx.com/zh-hans/markets/prices",
+                    "url": "https://www.okx.com/zh-hans/markets/prices?tab=derivatives",
                 }]},
             ],
         }
