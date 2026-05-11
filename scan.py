@@ -75,10 +75,10 @@ def fetch_1m_candles(inst_id, limit=LOOKBACK_BARS):
     return r.json().get("data", [])
 
 
-def check_pump(inst_id):
+def check_signal(inst_id):
     """滑动窗口：取最近 LOOKBACK_BARS 根已收盘 1m K线，
-    用最早 open 到最新 close 的累计涨幅判断 pump。
-    返回至多 1 条命中记录。"""
+    用最早 open 到最新 close 的累计涨跌幅判断 pump / dump。
+    返回至多 1 条命中记录（含 direction 字段）。"""
     candles = fetch_1m_candles(inst_id)
     # OKX 顺序：最新在前。先按 confirm 过滤
     confirmed = [row for row in candles if len(row) > 8 and row[8] == "1"]
@@ -92,39 +92,70 @@ def check_pump(inst_id):
         return []
     chg_pct = (close_price - open_price) / open_price * 100
     total_vol = sum(float(r[7]) if len(r) > 7 else 0 for r in confirmed)
-    if chg_pct >= THRESHOLD and total_vol >= MIN_VOL_USDT:
-        return [{
-            "ts": int(latest[0]),
-            "open": open_price,
-            "close": close_price,
-            "chg_pct": round(chg_pct, 2),
-            "vol_usdt": round(total_vol, 0),
-            "bars": len(confirmed),
-        }]
-    return []
+    if total_vol < MIN_VOL_USDT:
+        return []
+    if chg_pct >= THRESHOLD:
+        direction = "pump"
+    elif chg_pct <= -THRESHOLD:
+        direction = "dump"
+    else:
+        return []
+    return [{
+        "ts": int(latest[0]),
+        "open": open_price,
+        "close": close_price,
+        "chg_pct": round(chg_pct, 2),
+        "vol_usdt": round(total_vol, 0),
+        "bars": len(confirmed),
+        "direction": direction,
+    }]
 
 
 def send_feishu(signals):
     if not signals:
         return
-    # 用一条消息打包多个信号，避免刷屏
-    lines = [f"**🚀 OKX 15分钟涨幅提醒** ({now_cst()} CST)\n"]
-    for s in signals:
-        bar_time = datetime.fromtimestamp(s["ts"]/1000, CST).strftime("%H:%M")
-        lines.append(
-            f"**{s['inst']}**  +{s['chg_pct']}%  "
-            f"@{bar_time}  vol={s['vol_usdt']:,.0f} U"
-        )
+    pumps = [s for s in signals if s["direction"] == "pump"]
+    dumps = [s for s in signals if s["direction"] == "dump"]
+
+    lines = [f"**OKX 15分钟异动提醒** ({now_cst()} CST)\n"]
+    if pumps:
+        lines.append(f"**🚀 拉升 {len(pumps)} 个**")
+        for s in pumps:
+            bar_time = datetime.fromtimestamp(s["ts"]/1000, CST).strftime("%H:%M")
+            lines.append(
+                f"  **{s['inst']}**  +{s['chg_pct']}%  "
+                f"@{bar_time}  vol={s['vol_usdt']:,.0f} U"
+            )
+    if dumps:
+        if pumps:
+            lines.append("")
+        lines.append(f"**📉 闪崩 {len(dumps)} 个**")
+        for s in dumps:
+            bar_time = datetime.fromtimestamp(s["ts"]/1000, CST).strftime("%H:%M")
+            lines.append(
+                f"  **{s['inst']}**  {s['chg_pct']}%  "
+                f"@{bar_time}  vol={s['vol_usdt']:,.0f} U"
+            )
     content = "\n".join(lines)
+
+    # 配色：纯涨红、纯崩蓝、双向紫
+    if pumps and dumps:
+        color = "purple"
+        title = f"⚡ 拉升 {len(pumps)} / 闪崩 {len(dumps)}"
+    elif pumps:
+        color = "red"
+        title = f"🔥 发现 {len(pumps)} 个拉升信号"
+    else:
+        color = "blue"
+        title = f"❄️ 发现 {len(dumps)} 个闪崩信号"
 
     body = {
         "msg_type": "interactive",
         "card": {
             "config": {"wide_screen_mode": True},
             "header": {
-                "template": "red",
-                "title": {"tag": "plain_text",
-                          "content": f"🔥 发现 {len(signals)} 个pump信号"},
+                "template": color,
+                "title": {"tag": "plain_text", "content": title},
             },
             "elements": [
                 {"tag": "markdown", "content": content},
@@ -159,7 +190,7 @@ def main():
         if chg24h * 100 < 3:
             continue
         try:
-            hits = check_pump(inst)
+            hits = check_signal(inst)
         except Exception as e:
             print(f"  {inst} 拉K线失败: {e}")
             continue
@@ -167,17 +198,18 @@ def main():
             continue
         if inst in state:
             continue   # 冷却中
-        # 取最强的一根
-        best = max(hits, key=lambda x: x["chg_pct"])
+        # 取绝对涨跌幅最强的一根
+        best = max(hits, key=lambda x: abs(x["chg_pct"]))
         best["inst"] = inst
         all_signals.append(best)
         state[inst] = now
-        print(f"  ✓ {inst} +{best['chg_pct']}% vol={best['vol_usdt']:.0f}U")
+        arrow = "+" if best["chg_pct"] >= 0 else ""
+        print(f"  ✓ {inst} [{best['direction']}] {arrow}{best['chg_pct']}% vol={best['vol_usdt']:.0f}U")
         time.sleep(0.1)   # 避免太快被限流
 
     if all_signals:
-        # 按涨幅排序
-        all_signals.sort(key=lambda x: x["chg_pct"], reverse=True)
+        # 按绝对涨跌幅排序（先拉升后闪崩）
+        all_signals.sort(key=lambda x: (x["direction"] != "pump", -abs(x["chg_pct"])))
         send_feishu(all_signals)
     else:
         print("本轮无信号")
