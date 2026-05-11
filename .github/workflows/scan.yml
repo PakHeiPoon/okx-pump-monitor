@@ -33,8 +33,8 @@ jobs:
           FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
           # 可选：也可以直接改这里调阈值
           TOP_N: '100'
-          THRESHOLD: '0.1'
-          MIN_VOL_USDT: '100'
+          THRESHOLD: '2.0'
+          MIN_VOL_USDT: '5000'
           LOOKBACK_BARS: '5'
         run: python scan.py
 
