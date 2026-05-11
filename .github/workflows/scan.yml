@@ -17,6 +17,9 @@ jobs:
     timeout-minutes: 4
     permissions:
       contents: write   # 需要写state.json回仓库
+    env:
+      # 提前 opt-in Node 24，消掉 actions/checkout@v4 + setup-python@v5 的 Node 20 deprecation warning
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - uses: actions/checkout@v4
 
