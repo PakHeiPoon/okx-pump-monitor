@@ -19,15 +19,27 @@ interface SignalsTableProps {
   signals: Signal[];
 }
 
+function ageSeconds(iso: string): number {
+  return Math.floor((Date.now() - new Date(iso).getTime()) / 1000);
+}
+
 function timeAgo(iso: string): string {
-  const ms = Date.now() - new Date(iso).getTime();
-  const s = Math.floor(ms / 1000);
+  const s = ageSeconds(iso);
   if (s < 60) return `${s}s`;
   const m = Math.floor(s / 60);
   if (m < 60) return `${m}m`;
   const h = Math.floor(m / 60);
   if (h < 24) return `${h}h`;
   return `${Math.floor(h / 24)}d`;
+}
+
+type Freshness = "live" | "recent" | "stale";
+
+function freshness(iso: string): Freshness {
+  const s = ageSeconds(iso);
+  if (s < 5 * 60) return "live";       // <5min
+  if (s < 30 * 60) return "recent";    // 5-30min
+  return "stale";                       // 30min+
 }
 
 function formatVol(v: number): string {
@@ -165,16 +177,40 @@ export function SignalsTable({ signals }: SignalsTableProps) {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {signals.map((s) => {
+          {signals.map((s, idx) => {
             const pump = s.direction === "pump" || s.direction === "above";
             const sm = getSourceMeta(s.source);
             const chg = formatChange(s);
             const ctx = describeMeta(s);
+            const fr = freshness(s.detected_at);
+            const isTopLive = idx === 0 && fr === "live";
             return (
-              <TableRow key={s.id} className="hover:bg-accent/30">
+              <TableRow
+                key={s.id}
+                className={`relative transition-all duration-700 hover:bg-accent/30 ${
+                  fr === "live"
+                    ? "bg-emerald-500/[0.04]"
+                    : fr === "stale"
+                    ? "opacity-60"
+                    : ""
+                } ${isTopLive ? "signal-flash" : ""}`}
+                style={
+                  fr === "live"
+                    ? { boxShadow: "inset 3px 0 0 0 rgb(16 185 129)" }
+                    : undefined
+                }
+              >
                 <TableCell className="font-mono font-medium">
-                  <span className="text-foreground">{s.symbol}</span>
-                  <span className="text-muted-foreground ml-1 text-xs">-USDT</span>
+                  <span className="flex items-center gap-2">
+                    {fr === "live" ? (
+                      <span className="relative inline-flex h-1.5 w-1.5">
+                        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                        <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                      </span>
+                    ) : null}
+                    <span className="text-foreground">{s.symbol}</span>
+                    <span className="text-muted-foreground text-xs">-USDT</span>
+                  </span>
                 </TableCell>
                 <TableCell>
                   {pump ? (

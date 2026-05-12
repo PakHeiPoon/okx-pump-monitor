@@ -8,9 +8,11 @@ import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { SignalsTable } from "@/components/signals-table";
+import { SignalsTicker } from "@/components/signals-ticker";
 import { LiveDot } from "@/components/live-dot";
 import { getSourceMeta } from "@/lib/source-meta";
 import type { Signal } from "@/lib/types";
+import Link from "next/link";
 
 interface SignalsLiveProps {
   initialSignals: Signal[];
@@ -227,11 +229,39 @@ export function SignalsLive({ initialSignals, queryString }: SignalsLiveProps) {
         </div>
       </div>
 
+      {signals.length > 0 ? <SignalsTicker signals={signals} /> : null}
+
       {showInitialSkeleton ? (
         <SignalsSkeleton />
+      ) : signals.length === 0 ? (
+        <EmptyState />
       ) : (
         <SignalsTable signals={signals} />
       )}
+    </div>
+  );
+}
+
+function EmptyState() {
+  return (
+    <div className="bg-card border-border flex flex-col items-center justify-center gap-3 rounded-lg border p-12 text-center">
+      <div className="text-foreground text-sm font-medium">
+        🌙 全市场平静中
+      </div>
+      <div className="text-muted-foreground text-xs max-w-sm">
+        当前 time window 内没有命中阈值的信号。Scanner 仍在 15min cron 上跑。
+      </div>
+      <div className="flex gap-1.5 pt-2">
+        {(["6h", "24h", "7d"] as const).map((w) => (
+          <Link
+            key={w}
+            href={`/?window=${w}`}
+            className="bg-accent/40 hover:bg-accent rounded-md px-3 py-1 font-mono text-xs"
+          >
+            放宽到 {w}
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }

@@ -128,3 +128,12 @@
     @apply font-sans;
   }
 }
+
+/* signal "flash" — new top row glows once when polled in */
+@keyframes signal-flash {
+  0%   { background-color: rgba(16, 185, 129, 0.20); }
+  100% { background-color: rgba(16, 185, 129, 0.04); }
+}
+.signal-flash {
+  animation: signal-flash 1.6s ease-out;
+}

@@ -24,7 +24,9 @@ function parseDir(v: string | undefined): Dir {
 }
 
 function parseWindow(v: string | undefined): TimeWindow {
-  return v === "1h" || v === "6h" || v === "7d" ? v : "24h";
+  // V2.5: default window 1h (flow feel) — 24h 仍可手动选
+  if (v === "1h" || v === "6h" || v === "24h" || v === "7d") return v;
+  return "1h";
 }
 
 function parseSources(p: PageSearchParams): SourceId[] {
