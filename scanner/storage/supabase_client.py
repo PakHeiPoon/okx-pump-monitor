@@ -143,6 +143,53 @@ class SupabaseClient:
         except Exception as e:
             print(f"[supabase] mark_price_alert_triggered FAILED: {e}")
 
+    # ============ OI snapshots ============
+    def fetch_oi_snapshots(self):
+        """返回 {inst_id: {oi, oi_ccy, oi_usd, snapshot_at}}"""
+        if not self.enabled:
+            return {}
+        try:
+            r = requests.get(
+                f"{self.url}/rest/v1/oi_snapshots",
+                headers={**self._headers_read, "Accept": "application/json"},
+                params={"select": "*"},
+                timeout=10,
+            )
+            r.raise_for_status()
+            rows = r.json()
+            return {r_["inst_id"]: r_ for r_ in rows}
+        except Exception as e:
+            print(f"[supabase] fetch_oi_snapshots FAILED: {e}")
+            return {}
+
+    def upsert_oi_snapshots(self, snapshots):
+        """snapshots: list[dict(inst_id, oi, oi_ccy, oi_usd)]。批量 upsert。"""
+        if not self.enabled or not snapshots:
+            return
+        rows = [
+            {
+                "inst_id": s["inst_id"],
+                "oi": s["oi"],
+                "oi_ccy": s.get("oi_ccy"),
+                "oi_usd": s.get("oi_usd"),
+                "snapshot_at": "now()",
+            }
+            for s in snapshots
+        ]
+        # 让 Supabase 跑 default now() — 不传 snapshot_at
+        for r_ in rows:
+            r_.pop("snapshot_at", None)
+        try:
+            r = requests.post(
+                f"{self.url}/rest/v1/oi_snapshots",
+                headers={**self._headers_write, "Prefer": "resolution=merge-duplicates,return=minimal"},
+                json=rows,
+                timeout=15,
+            )
+            r.raise_for_status()
+        except Exception as e:
+            print(f"[supabase] upsert_oi_snapshots FAILED: {e}")
+
     @staticmethod
     def _signal_to_row(s):
         bar_ts_iso = datetime.fromtimestamp(s.bar_ts_ms / 1000, timezone.utc).isoformat()

@@ -8,7 +8,8 @@ export type SourceId =
   | "volume_surge"
   | "funding_extreme"
   | "breakout"
-  | "price_alert";
+  | "price_alert"
+  | "oi_surge";
 
 export interface SourceMeta {
   id: SourceId;
@@ -67,6 +68,14 @@ export const SOURCES: SourceMeta[] = [
     emoji: "🔔",
     description: "你设置的目标价或止损价被触达，一次性告警。",
     badgeClass: "bg-teal-500/15 text-teal-300 hover:bg-teal-500/25",
+  },
+  {
+    id: "oi_surge",
+    label: "OI surge · 持仓量异动",
+    shortLabel: "OI",
+    emoji: "📈",
+    description: "持仓量 OI 短时变化 ≥ ±10%（主力建/平仓的痕迹）。",
+    badgeClass: "bg-indigo-500/15 text-indigo-300 hover:bg-indigo-500/25",
   },
 ];
 

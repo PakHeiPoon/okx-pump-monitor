@@ -19,6 +19,7 @@ from .monitors.volume_surge import VolumeSurgeMonitor
 from .monitors.funding_extreme import FundingExtremeMonitor
 from .monitors.breakout import BreakoutMonitor
 from .monitors.price_alert import PriceAlertMonitor
+from .monitors.oi_surge import OISurgeMonitor
 from .notifiers.feishu import FeishuNotifier
 from .storage.supabase_client import SupabaseClient
 
@@ -41,6 +42,7 @@ def main():
         FundingExtremeMonitor(config),
         BreakoutMonitor(config, supabase),
         PriceAlertMonitor(config, supabase),
+        OISurgeMonitor(config, supabase),
     ]
     all_signals = []
     for m in monitors:

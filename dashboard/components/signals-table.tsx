@@ -64,12 +64,19 @@ function formatChange(s: Signal): { text: string; tone: "pump" | "dump" | "neutr
     }
     case "breakout":
     case "price_alert": {
-      const open = Number(s.open_price);
       const close = Number(s.close_price);
       const arrow = s.direction === "above" ? "↑" : "↓";
       return {
         text: `${arrow} ${close.toPrecision(5)}`,
         tone: s.direction === "above" ? "pump" : "dump",
+      };
+    }
+    case "oi_surge": {
+      const delta = (s.meta?.delta_pct as number | undefined) ?? chg;
+      const sign = delta >= 0 ? "+" : "";
+      return {
+        text: `${sign}${delta.toFixed(1)}% OI`,
+        tone: delta >= 0 ? "pump" : "dump",
       };
     }
     default: {
@@ -104,6 +111,15 @@ function describeMeta(s: Signal): string | null {
       const aType = (s.meta?.alert_type as string | undefined) ?? "alert";
       if (!tgt) return null;
       return `${aType} @ ${tgt.toPrecision(5)}`;
+    }
+    case "oi_surge": {
+      const usd = s.meta?.current_oi_usd as number | undefined;
+      if (!usd) return null;
+      const fmt = usd >= 1e9 ? `${(usd / 1e9).toFixed(2)}B` :
+                  usd >= 1e6 ? `${(usd / 1e6).toFixed(1)}M` :
+                  usd >= 1e3 ? `${(usd / 1e3).toFixed(0)}K` :
+                  usd.toFixed(0);
+      return `OI ≈ $${fmt}`;
     }
     default:
       return null;

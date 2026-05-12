@@ -16,6 +16,7 @@ SOURCE_META = {
     "funding_extreme":  {"label": "资金费率",    "emoji": "💰", "title": "Funding 极端"},
     "breakout":         {"label": "突破价位",    "emoji": "⚡", "title": "Breakout"},
     "price_alert":      {"label": "目标价/止损价", "emoji": "🔔", "title": "Price Alert"},
+    "oi_surge":         {"label": "持仓量异动",   "emoji": "📈", "title": "OI Surge"},
 }
 
 
@@ -46,6 +47,12 @@ def _fmt_line(s):
         atype = s.meta.get("alert_type", "")
         note = s.meta.get("note") or ""
         return f"  **{sym}**  到达 {tgt:g}（{atype}）  当前 {s.close_price:g}  {note}".rstrip()
+    if src == "oi_surge":
+        delta = s.meta.get("delta_pct", s.chg_pct)
+        oi_usd = s.meta.get("current_oi_usd") or 0
+        sign = "+" if delta >= 0 else ""
+        usd_str = f"${oi_usd / 1e6:.1f}M" if oi_usd >= 1e6 else f"${oi_usd:,.0f}"
+        return f"  **{sym}**  OI {sign}{delta}%  总持仓={usd_str}"
     # fallback
     sign = "+" if s.chg_pct >= 0 else ""
     return f"  **{sym}**  {sign}{s.chg_pct}  @{bar_t}"
@@ -127,4 +134,6 @@ def _color_for(source, sigs):
         return "carmine"
     if source == "price_alert":
         return "turquoise"
+    if source == "oi_surge":
+        return "indigo"
     return "red"

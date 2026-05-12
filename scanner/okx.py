@@ -84,3 +84,30 @@ def fetch_last_price(inst_id: str):
     if not data:
         return None
     return float(data[0].get("last") or 0)
+
+
+def fetch_all_open_interest():
+    """全部 SWAP 当前 OI 快照。返回 list[dict]，过滤到 -USDT-SWAP 为主。
+
+    每个 dict 含: inst_id, oi (contracts), oi_ccy (in base coin), oi_usd, ts_ms。
+    """
+    r = requests.get(
+        f"{OKX_BASE}/api/v5/public/open-interest",
+        params={"instType": "SWAP"},
+        timeout=15,
+    )
+    r.raise_for_status()
+    rows = r.json().get("data", [])
+    out = []
+    for row in rows:
+        inst = row.get("instId", "")
+        if not inst.endswith("-USDT-SWAP"):
+            continue
+        out.append({
+            "inst_id": inst,
+            "oi": float(row.get("oi") or 0),
+            "oi_ccy": float(row.get("oiCcy") or 0),
+            "oi_usd": float(row.get("oiUsd") or 0),
+            "ts_ms": int(row.get("ts") or 0),
+        })
+    return out
