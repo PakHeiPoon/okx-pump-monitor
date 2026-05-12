@@ -31,13 +31,15 @@ jobs:
       - name: Run scanner
         env:
           FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
-          # 可选：也可以直接改这里调阈值
+          # Supabase 配置：未设置时 graceful skip，scanner 照常推飞书
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
           TOP_N: '50'
           PUMP_THRESHOLD: '3.0'
           DUMP_THRESHOLD: '5.0'
           MIN_VOL_USDT: '50000'
           LOOKBACK_BARS: '16'
-        run: python scan.py
+        run: python -m scanner.main
 
       - name: Persist state
         run: |
