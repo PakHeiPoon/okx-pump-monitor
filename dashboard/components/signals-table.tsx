@@ -91,6 +91,24 @@ function formatChange(s: Signal): { text: string; tone: "pump" | "dump" | "neutr
         tone: delta >= 0 ? "pump" : "dump",
       };
     }
+    case "perp_premium": {
+      const prem = (s.meta?.premium_pct as number | undefined) ?? chg;
+      const sign = prem >= 0 ? "+" : "";
+      return {
+        text: `${sign}${prem.toFixed(3)}%`,
+        tone: prem >= 0 ? "pump" : "dump",
+      };
+    }
+    case "new_listings": {
+      return { text: "🆕 LIST", tone: "neutral" };
+    }
+    case "longshort_ratio": {
+      const ratio = (s.meta?.ratio as number | undefined) ?? chg;
+      return {
+        text: `L/S ${ratio.toFixed(2)}`,
+        tone: ratio >= 1 ? "pump" : "dump",
+      };
+    }
     default: {
       const sign = chg >= 0 ? "+" : "";
       return {
@@ -132,6 +150,19 @@ function describeMeta(s: Signal): string | null {
                   usd >= 1e3 ? `${(usd / 1e3).toFixed(0)}K` :
                   usd.toFixed(0);
       return `OI ≈ $${fmt}`;
+    }
+    case "perp_premium": {
+      const swap = s.meta?.swap_price as number | undefined;
+      const spot = s.meta?.spot_price as number | undefined;
+      if (!swap || !spot) return null;
+      return `swap ${swap.toPrecision(5)} · spot ${spot.toPrecision(5)}`;
+    }
+    case "new_listings": {
+      const last = s.meta?.last_price as number | undefined;
+      return last ? `last ${last.toPrecision(5)}` : "first seen";
+    }
+    case "longshort_ratio": {
+      return (s.meta?.bias as string | undefined) ?? null;
     }
     default:
       return null;

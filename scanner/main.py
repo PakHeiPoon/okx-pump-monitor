@@ -20,6 +20,9 @@ from .monitors.funding_extreme import FundingExtremeMonitor
 from .monitors.breakout import BreakoutMonitor
 from .monitors.price_alert import PriceAlertMonitor
 from .monitors.oi_surge import OISurgeMonitor
+from .monitors.perp_premium import PerpPremiumMonitor
+from .monitors.new_listings import NewListingsMonitor
+from .monitors.longshort_ratio import LongShortRatioMonitor
 from .notifiers.feishu import FeishuNotifier
 from .storage.supabase_client import SupabaseClient
 
@@ -34,6 +37,9 @@ def main():
     # 0. 持久层先建好（watchlist monitor 要用）
     supabase = SupabaseClient(config.supabase_url, config.supabase_service_key)
 
+    # 0.5 提前读 state（NewListingsMonitor 需要直接持有 state dict 写入 baseline）
+    state = state_mod.prune_expired(state_mod.load(), config.cooldown_min)
+
     # 1. 跑 monitors
     monitors = [
         SwapTopGainersMonitor(config),
@@ -43,6 +49,9 @@ def main():
         BreakoutMonitor(config, supabase),
         PriceAlertMonitor(config, supabase),
         OISurgeMonitor(config, supabase),
+        PerpPremiumMonitor(config),
+        NewListingsMonitor(config, state),
+        LongShortRatioMonitor(config),
     ]
     all_signals = []
     for m in monitors:
@@ -50,12 +59,11 @@ def main():
         print(f"  [{m.name}] hits={len(sigs)}")
         all_signals.extend(sigs)
 
-    # 2. 冷却去重
-    state = state_mod.prune_expired(state_mod.load(), config.cooldown_min)
+    # 2. 冷却去重（state 已经在 step 0.5 加载并被 NewListings 等 monitor 修改过）
     now_ts = time.time()
     fresh_signals = []
     for s in all_signals:
-        if s.inst_id in state:
+        if s.inst_id in state and not str(s.inst_id).startswith("_"):
             continue
         fresh_signals.append(s)
         state[s.inst_id] = now_ts
@@ -74,16 +82,15 @@ def main():
     # 4. 实时通知（飞书）
     notifiers = [
         FeishuNotifier(config.feishu_webhook),
-        # V2: EmailDailyDigestNotifier 不在此处实时调用
+        # V2.7: 邮件汇总走独立 workflow，不在此处实时调用
     ]
     for n in notifiers:
         n.send(fresh_signals)
 
     # 5. 持久化（Supabase）
-    supabase = SupabaseClient(config.supabase_url, config.supabase_service_key)
     supabase.insert_signals(fresh_signals)
 
-    # 6. cooldown state
+    # 6. cooldown state + 任何 monitor 写入的 _reserved 键一起落盘
     state_mod.save(state)
 
 

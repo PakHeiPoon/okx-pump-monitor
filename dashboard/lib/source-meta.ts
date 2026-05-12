@@ -9,7 +9,10 @@ export type SourceId =
   | "funding_extreme"
   | "breakout"
   | "price_alert"
-  | "oi_surge";
+  | "oi_surge"
+  | "perp_premium"
+  | "new_listings"
+  | "longshort_ratio";
 
 export interface SourceMeta {
   id: SourceId;
@@ -76,6 +79,30 @@ export const SOURCES: SourceMeta[] = [
     emoji: "📈",
     description: "持仓量 OI 短时变化 ≥ ±10%（主力建/平仓的痕迹）。",
     badgeClass: "bg-indigo-500/15 text-indigo-300 hover:bg-indigo-500/25",
+  },
+  {
+    id: "perp_premium",
+    label: "Perp premium · 合约/现货价差",
+    shortLabel: "Prem",
+    emoji: "💱",
+    description: "永续合约相对现货溢价 ≥ ±0.5%（多空狂热反向指标）。",
+    badgeClass: "bg-sky-500/15 text-sky-300 hover:bg-sky-500/25",
+  },
+  {
+    id: "new_listings",
+    label: "New listings · 新上架合约",
+    shortLabel: "NEW",
+    emoji: "🆕",
+    description: "OKX 新上架的 USDT 永续合约，首次出现就提醒（打新机会）。",
+    badgeClass: "bg-lime-500/15 text-lime-300 hover:bg-lime-500/25",
+  },
+  {
+    id: "longshort_ratio",
+    label: "Long/Short ratio · 散户多空比极端",
+    shortLabel: "L/S",
+    emoji: "⚖️",
+    description: "散户多空账户比 ≥3.5（FOMO多）或 ≤0.4（FOMO空），反向指标。",
+    badgeClass: "bg-violet-500/15 text-violet-300 hover:bg-violet-500/25",
   },
 ];
 

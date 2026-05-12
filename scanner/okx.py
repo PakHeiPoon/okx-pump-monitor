@@ -86,6 +86,53 @@ def fetch_last_price(inst_id: str):
     return float(data[0].get("last") or 0)
 
 
+def fetch_spot_last_price(symbol_pair: str):
+    """SPOT 现货最新价。symbol_pair 形如 'BTC-USDT'"""
+    r = requests.get(
+        f"{OKX_BASE}/api/v5/market/ticker",
+        params={"instId": symbol_pair},
+        timeout=10,
+    )
+    r.raise_for_status()
+    data = r.json().get("data", [])
+    if not data:
+        return None
+    return float(data[0].get("last") or 0)
+
+
+def fetch_all_swap_inst_ids():
+    """全部 live 状态的 SWAP USDT-本位永续 instId 集合。"""
+    r = requests.get(
+        f"{OKX_BASE}/api/v5/public/instruments",
+        params={"instType": "SWAP"},
+        timeout=15,
+    )
+    r.raise_for_status()
+    rows = r.json().get("data", [])
+    out = set()
+    for row in rows:
+        if row.get("state") == "live" and row.get("instId", "").endswith("-USDT-SWAP"):
+            out.add(row["instId"])
+    return out
+
+
+def fetch_long_short_account_ratio(inst_id: str, period: str = "5m"):
+    """OKX rubik 数据 - 散户多空账户比。inst_id 用 base，如 'BTC'。"""
+    base = inst_id.replace("-USDT-SWAP", "").replace("-USDT", "")
+    r = requests.get(
+        f"{OKX_BASE}/api/v5/rubik/stat/contracts/long-short-account-ratio",
+        params={"ccy": base, "period": period, "limit": "1"},
+        timeout=10,
+    )
+    r.raise_for_status()
+    data = r.json().get("data", [])
+    if not data:
+        return None
+    # data row = [ts, ratio]
+    row = data[0]
+    return {"ts_ms": int(row[0]), "ratio": float(row[1])}
+
+
 def fetch_all_open_interest():
     """全部 SWAP 当前 OI 快照。返回 list[dict]，过滤到 -USDT-SWAP 为主。
 

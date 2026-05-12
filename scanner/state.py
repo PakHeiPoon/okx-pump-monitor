@@ -19,6 +19,14 @@ def save(state):
 
 
 def prune_expired(state, cooldown_min):
-    """清掉过期记录，返回剩余 state。"""
+    """清掉过期 cooldown 记录，返回剩余 state。
+    以 '_' 开头的 key 是 monitor 自留地（如 _known_inst_ids），跳过 pruning。"""
     now = time.time()
-    return {k: v for k, v in state.items() if now - v < cooldown_min * 60}
+    out = {}
+    for k, v in state.items():
+        if k.startswith("_"):
+            out[k] = v  # reserved key — 保留原值不动
+            continue
+        if isinstance(v, (int, float)) and now - v < cooldown_min * 60:
+            out[k] = v
+    return out

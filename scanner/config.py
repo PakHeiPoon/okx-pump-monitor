@@ -20,6 +20,11 @@ class Config:
     funding_threshold_pct: float    # |funding rate| >= 该值（%）触发
     funding_top_n: int              # 只看 TOP N 大盘合约的资金费率，控制 API 量
 
+    # V2.6 新 monitor 阈值
+    perp_premium_threshold_pct: float   # |swap-spot| / spot * 100 >= 触发
+    longshort_ratio_high: float         # 散户多空账户比 ≥ 该值（极端多）
+    longshort_ratio_low: float          # ≤ 该值（极端空）
+
     # 通知通道
     feishu_webhook: str
 
@@ -44,6 +49,10 @@ def load() -> Config:
         vol_surge_max_abs_chg_pct=float(os.environ.get("VOL_SURGE_MAX_ABS_CHG_PCT", "1.5")),
         funding_threshold_pct=float(os.environ.get("FUNDING_THRESHOLD_PCT", "0.1")),
         funding_top_n=int(os.environ.get("FUNDING_TOP_N", "30")),
+        # V2.6
+        perp_premium_threshold_pct=float(os.environ.get("PERP_PREMIUM_THRESHOLD_PCT", "0.5")),
+        longshort_ratio_high=float(os.environ.get("LONGSHORT_RATIO_HIGH", "3.5")),
+        longshort_ratio_low=float(os.environ.get("LONGSHORT_RATIO_LOW", "0.4")),
         feishu_webhook=os.environ["FEISHU_WEBHOOK"],
         supabase_url=os.environ.get("SUPABASE_URL", "").rstrip("/"),
         supabase_service_key=os.environ.get("SUPABASE_SERVICE_KEY", ""),

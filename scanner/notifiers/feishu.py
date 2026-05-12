@@ -10,13 +10,16 @@ CST = timezone(timedelta(hours=8))
 
 
 SOURCE_META = {
-    "swap_top_gainers": {"label": "TOP50 异动",  "emoji": "🚀", "title": "15分钟拉升/闪崩"},
-    "watchlist":        {"label": "自选盯盘",    "emoji": "🎯", "title": "Watchlist 异动"},
-    "volume_surge":     {"label": "放量",        "emoji": "📊", "title": "成交量突变"},
-    "funding_extreme":  {"label": "资金费率",    "emoji": "💰", "title": "Funding 极端"},
-    "breakout":         {"label": "突破价位",    "emoji": "⚡", "title": "Breakout"},
-    "price_alert":      {"label": "目标价/止损价", "emoji": "🔔", "title": "Price Alert"},
-    "oi_surge":         {"label": "持仓量异动",   "emoji": "📈", "title": "OI Surge"},
+    "swap_top_gainers": {"label": "TOP50 异动",     "emoji": "🚀", "title": "15分钟拉升/闪崩"},
+    "watchlist":        {"label": "自选盯盘",       "emoji": "🎯", "title": "Watchlist 异动"},
+    "volume_surge":     {"label": "放量",           "emoji": "📊", "title": "成交量突变"},
+    "funding_extreme":  {"label": "资金费率",       "emoji": "💰", "title": "Funding 极端"},
+    "breakout":         {"label": "突破价位",       "emoji": "⚡", "title": "Breakout"},
+    "price_alert":      {"label": "目标价/止损价",  "emoji": "🔔", "title": "Price Alert"},
+    "oi_surge":         {"label": "持仓量异动",     "emoji": "📈", "title": "OI Surge"},
+    "perp_premium":     {"label": "合约-现货价差",  "emoji": "💱", "title": "Perp Premium"},
+    "new_listings":     {"label": "新上架合约",     "emoji": "🆕", "title": "New Listing"},
+    "longshort_ratio":  {"label": "散户多空比极端", "emoji": "⚖️", "title": "Long/Short Ratio"},
 }
 
 
@@ -53,6 +56,18 @@ def _fmt_line(s):
         sign = "+" if delta >= 0 else ""
         usd_str = f"${oi_usd / 1e6:.1f}M" if oi_usd >= 1e6 else f"${oi_usd:,.0f}"
         return f"  **{sym}**  OI {sign}{delta}%  总持仓={usd_str}"
+    if src == "perp_premium":
+        prem = s.meta.get("premium_pct", s.chg_pct)
+        sign = "+" if prem >= 0 else ""
+        bias = "合约溢价(多头狂热)" if prem > 0 else "合约折价(空头狂热)"
+        return f"  **{sym}**  premium {sign}{prem}%  {bias}"
+    if src == "new_listings":
+        last = s.meta.get("last_price") or s.close_price or 0
+        return f"  **{sym}**  🆕 NEW  当前价 {last:g}"
+    if src == "longshort_ratio":
+        ratio = s.meta.get("ratio", s.chg_pct)
+        bias = s.meta.get("bias", "")
+        return f"  **{sym}**  L/S {ratio}  ({bias})"
     # fallback
     sign = "+" if s.chg_pct >= 0 else ""
     return f"  **{sym}**  {sign}{s.chg_pct}  @{bar_t}"
@@ -136,4 +151,10 @@ def _color_for(source, sigs):
         return "turquoise"
     if source == "oi_surge":
         return "indigo"
+    if source == "perp_premium":
+        return "wathet"
+    if source == "new_listings":
+        return "green"
+    if source == "longshort_ratio":
+        return "violet"
     return "red"
