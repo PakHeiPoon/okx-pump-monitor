@@ -1,12 +1,22 @@
 import type { Signal, StatsBundle, TimeWindow } from "./types";
 
-const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
-const SUPABASE_KEY = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ?? "";
+function normalizeSupabaseUrl(raw: string): string {
+  // 容错：trim 空格、去尾斜杠、去用户可能误粘的 /rest/v1[/] 后缀
+  return raw
+    .trim()
+    .replace(/\/+$/, "")
+    .replace(/\/rest\/v1\/?$/i, "");
+}
+
+const SUPABASE_URL = normalizeSupabaseUrl(
+  process.env.NEXT_PUBLIC_SUPABASE_URL ?? "",
+);
+const SUPABASE_KEY = (process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ?? "").trim();
 
 function ensureConfigured(): void {
   if (!SUPABASE_URL || !SUPABASE_KEY) {
     throw new Error(
-      "Supabase env not configured. Set NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY in .env.local",
+      "Supabase env not configured. Set NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY (locally in .env.local, on Vercel under Project → Settings → Environment Variables).",
     );
   }
 }

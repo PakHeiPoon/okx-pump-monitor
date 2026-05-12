@@ -87,7 +87,8 @@ export default async function HomePage({ searchParams }: HomePageProps) {
             Failed to load signals: {errorMsg}
             <div className="text-muted-foreground mt-1 text-xs">
               Check NEXT_PUBLIC_SUPABASE_URL / NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY
-              in .env.local
+              (locally in .env.local · on Vercel under Project Settings → Environment
+              Variables). URL must NOT include /rest/v1 or trailing spaces.
             </div>
           </div>
         ) : null}
