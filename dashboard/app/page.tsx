@@ -4,6 +4,7 @@ import { FilterSidebar } from "@/components/filter-sidebar";
 import { LiveDot } from "@/components/live-dot";
 import { SignalsTable } from "@/components/signals-table";
 import { StatBar } from "@/components/stat-bar";
+import { WatchlistManager } from "@/components/watchlist-manager";
 import { fetchSignals, fetchStats } from "@/lib/supabase";
 import type { Signal, StatsBundle, TimeWindow } from "@/lib/types";
 
@@ -74,9 +75,12 @@ export default async function HomePage({ searchParams }: HomePageProps) {
               Perpetual swap signals
             </span>
           </div>
-          <div className="text-muted-foreground flex items-center gap-2 text-xs">
-            <LiveDot />
-            <span>Live · scanner every 15min</span>
+          <div className="flex items-center gap-3">
+            <WatchlistManager />
+            <div className="text-muted-foreground flex items-center gap-2 text-xs">
+              <LiveDot />
+              <span>Live · scanner every 15min</span>
+            </div>
           </div>
         </div>
       </header>
