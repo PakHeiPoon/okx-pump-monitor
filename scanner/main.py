@@ -14,6 +14,7 @@ from datetime import datetime, timezone, timedelta
 from .config import load
 from . import state as state_mod
 from .monitors.swap_top_gainers import SwapTopGainersMonitor
+from .monitors.watchlist import WatchlistMonitor
 from .notifiers.feishu import FeishuNotifier
 from .storage.supabase_client import SupabaseClient
 
@@ -25,11 +26,14 @@ def main():
     now_str = datetime.now(CST).strftime("%Y-%m-%d %H:%M:%S")
     print(f"[{now_str}] scanner start — pump≥{config.pump_threshold}% / dump≤-{config.dump_threshold}%")
 
+    # 0. 持久层先建好（watchlist monitor 要用）
+    supabase = SupabaseClient(config.supabase_url, config.supabase_service_key)
+
     # 1. 跑 monitors
     monitors = [
         SwapTopGainersMonitor(config),
-        # V1.5: WatchlistMonitor(config, supabase)
-        # V3:   BreakoutMonitor / VolumeSurgeMonitor / FundingExtremeMonitor / TargetAlertMonitor
+        WatchlistMonitor(config, supabase),
+        # V3: BreakoutMonitor / VolumeSurgeMonitor / FundingExtremeMonitor / TargetAlertMonitor
     ]
     all_signals = []
     for m in monitors:
