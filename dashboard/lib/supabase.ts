@@ -48,8 +48,8 @@ function sinceIso(hours: number): string {
 
 interface FetchSignalsOpts {
   window: TimeWindow;
-  direction?: "pump" | "dump";
-  source?: string;
+  direction?: "pump" | "dump" | "above" | "below";
+  sources?: string[];     // multi-select; empty/undefined = all
   limit?: number;
 }
 
@@ -68,8 +68,9 @@ export async function fetchSignals(opts: FetchSignalsOpts): Promise<Signal[]> {
   if (opts.direction) {
     params.set("direction", `eq.${opts.direction}`);
   }
-  if (opts.source) {
-    params.set("source", `eq.${opts.source}`);
+  if (opts.sources && opts.sources.length > 0) {
+    // PostgREST IN syntax: source=in.(a,b,c)
+    params.set("source", `in.(${opts.sources.join(",")})`);
   }
 
   const url = `${SUPABASE_URL}/rest/v1/signals?${params.toString()}`;

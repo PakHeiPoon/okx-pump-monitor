@@ -66,3 +66,17 @@ export async function validateAndNormalize(
   }
   return { symbol, inst_id };
 }
+
+// Last-traded price (for direction auto-inference on price alerts).
+export async function fetchLastPrice(inst_id: string): Promise<number> {
+  const res = await fetch(
+    `https://www.okx.com/api/v5/market/ticker?instId=${encodeURIComponent(inst_id)}`,
+    { cache: "no-store" },
+  );
+  if (!res.ok) throw new Error(`OKX ticker fetch failed: ${res.status}`);
+  const json = (await res.json()) as { code: string; data: Array<{ last: string }> };
+  if (json.code !== "0" || !json.data?.[0]?.last) {
+    throw new Error(`OKX ticker error for ${inst_id}`);
+  }
+  return parseFloat(json.data[0].last);
+}

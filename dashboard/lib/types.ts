@@ -1,8 +1,10 @@
+export type SignalDirection = "pump" | "dump" | "above" | "below";
+
 export interface Signal {
   id: number;
   inst_id: string;
   symbol: string;
-  direction: "pump" | "dump";
+  direction: SignalDirection;
   chg_pct: number;
   vol_usdt: number;
   bars: number;
@@ -11,6 +13,7 @@ export interface Signal {
   bar_ts: string;
   detected_at: string;
   source: string;
+  meta: Record<string, unknown>;
 }
 
 export interface StatsBundle {
