@@ -1,8 +1,7 @@
 import { Zap } from "lucide-react";
 
 import { FilterSidebar } from "@/components/filter-sidebar";
-import { LiveDot } from "@/components/live-dot";
-import { SignalsTable } from "@/components/signals-table";
+import { SignalsLive } from "@/components/signals-live";
 import { StatBar } from "@/components/stat-bar";
 import { WatchlistManager } from "@/components/watchlist-manager";
 import { BreakoutManager } from "@/components/breakout-manager";
@@ -16,8 +15,7 @@ type Dir = "pump" | "dump" | "all";
 interface PageSearchParams {
   direction?: string;
   window?: string;
-  sources?: string;     // comma-separated list of source IDs
-  // legacy: V1 used a single ?source= param
+  sources?: string;
   source?: string;
 }
 
@@ -31,18 +29,28 @@ function parseWindow(v: string | undefined): TimeWindow {
 
 function parseSources(p: PageSearchParams): SourceId[] {
   const validIds = new Set<SourceId>(SOURCES.map((s) => s.id));
-  // New multi-select param
   if (p.sources) {
     return p.sources
       .split(",")
       .map((s) => s.trim())
       .filter((s): s is SourceId => validIds.has(s as SourceId));
   }
-  // Legacy single-value param (V1 ?source=watchlist)
   if (p.source && validIds.has(p.source as SourceId)) {
     return [p.source as SourceId];
   }
   return [];
+}
+
+function buildLiveQuery(
+  direction: Dir,
+  window: TimeWindow,
+  sources: SourceId[],
+): URLSearchParams {
+  const params = new URLSearchParams();
+  if (direction !== "all") params.set("direction", direction);
+  params.set("window", window);
+  if (sources.length > 0) params.set("sources", sources.join(","));
+  return params;
 }
 
 interface HomePageProps {
@@ -82,29 +90,25 @@ export default async function HomePage({ searchParams }: HomePageProps) {
   return (
     <div className="min-h-screen">
       <header className="border-border bg-background/95 sticky top-0 z-10 border-b backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-6 py-4">
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-3 md:px-6 md:py-4">
           <div className="flex items-center gap-2.5">
             <Zap className="text-primary h-5 w-5" />
-            <span className="text-base font-semibold tracking-tight">
+            <span className="text-sm font-semibold tracking-tight md:text-base">
               OKX Pump Monitor
             </span>
             <span className="text-muted-foreground ml-2 hidden text-xs md:inline">
               Perpetual swap signals
             </span>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-1.5">
             <WatchlistManager />
             <BreakoutManager />
             <PriceAlertManager />
-            <div className="text-muted-foreground hidden items-center gap-2 text-xs md:flex">
-              <LiveDot />
-              <span>15min cron</span>
-            </div>
           </div>
         </div>
       </header>
 
-      <main className="mx-auto max-w-7xl px-6 py-6">
+      <main className="mx-auto max-w-7xl px-4 py-4 md:px-6 md:py-6">
         {errorMsg ? (
           <div className="mb-6 rounded-lg border border-rose-500/30 bg-rose-500/10 p-4 text-sm text-rose-300">
             Failed to load signals: {errorMsg}
@@ -118,10 +122,13 @@ export default async function HomePage({ searchParams }: HomePageProps) {
 
         <StatBar stats={stats} />
 
-        <div className="mt-6 flex flex-col gap-4 md:flex-row">
+        <div className="mt-6 flex flex-col gap-4 lg:flex-row">
           <FilterSidebar current={{ direction, window, sources }} />
-          <div className="flex-1">
-            <SignalsTable signals={signals} />
+          <div className="flex-1 min-w-0">
+            <SignalsLive
+              initialSignals={signals}
+              queryString={buildLiveQuery(direction, window, sources).toString()}
+            />
           </div>
         </div>
       </main>
