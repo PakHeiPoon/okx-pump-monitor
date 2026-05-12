@@ -15,6 +15,10 @@ from .config import load
 from . import state as state_mod
 from .monitors.swap_top_gainers import SwapTopGainersMonitor
 from .monitors.watchlist import WatchlistMonitor
+from .monitors.volume_surge import VolumeSurgeMonitor
+from .monitors.funding_extreme import FundingExtremeMonitor
+from .monitors.breakout import BreakoutMonitor
+from .monitors.price_alert import PriceAlertMonitor
 from .notifiers.feishu import FeishuNotifier
 from .storage.supabase_client import SupabaseClient
 
@@ -33,7 +37,10 @@ def main():
     monitors = [
         SwapTopGainersMonitor(config),
         WatchlistMonitor(config, supabase),
-        # V3: BreakoutMonitor / VolumeSurgeMonitor / FundingExtremeMonitor / TargetAlertMonitor
+        VolumeSurgeMonitor(config),
+        FundingExtremeMonitor(config),
+        BreakoutMonitor(config, supabase),
+        PriceAlertMonitor(config, supabase),
     ]
     all_signals = []
     for m in monitors:

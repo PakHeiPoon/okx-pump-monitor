@@ -13,6 +13,13 @@ class Config:
     lookback_bars: int
     cooldown_min: int
 
+    # V2.0 新 monitor 阈值
+    vol_surge_multiplier: float    # 当前 bar vol > 最近 N 根均值 × 该倍数
+    vol_surge_window: int           # 看最近多少根 1m K 线算均值
+    vol_surge_max_abs_chg_pct: float  # 价格波动 < 该值时才算"放量但没涨"
+    funding_threshold_pct: float    # |funding rate| >= 该值（%）触发
+    funding_top_n: int              # 只看 TOP N 大盘合约的资金费率，控制 API 量
+
     # 通知通道
     feishu_webhook: str
 
@@ -31,6 +38,12 @@ def load() -> Config:
         min_vol_usdt=float(os.environ.get("MIN_VOL_USDT", "50000")),
         lookback_bars=int(os.environ.get("LOOKBACK_BARS", "16")),
         cooldown_min=int(os.environ.get("COOLDOWN_MIN", "30")),
+        # V2.0
+        vol_surge_multiplier=float(os.environ.get("VOL_SURGE_MULTIPLIER", "8.0")),
+        vol_surge_window=int(os.environ.get("VOL_SURGE_WINDOW", "20")),
+        vol_surge_max_abs_chg_pct=float(os.environ.get("VOL_SURGE_MAX_ABS_CHG_PCT", "1.5")),
+        funding_threshold_pct=float(os.environ.get("FUNDING_THRESHOLD_PCT", "0.1")),
+        funding_top_n=int(os.environ.get("FUNDING_TOP_N", "30")),
         feishu_webhook=os.environ["FEISHU_WEBHOOK"],
         supabase_url=os.environ.get("SUPABASE_URL", "").rstrip("/"),
         supabase_service_key=os.environ.get("SUPABASE_SERVICE_KEY", ""),

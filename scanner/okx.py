@@ -42,3 +42,45 @@ def fetch_1m_candles(inst_id: str, limit: int):
 def display_name(inst_id: str) -> str:
     """BTC-USDT-SWAP → BTC-USDT"""
     return inst_id[:-5] if inst_id.endswith("-SWAP") else inst_id
+
+
+def fetch_funding_rates_all():
+    """全量永续合约当前资金费率。返回 {inst_id: funding_rate_float}。"""
+    # OKX 不支持 batch funding-rate，但 instType=SWAP 的 tickers 也不带 funding，
+    # 需要逐 inst 拉 funding-rate。为减少调用，先用 batch 拉 instruments，再按需查。
+    # 这里返回原始端点：fetch_funding_rate(inst_id)，由调用方循环。
+    raise NotImplementedError("Use fetch_funding_rate(inst_id) per symbol.")
+
+
+def fetch_funding_rate(inst_id: str):
+    """单合约当前资金费率。"""
+    r = requests.get(
+        f"{OKX_BASE}/api/v5/public/funding-rate",
+        params={"instId": inst_id},
+        timeout=10,
+    )
+    r.raise_for_status()
+    data = r.json().get("data", [])
+    if not data:
+        return None
+    row = data[0]
+    return {
+        "inst_id": row.get("instId"),
+        "funding_rate": float(row.get("fundingRate") or 0),
+        "next_funding_rate": float(row.get("nextFundingRate") or 0),
+        "next_funding_time_ms": int(row.get("nextFundingTime") or 0),
+    }
+
+
+def fetch_last_price(inst_id: str):
+    """最新成交价（用于 breakout / price_alert）。"""
+    r = requests.get(
+        f"{OKX_BASE}/api/v5/market/ticker",
+        params={"instId": inst_id},
+        timeout=10,
+    )
+    r.raise_for_status()
+    data = r.json().get("data", [])
+    if not data:
+        return None
+    return float(data[0].get("last") or 0)

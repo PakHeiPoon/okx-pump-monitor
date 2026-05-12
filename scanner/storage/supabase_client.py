@@ -76,6 +76,73 @@ class SupabaseClient:
             print(f"[supabase] fetch_monitor_config FAILED: {e}")
             return None
 
+    # ============ 读 breakout_levels ============
+    def fetch_breakout_levels(self):
+        if not self.enabled:
+            return []
+        try:
+            r = requests.get(
+                f"{self.url}/rest/v1/breakout_levels",
+                headers={**self._headers_read, "Accept": "application/json"},
+                params={"select": "*", "enabled": "eq.true"},
+                timeout=10,
+            )
+            r.raise_for_status()
+            return r.json()
+        except Exception as e:
+            print(f"[supabase] fetch_breakout_levels FAILED: {e}")
+            return []
+
+    def update_breakout_triggered(self, level_id, ts_iso):
+        if not self.enabled:
+            return
+        try:
+            r = requests.patch(
+                f"{self.url}/rest/v1/breakout_levels?id=eq.{level_id}",
+                headers=self._headers_write,
+                json={"last_triggered_at": ts_iso},
+                timeout=10,
+            )
+            r.raise_for_status()
+        except Exception as e:
+            print(f"[supabase] update_breakout_triggered FAILED: {e}")
+
+    # ============ 读 price_alerts ============
+    def fetch_active_price_alerts(self):
+        """只取还没触发过的 enabled alerts。"""
+        if not self.enabled:
+            return []
+        try:
+            r = requests.get(
+                f"{self.url}/rest/v1/price_alerts",
+                headers={**self._headers_read, "Accept": "application/json"},
+                params={
+                    "select": "*",
+                    "enabled": "eq.true",
+                    "triggered_at": "is.null",
+                },
+                timeout=10,
+            )
+            r.raise_for_status()
+            return r.json()
+        except Exception as e:
+            print(f"[supabase] fetch_active_price_alerts FAILED: {e}")
+            return []
+
+    def mark_price_alert_triggered(self, alert_id, ts_iso):
+        if not self.enabled:
+            return
+        try:
+            r = requests.patch(
+                f"{self.url}/rest/v1/price_alerts?id=eq.{alert_id}",
+                headers=self._headers_write,
+                json={"triggered_at": ts_iso},
+                timeout=10,
+            )
+            r.raise_for_status()
+        except Exception as e:
+            print(f"[supabase] mark_price_alert_triggered FAILED: {e}")
+
     @staticmethod
     def _signal_to_row(s):
         bar_ts_iso = datetime.fromtimestamp(s.bar_ts_ms / 1000, timezone.utc).isoformat()
@@ -89,4 +156,5 @@ class SupabaseClient:
             "close_price": s.close_price,
             "bar_ts":     bar_ts_iso,
             "source":     s.source,
+            "meta":       s.meta if isinstance(s.meta, dict) else {},
         }
