@@ -342,5 +342,12 @@
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1778673220.0083961,
   "TRUTH-USDT-SWAP|pump|cross_exchange": 1778673220.0083961,
   "ACT-USDT-SWAP|dump|cross_exchange": 1778673220.0083961,
-  "RLS-USDT-SWAP|dump|cross_exchange": 1778673220.0083961
+  "RLS-USDT-SWAP|dump|cross_exchange": 1778673220.0083961,
+  "TRUTH-USDT-SWAP|pump|swap_top_gainers": 1778673783.383321,
+  "UB-USDT-SWAP|dump|swap_top_gainers": 1778673783.383321,
+  "ARKM-USDT-SWAP|dump|perp_premium": 1778673783.383321,
+  "RSR-USDT-SWAP|pump|cross_exchange": 1778673783.383321,
+  "RESOLV-USDT-SWAP|dump|cross_exchange": 1778673783.383321,
+  "MOVE-USDT-SWAP|pump|cross_exchange": 1778673783.383321,
+  "SATS-USDT-SWAP|pump|cross_exchange": 1778673783.383321
 }
