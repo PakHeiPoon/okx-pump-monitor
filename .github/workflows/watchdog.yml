@@ -1,0 +1,41 @@
+name: Scanner Watchdog (cron → Vercel)
+
+# Hybrid 架构：
+# - 业务逻辑全在 Vercel /api/cron/watchdog/route.ts（TS）
+# - 频率 ≥ daily 才能上 Vercel Cron（Hobby plan 限制），所以 10min 触发用
+#   GitHub Actions 做 thin scheduler，仅负责按时 curl Vercel endpoint
+# - 这样既享受 Vercel 的日志/observability/无 git 依赖，又免费 10min 调度
+# - 升级 Vercel Pro 后可以删除这个 workflow，直接把 cron 写回 dashboard/vercel.json
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: watchdog
+  cancel-in-progress: false
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+    steps:
+      - name: Ping Vercel watchdog endpoint
+        env:
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+          WATCHDOG_URL: ${{ vars.WATCHDOG_URL || 'https://okx-pump-monitor.vercel.app/api/cron/watchdog' }}
+        run: |
+          if [ -z "$CRON_SECRET" ]; then
+            echo "::error::CRON_SECRET secret not set"
+            exit 1
+          fi
+          echo "Pinging ${WATCHDOG_URL}"
+          # -fS = fail on HTTP error + show errors; -m 30 = 30s timeout
+          curl -fSsm 30 \
+            -H "Authorization: Bearer ${CRON_SECRET}" \
+            "${WATCHDOG_URL}" | tee /tmp/watchdog.json
+          echo
+          # 显式校验 JSON 含 status 字段（任意值都接受，DOWN/DEGRADED 时由 Vercel
+          # 路由内部去发 Feishu 告警，不在这里二次报错）
+          jq -e '.status' /tmp/watchdog.json > /dev/null
