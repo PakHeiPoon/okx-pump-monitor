@@ -1,4 +1,13 @@
-"""跨 run cooldown 状态。当前用 state.json，后续 V2 可迁 Supabase。"""
+"""跨 run cooldown 状态。当前用 state.json，后续 V2 可迁 Supabase。
+
+V2.8: 冷却 key 从单一 inst_id 升级为 (inst_id, direction, source) 三元组。
+解决"BILL pump 后 30 分钟内 BILL dump 也被冷却"和"同一币不同 monitor
+互相挤掉"两个老问题。
+
+格式：'BILL-USDT-SWAP|pump|swap_top_gainers'
+
+向后兼容：老格式 key 不带 '|'，在 prune_expired 里也会自然过期，无需迁移。
+"""
 import json
 import time
 
@@ -30,3 +39,16 @@ def prune_expired(state, cooldown_min):
         if isinstance(v, (int, float)) and now - v < cooldown_min * 60:
             out[k] = v
     return out
+
+
+def make_cooldown_key(signal) -> str:
+    """从 Signal 对象生成冷却 key。
+
+    粒度：(inst_id, direction, source) 三元组。
+    - BILL-USDT-SWAP pump on swap_top_gainers   → 'BILL-USDT-SWAP|pump|swap_top_gainers'
+    - BILL-USDT-SWAP dump on swap_top_gainers   → 'BILL-USDT-SWAP|dump|swap_top_gainers' (独立 key)
+    - BILL-USDT-SWAP pump on oi_surge           → 'BILL-USDT-SWAP|pump|oi_surge'         (独立 key)
+
+    这样同一币种不同方向、不同 monitor 各自独立冷却，互不干扰。
+    """
+    return f"{signal.inst_id}|{signal.direction}|{signal.source}"

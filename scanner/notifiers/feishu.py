@@ -20,6 +20,8 @@ SOURCE_META = {
     "perp_premium":     {"label": "合约-现货价差",  "emoji": "💱", "title": "Perp Premium"},
     "new_listings":     {"label": "新上架合约",     "emoji": "🆕", "title": "New Listing"},
     "longshort_ratio":  {"label": "散户多空比极端", "emoji": "⚖️", "title": "Long/Short Ratio"},
+    "liquidations":     {"label": "强平爆仓密集",   "emoji": "💀", "title": "Liquidations"},
+    "cross_exchange":   {"label": "跨所价差",       "emoji": "🔀", "title": "Cross-Exchange Spread"},
 }
 
 
@@ -68,6 +70,22 @@ def _fmt_line(s):
         ratio = s.meta.get("ratio", s.chg_pct)
         bias = s.meta.get("bias", "")
         return f"  **{sym}**  L/S {ratio}  ({bias})"
+    if src == "liquidations":
+        long_usd = s.meta.get("long_liq_usd", 0)
+        short_usd = s.meta.get("short_liq_usd", 0)
+        win = s.meta.get("window_min", 5)
+        cnt = s.meta.get("event_count", 0)
+        side = "多头爆仓" if long_usd > short_usd else "空头爆仓"
+        return (f"  **{sym}**  💀 {win}min {cnt} 笔强平  "
+                f"long ${long_usd / 1e6:.2f}M / short ${short_usd / 1e6:.2f}M  ({side})")
+    if src == "cross_exchange":
+        max_ex = s.meta.get("max_exchange", "?")
+        min_ex = s.meta.get("min_exchange", "?")
+        spread = s.meta.get("spread_pct", s.chg_pct)
+        okx_p = s.meta.get("okx_price")
+        return (f"  **{sym}**  🔀 spread {spread}%  "
+                f"{max_ex}={s.close_price:g} > {min_ex}={s.open_price:g}  "
+                f"(OKX={okx_p:g})")
     # fallback
     sign = "+" if s.chg_pct >= 0 else ""
     return f"  **{sym}**  {sign}{s.chg_pct}  @{bar_t}"
@@ -157,4 +175,9 @@ def _color_for(source, sigs):
         return "green"
     if source == "longshort_ratio":
         return "violet"
+    if source == "liquidations":
+        # 多头爆仓主导=红（dump），空头爆仓主导=蓝（pump）
+        return "red" if sigs[0].direction == "dump" else "blue"
+    if source == "cross_exchange":
+        return "purple"
     return "red"

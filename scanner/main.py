@@ -3,10 +3,11 @@
 执行流程：
 1. 加载配置
 2. 跑所有 enabled monitors → 汇总 signals
-3. 过滤冷却期内已推送的 inst_id
+3. 过滤冷却期内已推送的 (inst_id, direction, source) 三元组
 4. 实时通知（飞书）
 5. 持久化（Supabase signals 表）
-6. 更新冷却 state.json
+6. 写 scanner_heartbeat（watchdog 用）
+7. 更新冷却 state.json
 """
 import time
 from datetime import datetime, timezone, timedelta
@@ -23,6 +24,8 @@ from .monitors.oi_surge import OISurgeMonitor
 from .monitors.perp_premium import PerpPremiumMonitor
 from .monitors.new_listings import NewListingsMonitor
 from .monitors.longshort_ratio import LongShortRatioMonitor
+from .monitors.liquidations import LiquidationsMonitor
+from .monitors.cross_exchange import CrossExchangeMonitor
 from .notifiers.feishu import FeishuNotifier
 from .storage.supabase_client import SupabaseClient
 
@@ -31,6 +34,8 @@ CST = timezone(timedelta(hours=8))
 
 def main():
     config = load()
+    started_at_dt = datetime.now(timezone.utc)
+    started_at_ts = time.time()
     now_str = datetime.now(CST).strftime("%Y-%m-%d %H:%M:%S")
     print(f"[{now_str}] scanner start — pump≥{config.pump_threshold}% / dump≤-{config.dump_threshold}%")
 
@@ -40,58 +45,92 @@ def main():
     # 0.5 提前读 state（NewListingsMonitor 需要直接持有 state dict 写入 baseline）
     state = state_mod.prune_expired(state_mod.load(), config.cooldown_min)
 
-    # 1. 跑 monitors
-    monitors = [
-        SwapTopGainersMonitor(config),
-        WatchlistMonitor(config, supabase),
-        VolumeSurgeMonitor(config),
-        FundingExtremeMonitor(config),
-        BreakoutMonitor(config, supabase),
-        PriceAlertMonitor(config, supabase),
-        OISurgeMonitor(config, supabase),
-        PerpPremiumMonitor(config),
-        NewListingsMonitor(config, state),
-        LongShortRatioMonitor(config),
-    ]
     all_signals = []
-    for m in monitors:
-        sigs = m.scan()
-        print(f"  [{m.name}] hits={len(sigs)}")
-        all_signals.extend(sigs)
-
-    # 2. 冷却去重（state 已经在 step 0.5 加载并被 NewListings 等 monitor 修改过）
-    now_ts = time.time()
     fresh_signals = []
-    for s in all_signals:
-        if s.inst_id in state and not str(s.inst_id).startswith("_"):
-            continue
-        fresh_signals.append(s)
-        state[s.inst_id] = now_ts
+    okx_errors = 0
+    monitors_run = 0
 
-    if not fresh_signals:
-        print("本轮无新信号（可能在冷却期）")
+    try:
+        # 1. 跑 monitors
+        monitors = [
+            SwapTopGainersMonitor(config),
+            WatchlistMonitor(config, supabase),
+            VolumeSurgeMonitor(config),
+            FundingExtremeMonitor(config),
+            BreakoutMonitor(config, supabase),
+            PriceAlertMonitor(config, supabase),
+            OISurgeMonitor(config, supabase),
+            PerpPremiumMonitor(config),
+            NewListingsMonitor(config, state),
+            LongShortRatioMonitor(config),
+            # V2.8 新增
+            LiquidationsMonitor(config, supabase),
+            CrossExchangeMonitor(config),
+        ]
+        monitors_run = len(monitors)
+        for m in monitors:
+            try:
+                sigs = m.scan()
+                print(f"  [{m.name}] hits={len(sigs)}")
+                all_signals.extend(sigs)
+            except Exception as e:
+                okx_errors += 1
+                print(f"  [{m.name}] FAILED: {e}")
+
+        # 2. 冷却去重：V2.8 起 key 升级为 (inst_id, direction, source) 三元组，
+        # 避免老逻辑下"同币不同方向"或"同币不同 monitor"互相挤压冷却。
+        now_ts = time.time()
+        for s in all_signals:
+            key = state_mod.make_cooldown_key(s)
+            if key in state:
+                continue
+            fresh_signals.append(s)
+            state[key] = now_ts
+
+        if not fresh_signals:
+            print("本轮无新信号（可能在冷却期）")
+        else:
+            # 3. 排序：先 pump 后 dump，绝对涨跌幅降序
+            fresh_signals.sort(key=lambda s: (s.direction != "pump", -abs(s.chg_pct)))
+            for s in fresh_signals:
+                arrow = "+" if s.chg_pct >= 0 else ""
+                print(f"  ✓ {s.inst_id} [{s.direction}] {arrow}{s.chg_pct}% vol={s.vol_usdt:.0f}U")
+
+            # 4. 实时通知（飞书）
+            notifiers = [
+                FeishuNotifier(config.feishu_webhook),
+                # V2.7: 邮件汇总走独立 workflow，不在此处实时调用
+            ]
+            for n in notifiers:
+                try:
+                    n.send(fresh_signals)
+                except Exception as e:
+                    print(f"  [{n.name}] notify FAILED: {e}")
+
+            # 5. 持久化（Supabase）
+            supabase.insert_signals(fresh_signals)
+    finally:
+        # 6. heartbeat — 不论成功失败都写一条，watchdog 用
+        duration_ms = int((time.time() - started_at_ts) * 1000)
+        try:
+            supabase.insert_heartbeat({
+                "started_at":    started_at_dt.isoformat(),
+                "duration_ms":   duration_ms,
+                "monitors_run":  monitors_run,
+                "signals_found": len(all_signals),
+                "fresh_signals": len(fresh_signals),
+                "okx_errors":    okx_errors,
+                "meta": {
+                    "pump_threshold": config.pump_threshold,
+                    "dump_threshold": config.dump_threshold,
+                    "top_n":          config.top_n,
+                },
+            })
+        except Exception as e:
+            print(f"[heartbeat] insert FAILED: {e}")
+
+        # 7. cooldown state + 任何 monitor 写入的 _reserved 键一起落盘
         state_mod.save(state)
-        return
-
-    # 3. 排序：先 pump 后 dump，绝对涨跌幅降序
-    fresh_signals.sort(key=lambda s: (s.direction != "pump", -abs(s.chg_pct)))
-    for s in fresh_signals:
-        arrow = "+" if s.chg_pct >= 0 else ""
-        print(f"  ✓ {s.inst_id} [{s.direction}] {arrow}{s.chg_pct}% vol={s.vol_usdt:.0f}U")
-
-    # 4. 实时通知（飞书）
-    notifiers = [
-        FeishuNotifier(config.feishu_webhook),
-        # V2.7: 邮件汇总走独立 workflow，不在此处实时调用
-    ]
-    for n in notifiers:
-        n.send(fresh_signals)
-
-    # 5. 持久化（Supabase）
-    supabase.insert_signals(fresh_signals)
-
-    # 6. cooldown state + 任何 monitor 写入的 _reserved 键一起落盘
-    state_mod.save(state)
 
 
 if __name__ == "__main__":

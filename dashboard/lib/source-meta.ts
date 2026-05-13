@@ -12,7 +12,9 @@ export type SourceId =
   | "oi_surge"
   | "perp_premium"
   | "new_listings"
-  | "longshort_ratio";
+  | "longshort_ratio"
+  | "liquidations"
+  | "cross_exchange";
 
 export interface SourceMeta {
   id: SourceId;
@@ -103,6 +105,22 @@ export const SOURCES: SourceMeta[] = [
     emoji: "⚖️",
     description: "散户多空账户比 ≥3.5（FOMO多）或 ≤0.4（FOMO空），反向指标。",
     badgeClass: "bg-violet-500/15 text-violet-300 hover:bg-violet-500/25",
+  },
+  {
+    id: "liquidations",
+    label: "Liquidations · 强平爆仓密集",
+    shortLabel: "Liq",
+    emoji: "💀",
+    description: "近 5 分钟单币种累计强平 ≥ $1M。多头爆仓→抛压dump，空头爆仓→轧空pump。",
+    badgeClass: "bg-red-500/15 text-red-300 hover:bg-red-500/25",
+  },
+  {
+    id: "cross_exchange",
+    label: "Cross-exchange · 跨所价差",
+    shortLabel: "Cross",
+    emoji: "🔀",
+    description: "OKX 相对 Bitget / Gate.io 价差 ≥ 0.3%。OKX 偏高→pump 领先；偏低→dump 滞涨。",
+    badgeClass: "bg-purple-500/15 text-purple-300 hover:bg-purple-500/25",
   },
 ];
 

@@ -190,6 +190,61 @@ class SupabaseClient:
         except Exception as e:
             print(f"[supabase] upsert_oi_snapshots FAILED: {e}")
 
+    # ============ scanner_heartbeat (V2.8 watchdog) ============
+    def insert_heartbeat(self, hb):
+        """hb: dict with keys started_at(iso), duration_ms, monitors_run,
+        signals_found, fresh_signals, okx_errors, meta(dict)."""
+        if not self.enabled:
+            return
+        try:
+            r = requests.post(
+                f"{self.url}/rest/v1/scanner_heartbeat",
+                headers=self._headers_write,
+                json=hb,
+                timeout=10,
+            )
+            r.raise_for_status()
+        except Exception as e:
+            print(f"[supabase] insert_heartbeat FAILED: {e}")
+
+    def fetch_latest_heartbeat(self):
+        """返回最新一条 heartbeat dict 或 None。"""
+        if not self.enabled:
+            return None
+        try:
+            r = requests.get(
+                f"{self.url}/rest/v1/scanner_heartbeat",
+                headers={**self._headers_read, "Accept": "application/json"},
+                params={
+                    "select": "*",
+                    "order": "started_at.desc",
+                    "limit": "1",
+                },
+                timeout=10,
+            )
+            r.raise_for_status()
+            rows = r.json()
+            return rows[0] if rows else None
+        except Exception as e:
+            print(f"[supabase] fetch_latest_heartbeat FAILED: {e}")
+            return None
+
+    # ============ liquidations (V2.8 monitor) ============
+    def insert_liquidations(self, rows):
+        """rows: list[dict(inst_id, side, price, sz, notional_usd, ts(iso))]."""
+        if not self.enabled or not rows:
+            return
+        try:
+            r = requests.post(
+                f"{self.url}/rest/v1/liquidations",
+                headers=self._headers_write,
+                json=rows,
+                timeout=10,
+            )
+            r.raise_for_status()
+        except Exception as e:
+            print(f"[supabase] insert_liquidations FAILED: {e}")
+
     @staticmethod
     def _signal_to_row(s):
         bar_ts_iso = datetime.fromtimestamp(s.bar_ts_ms / 1000, timezone.utc).isoformat()

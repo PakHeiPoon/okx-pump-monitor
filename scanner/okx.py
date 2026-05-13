@@ -158,6 +158,68 @@ def fetch_long_short_account_ratio(inst_id: str, period: str = "5m"):
     return {"ts_ms": int(row[0]), "ratio": float(row[1])}
 
 
+def fetch_swap_instruments():
+    """全部 USDT-本位 SWAP 合约的 lot size / ctVal / 状态。
+
+    返回 dict {inst_id: {"ct_val": float, "ct_val_ccy": str, "uly": str}}。
+    清算 monitor 用 ct_val 把"合约张数"换算成"base 币数量"，再乘以价格得 USD。
+    """
+    r = requests.get(
+        f"{OKX_BASE}/api/v5/public/instruments",
+        params={"instType": "SWAP"},
+        timeout=15,
+    )
+    r.raise_for_status()
+    rows = r.json().get("data", [])
+    out = {}
+    for row in rows:
+        if row.get("state") != "live":
+            continue
+        inst = row.get("instId", "")
+        if not inst.endswith("-USDT-SWAP"):
+            continue
+        out[inst] = {
+            "ct_val":      float(row.get("ctVal") or 0),
+            "ct_val_ccy":  row.get("ctValCcy") or "",
+            "uly":         row.get("uly") or "",
+        }
+    return out
+
+
+def fetch_liquidation_orders(uly: str, limit: int = 100):
+    """单 underlying 的最近强平订单。返回 list[dict]，每行：
+       {inst_id, pos_side ('long'/'short'), sz, bk_px, ts_ms}
+
+    posSide=long  → 多头被强平（抛压）
+    posSide=short → 空头被强平（轧空）
+    sz 是合约张数，需要 ct_val 换算实际 base 币量。
+    """
+    r = requests.get(
+        f"{OKX_BASE}/api/v5/public/liquidation-orders",
+        params={
+            "instType": "SWAP",
+            "state":    "filled",
+            "uly":      uly,
+            "limit":    str(limit),
+        },
+        timeout=10,
+    )
+    r.raise_for_status()
+    blocks = r.json().get("data", [])
+    out = []
+    for blk in blocks:
+        inst = blk.get("instId", "")
+        for d in blk.get("details", []):
+            out.append({
+                "inst_id":  inst,
+                "pos_side": d.get("posSide", ""),
+                "sz":       float(d.get("sz") or 0),
+                "bk_px":    float(d.get("bkPx") or 0),
+                "ts_ms":    int(d.get("ts") or d.get("time") or 0),
+            })
+    return out
+
+
 def fetch_all_open_interest():
     """全部 SWAP 当前 OI 快照。返回 list[dict]，过滤到 -USDT-SWAP 为主。
 

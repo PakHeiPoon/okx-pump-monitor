@@ -110,6 +110,28 @@ function formatChange(s: Signal): ChangeDisplay {
         tone: ratio >= 1 ? "pump" : "dump",
       };
     }
+    case "liquidations": {
+      const total =
+        ((s.meta?.long_liq_usd as number | undefined) ?? 0) +
+        ((s.meta?.short_liq_usd as number | undefined) ?? 0);
+      const fmt =
+        total >= 1e9
+          ? `$${(total / 1e9).toFixed(2)}B`
+          : total >= 1e6
+          ? `$${(total / 1e6).toFixed(2)}M`
+          : `$${(total / 1e3).toFixed(0)}K`;
+      return {
+        text: `💀 ${fmt}`,
+        tone: s.direction === "pump" ? "pump" : "dump",
+      };
+    }
+    case "cross_exchange": {
+      const sp = (s.meta?.spread_pct as number | undefined) ?? chg;
+      return {
+        text: `🔀 ${sp.toFixed(2)}%`,
+        tone: s.direction === "pump" ? "pump" : "dump",
+      };
+    }
     default: {
       const sign = chg >= 0 ? "+" : "";
       return {
@@ -170,6 +192,25 @@ function describeMeta(s: Signal): string | null {
     }
     case "longshort_ratio": {
       return (s.meta?.bias as string | undefined) ?? null;
+    }
+    case "liquidations": {
+      const longUsd = (s.meta?.long_liq_usd as number | undefined) ?? 0;
+      const shortUsd = (s.meta?.short_liq_usd as number | undefined) ?? 0;
+      const win = (s.meta?.window_min as number | undefined) ?? 5;
+      const cnt = (s.meta?.event_count as number | undefined) ?? 0;
+      const fmtUsd = (v: number): string =>
+        v >= 1e6
+          ? `$${(v / 1e6).toFixed(1)}M`
+          : v >= 1e3
+          ? `$${(v / 1e3).toFixed(0)}K`
+          : `$${v.toFixed(0)}`;
+      return `${win}min · ${cnt} events · L ${fmtUsd(longUsd)} / S ${fmtUsd(shortUsd)}`;
+    }
+    case "cross_exchange": {
+      const maxEx = s.meta?.max_exchange as string | undefined;
+      const minEx = s.meta?.min_exchange as string | undefined;
+      if (!maxEx || !minEx) return null;
+      return `${maxEx} > ${minEx}`;
     }
     default:
       return null;
