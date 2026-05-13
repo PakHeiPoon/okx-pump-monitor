@@ -319,11 +319,6 @@
     "ZRO-USDT-SWAP",
     "ZRX-USDT-SWAP"
   ],
-  "CHIP-USDT-SWAP|dump|volume_surge": 1778702597.679077,
-  "PENGU-USDT-SWAP|pump|volume_surge": 1778702597.679077,
-  "ARB-USDT-SWAP|pump|volume_surge": 1778702597.679077,
-  "TURBO-USDT-SWAP|dump|cross_exchange": 1778702597.679077,
-  "RLS-USDT-SWAP|pump|cross_exchange": 1778702597.679077,
   "LAB-USDT-SWAP|pump|funding_extreme": 1778703445.7839105,
   "LAB-USDT-SWAP|dump|longshort_ratio": 1778703445.7839105,
   "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778703445.7839105,
@@ -333,5 +328,6 @@
   "ACH-USDT-SWAP|pump|cross_exchange": 1778703445.7839105,
   "IOST-USDT-SWAP|pump|cross_exchange": 1778703445.7839105,
   "SATS-USDT-SWAP|pump|cross_exchange": 1778703643.6560054,
-  "PIPPIN-USDT-SWAP|pump|cross_exchange": 1778704377.00919
+  "PIPPIN-USDT-SWAP|pump|cross_exchange": 1778704377.00919,
+  "DOOD-USDT-SWAP|dump|cross_exchange": 1778705276.371519
 }
