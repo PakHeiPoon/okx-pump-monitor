@@ -319,12 +319,6 @@
     "ZRO-USDT-SWAP",
     "ZRX-USDT-SWAP"
   ],
-  "BIO-USDT-SWAP|pump|volume_surge": 1778696255.6353507,
-  "RESOLV-USDT-SWAP|dump|perp_premium": 1778696255.6353507,
-  "OPENAI-USDT-SWAP|pump|longshort_ratio": 1778696255.6353507,
-  "TURBO-USDT-SWAP|dump|cross_exchange": 1778696255.6353507,
-  "SPACE-USDT-SWAP|dump|cross_exchange": 1778696255.6353507,
-  "LINEA-USDT-SWAP|dump|cross_exchange": 1778696255.6353507,
   "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778697050.8180757,
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1778697050.8180757,
   "LAB-USDT-SWAP|pump|funding_extreme": 1778698081.5193584,
@@ -334,5 +328,14 @@
   "ACT-USDT-SWAP|dump|cross_exchange": 1778698081.5193584,
   "AZTEC-USDT-SWAP|dump|cross_exchange": 1778698081.5193584,
   "RSR-USDT-SWAP|dump|cross_exchange": 1778698081.5193584,
-  "BOME-USDT-SWAP|dump|cross_exchange": 1778698081.5193584
+  "BOME-USDT-SWAP|dump|cross_exchange": 1778698081.5193584,
+  "H-USDT-SWAP|pump|volume_surge": 1778698975.6701624,
+  "HBAR-USDT-SWAP|pump|volume_surge": 1778698975.6701624,
+  "OPENAI-USDT-SWAP|pump|longshort_ratio": 1778698975.6701624,
+  "UB-USDT-SWAP|pump|cross_exchange": 1778698975.6701624,
+  "DOOD-USDT-SWAP|dump|cross_exchange": 1778698975.6701624,
+  "TURBO-USDT-SWAP|dump|cross_exchange": 1778698975.6701624,
+  "SPACE-USDT-SWAP|dump|cross_exchange": 1778698975.6701624,
+  "LINEA-USDT-SWAP|dump|cross_exchange": 1778698975.6701624,
+  "PEOPLE-USDT-SWAP|dump|cross_exchange": 1778698975.6701624
 }
