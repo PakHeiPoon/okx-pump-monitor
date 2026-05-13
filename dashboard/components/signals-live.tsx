@@ -11,6 +11,7 @@ import { SignalCard } from "@/components/signal-card";
 import { SignalsTable } from "@/components/signals-table";
 import { SignalsTicker } from "@/components/signals-ticker";
 import { LiveDot } from "@/components/live-dot";
+import { fuseSignals } from "@/lib/fusion";
 import { getSourceMeta } from "@/lib/source-meta";
 import type { Signal } from "@/lib/types";
 import Link from "next/link";
@@ -283,8 +284,12 @@ export function SignalsLive({ initialSignals, queryString }: SignalsLiveProps) {
         <EmptyState />
       ) : view === "cards" ? (
         <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
-          {signals.map((s) => (
-            <SignalCard key={s.id} signal={s} />
+          {fuseSignals(signals).map((g) => (
+            <SignalCard
+              key={`${g.primary.id}-${g.related.length}`}
+              signal={g.primary}
+              related={g.related}
+            />
           ))}
         </div>
       ) : (

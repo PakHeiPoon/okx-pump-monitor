@@ -14,6 +14,7 @@ from datetime import datetime, timezone, timedelta
 
 from .config import load
 from . import state as state_mod
+from . import fusion as fusion_mod
 from .monitors.swap_top_gainers import SwapTopGainersMonitor
 from .monitors.watchlist import WatchlistMonitor
 from .monitors.volume_surge import VolumeSurgeMonitor
@@ -90,11 +91,21 @@ def main():
         if not fresh_signals:
             print("本轮无新信号（可能在冷却期）")
         else:
+            # 2.5 信号融合 — 同 inst_id 多 monitor 命中合并打分（V2.9 / Phase 3）
+            fresh_signals = fusion_mod.fuse(fresh_signals, time_bucket_min=5)
+            high_conf = [s for s in fresh_signals if s.meta.get("confidence_score", 1) >= 3]
+            print(f"  [fusion] {len(fresh_signals)} signals → "
+                  f"{len({s.meta.get('fusion_group_id', s.inst_id) for s in fresh_signals})} groups, "
+                  f"{len(high_conf)} 高置信(≥3 sources)")
+
             # 3. 排序：先 pump 后 dump，绝对涨跌幅降序
             fresh_signals.sort(key=lambda s: (s.direction != "pump", -abs(s.chg_pct)))
             for s in fresh_signals:
                 arrow = "+" if s.chg_pct >= 0 else ""
-                print(f"  ✓ {s.inst_id} [{s.direction}] {arrow}{s.chg_pct}% vol={s.vol_usdt:.0f}U")
+                conf = s.meta.get("confidence_score", 1)
+                tag = "★" * conf
+                print(f"  ✓ {s.inst_id} [{s.direction}] {arrow}{s.chg_pct}% "
+                      f"vol={s.vol_usdt:.0f}U conf={tag}")
 
             # 4. 实时通知（飞书）
             notifiers = [

@@ -100,13 +100,46 @@ class FeishuNotifier(Notifier):
     def send(self, signals):
         if not signals:
             return
-        # 按 source 分组
-        groups = {}
+
+        # V2.9: fusion-aware rendering — 优先把同 inst_id 多 source 信号折叠
+        # 成一行高置信卡片，剩下的按 source 分组保留兼容旧逻辑。
+        high_conf_lines = []
+        seen_groups = set()
         for s in signals:
+            conf = s.meta.get("confidence_score", 1) if isinstance(s.meta, dict) else 1
+            gid = s.meta.get("fusion_group_id") if isinstance(s.meta, dict) else None
+            is_primary = s.meta.get("fusion_primary", True) if isinstance(s.meta, dict) else True
+            if conf >= 2 and gid and is_primary and gid not in seen_groups:
+                seen_groups.add(gid)
+                sources_chips = " ".join(
+                    f"`{src}`" for src in s.meta.get("fused_sources", [s.source])
+                )
+                stars = "★" * conf + "☆" * (5 - conf)
+                high_conf_lines.append(
+                    f"  **{display_name(s.inst_id)}** {stars}  ({conf} 维度同时触发)\n"
+                    f"    {sources_chips}\n"
+                    f"    {_fmt_line(s).strip()}"
+                )
+
+        # 剩下的（confidence=1 或非 primary 在融合组里）按 source 分组渲染
+        leftover = []
+        for s in signals:
+            gid = s.meta.get("fusion_group_id") if isinstance(s.meta, dict) else None
+            if gid and gid in seen_groups:
+                # 已在高置信卡片里被代表了，不重复渲染
+                continue
+            leftover.append(s)
+
+        groups = {}
+        for s in leftover:
             groups.setdefault(s.source, []).append(s)
 
         now_str = datetime.now(CST).strftime("%Y-%m-%d %H:%M:%S")
         lines = [f"**OKX 异动提醒** ({now_str} CST)"]
+        if high_conf_lines:
+            lines.append("")
+            lines.append(f"**🔥 高置信信号（多维度共振）· {len(high_conf_lines)} 组**")
+            lines.extend(high_conf_lines)
         for src, sigs in groups.items():
             meta = SOURCE_META.get(src, {"emoji": "•", "label": src})
             lines.append("")
@@ -115,8 +148,15 @@ class FeishuNotifier(Notifier):
                 lines.append(_fmt_line(s))
         content = "\n".join(lines)
 
-        # 标题选取规则：单一来源 → 该来源 title；多来源 → "综合异动"
-        if len(groups) == 1:
+        # 标题选取规则（fusion 优先）：
+        #   有高置信组 → "🔥 高置信共振 · N 组" + 红色
+        #   单一来源 leftover → 该来源 title
+        #   多来源 leftover → "综合异动"
+        if high_conf_lines:
+            color = "red"
+            extra = f" + {len(leftover)} 单维度" if leftover else ""
+            title = f"🔥 高置信共振 · {len(high_conf_lines)} 组{extra}"
+        elif len(groups) == 1:
             src = next(iter(groups))
             meta = SOURCE_META.get(src, {"emoji": "🔥", "title": src})
             color = _color_for(src, groups[src])
