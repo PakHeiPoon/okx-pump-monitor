@@ -331,5 +331,7 @@
   "UB-USDT-SWAP|pump|cross_exchange": 1778708860.0641303,
   "W-USDT-SWAP|pump|cross_exchange": 1778709216.4900327,
   "PUMP-USDT-SWAP|dump|cross_exchange": 1778709216.4900327,
-  "CHZ-USDT-SWAP|pump|cross_exchange": 1778709216.4900327
+  "CHZ-USDT-SWAP|pump|cross_exchange": 1778709216.4900327,
+  "XRP-USDT-SWAP|pump|volume_surge": 1778709774.8947928,
+  "GMT-USDT-SWAP|dump|perp_premium": 1778709774.8947928
 }
