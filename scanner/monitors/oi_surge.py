@@ -42,13 +42,16 @@ class OISurgeMonitor(Monitor):
         previous = self.supabase.fetch_oi_snapshots()
 
         signals = []
-        # 限制扫描范围到 TOP N（避免一次推 300 个币的 OI 全部上 DB）
+        # 限制对比范围到 active universe（避免噪声小币 OI 抖动报错信号）
         top_set = set()
         try:
-            top = okx.fetch_top_swap_gainers(self.config.top_n)
+            top = okx.fetch_active_universe(
+                top_movers=self.config.top_n,
+                top_volume=self.config.top_n * 2,
+            )
             top_set = {t[0] for t in top}
         except Exception as e:
-            print(f"  [oi_surge] 拉 top 失败: {e}")
+            print(f"  [oi_surge] 拉 universe 失败: {e}")
 
         # 只对 TOP N 内的币做对比，但全量 upsert（攒 baseline 给下次）
         for row in current:

@@ -21,7 +21,9 @@ class PerpPremiumMonitor(Monitor):
     def scan(self):
         c = self.config
         signals = []
-        top = okx.fetch_top_swap_gainers(c.top_n)
+        # 每个币要 2 个 API call（swap + spot），universe 控制在 50（top_movers only）
+        # 不掺杂 vol 榜了，太慢
+        top = okx.fetch_active_universe(top_movers=c.top_n, top_volume=0)
         for inst, _chg, _last in top:
             spot_pair = inst.replace("-SWAP", "")  # BTC-USDT-SWAP → BTC-USDT
             try:

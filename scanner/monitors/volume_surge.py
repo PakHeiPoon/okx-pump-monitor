@@ -19,8 +19,8 @@ class VolumeSurgeMonitor(Monitor):
     def scan(self):
         c = self.config
         signals = []
-        # 复用涨幅榜的扫描范围，控制 API 量
-        top = okx.fetch_top_swap_gainers(c.top_n)
+        # universe 同 swap_top_gainers：覆盖陡变 + 高成交量
+        top = okx.fetch_active_universe(top_movers=c.top_n, top_volume=c.top_n * 2)
         for inst, _chg24h, _last in top:
             try:
                 hit = self._check_surge(inst)

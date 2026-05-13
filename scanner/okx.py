@@ -4,28 +4,53 @@ import requests
 OKX_BASE = "https://www.okx.com"
 
 
-def fetch_top_swap_gainers(top_n: int):
-    """USDT 本位永续合约 24h 涨幅榜 TOP N。返回 [(inst_id, chg_ratio, last_price), ...]"""
+def _fetch_swap_tickers_raw():
     r = requests.get(
         f"{OKX_BASE}/api/v5/market/tickers",
         params={"instType": "SWAP"},
         timeout=15,
     )
     r.raise_for_status()
-    data = r.json()["data"]
-    pairs = []
-    for t in data:
-        inst = t["instId"]
+    return r.json()["data"]
+
+
+def _parse_pairs(tickers):
+    """tickers raw → list[dict(inst_id, chg, last, vol)]，已过滤到 -USDT-SWAP。"""
+    out = []
+    for t in tickers:
+        inst = t.get("instId", "")
         if not inst.endswith("-USDT-SWAP"):
             continue
-        last = float(t["last"] or 0)
-        open24h = float(t["open24h"] or 0)
+        last = float(t.get("last") or 0)
+        open24h = float(t.get("open24h") or 0)
         if open24h <= 0:
             continue
         chg = (last - open24h) / open24h
-        pairs.append((inst, chg, last))
-    pairs.sort(key=lambda x: x[1], reverse=True)
-    return pairs[:top_n]
+        vol = float(t.get("volCcy24h") or 0)
+        out.append({"inst_id": inst, "chg": chg, "last": last, "vol": vol})
+    return out
+
+
+def fetch_top_swap_gainers(top_n: int):
+    """24h 涨幅 TOP N（按 chg 降序）。保留给 funding / longshort 这类
+    rubik API 慢、只看主流币的 monitor 用。"""
+    pairs = _parse_pairs(_fetch_swap_tickers_raw())
+    pairs.sort(key=lambda p: -p["chg"])
+    return [(p["inst_id"], p["chg"], p["last"]) for p in pairs[:top_n]]
+
+
+def fetch_active_universe(top_movers: int = 50, top_volume: int = 100):
+    """主扫描 universe = |24h chg| 排 TOP M ∪ 24h vol 排 TOP V，去重。
+    覆盖两类活跃币：异动型 + 高成交量型（LAB 这种 24h 横盘但量大的也能进）。
+    返回 list[(inst_id, chg_ratio, last)] 按 abs chg 降序。"""
+    pairs = _parse_pairs(_fetch_swap_tickers_raw())
+    by_chg = sorted(pairs, key=lambda p: -abs(p["chg"]))[:top_movers]
+    by_vol = sorted(pairs, key=lambda p: -p["vol"])[:top_volume]
+    seen = {}
+    for p in by_chg + by_vol:
+        seen[p["inst_id"]] = p
+    merged = sorted(seen.values(), key=lambda p: -abs(p["chg"]))
+    return [(p["inst_id"], p["chg"], p["last"]) for p in merged]
 
 
 def fetch_1m_candles(inst_id: str, limit: int):

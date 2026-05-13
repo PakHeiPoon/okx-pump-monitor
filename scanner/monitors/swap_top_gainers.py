@@ -15,11 +15,10 @@ class SwapTopGainersMonitor(Monitor):
     def scan(self):
         c = self.config
         signals = []
-        top = okx.fetch_top_swap_gainers(c.top_n)
-        for inst, chg24h, _last in top:
-            # 24h 涨幅都不到 3%，跳过加速扫描（保留原逻辑）
-            if chg24h * 100 < 3:
-                continue
+        # universe = abs 24h chg TOP_N ∪ 24h vol TOP_N*2，去重后约 ~130 个币
+        # 既覆盖陡涨陡跌，也覆盖 LAB 这种 24h 横盘但高成交额的活跃币
+        top = okx.fetch_active_universe(top_movers=c.top_n, top_volume=c.top_n * 2)
+        for inst, _chg24h, _last in top:
             try:
                 hit = self._check_signal(inst)
             except Exception as e:
@@ -27,7 +26,7 @@ class SwapTopGainersMonitor(Monitor):
                 continue
             if hit:
                 signals.append(hit)
-            time.sleep(0.1)   # 避免 OKX 限流
+            time.sleep(0.05)   # 避免 OKX 限流
         return signals
 
     def _check_signal(self, inst_id):
