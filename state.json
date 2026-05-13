@@ -319,12 +319,12 @@
     "ZRO-USDT-SWAP",
     "ZRX-USDT-SWAP"
   ],
-  "PIPPIN-USDT-SWAP|pump|cross_exchange": 1778704377.00919,
   "DOOD-USDT-SWAP|dump|cross_exchange": 1778705276.371519,
   "LAB-USDT-SWAP|pump|funding_extreme": 1778706187.1463447,
   "LAB-USDT-SWAP|dump|longshort_ratio": 1778706187.1463447,
   "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778706187.1463447,
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1778706187.1463447,
   "OPENAI-USDT-SWAP|pump|longshort_ratio": 1778706187.1463447,
-  "SATS-USDT-SWAP|pump|cross_exchange": 1778706187.1463447
+  "SATS-USDT-SWAP|pump|cross_exchange": 1778706187.1463447,
+  "BASED-USDT-SWAP|dump|cross_exchange": 1778707059.3954198
 }
