@@ -1,5 +1,3 @@
-import { Zap } from "lucide-react";
-
 import { FilterSidebar } from "@/components/filter-sidebar";
 import { SignalsLive } from "@/components/signals-live";
 import { StatBar } from "@/components/stat-bar";
@@ -24,7 +22,6 @@ function parseDir(v: string | undefined): Dir {
 }
 
 function parseWindow(v: string | undefined): TimeWindow {
-  // V2.5: default window 1h (flow feel) — 24h 仍可手动选
   if (v === "1h" || v === "6h" || v === "24h" || v === "7d") return v;
   return "1h";
 }
@@ -90,50 +87,40 @@ export default async function HomePage({ searchParams }: HomePageProps) {
   }
 
   return (
-    <div className="min-h-screen">
-      <header className="border-border bg-background/95 sticky top-0 z-10 border-b backdrop-blur">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-3 md:px-6 md:py-4">
-          <div className="flex items-center gap-2.5">
-            <Zap className="text-primary h-5 w-5" />
-            <span className="text-sm font-semibold tracking-tight md:text-base">
-              OKX Pump Monitor
-            </span>
-            <span className="text-muted-foreground ml-2 hidden text-xs md:inline">
-              Perpetual swap signals
-            </span>
-          </div>
-          <div className="flex flex-wrap items-center gap-1.5">
-            <WatchlistManager />
-            <BreakoutManager />
-            <PriceAlertManager />
+    <main className="mx-auto max-w-7xl px-4 py-4 md:px-6 md:py-6">
+      {errorMsg ? (
+        <div className="mb-6 rounded-lg border border-rose-500/30 bg-rose-500/10 p-4 text-sm text-rose-300">
+          Failed to load signals: {errorMsg}
+          <div className="text-muted-foreground mt-1 text-xs">
+            Check NEXT_PUBLIC_SUPABASE_URL / NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY
+            (locally in .env.local · on Vercel under Project Settings → Environment
+            Variables). URL must NOT include /rest/v1 or trailing spaces.
           </div>
         </div>
-      </header>
+      ) : null}
 
-      <main className="mx-auto max-w-7xl px-4 py-4 md:px-6 md:py-6">
-        {errorMsg ? (
-          <div className="mb-6 rounded-lg border border-rose-500/30 bg-rose-500/10 p-4 text-sm text-rose-300">
-            Failed to load signals: {errorMsg}
-            <div className="text-muted-foreground mt-1 text-xs">
-              Check NEXT_PUBLIC_SUPABASE_URL / NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY
-              (locally in .env.local · on Vercel under Project Settings → Environment
-              Variables). URL must NOT include /rest/v1 or trailing spaces.
-            </div>
-          </div>
-        ) : null}
-
-        <StatBar stats={stats} />
-
-        <div className="mt-6 flex flex-col gap-4 lg:flex-row">
-          <FilterSidebar current={{ direction, window, sources }} />
-          <div className="flex-1 min-w-0">
-            <SignalsLive
-              initialSignals={signals}
-              queryString={buildLiveQuery(direction, window, sources).toString()}
-            />
-          </div>
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
+        <div className="text-muted-foreground text-xs">
+          Perpetual swap signals · auto-updating
         </div>
-      </main>
-    </div>
+        <div className="flex flex-wrap items-center gap-1.5">
+          <WatchlistManager />
+          <BreakoutManager />
+          <PriceAlertManager />
+        </div>
+      </div>
+
+      <StatBar stats={stats} />
+
+      <div className="mt-6 flex flex-col gap-4 lg:flex-row">
+        <FilterSidebar current={{ direction, window, sources }} />
+        <div className="flex-1 min-w-0">
+          <SignalsLive
+            initialSignals={signals}
+            queryString={buildLiveQuery(direction, window, sources).toString()}
+          />
+        </div>
+      </div>
+    </main>
   );
 }

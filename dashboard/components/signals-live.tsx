@@ -2,11 +2,12 @@
 
 import { useEffect, useRef, useState } from "react";
 import useSWR from "swr";
-import { Bell, BellOff, Volume2, VolumeX } from "lucide-react";
+import { Bell, BellOff, LayoutGrid, Rows3, Volume2, VolumeX } from "lucide-react";
 import { toast } from "sonner";
 
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
+import { SignalCard } from "@/components/signal-card";
 import { SignalsTable } from "@/components/signals-table";
 import { SignalsTicker } from "@/components/signals-ticker";
 import { LiveDot } from "@/components/live-dot";
@@ -23,9 +24,12 @@ interface ApiError {
   error: string;
 }
 
+type ViewMode = "cards" | "table";
+
 const POLL_INTERVAL_MS = 15_000;
 const SOUND_LS_KEY = "okx_pump_sound";
 const NOTIFY_LS_KEY = "okx_pump_notify";
+const VIEW_LS_KEY = "okx_pump_view";
 
 async function fetchSignalsClient(qs: string): Promise<Signal[]> {
   const res = await fetch(`/api/signals?${qs}`, { cache: "no-store" });
@@ -96,16 +100,30 @@ export function SignalsLive({ initialSignals, queryString }: SignalsLiveProps) {
 
   const [soundOn, setSoundOn] = useState(false);
   const [notifyOn, setNotifyOn] = useState(false);
+  const [view, setView] = useState<ViewMode>("cards");
 
   // hydrate prefs from localStorage
   useEffect(() => {
     try {
       setSoundOn(localStorage.getItem(SOUND_LS_KEY) === "1");
       setNotifyOn(localStorage.getItem(NOTIFY_LS_KEY) === "1");
+      const storedView = localStorage.getItem(VIEW_LS_KEY);
+      if (storedView === "cards" || storedView === "table") {
+        setView(storedView);
+      }
     } catch {
       // ignore
     }
   }, []);
+
+  function setViewMode(next: ViewMode): void {
+    setView(next);
+    try {
+      localStorage.setItem(VIEW_LS_KEY, next);
+    } catch {
+      // ignore
+    }
+  }
 
   function toggleSound(): void {
     const next = !soundOn;
@@ -199,6 +217,34 @@ export function SignalsLive({ initialSignals, queryString }: SignalsLiveProps) {
           ) : null}
         </div>
         <div className="flex items-center gap-1">
+          <div className="bg-accent/40 mr-1 flex items-center rounded-md p-0.5">
+            <button
+              type="button"
+              onClick={() => setViewMode("cards")}
+              className={`flex items-center gap-1 rounded px-1.5 py-0.5 text-[11px] transition-colors ${
+                view === "cards"
+                  ? "bg-background text-foreground"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+              title="Card view"
+            >
+              <LayoutGrid className="h-3 w-3" />
+              <span className="hidden sm:inline">Cards</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => setViewMode("table")}
+              className={`flex items-center gap-1 rounded px-1.5 py-0.5 text-[11px] transition-colors ${
+                view === "table"
+                  ? "bg-background text-foreground"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+              title="Table view"
+            >
+              <Rows3 className="h-3 w-3" />
+              <span className="hidden sm:inline">Table</span>
+            </button>
+          </div>
           <Button
             variant="ghost"
             size="sm"
@@ -235,6 +281,12 @@ export function SignalsLive({ initialSignals, queryString }: SignalsLiveProps) {
         <SignalsSkeleton />
       ) : signals.length === 0 ? (
         <EmptyState />
+      ) : view === "cards" ? (
+        <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
+          {signals.map((s) => (
+            <SignalCard key={s.id} signal={s} />
+          ))}
+        </div>
       ) : (
         <SignalsTable signals={signals} />
       )}

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
+import { TopNav } from "@/components/top-nav";
 import { Toaster } from "@/components/ui/sonner";
 
 import "./globals.css";
@@ -31,7 +32,8 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} dark h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        {children}
+        <TopNav />
+        <div className="flex-1">{children}</div>
         <Toaster richColors position="top-right" />
       </body>
     </html>
