@@ -319,16 +319,6 @@
     "ZRO-USDT-SWAP",
     "ZRX-USDT-SWAP"
   ],
-  "PIPPIN-USDT-SWAP|dump|volume_surge": 1778675583.1035192,
-  "MON-USDT-SWAP|dump|volume_surge": 1778675583.1035192,
-  "ENA-USDT-SWAP|dump|volume_surge": 1778675583.1035192,
-  "PUMP-USDT-SWAP|dump|volume_surge": 1778675583.1035192,
-  "ARB-USDT-SWAP|dump|volume_surge": 1778675583.1035192,
-  "INJ-USDT-SWAP|dump|funding_extreme": 1778675583.1035192,
-  "RKLB-USDT-SWAP|pump|funding_extreme": 1778675583.1035192,
-  "DRAM-USDT-SWAP|pump|funding_extreme": 1778675583.1035192,
-  "BILL-USDT-SWAP|dump|oi_surge": 1778675583.1035192,
-  "DRAM-USDT-SWAP|pump|longshort_ratio": 1778675583.1035192,
   "TRUTH-USDT-SWAP|pump|swap_top_gainers": 1778676473.4533916,
   "PLUME-USDT-SWAP|pump|cross_exchange": 1778676473.4533916,
   "ACH-USDT-SWAP|pump|cross_exchange": 1778676473.4533916,
@@ -338,5 +328,9 @@
   "AZTEC-USDT-SWAP|dump|cross_exchange": 1778677373.3126173,
   "STABLE-USDT-SWAP|pump|cross_exchange": 1778677373.3126173,
   "SPACE-USDT-SWAP|pump|cross_exchange": 1778677373.3126173,
-  "BASED-USDT-SWAP|dump|cross_exchange": 1778677373.3126173
+  "BASED-USDT-SWAP|dump|cross_exchange": 1778677373.3126173,
+  "INJ-USDT-SWAP|dump|funding_extreme": 1778678271.2758777,
+  "RKLB-USDT-SWAP|pump|funding_extreme": 1778678271.2758777,
+  "DRAM-USDT-SWAP|pump|longshort_ratio": 1778678271.2758777,
+  "BILL-USDT-SWAP|dump|cross_exchange": 1778678271.2758777
 }
