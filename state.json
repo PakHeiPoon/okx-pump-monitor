@@ -328,5 +328,10 @@
   "PLUME-USDT-SWAP|pump|cross_exchange": 1778684594.7164385,
   "PIPPIN-USDT-SWAP|dump|cross_exchange": 1778684594.7164385,
   "DOOD-USDT-SWAP|dump|cross_exchange": 1778684594.7164385,
-  "RLS-USDT-SWAP|dump|cross_exchange": 1778684594.7164385
+  "RLS-USDT-SWAP|dump|cross_exchange": 1778684594.7164385,
+  "CORE-USDT-SWAP|dump|volume_surge": 1778685456.0210366,
+  "SPACE-USDT-SWAP|dump|cross_exchange": 1778685456.0210366,
+  "SAHARA-USDT-SWAP|dump|cross_exchange": 1778685456.0210366,
+  "ACT-USDT-SWAP|dump|cross_exchange": 1778685456.0210366,
+  "ACH-USDT-SWAP|pump|cross_exchange": 1778685456.0210366
 }
