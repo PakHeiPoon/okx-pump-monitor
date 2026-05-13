@@ -318,15 +318,6 @@
     "ZRO-USDT-SWAP",
     "ZRX-USDT-SWAP"
   ],
-  "LAB-USDT-SWAP|pump|swap_top_gainers": 1778662962.7278829,
-  "EIGEN-USDT-SWAP|dump|volume_surge": 1778662962.7278829,
-  "ETHFI-USDT-SWAP|dump|volume_surge": 1778662962.7278829,
-  "DRAM-USDT-SWAP|pump|funding_extreme": 1778662962.7278829,
-  "RECALL-USDT-SWAP|pump|oi_surge": 1778662962.7278829,
-  "BILL-USDT-SWAP|dump|cross_exchange": 1778662962.7278829,
-  "UB-USDT-SWAP|pump|cross_exchange": 1778662962.7278829,
-  "ACH-USDT-SWAP|pump|cross_exchange": 1778662962.7278829,
-  "NOT-USDT-SWAP|pump|cross_exchange": 1778662962.7278829,
   "INJ-USDT-SWAP|pump|swap_top_gainers": 1778663878.4610236,
   "CFX-USDT-SWAP|pump|volume_surge": 1778663878.4610236,
   "ADA-USDT-SWAP|pump|volume_surge": 1778663878.4610236,
@@ -339,5 +330,12 @@
   "RLS-USDT-SWAP|dump|cross_exchange": 1778664781.8345687,
   "RESOLV-USDT-SWAP|dump|cross_exchange": 1778664781.8345687,
   "PLUME-USDT-SWAP|pump|cross_exchange": 1778664781.8345687,
-  "LINEA-USDT-SWAP|dump|cross_exchange": 1778664781.8345687
+  "LINEA-USDT-SWAP|dump|cross_exchange": 1778664781.8345687,
+  "UP-USDT-SWAP|dump|swap_top_gainers": 1778665675.645279,
+  "UP-USDT-SWAP|dump|funding_extreme": 1778665675.645279,
+  "RKLB-USDT-SWAP|pump|funding_extreme": 1778665675.645279,
+  "INJ-USDT-SWAP|dump|perp_premium": 1778665675.645279,
+  "BASED-USDT-SWAP|dump|cross_exchange": 1778665675.645279,
+  "MEME-USDT-SWAP|dump|cross_exchange": 1778665675.645279,
+  "DOOD-USDT-SWAP|dump|cross_exchange": 1778665675.645279
 }
