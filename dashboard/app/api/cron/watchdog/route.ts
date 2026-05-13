@@ -48,8 +48,8 @@ function authorized(req: NextRequest): boolean {
 async function fetchLatestHeartbeat(): Promise<Heartbeat | null> {
   // 复用 dashboard 已经配置的 NEXT_PUBLIC_SUPABASE_URL（同一个 supabase 项目），
   // 避免维护两份相同的 URL env。SERVICE_KEY 是独立 secret，必须 server-side only。
-  const url = (process.env.NEXT_PUBLIC_SUPABASE_URL ?? "").replace(/\/+$/, "");
-  const key = process.env.SUPABASE_SERVICE_KEY ?? "";
+  const url = (process.env.NEXT_PUBLIC_SUPABASE_URL ?? "").trim().replace(/\/+$/, "");
+  const key = (process.env.SUPABASE_SERVICE_KEY ?? "").trim();
   if (!url || !key) {
     throw new Error("NEXT_PUBLIC_SUPABASE_URL / SUPABASE_SERVICE_KEY not configured");
   }
