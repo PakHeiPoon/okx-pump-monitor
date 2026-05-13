@@ -319,10 +319,6 @@
     "ZRO-USDT-SWAP",
     "ZRX-USDT-SWAP"
   ],
-  "INJ-USDT-SWAP|dump|funding_extreme": 1778678271.2758777,
-  "RKLB-USDT-SWAP|pump|funding_extreme": 1778678271.2758777,
-  "DRAM-USDT-SWAP|pump|longshort_ratio": 1778678271.2758777,
-  "BILL-USDT-SWAP|dump|cross_exchange": 1778678271.2758777,
   "CRCL-USDT-SWAP|dump|volume_surge": 1778679183.0259717,
   "COIN-USDT-SWAP|dump|volume_surge": 1778679183.0259717,
   "PUMP-USDT-SWAP|pump|volume_surge": 1778679183.0259717,
@@ -334,5 +330,21 @@
   "USELESS-USDT-SWAP|pump|cross_exchange": 1778680080.9195552,
   "DOOD-USDT-SWAP|dump|cross_exchange": 1778680080.9195552,
   "RLS-USDT-SWAP|dump|cross_exchange": 1778680080.9195552,
-  "BOME-USDT-SWAP|dump|cross_exchange": 1778680080.9195552
+  "BOME-USDT-SWAP|dump|cross_exchange": 1778680080.9195552,
+  "PLUME-USDT-SWAP|dump|volume_surge": 1778680989.4625106,
+  "MEGA-USDT-SWAP|dump|volume_surge": 1778680989.4625106,
+  "MOVE-USDT-SWAP|dump|volume_surge": 1778680989.4625106,
+  "MON-USDT-SWAP|dump|volume_surge": 1778680989.4625106,
+  "ENA-USDT-SWAP|dump|volume_surge": 1778680989.4625106,
+  "FLOKI-USDT-SWAP|dump|volume_surge": 1778680989.4625106,
+  "CORE-USDT-SWAP|dump|volume_surge": 1778680989.4625106,
+  "ACT-USDT-SWAP|dump|volume_surge": 1778680989.4625106,
+  "GALA-USDT-SWAP|dump|volume_surge": 1778680989.4625106,
+  "BLUR-USDT-SWAP|dump|volume_surge": 1778680989.4625106,
+  "LINEA-USDT-SWAP|dump|volume_surge": 1778680989.4625106,
+  "BOME-USDT-SWAP|dump|volume_surge": 1778680989.4625106,
+  "INJ-USDT-SWAP|dump|funding_extreme": 1778680989.4625106,
+  "LAB-USDT-SWAP|dump|longshort_ratio": 1778680989.4625106,
+  "ACT-USDT-SWAP|dump|cross_exchange": 1778680989.4625106,
+  "RSR-USDT-SWAP|pump|cross_exchange": 1778680989.4625106
 }
