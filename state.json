@@ -336,5 +336,8 @@
   "BASED-USDT-SWAP|dump|cross_exchange": 1778690531.095368,
   "USELESS-USDT-SWAP|pump|cross_exchange": 1778690531.095368,
   "DOOD-USDT-SWAP|dump|cross_exchange": 1778690531.095368,
-  "RLS-USDT-SWAP|dump|cross_exchange": 1778690531.095368
+  "RLS-USDT-SWAP|dump|cross_exchange": 1778690531.095368,
+  "TRUTH-USDT-SWAP|pump|swap_top_gainers": 1778690862.5246782,
+  "RIVER-USDT-SWAP|pump|funding_extreme": 1778690862.5246782,
+  "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778690862.5246782
 }
