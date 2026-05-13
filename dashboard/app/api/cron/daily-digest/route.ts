@@ -60,10 +60,11 @@ function authorized(req: NextRequest): boolean {
 }
 
 async function fetch24hSignals(): Promise<SignalRow[]> {
-  const url = (process.env.SUPABASE_URL ?? "").replace(/\/+$/, "");
+  // 复用 dashboard 已经配置的 NEXT_PUBLIC_SUPABASE_URL。
+  const url = (process.env.NEXT_PUBLIC_SUPABASE_URL ?? "").replace(/\/+$/, "");
   const key = process.env.SUPABASE_SERVICE_KEY ?? "";
   if (!url || !key) {
-    throw new Error("SUPABASE_URL / SUPABASE_SERVICE_KEY not configured");
+    throw new Error("NEXT_PUBLIC_SUPABASE_URL / SUPABASE_SERVICE_KEY not configured");
   }
   const since = new Date(Date.now() - 24 * 3600 * 1000).toISOString();
   const params = new URLSearchParams({
