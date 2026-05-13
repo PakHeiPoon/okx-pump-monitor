@@ -319,13 +319,6 @@
     "ZRO-USDT-SWAP",
     "ZRX-USDT-SWAP"
   ],
-  "BILL-USDT-SWAP|pump|swap_top_gainers": 1778669260.2561138,
-  "TRUTH-USDT-SWAP|pump|swap_top_gainers": 1778669260.2561138,
-  "ROBO-USDT-SWAP|dump|volume_surge": 1778669260.2561138,
-  "TRIA-USDT-SWAP|pump|funding_extreme": 1778669260.2561138,
-  "PIPPIN-USDT-SWAP|dump|cross_exchange": 1778669260.2561138,
-  "BASED-USDT-SWAP|dump|cross_exchange": 1778669260.2561138,
-  "PEOPLE-USDT-SWAP|pump|cross_exchange": 1778669260.2561138,
   "LAB-USDT-SWAP|pump|swap_top_gainers": 1778670180.5132673,
   "INJ-USDT-SWAP|dump|funding_extreme": 1778670180.5132673,
   "TURBO-USDT-SWAP|dump|funding_extreme": 1778670180.5132673,
@@ -352,5 +345,12 @@
   "MEW-USDT-SWAP|pump|cross_exchange": 1778671076.6564326,
   "SATS-USDT-SWAP|pump|cross_exchange": 1778671076.6564326,
   "ZIL-USDT-SWAP|pump|cross_exchange": 1778671076.6564326,
-  "NOT-USDT-SWAP|pump|cross_exchange": 1778671076.6564326
+  "NOT-USDT-SWAP|pump|cross_exchange": 1778671076.6564326,
+  "BILL-USDT-SWAP|pump|swap_top_gainers": 1778671982.5406253,
+  "UB-USDT-SWAP|pump|swap_top_gainers": 1778671982.5406253,
+  "RECALL-USDT-SWAP|pump|swap_top_gainers": 1778671982.5406253,
+  "OPG-USDT-SWAP|dump|volume_surge": 1778671982.5406253,
+  "STRK-USDT-SWAP|dump|volume_surge": 1778671982.5406253,
+  "AZTEC-USDT-SWAP|dump|cross_exchange": 1778671982.5406253,
+  "DOOD-USDT-SWAP|dump|cross_exchange": 1778671982.5406253
 }
