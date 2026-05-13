@@ -318,10 +318,6 @@
     "ZRO-USDT-SWAP",
     "ZRX-USDT-SWAP"
   ],
-  "DRAM-USDT-SWAP|pump|longshort_ratio": 1778661186.7051346,
-  "TRUTH-USDT-SWAP|pump|cross_exchange": 1778661186.7051346,
-  "ROBO-USDT-SWAP|dump|cross_exchange": 1778661186.7051346,
-  "SATS-USDT-SWAP|dump|cross_exchange": 1778661186.7051346,
   "BILL-USDT-SWAP|pump|swap_top_gainers": 1778662065.0515296,
   "UB-USDT-SWAP|pump|swap_top_gainers": 1778662065.0515296,
   "BILL-USDT-SWAP|pump|funding_extreme": 1778662065.0515296,
@@ -340,5 +336,8 @@
   "BILL-USDT-SWAP|dump|cross_exchange": 1778662962.7278829,
   "UB-USDT-SWAP|pump|cross_exchange": 1778662962.7278829,
   "ACH-USDT-SWAP|pump|cross_exchange": 1778662962.7278829,
-  "NOT-USDT-SWAP|pump|cross_exchange": 1778662962.7278829
+  "NOT-USDT-SWAP|pump|cross_exchange": 1778662962.7278829,
+  "INJ-USDT-SWAP|pump|swap_top_gainers": 1778663878.4610236,
+  "CFX-USDT-SWAP|pump|volume_surge": 1778663878.4610236,
+  "ADA-USDT-SWAP|pump|volume_surge": 1778663878.4610236
 }
