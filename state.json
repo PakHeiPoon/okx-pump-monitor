@@ -327,5 +327,8 @@
   "BASED-USDT-SWAP|dump|cross_exchange": 1778650384.3453927,
   "DOOD-USDT-SWAP|dump|cross_exchange": 1778650384.3453927,
   "RLS-USDT-SWAP|dump|cross_exchange": 1778650384.3453927,
-  "SATS-USDT-SWAP|dump|cross_exchange": 1778650384.3453927
+  "SATS-USDT-SWAP|dump|cross_exchange": 1778650384.3453927,
+  "DRAM-USDT-SWAP|pump|funding_extreme": 1778651252.5232804,
+  "PIPPIN-USDT-SWAP|dump|cross_exchange": 1778651252.5232804,
+  "RESOLV-USDT-SWAP|dump|cross_exchange": 1778651252.5232804
 }
