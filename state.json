@@ -330,5 +330,14 @@
   "SATS-USDT-SWAP|dump|cross_exchange": 1778650384.3453927,
   "DRAM-USDT-SWAP|pump|funding_extreme": 1778651252.5232804,
   "PIPPIN-USDT-SWAP|dump|cross_exchange": 1778651252.5232804,
-  "RESOLV-USDT-SWAP|dump|cross_exchange": 1778651252.5232804
+  "RESOLV-USDT-SWAP|dump|cross_exchange": 1778651252.5232804,
+  "WCT-USDT-SWAP|dump|volume_surge": 1778652175.6115463,
+  "USELESS-USDT-SWAP|dump|volume_surge": 1778652175.6115463,
+  "GME-USDT-SWAP|pump|funding_extreme": 1778652175.6115463,
+  "YB-USDT-SWAP|dump|perp_premium": 1778652175.6115463,
+  "PLUME-USDT-SWAP|pump|cross_exchange": 1778652175.6115463,
+  "BOME-USDT-SWAP|pump|cross_exchange": 1778652175.6115463,
+  "KAT-USDT-SWAP|dump|cross_exchange": 1778652175.6115463,
+  "LINEA-USDT-SWAP|dump|cross_exchange": 1778652175.6115463,
+  "ZIL-USDT-SWAP|dump|cross_exchange": 1778652175.6115463
 }
