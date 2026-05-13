@@ -131,6 +131,10 @@ function formatChange(s: Signal): { text: string; tone: "pump" | "dump" | "neutr
         tone: s.direction === "pump" ? "pump" : "dump",
       };
     }
+    case "flush_reversal": {
+      const rec = (s.meta?.recovery_pct as number | undefined) ?? chg;
+      return { text: `🪂 V ${rec.toFixed(0)}%`, tone: "pump" };
+    }
     default: {
       const sign = chg >= 0 ? "+" : "";
       return {
@@ -200,6 +204,13 @@ function describeMeta(s: Signal): string | null {
       const minEx = s.meta?.min_exchange as string | undefined;
       if (!maxEx || !minEx) return null;
       return `${maxEx} > ${minEx}`;
+    }
+    case "flush_reversal": {
+      const peak = s.meta?.peak_price as number | undefined;
+      const drop = s.meta?.drop_pct as number | undefined;
+      const vx = s.meta?.vol_multiplier as number | undefined;
+      if (!peak || drop === undefined) return null;
+      return `peak ${peak.toPrecision(5)} -${drop.toFixed(1)}%  vol×${vx?.toFixed(1) ?? "?"}`;
     }
     default:
       return null;

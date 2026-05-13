@@ -14,7 +14,8 @@ export type SourceId =
   | "new_listings"
   | "longshort_ratio"
   | "liquidations"
-  | "cross_exchange";
+  | "cross_exchange"
+  | "flush_reversal";
 
 export interface SourceMeta {
   id: SourceId;
@@ -121,6 +122,14 @@ export const SOURCES: SourceMeta[] = [
     emoji: "🔀",
     description: "OKX 相对 Bitget / Gate.io 价差 ≥ 0.3%。OKX 偏高→pump 领先；偏低→dump 滞涨。",
     badgeClass: "bg-purple-500/15 text-purple-300 hover:bg-purple-500/25",
+  },
+  {
+    id: "flush_reversal",
+    label: "Flush reversal · 闪崩 V 反弹",
+    shortLabel: "Flush",
+    emoji: "🪂",
+    description: "强势币创新高后 ≤ 15min 闪崩 ≥ 8% 杀多 + V-bottom 反弹（trap & reverse 形态）。",
+    badgeClass: "bg-pink-500/15 text-pink-300 hover:bg-pink-500/25",
   },
 ];
 

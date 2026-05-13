@@ -22,6 +22,7 @@ SOURCE_META = {
     "longshort_ratio":  {"label": "散户多空比极端", "emoji": "⚖️", "title": "Long/Short Ratio"},
     "liquidations":     {"label": "强平爆仓密集",   "emoji": "💀", "title": "Liquidations"},
     "cross_exchange":   {"label": "跨所价差",       "emoji": "🔀", "title": "Cross-Exchange Spread"},
+    "flush_reversal":   {"label": "闪崩 V 反弹",    "emoji": "🪂", "title": "Flush Reversal"},
 }
 
 
@@ -86,6 +87,16 @@ def _fmt_line(s):
         return (f"  **{sym}**  🔀 spread {spread}%  "
                 f"{max_ex}={s.close_price:g} > {min_ex}={s.open_price:g}  "
                 f"(OKX={okx_p:g})")
+    if src == "flush_reversal":
+        peak = s.meta.get("peak_price", 0)
+        trough = s.meta.get("trough_price", s.open_price)
+        drop = s.meta.get("drop_pct", 0)
+        rec = s.meta.get("recovery_pct", s.chg_pct)
+        pt = s.meta.get("peak_trough_min", "?")
+        post = s.meta.get("post_trough_min", "?")
+        vol_x = s.meta.get("vol_multiplier", "?")
+        return (f"  **{sym}**  🪂 闪崩反弹  peak {peak:g} → trough {trough:g}（-{drop}% in {pt}min）\n"
+                f"    反弹 {rec}%（现 {s.close_price:g}，距底 {post}min）· vol×{vol_x}")
     # fallback
     sign = "+" if s.chg_pct >= 0 else ""
     return f"  **{sym}**  {sign}{s.chg_pct}  @{bar_t}"
@@ -220,4 +231,6 @@ def _color_for(source, sigs):
         return "red" if sigs[0].direction == "dump" else "blue"
     if source == "cross_exchange":
         return "purple"
+    if source == "flush_reversal":
+        return "carmine"  # 显眼但和 breakout 区分
     return "red"

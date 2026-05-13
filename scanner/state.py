@@ -6,6 +6,9 @@ V2.8: 冷却 key 从单一 inst_id 升级为 (inst_id, direction, source) 三元
 
 格式：'BILL-USDT-SWAP|pump|swap_top_gainers'
 
+V2.10: load/save 支持 file 参数，让 realtime workflow 用独立 state 文件
+（state-realtime.json）和 15min 主 scanner 隔离，避免 git push 冲突。
+
 向后兼容：老格式 key 不带 '|'，在 prune_expired 里也会自然过期，无需迁移。
 """
 import json
@@ -14,16 +17,16 @@ import time
 STATE_FILE = "state.json"
 
 
-def load():
+def load(file: str = STATE_FILE):
     try:
-        with open(STATE_FILE) as f:
+        with open(file) as f:
             return json.load(f)
     except FileNotFoundError:
         return {}
 
 
-def save(state):
-    with open(STATE_FILE, "w") as f:
+def save(state, file: str = STATE_FILE):
+    with open(file, "w") as f:
         json.dump(state, f, indent=2)
 
 

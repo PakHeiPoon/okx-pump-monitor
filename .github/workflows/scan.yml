@@ -46,7 +46,9 @@ jobs:
           if [[ -n $(git status -s state.json) ]]; then
             git config user.name "github-actions"
             git config user.email "actions@github.com"
+            # rebase 先，避免和 scan-realtime.yml 同时 push 冲突（state-realtime.json）
+            git pull --rebase origin main || true
             git add state.json
-            git commit -m "update state [skip ci]"
-            git push
+            git commit -m "update state [skip ci]" || true
+            git push || true
           fi

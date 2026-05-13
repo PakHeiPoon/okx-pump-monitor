@@ -1,0 +1,61 @@
+name: OKX Realtime Scanner (flush_reversal)
+
+# V2.10：高频 monitor 专用 workflow。当前只跑 FlushReversalMonitor，5min 粒度。
+# 主 scanner（scan.yml）继续 15min，其他 11 个 monitor 不变。
+#
+# 反弹形态窗口 10-60min，5min 检测延迟足够抓到反弹早段。如果将来要做到 1min
+# 实时，最佳路径是升级 Vercel Pro + 把这个 workflow 迁到 Vercel Cron（不需要
+# state.json git commit 因为 realtime 可以接受偶尔丢冷却）。
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: scan-realtime
+  cancel-in-progress: false
+
+jobs:
+  scan-realtime:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    permissions:
+      contents: write   # 写 state-realtime.json 回仓库
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Run realtime scanner
+        env:
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          # flush_reversal 阈值（如要调可在仓库 Variables 配，否则用代码默认值）
+          FLUSH_LOOKBACK_MIN: '30'
+          FLUSH_MIN_DROP_PCT: '8.0'
+          FLUSH_PEAK_TROUGH_MAX_MIN: '15'
+          FLUSH_MIN_RECOVERY_PCT: '30.0'
+          FLUSH_VOL_MULTIPLIER: '3.0'
+          FLUSH_REQUIRE_24H_GAINER_PCT: '5.0'
+          FLUSH_TOP_N: '60'
+        run: python -m scanner.realtime
+
+      - name: Persist realtime state
+        run: |
+          if [[ -n $(git status -s state-realtime.json) ]]; then
+            git config user.name "github-actions"
+            git config user.email "actions@github.com"
+            # rebase 先，避免和 scan.yml 同时 push 冲突
+            git pull --rebase origin main || true
+            git add state-realtime.json
+            git commit -m "update state-realtime [skip ci]" || true
+            git push || true
+          fi
