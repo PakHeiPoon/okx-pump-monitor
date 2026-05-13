@@ -319,7 +319,6 @@
     "ZRO-USDT-SWAP",
     "ZRX-USDT-SWAP"
   ],
-  "BASED-USDT-SWAP|dump|cross_exchange": 1778707059.3954198,
   "SPACEX-USDT-SWAP|pump|longshort_ratio": 1778707976.0763116,
   "PIPPIN-USDT-SWAP|pump|cross_exchange": 1778707976.0763116,
   "SATS-USDT-SWAP|dump|cross_exchange": 1778707976.0763116,
@@ -329,5 +328,8 @@
   "LAB-USDT-SWAP|dump|longshort_ratio": 1778708860.0641303,
   "OPENAI-USDT-SWAP|pump|longshort_ratio": 1778708860.0641303,
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1778708860.0641303,
-  "UB-USDT-SWAP|pump|cross_exchange": 1778708860.0641303
+  "UB-USDT-SWAP|pump|cross_exchange": 1778708860.0641303,
+  "W-USDT-SWAP|pump|cross_exchange": 1778709216.4900327,
+  "PUMP-USDT-SWAP|dump|cross_exchange": 1778709216.4900327,
+  "CHZ-USDT-SWAP|pump|cross_exchange": 1778709216.4900327
 }
