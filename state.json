@@ -319,19 +319,14 @@
     "ZRO-USDT-SWAP",
     "ZRX-USDT-SWAP"
   ],
-  "LAB-USDT-SWAP|pump|funding_extreme": 1778708860.0641303,
-  "LAB-USDT-SWAP|dump|longshort_ratio": 1778708860.0641303,
-  "OPENAI-USDT-SWAP|pump|longshort_ratio": 1778708860.0641303,
-  "DRAM-USDT-SWAP|pump|longshort_ratio": 1778708860.0641303,
-  "UB-USDT-SWAP|pump|cross_exchange": 1778708860.0641303,
-  "W-USDT-SWAP|pump|cross_exchange": 1778709216.4900327,
-  "PUMP-USDT-SWAP|dump|cross_exchange": 1778709216.4900327,
-  "CHZ-USDT-SWAP|pump|cross_exchange": 1778709216.4900327,
   "XRP-USDT-SWAP|pump|volume_surge": 1778709774.8947928,
   "GMT-USDT-SWAP|dump|perp_premium": 1778709774.8947928,
   "WLFI-USDT-SWAP|dump|volume_surge": 1778710665.1612053,
   "WET-USDT-SWAP|pump|perp_premium": 1778710665.1612053,
   "BILL-USDT-SWAP|pump|cross_exchange": 1778710665.1612053,
   "DOOD-USDT-SWAP|dump|cross_exchange": 1778710665.1612053,
-  "RLS-USDT-SWAP|dump|cross_exchange": 1778710665.1612053
+  "RLS-USDT-SWAP|dump|cross_exchange": 1778710665.1612053,
+  "LAB-USDT-SWAP|pump|funding_extreme": 1778711547.4249303,
+  "LAB-USDT-SWAP|dump|longshort_ratio": 1778711547.4249303,
+  "RLS-USDT-SWAP|pump|cross_exchange": 1778711547.4249303
 }
