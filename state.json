@@ -319,11 +319,6 @@
     "ZRO-USDT-SWAP",
     "ZRX-USDT-SWAP"
   ],
-  "NG-USDT-SWAP|pump|funding_extreme": 1778680080.9195552,
-  "USELESS-USDT-SWAP|pump|cross_exchange": 1778680080.9195552,
-  "DOOD-USDT-SWAP|dump|cross_exchange": 1778680080.9195552,
-  "RLS-USDT-SWAP|dump|cross_exchange": 1778680080.9195552,
-  "BOME-USDT-SWAP|dump|cross_exchange": 1778680080.9195552,
   "PLUME-USDT-SWAP|dump|volume_surge": 1778680989.4625106,
   "MEGA-USDT-SWAP|dump|volume_surge": 1778680989.4625106,
   "MOVE-USDT-SWAP|dump|volume_surge": 1778680989.4625106,
@@ -347,5 +342,9 @@
   "BASED-USDT-SWAP|dump|cross_exchange": 1778681890.5238366,
   "PIPPIN-USDT-SWAP|dump|cross_exchange": 1778681890.5238366,
   "PLUME-USDT-SWAP|pump|cross_exchange": 1778681890.5238366,
-  "PUMP-USDT-SWAP|dump|cross_exchange": 1778681890.5238366
+  "PUMP-USDT-SWAP|dump|cross_exchange": 1778681890.5238366,
+  "RKLB-USDT-SWAP|pump|funding_extreme": 1778682447.4501603,
+  "DOOD-USDT-SWAP|dump|cross_exchange": 1778682447.4501603,
+  "SPACE-USDT-SWAP|dump|cross_exchange": 1778682447.4501603,
+  "MEME-USDT-SWAP|pump|cross_exchange": 1778682447.4501603
 }
