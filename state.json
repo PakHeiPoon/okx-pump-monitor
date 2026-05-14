@@ -321,30 +321,22 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "ZANO",
     "FIRO",
+    "ZANO",
     "VVV",
     "LAB",
     "BILL",
     "BTC",
-    "INJ",
     "PROS",
-    "HYPE",
-    "ADA",
-    "ONDO",
     "GITLAWB",
     "SUI",
     "PENGU",
-    "TROLL"
+    "HYPE",
+    "TROLL",
+    "SOL",
+    "INJ",
+    "KISHU"
   ],
-  "EIGEN-USDT-SWAP|dump|perp_premium": 1778748485.1264899,
-  "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778748485.1264899,
-  "OPENAI-USDT-SWAP|pump|longshort_ratio": 1778748485.1264899,
-  "AZTEC-USDT-SWAP|dump|cross_exchange": 1778748485.1264899,
-  "DOOD-USDT-SWAP|dump|cross_exchange": 1778748485.1264899,
-  "KAT-USDT-SWAP|dump|cross_exchange": 1778748485.1264899,
-  "SPACE-USDT-SWAP|dump|cross_exchange": 1778748485.1264899,
-  "AI-USDT-SWAP|dump|cross_exchange": 1778748485.1264899,
   "TRUTH-USDT-SWAP|pump|swap_top_gainers": 1778749391.6810281,
   "TESTPRE-USDT-SWAP|pump|new_listings": 1778749391.6810281,
   "W-USDT-SWAP|dump|cross_exchange": 1778749391.6810281,
@@ -362,5 +354,9 @@
   "XPL-USDT-SWAP|pump|volume_surge": 1778750258.8484352,
   "MRVL-USDT-SWAP|pump|funding_extreme": 1778750258.8484352,
   "HYPE-USDT-SWAP|pump|social_surge": 1778750258.8484352,
-  "ADA-USDT-SWAP|pump|social_surge": 1778750258.8484352
+  "ADA-USDT-SWAP|pump|social_surge": 1778750258.8484352,
+  "TIA-USDT-SWAP|dump|volume_surge": 1778751150.0346754,
+  "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778751150.0346754,
+  "TSM-USDT-SWAP|pump|longshort_ratio": 1778751150.0346754,
+  "SOL-USDT-SWAP|pump|social_surge": 1778751150.0346754
 }
