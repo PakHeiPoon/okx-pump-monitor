@@ -179,6 +179,217 @@ function median(arr: number[]): number {
     : sorted[mid];
 }
 
+/**
+ * Walk-forward backtest:
+ * 把 rows 按时间切成滚动窗口；每个窗口先在前 train_ratio 部分做阈值扫描找最优，
+ * 然后把这个阈值应用到剩余部分（out-of-sample test）测真实 perf。
+ * 这样得到的 OOS 指标避免了 in-sample overfitting bias —— 比纯 replay
+ * 决定阈值多挣 3-5% 信赖度。
+ *
+ * 「阈值」语义：|chg_pct_at_signal| ≥ threshold（绝对值），覆盖 pump+dump 两侧。
+ */
+export interface WalkForwardWindow {
+  window_start: string;       // ISO
+  window_end: string;
+  n_train: number;
+  n_test: number;
+  best_threshold: number;     // 训练集上找到的最优 chg_pct 阈值
+  train_avg_signed: number;   // 训练集上该阈值下的 avg signed return
+  train_hit_pct: number;
+  test_n_filtered: number;    // 测试集中通过阈值的 signal 数
+  test_avg_signed: number | null;
+  test_hit_pct: number | null;
+  status: "ok" | "insufficient_train" | "insufficient_test";
+}
+
+export interface WalkForwardSummary {
+  windows: WalkForwardWindow[];
+  avg_best_threshold: number;
+  threshold_std: number;          // 阈值跨窗口稳定性（越小越稳）
+  avg_oos_return: number;
+  avg_oos_hit_pct: number;
+  ok_windows: number;
+}
+
+export interface WalkForwardOptions {
+  window_days?: number;          // 默认 7
+  train_ratio?: number;          // 默认 0.7
+  step_days?: number;            // 默认 2（滑动幅度，覆盖率 ~70%）
+  threshold_min?: number;        // 默认 1.5
+  threshold_max?: number;        // 默认 5.0
+  threshold_step?: number;       // 默认 0.5
+  min_train_signals?: number;    // 默认 10
+  min_test_filtered?: number;    // 默认 3
+}
+
+function meanStd(arr: number[]): { mean: number; std: number } {
+  if (arr.length === 0) return { mean: 0, std: 0 };
+  const mean = arr.reduce((a, b) => a + b, 0) / arr.length;
+  const variance =
+    arr.reduce((a, b) => a + (b - mean) ** 2, 0) / arr.length;
+  return { mean, std: Math.sqrt(variance) };
+}
+
+function evalAtThreshold(rows: BacktestRow[], threshold: number): {
+  n: number;
+  avg_signed: number;
+  hit_pct: number;
+} {
+  const filtered = rows.filter((r) => Math.abs(r.chg_pct_at_signal) >= threshold);
+  const n = filtered.length;
+  if (n === 0) return { n: 0, avg_signed: 0, hit_pct: 0 };
+  const avg_signed =
+    filtered.reduce((a, r) => a + r.signed_return_pct, 0) / n;
+  const hits = filtered.filter((r) => r.is_correct).length;
+  return { n, avg_signed, hit_pct: (hits / n) * 100 };
+}
+
+export function runWalkForward(
+  rows: BacktestRow[],
+  opts: WalkForwardOptions = {},
+): WalkForwardSummary {
+  const window_days = opts.window_days ?? 7;
+  const train_ratio = opts.train_ratio ?? 0.7;
+  const step_days = opts.step_days ?? 2;
+  const threshold_min = opts.threshold_min ?? 1.5;
+  const threshold_max = opts.threshold_max ?? 5.0;
+  const threshold_step = opts.threshold_step ?? 0.5;
+  const min_train_signals = opts.min_train_signals ?? 10;
+  const min_test_filtered = opts.min_test_filtered ?? 3;
+
+  if (rows.length === 0) {
+    return {
+      windows: [],
+      avg_best_threshold: 0,
+      threshold_std: 0,
+      avg_oos_return: 0,
+      avg_oos_hit_pct: 0,
+      ok_windows: 0,
+    };
+  }
+
+  // 排序 by detected_at asc
+  const sorted = [...rows].sort(
+    (a, b) =>
+      new Date(a.detected_at).getTime() - new Date(b.detected_at).getTime(),
+  );
+
+  const t0 = new Date(sorted[0].detected_at).getTime();
+  const tN = new Date(sorted[sorted.length - 1].detected_at).getTime();
+  const dayMs = 24 * 3600 * 1000;
+
+  const thresholds: number[] = [];
+  for (let t = threshold_min; t <= threshold_max + 1e-9; t += threshold_step) {
+    thresholds.push(Math.round(t * 10) / 10);
+  }
+
+  const windows: WalkForwardWindow[] = [];
+
+  for (
+    let winStart = t0;
+    winStart + window_days * dayMs <= tN + dayMs;
+    winStart += step_days * dayMs
+  ) {
+    const winEnd = winStart + window_days * dayMs;
+    const trainEnd = winStart + window_days * dayMs * train_ratio;
+
+    const inWindow = sorted.filter((r) => {
+      const t = new Date(r.detected_at).getTime();
+      return t >= winStart && t < winEnd;
+    });
+    const train = inWindow.filter(
+      (r) => new Date(r.detected_at).getTime() < trainEnd,
+    );
+    const test = inWindow.filter(
+      (r) => new Date(r.detected_at).getTime() >= trainEnd,
+    );
+
+    const window_start_iso = new Date(winStart).toISOString();
+    const window_end_iso = new Date(winEnd).toISOString();
+
+    if (train.length < min_train_signals) {
+      windows.push({
+        window_start: window_start_iso,
+        window_end: window_end_iso,
+        n_train: train.length,
+        n_test: test.length,
+        best_threshold: 0,
+        train_avg_signed: 0,
+        train_hit_pct: 0,
+        test_n_filtered: 0,
+        test_avg_signed: null,
+        test_hit_pct: null,
+        status: "insufficient_train",
+      });
+      continue;
+    }
+
+    // Threshold sweep on train，目标 = avg_signed * sqrt(n)（防止极小样本带高均值）
+    let best = thresholds[0];
+    let bestScore = -Infinity;
+    let bestTrainAvg = 0;
+    let bestTrainHit = 0;
+    for (const thr of thresholds) {
+      const ev = evalAtThreshold(train, thr);
+      if (ev.n < 3) continue;
+      const score = ev.avg_signed * Math.sqrt(ev.n);
+      if (score > bestScore) {
+        bestScore = score;
+        best = thr;
+        bestTrainAvg = ev.avg_signed;
+        bestTrainHit = ev.hit_pct;
+      }
+    }
+
+    // Apply best to test
+    const testEv = evalAtThreshold(test, best);
+    if (testEv.n < min_test_filtered) {
+      windows.push({
+        window_start: window_start_iso,
+        window_end: window_end_iso,
+        n_train: train.length,
+        n_test: test.length,
+        best_threshold: best,
+        train_avg_signed: bestTrainAvg,
+        train_hit_pct: bestTrainHit,
+        test_n_filtered: testEv.n,
+        test_avg_signed: null,
+        test_hit_pct: null,
+        status: "insufficient_test",
+      });
+      continue;
+    }
+
+    windows.push({
+      window_start: window_start_iso,
+      window_end: window_end_iso,
+      n_train: train.length,
+      n_test: test.length,
+      best_threshold: best,
+      train_avg_signed: bestTrainAvg,
+      train_hit_pct: bestTrainHit,
+      test_n_filtered: testEv.n,
+      test_avg_signed: testEv.avg_signed,
+      test_hit_pct: testEv.hit_pct,
+      status: "ok",
+    });
+  }
+
+  const okWindows = windows.filter((w) => w.status === "ok");
+  const thrStats = meanStd(okWindows.map((w) => w.best_threshold));
+  const oosReturn = meanStd(okWindows.map((w) => w.test_avg_signed ?? 0));
+  const oosHit = meanStd(okWindows.map((w) => w.test_hit_pct ?? 0));
+
+  return {
+    windows,
+    avg_best_threshold: Math.round(thrStats.mean * 100) / 100,
+    threshold_std: Math.round(thrStats.std * 100) / 100,
+    avg_oos_return: Math.round(oosReturn.mean * 100) / 100,
+    avg_oos_hit_pct: Math.round(oosHit.mean * 10) / 10,
+    ok_windows: okWindows.length,
+  };
+}
+
 export function aggregate(rows: BacktestRow[], keyFn: (r: BacktestRow) => string): AggRow[] {
   const buckets = new Map<string, BacktestRow[]>();
   for (const r of rows) {
