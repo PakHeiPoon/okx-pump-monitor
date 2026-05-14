@@ -319,9 +319,6 @@
     "ZRO-USDT-SWAP",
     "ZRX-USDT-SWAP"
   ],
-  "PROS-USDT-SWAP|dump|perp_premium": 1778720551.7105668,
-  "ATH-USDT-SWAP|dump|cross_exchange": 1778720551.7105668,
-  "PLUME-USDT-SWAP|pump|cross_exchange": 1778720551.7105668,
   "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778721475.4685347,
   "TRUTH-USDT-SWAP|pump|cross_exchange": 1778721475.4685347,
   "SAHARA-USDT-SWAP|dump|cross_exchange": 1778721475.4685347,
@@ -339,5 +336,6 @@
   "AZTEC-USDT-SWAP|dump|cross_exchange": 1778722365.8682375,
   "PIPPIN-USDT-SWAP|pump|cross_exchange": 1778722365.8682375,
   "DOOD-USDT-SWAP|dump|cross_exchange": 1778722365.8682375,
-  "TRIA-USDT-SWAP|dump|cross_exchange": 1778722365.8682375
+  "TRIA-USDT-SWAP|dump|cross_exchange": 1778722365.8682375,
+  "TRUTH-USDT-SWAP|pump|swap_top_gainers": 1778723276.259343
 }
