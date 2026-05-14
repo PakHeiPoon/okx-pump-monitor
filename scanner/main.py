@@ -26,7 +26,8 @@ from .monitors.perp_premium import PerpPremiumMonitor
 from .monitors.new_listings import NewListingsMonitor
 from .monitors.longshort_ratio import LongShortRatioMonitor
 from .monitors.liquidations import LiquidationsMonitor
-from .monitors.cross_exchange import CrossExchangeMonitor
+# V2.15: cross_exchange 关闭——不匹配当前交易风格。文件保留，重启 2 行即可。
+# from .monitors.cross_exchange import CrossExchangeMonitor
 from .monitors.social_surge import SocialSurgeMonitor
 from .monitors.whale_to_cex import WhaleToCexMonitor
 # flush_reversal 不在这里——它走 scanner.realtime（独立 5min cron），需要更
@@ -70,7 +71,7 @@ def main():
             LongShortRatioMonitor(config),
             # V2.8 新增
             LiquidationsMonitor(config, supabase),
-            CrossExchangeMonitor(config),
+            # CrossExchangeMonitor(config),  ← V2.15 关闭
             # V2.11 新增：链上 + 社交
             WhaleToCexMonitor(config, supabase),
             SocialSurgeMonitor(config, state, supabase),
