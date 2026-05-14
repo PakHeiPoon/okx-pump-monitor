@@ -328,19 +328,15 @@
     "PROS",
     "PENGU",
     "LAB",
-    "SOL",
-    "VVV",
-    "SUI",
+    "AI",
     "NEAR",
+    "SUI",
+    "SOL",
     "GITLAWB",
     "ONDO",
-    "KAS",
-    "POL"
+    "Q",
+    "ADA"
   ],
-  "TIA-USDT-SWAP|dump|volume_surge": 1778751150.0346754,
-  "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778751150.0346754,
-  "TSM-USDT-SWAP|pump|longshort_ratio": 1778751150.0346754,
-  "SOL-USDT-SWAP|pump|social_surge": 1778751150.0346754,
   "BILL-USDT-SWAP|pump|swap_top_gainers": 1778751982.238362,
   "DOGE-USDT-SWAP|pump|social_surge": 1778751982.238362,
   "PIEVERSE-USDT-SWAP|dump|swap_top_gainers": 1778753001.238831,
@@ -349,5 +345,12 @@
   "RLS-USDT-SWAP|pump|funding_extreme": 1778753001.238831,
   "NEAR-USDT-SWAP|pump|social_surge": 1778753001.238831,
   "ONDO-USDT-SWAP|pump|social_surge": 1778753001.238831,
-  "POL-USDT-SWAP|pump|social_surge": 1778753001.238831
+  "POL-USDT-SWAP|pump|social_surge": 1778753001.238831,
+  "AI-USDT-SWAP|pump|swap_top_gainers": 1778753875.785259,
+  "INJ-USDT-SWAP|pump|swap_top_gainers": 1778753875.785259,
+  "AI-USDT-SWAP|pump|oi_surge": 1778753875.785259,
+  "BREV-USDT-SWAP|dump|perp_premium": 1778753875.785259,
+  "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778753875.785259,
+  "AI-USDT-SWAP|pump|social_surge": 1778753875.785259,
+  "ADA-USDT-SWAP|pump|social_surge": 1778753875.785259
 }
