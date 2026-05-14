@@ -112,7 +112,17 @@ def _fmt_line(s):
         chg = s.meta.get("price_change_24h_pct", 0)
         rank_str = f"rank {rank}" if rank else "rank ?"
         sign = "+" if chg >= 0 else ""
-        return f"  🌐 **{sym}** ({name}) 进入 CoinGecko 热搜 · {rank_str} · 24h {sign}{chg}%"
+        line = f"  🌐 **{sym}** ({name}) 进入 CoinGecko 热搜 · {rank_str} · 24h {sign}{chg}%"
+        # V2.17: 顺手把第一条新闻当 catalyst 贴出来
+        news = s.meta.get("news_items") or []
+        if news:
+            top = news[0]
+            title = (top.get("title") or "").replace("[", "(").replace("]", ")")[:90]
+            url = top.get("url") or ""
+            src_name = top.get("source") or "news"
+            if title and url:
+                line += f"\n    📰 [{src_name}]({url}) {title}"
+        return line
     # fallback
     sign = "+" if s.chg_pct >= 0 else ""
     return f"  **{sym}**  {sign}{s.chg_pct}  @{bar_t}"

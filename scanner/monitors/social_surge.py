@@ -1,7 +1,11 @@
-"""Social-surge monitor — CoinGecko 热搜趋势监控（V2.11）。
+"""Social-surge monitor — CoinGecko 热搜趋势监控（V2.11 / V2.17 news enrich）。
 
 底层逻辑：CoinGecko `/search/trending` 返回过去 24h 全球搜索量最高的 15 个币。
 **新进入**列表的币代表零售注意力突变，通常先于价格 pump 1-3 天到达。
+
+V2.17 升级：每个新进入的币顺手抓 Google News RSS 2 条最新新闻 + CoinGecko
+项目链接 + 项目缩略图。这样 dashboard / Feishu 信号都能直接给出**为什么**这
+个币在涨（具体的 catalyst/新闻），不是"trending +24%"干巴巴一行。
 
 为啥不用 LunarCrush：免费层已锁所有 /coins / /topic / /time-series endpoint，
 真要拿数据得付 $24/月起。CoinGecko trending 免费无 key、质量同等可用。
@@ -13,6 +17,8 @@ LunarCrush key 仍然保留在 env 里，未来升级 Individual 后这个 monit
 只对**新进入**的发信号。同一币持续在榜不会反复刷。
 """
 import os
+import re
+import html
 
 import requests
 
@@ -20,6 +26,59 @@ from .base import Monitor, Signal
 
 
 COINGECKO_TRENDING = "https://api.coingecko.com/api/v3/search/trending"
+GOOGLE_NEWS_RSS = "https://news.google.com/rss/search"
+
+
+def fetch_news_for(coin_name: str, max_items: int = 2):
+    """从 Google News RSS 抓最新 N 条新闻标题+链接+来源。
+    用 coin_name（如 Gensyn）而非 symbol（如 AI）做查询，避免同名干扰。
+    免 key 免认证，但偶尔会 timeout——失败时返回 []，不阻塞主流程。
+    """
+    if not coin_name:
+        return []
+    try:
+        r = requests.get(
+            GOOGLE_NEWS_RSS,
+            params={
+                "q":    f"{coin_name} crypto",
+                "hl":   "en-US",
+                "gl":   "US",
+                "ceid": "US:en",
+            },
+            timeout=8,
+        )
+        r.raise_for_status()
+        text = r.text
+    except Exception:
+        return []
+
+    out = []
+    items = re.findall(r"<item>(.*?)</item>", text, re.DOTALL)
+    for item in items[:max_items]:
+        title_m = re.search(
+            r"<title><!\[CDATA\[(.*?)\]\]>|<title>(.*?)</title>", item
+        )
+        link_m = re.search(r"<link>(.*?)</link>", item)
+        pub_m = re.search(r"<pubDate>(.*?)</pubDate>", item)
+        src_m = re.search(r"<source[^>]*>(.*?)</source>", item)
+        title = (
+            (title_m.group(1) or title_m.group(2) or "")
+            if title_m
+            else ""
+        )
+        title = html.unescape(title).strip()
+        link = (link_m.group(1).strip() if link_m else "")
+        pub_date = (pub_m.group(1).strip() if pub_m else "")
+        src = (src_m.group(1).strip() if src_m else "")
+        if not title or not link:
+            continue
+        out.append({
+            "title":  title[:200],
+            "url":    link,
+            "source": src,
+            "pub":    pub_date,
+        })
+    return out
 
 
 class SocialSurgeMonitor(Monitor):
@@ -31,6 +90,8 @@ class SocialSurgeMonitor(Monitor):
         self.supabase = supabase
         # 只对在 OKX SWAP 有对应合约的 trending 币发信号（你能交易才有意义）
         self.require_okx_swap = os.environ.get("SOCIAL_REQUIRE_OKX_SWAP", "1") == "1"
+        # V2.17: 是否在每个新 trending 币上 fetch Google News（每次 +1 HTTP）
+        self.enrich_news = os.environ.get("SOCIAL_ENRICH_NEWS", "1") == "1"
 
     def scan(self):
         try:
@@ -59,7 +120,10 @@ class SocialSurgeMonitor(Monitor):
             sym = (item.get("symbol") or "").upper()
             name = item.get("name") or sym
             rank = item.get("market_cap_rank")
-            price_chg = (item.get("data") or {}).get("price_change_percentage_24h", {}).get("usd")
+            coin_id = item.get("id") or item.get("slug")
+            thumb_url = item.get("small") or item.get("thumb")
+            data_block = item.get("data") or {}
+            price_chg = (data_block.get("price_change_percentage_24h") or {}).get("usd")
             if not sym:
                 continue
             current.append(sym)
@@ -78,7 +142,13 @@ class SocialSurgeMonitor(Monitor):
             except (TypeError, ValueError):
                 chg = 0.0
 
-            # rank 越小 = 市值越大 = 越显著（小币上热搜价值更大但 noise 也更高）
+            # V2.17: 富化——抓 2 条最新新闻 + 项目主页
+            news_items = []
+            if self.enrich_news and name:
+                news_items = fetch_news_for(name, max_items=2)
+
+            coingecko_url = f"https://www.coingecko.com/en/coins/{coin_id}" if coin_id else None
+
             signals.append(Signal(
                 inst_id=inst_id,
                 direction="pump",            # 热搜 = 注意力倾向 = bullish bias
@@ -90,10 +160,14 @@ class SocialSurgeMonitor(Monitor):
                 bar_ts_ms=0,
                 source=self.name,
                 meta={
-                    "coin_name":     name,
-                    "market_cap_rank": rank if isinstance(rank, int) else None,
+                    "coin_name":           name,
+                    "coin_id":             coin_id,
+                    "thumb_url":           thumb_url,
+                    "coingecko_url":       coingecko_url,
+                    "market_cap_rank":     rank if isinstance(rank, int) else None,
                     "price_change_24h_pct": round(chg, 2),
-                    "trending_source": "coingecko",
+                    "trending_source":     "coingecko",
+                    "news_items":          news_items,   # list[{title, url, source, pub}]
                 },
             ))
 

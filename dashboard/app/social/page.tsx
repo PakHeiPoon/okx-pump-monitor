@@ -11,14 +11,25 @@ export const metadata = {
 
 export const dynamic = "force-dynamic";
 
+interface NewsItem {
+  title: string;
+  url: string;
+  source: string;
+  pub: string;
+}
+
 interface TrendingEntry {
   symbol: string;
   inst_id: string;
   coin_name: string;
+  coin_id: string | null;
+  thumb_url: string | null;
+  coingecko_url: string | null;
   market_cap_rank: number | null;
   price_change_24h_pct: number;
   detected_at: string;
   signal_id: number;
+  news_items: NewsItem[];
 }
 
 function pickEntries(signals: Signal[]): TrendingEntry[] {
@@ -28,10 +39,19 @@ function pickEntries(signals: Signal[]): TrendingEntry[] {
   for (const s of signals) {
     if (seen.has(s.symbol)) continue;
     seen.add(s.symbol);
+    const newsRaw = s.meta?.news_items;
+    const news: NewsItem[] = Array.isArray(newsRaw)
+      ? (newsRaw as NewsItem[]).filter(
+          (n) => n && typeof n.title === "string" && typeof n.url === "string",
+        )
+      : [];
     out.push({
       symbol: s.symbol,
       inst_id: s.inst_id,
       coin_name: (s.meta?.coin_name as string | undefined) ?? s.symbol,
+      coin_id: (s.meta?.coin_id as string | undefined) ?? null,
+      thumb_url: (s.meta?.thumb_url as string | undefined) ?? null,
+      coingecko_url: (s.meta?.coingecko_url as string | undefined) ?? null,
       market_cap_rank:
         typeof s.meta?.market_cap_rank === "number"
           ? (s.meta.market_cap_rank as number)
@@ -40,6 +60,7 @@ function pickEntries(signals: Signal[]): TrendingEntry[] {
         Number(s.meta?.price_change_24h_pct ?? s.chg_pct) || 0,
       detected_at: s.detected_at,
       signal_id: s.id,
+      news_items: news,
     });
   }
   return out;
@@ -172,10 +193,12 @@ function TrendingCard({ entry: e }: TrendingCardProps) {
   const chgColor = isPump ? "text-emerald-400" : "text-rose-400";
   const Arrow = isPump ? TrendingUp : TrendingDown;
   const sign = isPump ? "+" : "";
+  const cgUrl = e.coingecko_url ?? coinGeckoUrl(e.symbol);
+  const hasNews = e.news_items.length > 0;
 
   return (
     <div
-      className={`bg-card border-border relative overflow-hidden rounded-lg border p-3 transition-all hover:border-accent-foreground/20 ${
+      className={`bg-card border-border relative flex flex-col overflow-hidden rounded-lg border p-3 transition-all hover:border-accent-foreground/20 ${
         fresh ? "ring-1 ring-sky-500/40 bg-sky-500/[0.03]" : ""
       }`}
     >
@@ -186,12 +209,23 @@ function TrendingCard({ entry: e }: TrendingCardProps) {
       ) : null}
 
       <div className="flex items-start justify-between gap-2">
-        <div className="min-w-0 flex-1">
-          <div className="text-foreground truncate font-mono text-sm font-semibold">
-            {e.symbol}
-          </div>
-          <div className="text-muted-foreground truncate text-[11px]">
-            {e.coin_name}
+        <div className="flex min-w-0 flex-1 items-start gap-2">
+          {e.thumb_url ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={e.thumb_url}
+              alt=""
+              className="h-6 w-6 shrink-0 rounded-full"
+              loading="lazy"
+            />
+          ) : null}
+          <div className="min-w-0 flex-1">
+            <div className="text-foreground truncate font-mono text-sm font-semibold">
+              {e.symbol}
+            </div>
+            <div className="text-muted-foreground truncate text-[11px]">
+              {e.coin_name}
+            </div>
           </div>
         </div>
         {e.market_cap_rank !== null ? (
@@ -211,9 +245,37 @@ function TrendingCard({ entry: e }: TrendingCardProps) {
         </div>
       </div>
 
-      <div className="border-border/60 mt-2 flex items-center justify-between gap-2 border-t pt-2">
+      {hasNews ? (
+        <div className="border-border/60 mt-2 space-y-1 border-t pt-2">
+          {e.news_items.slice(0, 2).map((n) => (
+            <a
+              key={n.url}
+              href={n.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block leading-tight"
+              title={n.title}
+            >
+              <div className="text-foreground/90 hover:text-sky-300 line-clamp-2 text-[11px]">
+                📰 {n.title}
+              </div>
+              <div className="text-muted-foreground mt-0.5 text-[9px] uppercase tracking-wider">
+                {n.source}
+              </div>
+            </a>
+          ))}
+        </div>
+      ) : (
+        <div className="border-border/60 mt-2 border-t pt-2">
+          <span className="text-muted-foreground text-[10px]">
+            暂未抓到新闻
+          </span>
+        </div>
+      )}
+
+      <div className="border-border/60 mt-auto flex items-center justify-between gap-2 border-t pt-2">
         <a
-          href={coinGeckoUrl(e.symbol)}
+          href={cgUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="text-muted-foreground hover:text-foreground inline-flex items-center gap-1 text-[10px]"

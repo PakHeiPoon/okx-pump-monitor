@@ -261,10 +261,18 @@ function describeMeta(s: Signal): string | null {
     case "social_surge": {
       const name = s.meta?.coin_name as string | undefined;
       const chg = s.meta?.price_change_24h_pct as number | undefined;
-      const src = (s.meta?.trending_source as string | undefined) ?? "coingecko";
       const sign = chg !== undefined && chg >= 0 ? "+" : "";
       const chgStr = chg !== undefined ? `${sign}${chg.toFixed(1)}%` : "—";
-      return `${name ?? "?"} · ${src} trending · 24h ${chgStr}`;
+      // V2.17: 把 catalyst（第一条 news）的 source name 拼进来当 hint
+      const newsRaw = s.meta?.news_items;
+      const news =
+        Array.isArray(newsRaw) && newsRaw.length > 0
+          ? (newsRaw[0] as { title?: string; source?: string })
+          : null;
+      const catalyst = news?.title
+        ? ` · 📰 ${news.source ?? "news"}: ${news.title.slice(0, 60)}…`
+        : "";
+      return `${name ?? "?"} · trending · 24h ${chgStr}${catalyst}`;
     }
     default:
       return null;
