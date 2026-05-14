@@ -328,21 +328,15 @@
     "BTC",
     "BILL",
     "SERV",
-    "PENGU",
     "ZEC",
+    "PENGU",
     "VVV",
-    "CC",
     "PI",
-    "MEGA",
-    "SUI",
-    "ETH"
+    "INJ",
+    "CC",
+    "TON",
+    "COLLECT"
   ],
-  "BILL-USDT-SWAP|pump|swap_top_gainers": 1778761064.9319923,
-  "AI-USDT-SWAP|dump|funding_extreme": 1778761064.9319923,
-  "MRVL-USDT-SWAP|pump|funding_extreme": 1778761064.9319923,
-  "NVDA-USDT-SWAP|pump|funding_extreme": 1778761064.9319923,
-  "ARM-USDT-SWAP|pump|longshort_ratio": 1778761064.9319923,
-  "PI-USDT-SWAP|pump|social_surge": 1778761064.9319923,
   "RLS-USDT-SWAP|dump|swap_top_gainers": 1778761982.8034613,
   "OP-USDT-SWAP|dump|volume_surge": 1778761982.8034613,
   "BLEND-USDT-SWAP|pump|longshort_ratio": 1778761982.8034613,
@@ -352,5 +346,10 @@
   "BIO-USDT-SWAP|pump|swap_top_gainers": 1778762855.1966312,
   "CC-USDT-SWAP|pump|social_surge": 1778762855.1966312,
   "MEGA-USDT-SWAP|pump|social_surge": 1778762855.1966312,
-  "SUI-USDT-SWAP|pump|social_surge": 1778762855.1966312
+  "SUI-USDT-SWAP|pump|social_surge": 1778762855.1966312,
+  "CHZ-USDT-SWAP|dump|volume_surge": 1778763768.7135887,
+  "MRVL-USDT-SWAP|pump|funding_extreme": 1778763768.7135887,
+  "NVDA-USDT-SWAP|pump|funding_extreme": 1778763768.7135887,
+  "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778763768.7135887,
+  "TON-USDT-SWAP|pump|social_surge": 1778763768.7135887
 }
