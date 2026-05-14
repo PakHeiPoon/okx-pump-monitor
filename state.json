@@ -324,24 +324,24 @@
     "FIRO",
     "ZANO",
     "HYPE",
+    "PENGU",
     "BTC",
     "VVV",
     "BILL",
-    "PENGU",
-    "DOGE",
+    "SOL",
     "INJ",
     "XRP",
-    "ZEC",
-    "ONDO",
+    "LUNC",
+    "TAO",
     "LAB",
-    "SOL",
-    "ETH"
+    "ETH",
+    "DOGE"
   ],
-  "UP-USDT-SWAP|dump|volume_surge": 1778788985.4747274,
-  "ETH-USDT-SWAP|pump|social_surge": 1778788985.4747274,
   "UP-USDT-SWAP|pump|funding_extreme": 1778789864.4663138,
   "BLEND-USDT-SWAP|pump|funding_extreme": 1778789864.4663138,
   "SOL-USDT-SWAP|pump|social_surge": 1778789864.4663138,
   "AI-USDT-SWAP|pump|funding_extreme": 1778790760.018132,
-  "ONDO-USDT-SWAP|pump|social_surge": 1778790760.018132
+  "ONDO-USDT-SWAP|pump|social_surge": 1778790760.018132,
+  "BIO-USDT-SWAP|dump|volume_surge": 1778791677.268333,
+  "TAO-USDT-SWAP|pump|social_surge": 1778791677.268333
 }
