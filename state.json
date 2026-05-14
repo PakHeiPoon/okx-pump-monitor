@@ -324,25 +324,21 @@
     "ZANO",
     "FIRO",
     "PENGU",
-    "AI",
-    "HYPE",
     "BTC",
+    "HYPE",
+    "AI",
     "ZEC",
+    "XRP",
     "LINK",
     "LAB",
-    "XRP",
     "BILL",
     "SOL",
-    "MON",
-    "TAO",
-    "ETH"
+    "VVV",
+    "ETH",
+    "TAO"
   ],
-  "UP-USDT-SWAP|pump|swap_top_gainers": 1778775449.327917,
-  "LAB-USDT-SWAP|pump|swap_top_gainers": 1778775449.327917,
-  "SOL-USDT-SWAP|pump|social_surge": 1778775449.327917,
-  "XRP-USDT-SWAP|pump|social_surge": 1778775449.327917,
-  "BNB-USDT-SWAP|pump|social_surge": 1778775449.327917,
   "BILL-USDT-SWAP|pump|funding_extreme": 1778776376.052227,
   "ICP-USDT-SWAP|dump|volume_surge": 1778777274.0810504,
-  "ETH-USDT-SWAP|pump|social_surge": 1778777274.0810504
+  "ETH-USDT-SWAP|pump|social_surge": 1778777274.0810504,
+  "PLUME-USDT-SWAP|pump|volume_surge": 1778778184.9782774
 }
