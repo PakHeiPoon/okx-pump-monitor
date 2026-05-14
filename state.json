@@ -329,19 +329,18 @@
     "VVV",
     "BILL",
     "SOL",
-    "INJ",
-    "XRP",
     "LUNC",
     "TAO",
+    "XRP",
     "LAB",
-    "ETH",
-    "DOGE"
+    "INJ",
+    "ZEC",
+    "ETH"
   ],
-  "UP-USDT-SWAP|pump|funding_extreme": 1778789864.4663138,
-  "BLEND-USDT-SWAP|pump|funding_extreme": 1778789864.4663138,
-  "SOL-USDT-SWAP|pump|social_surge": 1778789864.4663138,
   "AI-USDT-SWAP|pump|funding_extreme": 1778790760.018132,
   "ONDO-USDT-SWAP|pump|social_surge": 1778790760.018132,
   "BIO-USDT-SWAP|dump|volume_surge": 1778791677.268333,
-  "TAO-USDT-SWAP|pump|social_surge": 1778791677.268333
+  "TAO-USDT-SWAP|pump|social_surge": 1778791677.268333,
+  "UP-USDT-SWAP|pump|funding_extreme": 1778792080.3034146,
+  "ZEC-USDT-SWAP|pump|social_surge": 1778792080.3034146
 }
