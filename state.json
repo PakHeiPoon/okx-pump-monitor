@@ -319,10 +319,6 @@
     "ZRO-USDT-SWAP",
     "ZRX-USDT-SWAP"
   ],
-  "MRVL-USDT-SWAP|pump|funding_extreme": 1778716055.8095984,
-  "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778716055.8095984,
-  "UB-USDT-SWAP|pump|cross_exchange": 1778716055.8095984,
-  "PLUME-USDT-SWAP|pump|cross_exchange": 1778716055.8095984,
   "CHIP-USDT-SWAP|dump|volume_surge": 1778716963.3086567,
   "ADA-USDT-SWAP|pump|volume_surge": 1778716963.3086567,
   "SAHARA-USDT-SWAP|pump|volume_surge": 1778716963.3086567,
@@ -333,5 +329,14 @@
   "DOOD-USDT-SWAP|dump|cross_exchange": 1778716963.3086567,
   "PROS-USDT-SWAP|pump|oi_surge": 1778717785.8965487,
   "BASED-USDT-SWAP|dump|cross_exchange": 1778717785.8965487,
-  "HUMA-USDT-SWAP|dump|cross_exchange": 1778717785.8965487
+  "HUMA-USDT-SWAP|dump|cross_exchange": 1778717785.8965487,
+  "UB-USDT-SWAP|pump|swap_top_gainers": 1778718787.9791021,
+  "PEPE-USDT-SWAP|pump|volume_surge": 1778718787.9791021,
+  "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778718787.9791021,
+  "DRAM-USDT-SWAP|pump|longshort_ratio": 1778718787.9791021,
+  "SPACE-USDT-SWAP|dump|cross_exchange": 1778718787.9791021,
+  "TURBO-USDT-SWAP|dump|cross_exchange": 1778718787.9791021,
+  "MEW-USDT-SWAP|dump|cross_exchange": 1778718787.9791021,
+  "BOME-USDT-SWAP|pump|cross_exchange": 1778718787.9791021,
+  "LINEA-USDT-SWAP|dump|cross_exchange": 1778718787.9791021
 }
