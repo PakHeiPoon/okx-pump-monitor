@@ -322,20 +322,20 @@
   ],
   "_trending_last_seen": [
     "AI",
-    "ZANO",
     "FIRO",
+    "ZANO",
+    "PENGU",
     "BTC",
     "LAB",
     "BILL",
-    "PENGU",
-    "TAO",
-    "VVV",
     "ZEC",
     "ETH",
+    "TAO",
+    "VVV",
     "SIREN",
-    "DOGE",
-    "INJ",
-    "HYPE"
+    "LUNC",
+    "TON",
+    "AERO"
   ],
   "AI-USDT-SWAP|pump|swap_top_gainers": 1778758348.3700187,
   "AI-USDT-SWAP|dump|funding_extreme": 1778758348.3700187,
@@ -356,5 +356,8 @@
   "DOGE-USDT-SWAP|pump|social_surge": 1778758348.3700187,
   "BLEND-USDT-SWAP|pump|longshort_ratio": 1778759272.3583221,
   "INJ-USDT-SWAP|pump|social_surge": 1778759272.3583221,
-  "HYPE-USDT-SWAP|pump|social_surge": 1778759272.3583221
+  "HYPE-USDT-SWAP|pump|social_surge": 1778759272.3583221,
+  "PEPE-USDT-SWAP|dump|volume_surge": 1778760197.9230015,
+  "TON-USDT-SWAP|pump|social_surge": 1778760197.9230015,
+  "AERO-USDT-SWAP|pump|social_surge": 1778760197.9230015
 }
