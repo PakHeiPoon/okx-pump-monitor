@@ -323,25 +323,26 @@
   "_trending_last_seen": [
     "FIRO",
     "ZANO",
-    "PENGU",
     "HYPE",
     "BILL",
-    "BTC",
-    "XRP",
     "ZEC",
-    "VVV",
-    "SOL",
-    "KISHU",
-    "TAO",
+    "BTC",
     "LAB",
     "SUI",
-    "DOGE"
+    "XRP",
+    "DOGE",
+    "PENGU",
+    "KISHU",
+    "AI",
+    "VVV",
+    "TAO"
   ],
-  "PIEVERSE-USDT-SWAP|dump|volume_surge": 1778792556.0116267,
   "AI-USDT-SWAP|pump|funding_extreme": 1778793441.8486912,
   "AIXBT-USDT-SWAP|dump|perp_premium": 1778793441.8486912,
   "SUI-USDT-SWAP|pump|social_surge": 1778793441.8486912,
   "STABLE-USDT-SWAP|pump|swap_top_gainers": 1778794380.3584106,
   "UP-USDT-SWAP|pump|funding_extreme": 1778794380.3584106,
-  "DOGE-USDT-SWAP|pump|social_surge": 1778794380.3584106
+  "DOGE-USDT-SWAP|pump|social_surge": 1778794380.3584106,
+  "BOME-USDT-SWAP|dump|perp_premium": 1778795251.1522012,
+  "AI-USDT-SWAP|pump|social_surge": 1778795251.1522012
 }
