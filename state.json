@@ -319,8 +319,6 @@
     "ZRO-USDT-SWAP",
     "ZRX-USDT-SWAP"
   ],
-  "MRVL-USDT-SWAP|pump|oi_surge": 1778741279.721773,
-  "RSR-USDT-SWAP|dump|cross_exchange": 1778741279.721773,
   "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778742195.9742022,
   "PIPPIN-USDT-SWAP|dump|cross_exchange": 1778742195.9742022,
   "SPACE-USDT-SWAP|dump|cross_exchange": 1778742195.9742022,
@@ -329,18 +327,18 @@
     "FIRO",
     "ZANO",
     "LAB",
-    "BILL",
     "VVV",
+    "BILL",
     "PENGU",
-    "PROS",
     "ONDO",
+    "PROS",
+    "HYPE",
+    "NEAR",
     "JUP",
     "OCT",
-    "PI",
-    "HYPE",
+    "ZEC",
     "UP",
-    "POD",
-    "PUMP"
+    "SUI"
   ],
   "SAHARA-USDT-SWAP|dump|volume_surge": 1778743073.8085575,
   "DOOD-USDT-SWAP|dump|cross_exchange": 1778743073.8085575,
@@ -357,5 +355,10 @@
   "PI-USDT-SWAP|pump|social_surge": 1778743073.8085575,
   "HYPE-USDT-SWAP|pump|social_surge": 1778743073.8085575,
   "UP-USDT-SWAP|pump|social_surge": 1778743073.8085575,
-  "PUMP-USDT-SWAP|pump|social_surge": 1778743073.8085575
+  "PUMP-USDT-SWAP|pump|social_surge": 1778743073.8085575,
+  "PLUME-USDT-SWAP|pump|cross_exchange": 1778743983.5554473,
+  "AI-USDT-SWAP|pump|cross_exchange": 1778743983.5554473,
+  "NEAR-USDT-SWAP|pump|social_surge": 1778743983.5554473,
+  "ZEC-USDT-SWAP|pump|social_surge": 1778743983.5554473,
+  "SUI-USDT-SWAP|pump|social_surge": 1778743983.5554473
 }
