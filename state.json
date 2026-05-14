@@ -319,9 +319,6 @@
     "ZRO-USDT-SWAP",
     "ZRX-USDT-SWAP"
   ],
-  "UB-USDT-SWAP|pump|swap_top_gainers": 1778733181.3223515,
-  "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778733181.3223515,
-  "HMSTR-USDT-SWAP|pump|cross_exchange": 1778733181.3223515,
   "PIEVERSE-USDT-SWAP|pump|swap_top_gainers": 1778734044.8999226,
   "BASED-USDT-SWAP|dump|perp_premium": 1778734044.8999226,
   "YB-USDT-SWAP|dump|perp_premium": 1778734044.8999226,
@@ -336,5 +333,9 @@
   "TRIA-USDT-SWAP|dump|cross_exchange": 1778734985.8985214,
   "RSR-USDT-SWAP|pump|cross_exchange": 1778734985.8985214,
   "RLS-USDT-SWAP|pump|cross_exchange": 1778734985.8985214,
-  "ZIL-USDT-SWAP|pump|cross_exchange": 1778734985.8985214
+  "ZIL-USDT-SWAP|pump|cross_exchange": 1778734985.8985214,
+  "UP-USDT-SWAP|pump|funding_extreme": 1778735845.693025,
+  "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778735845.693025,
+  "USELESS-USDT-SWAP|pump|cross_exchange": 1778735845.693025,
+  "TURBO-USDT-SWAP|pump|cross_exchange": 1778735845.693025
 }
