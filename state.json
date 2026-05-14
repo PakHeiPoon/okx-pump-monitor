@@ -321,27 +321,22 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "AI",
     "FIRO",
-    "LAB",
+    "AI",
     "HYPE",
-    "BTC",
+    "ZANO",
     "BILL",
-    "SERV",
-    "ZEC",
+    "LAB",
+    "BTC",
     "PENGU",
+    "ZEC",
+    "SERV",
     "VVV",
-    "PI",
+    "SOL",
     "INJ",
-    "CC",
-    "TON",
-    "COLLECT"
+    "PI",
+    "DOGE"
   ],
-  "RLS-USDT-SWAP|dump|swap_top_gainers": 1778761982.8034613,
-  "OP-USDT-SWAP|dump|volume_surge": 1778761982.8034613,
-  "BLEND-USDT-SWAP|pump|longshort_ratio": 1778761982.8034613,
-  "OPENAI-USDT-SWAP|pump|longshort_ratio": 1778761982.8034613,
-  "INJ-USDT-SWAP|pump|social_surge": 1778761982.8034613,
   "LAB-USDT-SWAP|pump|swap_top_gainers": 1778762855.1966312,
   "BIO-USDT-SWAP|pump|swap_top_gainers": 1778762855.1966312,
   "CC-USDT-SWAP|pump|social_surge": 1778762855.1966312,
@@ -351,5 +346,8 @@
   "MRVL-USDT-SWAP|pump|funding_extreme": 1778763768.7135887,
   "NVDA-USDT-SWAP|pump|funding_extreme": 1778763768.7135887,
   "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778763768.7135887,
-  "TON-USDT-SWAP|pump|social_surge": 1778763768.7135887
+  "TON-USDT-SWAP|pump|social_surge": 1778763768.7135887,
+  "XLM-USDT-SWAP|pump|volume_surge": 1778764666.5898914,
+  "SOL-USDT-SWAP|pump|social_surge": 1778764666.5898914,
+  "DOGE-USDT-SWAP|pump|social_surge": 1778764666.5898914
 }
