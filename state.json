@@ -353,5 +353,8 @@
   "ETH-USDT-SWAP|pump|social_surge": 1778757300.3422573,
   "CHIP-USDT-SWAP|pump|social_surge": 1778757300.3422573,
   "INJ-USDT-SWAP|pump|social_surge": 1778757300.3422573,
-  "SOL-USDT-SWAP|pump|social_surge": 1778757300.3422573
+  "SOL-USDT-SWAP|pump|social_surge": 1778757300.3422573,
+  "COAI-USDT-SWAP|dump|volume_surge": 1778757477.8432205,
+  "MON-USDT-SWAP|dump|volume_surge": 1778757477.8432205,
+  "PENGU-USDT-SWAP|pump|volume_surge": 1778757477.8432205
 }
