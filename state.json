@@ -319,10 +319,6 @@
     "ZRO-USDT-SWAP",
     "ZRX-USDT-SWAP"
   ],
-  "LAB-USDT-SWAP|pump|funding_extreme": 1778727777.1663995,
-  "RKLB-USDT-SWAP|pump|funding_extreme": 1778727777.1663995,
-  "DRAM-USDT-SWAP|pump|longshort_ratio": 1778727777.1663995,
-  "FLOKI-USDT-SWAP|pump|cross_exchange": 1778727777.1663995,
   "TRUTH-USDT-SWAP|dump|swap_top_gainers": 1778728644.9741547,
   "TRUTH-USDT-SWAP|dump|cross_exchange": 1778728644.9741547,
   "BASED-USDT-SWAP|dump|cross_exchange": 1778728644.9741547,
@@ -331,5 +327,13 @@
   "DOOD-USDT-SWAP|dump|cross_exchange": 1778728644.9741547,
   "SPACE-USDT-SWAP|dump|cross_exchange": 1778728644.9741547,
   "CHIP-USDT-SWAP|pump|cross_exchange": 1778729549.837252,
-  "PLUME-USDT-SWAP|pump|cross_exchange": 1778729549.837252
+  "PLUME-USDT-SWAP|pump|cross_exchange": 1778729549.837252,
+  "TRUTH-USDT-SWAP|pump|swap_top_gainers": 1778730469.1388388,
+  "LAB-USDT-SWAP|pump|funding_extreme": 1778730469.1388388,
+  "YB-USDT-SWAP|dump|perp_premium": 1778730469.1388388,
+  "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778730469.1388388,
+  "UB-USDT-SWAP|pump|cross_exchange": 1778730469.1388388,
+  "ATH-USDT-SWAP|dump|cross_exchange": 1778730469.1388388,
+  "PEOPLE-USDT-SWAP|dump|cross_exchange": 1778730469.1388388,
+  "RLS-USDT-SWAP|dump|cross_exchange": 1778730469.1388388
 }
