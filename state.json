@@ -321,20 +321,20 @@
   ],
   "_trending_last_seen": [
     "ZANO",
+    "BILL",
     "VVV",
     "LAB",
-    "BILL",
     "SOL",
     "PENGU",
     "BTC",
     "SUI",
     "ONDO",
     "SIREN",
-    "MEGA",
-    "ZEC",
     "MON",
-    "STRK",
-    "UNI"
+    "MEGA",
+    "VIRTUAL",
+    "CC",
+    "STRK"
   ],
   "RLS-USDT-SWAP|pump|funding_extreme": 1778745779.2864232,
   "MET-USDT-SWAP|dump|perp_premium": 1778745779.2864232,
@@ -356,5 +356,9 @@
   "ZEC-USDT-SWAP|pump|social_surge": 1778746686.010822,
   "MON-USDT-SWAP|pump|social_surge": 1778746686.010822,
   "STRK-USDT-SWAP|pump|social_surge": 1778746686.010822,
-  "UNI-USDT-SWAP|pump|social_surge": 1778746686.010822
+  "UNI-USDT-SWAP|pump|social_surge": 1778746686.010822,
+  "MRVL-USDT-SWAP|pump|funding_extreme": 1778747576.7593985,
+  "TSM-USDT-SWAP|pump|longshort_ratio": 1778747576.7593985,
+  "VIRTUAL-USDT-SWAP|pump|social_surge": 1778747576.7593985,
+  "CC-USDT-SWAP|pump|social_surge": 1778747576.7593985
 }
