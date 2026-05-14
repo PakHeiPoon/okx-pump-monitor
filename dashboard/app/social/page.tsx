@@ -266,10 +266,19 @@ function TrendingCard({ entry: e }: TrendingCardProps) {
           ))}
         </div>
       ) : (
+        // V2.17 fallback：老 record 没 news_items 时给 Google News 搜索链接，
+        // 用户一键查看为啥这个币进了热搜。新 record (V2.17+) 直接展示标题。
         <div className="border-border/60 mt-2 border-t pt-2">
-          <span className="text-muted-foreground text-[10px]">
-            暂未抓到新闻
-          </span>
+          <a
+            href={`https://news.google.com/search?q=${encodeURIComponent(
+              `${e.coin_name} crypto`,
+            )}&hl=en-US`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-sky-300 inline-flex items-center gap-1 text-[10px]"
+          >
+            🔎 Google News：搜 {e.coin_name} →
+          </a>
         </div>
       )}
 
