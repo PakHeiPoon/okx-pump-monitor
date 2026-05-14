@@ -27,6 +27,8 @@ from .monitors.new_listings import NewListingsMonitor
 from .monitors.longshort_ratio import LongShortRatioMonitor
 from .monitors.liquidations import LiquidationsMonitor
 from .monitors.cross_exchange import CrossExchangeMonitor
+from .monitors.social_surge import SocialSurgeMonitor
+from .monitors.whale_to_cex import WhaleToCexMonitor
 # flush_reversal 不在这里——它走 scanner.realtime（独立 5min cron），需要更
 # 低的检测延迟。在这里同时跑会造成重复 API 调用 + 重复告警。
 from .notifiers.feishu import FeishuNotifier
@@ -69,6 +71,9 @@ def main():
             # V2.8 新增
             LiquidationsMonitor(config, supabase),
             CrossExchangeMonitor(config),
+            # V2.11 新增：链上 + 社交
+            WhaleToCexMonitor(config, supabase),
+            SocialSurgeMonitor(config, state, supabase),
             # flush_reversal 在 scanner.realtime（5min cron），不在这里
         ]
         monitors_run = len(monitors)

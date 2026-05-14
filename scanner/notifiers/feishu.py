@@ -23,6 +23,8 @@ SOURCE_META = {
     "liquidations":     {"label": "强平爆仓密集",   "emoji": "💀", "title": "Liquidations"},
     "cross_exchange":   {"label": "跨所价差",       "emoji": "🔀", "title": "Cross-Exchange Spread"},
     "flush_reversal":   {"label": "闪崩 V 反弹",    "emoji": "🪂", "title": "Flush Reversal"},
+    "whale_to_cex":     {"label": "鲸鱼转入交易所", "emoji": "🐋", "title": "Whale → CEX"},
+    "social_surge":     {"label": "社交热搜异动",   "emoji": "🌐", "title": "Social Surge"},
 }
 
 
@@ -97,6 +99,20 @@ def _fmt_line(s):
         vol_x = s.meta.get("vol_multiplier", "?")
         return (f"  **{sym}**  🪂 闪崩反弹  peak {peak:g} → trough {trough:g}（-{drop}% in {pt}min）\n"
                 f"    反弹 {rec}%（现 {s.close_price:g}，距底 {post}min）· vol×{vol_x}")
+    if src == "whale_to_cex":
+        ex = s.meta.get("exchange", "?")
+        total = s.meta.get("total_usd", 0)
+        max_tx = s.meta.get("max_single_usd", 0)
+        cnt = s.meta.get("tx_count", 0)
+        win = s.meta.get("window_min", "?")
+        return (f"  🐋 **{ex}** 入金 ${total/1e6:.2f}M / {cnt} 笔 ({win}min) · 单笔最大 ${max_tx/1e6:.2f}M")
+    if src == "social_surge":
+        name = s.meta.get("coin_name", sym)
+        rank = s.meta.get("market_cap_rank")
+        chg = s.meta.get("price_change_24h_pct", 0)
+        rank_str = f"rank {rank}" if rank else "rank ?"
+        sign = "+" if chg >= 0 else ""
+        return f"  🌐 **{sym}** ({name}) 进入 CoinGecko 热搜 · {rank_str} · 24h {sign}{chg}%"
     # fallback
     sign = "+" if s.chg_pct >= 0 else ""
     return f"  **{sym}**  {sign}{s.chg_pct}  @{bar_t}"
@@ -232,5 +248,9 @@ def _color_for(source, sigs):
     if source == "cross_exchange":
         return "purple"
     if source == "flush_reversal":
-        return "carmine"  # 显眼但和 breakout 区分
+        return "carmine"
+    if source == "whale_to_cex":
+        return "indigo"   # 链上信号专色
+    if source == "social_surge":
+        return "wathet"   # 浅蓝，区别于 breakout 紫
     return "red"

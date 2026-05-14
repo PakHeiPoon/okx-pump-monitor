@@ -135,6 +135,18 @@ function formatChange(s: Signal): { text: string; tone: "pump" | "dump" | "neutr
       const rec = (s.meta?.recovery_pct as number | undefined) ?? chg;
       return { text: `🪂 V ${rec.toFixed(0)}%`, tone: "pump" };
     }
+    case "whale_to_cex": {
+      const total = (s.meta?.total_usd as number | undefined) ?? 0;
+      const fmt =
+        total >= 1e9 ? `$${(total / 1e9).toFixed(2)}B`
+        : total >= 1e6 ? `$${(total / 1e6).toFixed(2)}M`
+        : `$${(total / 1e3).toFixed(0)}K`;
+      return { text: `🐋 ${fmt}`, tone: "dump" };
+    }
+    case "social_surge": {
+      const rank = s.meta?.market_cap_rank as number | undefined;
+      return { text: rank ? `🌐 #${rank}` : "🌐 trending", tone: "pump" };
+    }
     default: {
       const sign = chg >= 0 ? "+" : "";
       return {
@@ -211,6 +223,18 @@ function describeMeta(s: Signal): string | null {
       const vx = s.meta?.vol_multiplier as number | undefined;
       if (!peak || drop === undefined) return null;
       return `peak ${peak.toPrecision(5)} -${drop.toFixed(1)}%  vol×${vx?.toFixed(1) ?? "?"}`;
+    }
+    case "whale_to_cex": {
+      const ex = s.meta?.exchange as string | undefined;
+      const cnt = (s.meta?.tx_count as number | undefined) ?? 0;
+      const maxTx = (s.meta?.max_single_usd as number | undefined) ?? 0;
+      return `${ex ?? "?"} · ${cnt}tx · max $${(maxTx / 1e6).toFixed(2)}M`;
+    }
+    case "social_surge": {
+      const name = s.meta?.coin_name as string | undefined;
+      const chg = s.meta?.price_change_24h_pct as number | undefined;
+      const sign = chg !== undefined && chg >= 0 ? "+" : "";
+      return `${name ?? "?"}${chg !== undefined ? ` · 24h ${sign}${chg.toFixed(1)}%` : ""}`;
     }
     default:
       return null;

@@ -15,7 +15,9 @@ export type SourceId =
   | "longshort_ratio"
   | "liquidations"
   | "cross_exchange"
-  | "flush_reversal";
+  | "flush_reversal"
+  | "whale_to_cex"
+  | "social_surge";
 
 export interface SourceMeta {
   id: SourceId;
@@ -130,6 +132,22 @@ export const SOURCES: SourceMeta[] = [
     emoji: "🪂",
     description: "强势币创新高后 ≤ 15min 闪崩 ≥ 8% 杀多 + V-bottom 反弹（trap & reverse 形态）。",
     badgeClass: "bg-pink-500/15 text-pink-300 hover:bg-pink-500/25",
+  },
+  {
+    id: "whale_to_cex",
+    label: "Whale → CEX · 鲸鱼转入交易所",
+    shortLabel: "Whale",
+    emoji: "🐋",
+    description: "USDT/USDC 大额转入 Binance/Coinbase/OKX 等热钱包（单笔 ≥ $500K 或累计 ≥ $5M）= 砸盘预备。",
+    badgeClass: "bg-indigo-500/15 text-indigo-300 hover:bg-indigo-500/25",
+  },
+  {
+    id: "social_surge",
+    label: "Social surge · 社交热搜异动",
+    shortLabel: "Social",
+    emoji: "🌐",
+    description: "首次进入 CoinGecko 24h 全球热搜榜（top 15）= 零售注意力突变，常先于 pump 1-3 天。",
+    badgeClass: "bg-sky-500/15 text-sky-300 hover:bg-sky-500/25",
   },
 ];
 

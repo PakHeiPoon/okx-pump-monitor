@@ -139,6 +139,23 @@ function formatChange(s: Signal): ChangeDisplay {
         tone: "pump",
       };
     }
+    case "whale_to_cex": {
+      const total = (s.meta?.total_usd as number | undefined) ?? 0;
+      const fmt =
+        total >= 1e9
+          ? `$${(total / 1e9).toFixed(2)}B`
+          : total >= 1e6
+          ? `$${(total / 1e6).toFixed(2)}M`
+          : `$${(total / 1e3).toFixed(0)}K`;
+      return { text: `🐋 ${fmt}`, tone: "dump" };
+    }
+    case "social_surge": {
+      const rank = s.meta?.market_cap_rank as number | undefined;
+      return {
+        text: rank ? `🌐 #${rank}` : "🌐 trending",
+        tone: "pump",
+      };
+    }
     default: {
       const sign = chg >= 0 ? "+" : "";
       return {
@@ -230,6 +247,24 @@ function describeMeta(s: Signal): string | null {
       const ptStr = pt !== undefined ? `${pt}min` : "?";
       const vxStr = vx !== undefined ? `${vx.toFixed(1)}×` : "?";
       return `${peak.toPrecision(5)} → ${trough.toPrecision(5)} (${dropStr} in ${ptStr}) · vol ${vxStr}`;
+    }
+    case "whale_to_cex": {
+      const ex = s.meta?.exchange as string | undefined;
+      const total = (s.meta?.total_usd as number | undefined) ?? 0;
+      const maxTx = (s.meta?.max_single_usd as number | undefined) ?? 0;
+      const cnt = (s.meta?.tx_count as number | undefined) ?? 0;
+      const win = (s.meta?.window_min as number | undefined) ?? 15;
+      const fmtUsd = (v: number): string =>
+        v >= 1e6 ? `$${(v / 1e6).toFixed(2)}M` : `$${(v / 1e3).toFixed(0)}K`;
+      return `${ex ?? "?"} · ${cnt} tx in ${win}min · max ${fmtUsd(maxTx)} / total ${fmtUsd(total)}`;
+    }
+    case "social_surge": {
+      const name = s.meta?.coin_name as string | undefined;
+      const chg = s.meta?.price_change_24h_pct as number | undefined;
+      const src = (s.meta?.trending_source as string | undefined) ?? "coingecko";
+      const sign = chg !== undefined && chg >= 0 ? "+" : "";
+      const chgStr = chg !== undefined ? `${sign}${chg.toFixed(1)}%` : "—";
+      return `${name ?? "?"} · ${src} trending · 24h ${chgStr}`;
     }
     default:
       return null;
