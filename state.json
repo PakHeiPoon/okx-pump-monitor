@@ -323,22 +323,20 @@
   "_trending_last_seen": [
     "PENGU",
     "IRYS",
-    "HYPE",
-    "ZANO",
     "FIRO",
+    "ZANO",
+    "HYPE",
     "RUNE",
     "BTC",
     "BILL",
-    "XRP",
     "ZEC",
-    "SOL",
+    "XRP",
     "TON",
+    "SOL",
+    "SUI",
     "KISHU",
-    "CHIP",
-    "SUI"
+    "CHIP"
   ],
-  "CHZ-USDT-SWAP|dump|volume_surge": 1778847490.667455,
-  "CHIP-USDT-SWAP|pump|social_surge": 1778847490.667455,
   "MU-USDT-SWAP|dump|volume_surge": 1778848374.75734,
   "CFX-USDT-SWAP|dump|volume_surge": 1778848374.75734,
   "MEGA-USDT-SWAP|dump|volume_surge": 1778848374.75734,
@@ -349,5 +347,9 @@
   "XPL-USDT-SWAP|dump|volume_surge": 1778849280.7104995,
   "XRP-USDT-SWAP|pump|social_surge": 1778849280.7104995,
   "TON-USDT-SWAP|pump|social_surge": 1778849280.7104995,
-  "SUI-USDT-SWAP|pump|social_surge": 1778849280.7104995
+  "SUI-USDT-SWAP|pump|social_surge": 1778849280.7104995,
+  "XAG-USDT-SWAP|dump|volume_surge": 1778850190.596187,
+  "ONDO-USDT-SWAP|dump|volume_surge": 1778850190.596187,
+  "WLD-USDT-SWAP|dump|volume_surge": 1778850190.596187,
+  "STRK-USDT-SWAP|dump|volume_surge": 1778850190.596187
 }
