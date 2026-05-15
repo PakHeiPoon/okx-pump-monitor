@@ -322,24 +322,20 @@
   "_trending_last_seen": [
     "HYPE",
     "ZANO",
+    "PENGU",
     "ZEC",
     "BILL",
     "VVV",
-    "PENGU",
-    "FIRO",
     "CC",
-    "LINK",
     "XRP",
-    "ONDO",
-    "SHIB",
-    "BTC",
+    "LINK",
+    "ENA",
     "LUNC",
-    "TAO"
+    "KISHU",
+    "AI",
+    "TEL",
+    "FIRO"
   ],
-  "UB-USDT-SWAP|pump|swap_top_gainers": 1778817785.840794,
-  "WLD-USDT-SWAP|dump|volume_surge": 1778817785.840794,
-  "ZEC-USDT-SWAP|pump|social_surge": 1778817785.840794,
-  "MON-USDT-SWAP|pump|social_surge": 1778817785.840794,
   "CFX-USDT-SWAP|pump|volume_surge": 1778818666.553999,
   "UP-USDT-SWAP|pump|funding_extreme": 1778818666.553999,
   "LINK-USDT-SWAP|pump|social_surge": 1778818666.553999,
@@ -349,5 +345,10 @@
   "PNUT-USDT-SWAP|dump|volume_surge": 1778819542.8793793,
   "AI-USDT-SWAP|pump|funding_extreme": 1778819542.8793793,
   "BTC-USDT-SWAP|pump|social_surge": 1778819542.8793793,
-  "TAO-USDT-SWAP|pump|social_surge": 1778819542.8793793
+  "TAO-USDT-SWAP|pump|social_surge": 1778819542.8793793,
+  "CFX-USDT-SWAP|pump|swap_top_gainers": 1778820464.5765994,
+  "CFX-USDT-SWAP|pump|oi_surge": 1778820464.5765994,
+  "SPX-USDT-SWAP|pump|longshort_ratio": 1778820464.5765994,
+  "ENA-USDT-SWAP|pump|social_surge": 1778820464.5765994,
+  "AI-USDT-SWAP|pump|social_surge": 1778820464.5765994
 }
