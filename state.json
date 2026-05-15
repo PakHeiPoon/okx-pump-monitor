@@ -323,26 +323,23 @@
   "_trending_last_seen": [
     "LAB",
     "STORJ",
+    "HYPE",
     "PENGU",
     "VVV",
-    "HYPE",
-    "ASTEROID",
-    "OCT",
     "BTC",
+    "OCT",
     "XRP",
-    "TON",
-    "TAO",
-    "ETH",
+    "ASTEROID",
     "MEGA",
     "LINK",
-    "CFG"
+    "TON",
+    "ETH",
+    "KISHU",
+    "ADA"
   ],
-  "BIO-USDT-SWAP|dump|volume_surge": 1778870867.6083584,
-  "XRP-USDT-SWAP|pump|social_surge": 1778870867.6083584,
-  "LINK-USDT-SWAP|pump|social_surge": 1778870867.6083584,
-  "ZEC-USDT-SWAP|pump|social_surge": 1778870867.6083584,
   "AI-USDT-SWAP|dump|volume_surge": 1778871752.5273805,
   "BABY-USDT-SWAP|pump|volume_surge": 1778871752.5273805,
   "AGLD-USDT-SWAP|dump|perp_premium": 1778871752.5273805,
-  "ETH-USDT-SWAP|pump|social_surge": 1778872677.0443802
+  "ETH-USDT-SWAP|pump|social_surge": 1778872677.0443802,
+  "ADA-USDT-SWAP|pump|social_surge": 1778873576.2919965
 }
