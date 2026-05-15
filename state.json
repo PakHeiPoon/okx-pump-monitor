@@ -321,28 +321,22 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "FIRO",
     "ZANO",
+    "FIRO",
     "HYPE",
     "PENGU",
     "BILL",
     "BTC",
-    "IRYS",
     "RUNE",
-    "LAB",
-    "SOL",
-    "ZEC",
     "MEGA",
+    "SOL",
+    "IRYS",
+    "LAB",
     "TON",
+    "ONDO",
     "SUI",
-    "ONDO"
+    "VVV"
   ],
-  "BASED-USDT-SWAP|dump|swap_top_gainers": 1778852877.0406423,
-  "CRCL-USDT-SWAP|pump|oi_surge": 1778852877.0406423,
-  "MSFT-USDT-SWAP|pump|longshort_ratio": 1778852877.0406423,
-  "PENGU-USDT-SWAP|pump|social_surge": 1778852877.0406423,
-  "MEGA-USDT-SWAP|pump|social_surge": 1778852877.0406423,
-  "TON-USDT-SWAP|pump|social_surge": 1778852877.0406423,
   "LIGHT-USDT-SWAP|dump|swap_top_gainers": 1778853776.9951758,
   "CC-USDT-SWAP|dump|volume_surge": 1778853776.9951758,
   "ONDO-USDT-SWAP|pump|social_surge": 1778853776.9951758,
@@ -351,5 +345,8 @@
   "UP-USDT-SWAP|pump|swap_top_gainers": 1778854671.2063215,
   "AI-USDT-SWAP|pump|swap_top_gainers": 1778854671.2063215,
   "JELLYJELLY-USDT-SWAP|pump|swap_top_gainers": 1778854671.2063215,
-  "SUI-USDT-SWAP|pump|social_surge": 1778854671.2063215
+  "SUI-USDT-SWAP|pump|social_surge": 1778854671.2063215,
+  "UP-USDT-SWAP|pump|funding_extreme": 1778855552.5588155,
+  "AVNT-USDT-SWAP|dump|perp_premium": 1778855552.5588155,
+  "MSFT-USDT-SWAP|pump|longshort_ratio": 1778855552.5588155
 }
