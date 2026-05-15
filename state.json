@@ -322,26 +322,27 @@
   ],
   "_trending_last_seen": [
     "ZANO",
-    "RUNE",
     "MEGA",
+    "HYPE",
+    "RUNE",
     "PENGU",
     "BTC",
-    "HYPE",
+    "VVV",
     "BILL",
     "SUI",
-    "VVV",
     "SOL",
-    "ZEC",
     "TAO",
-    "IRYS",
-    "EWT",
-    "XRP"
+    "TON",
+    "MON",
+    "SIREN",
+    "ZEC"
   ],
-  "TAO-USDT-SWAP|pump|social_surge": 1778857386.6740458,
   "UP-USDT-SWAP|pump|funding_extreme": 1778858264.805496,
   "MAGIC-USDT-SWAP|dump|perp_premium": 1778858264.805496,
   "PENGU-USDT-SWAP|pump|social_surge": 1778858264.805496,
   "ZEC-USDT-SWAP|pump|social_surge": 1778858264.805496,
   "LINK-USDT-SWAP|pump|social_surge": 1778858264.805496,
-  "SOL-USDT-SWAP|pump|social_surge": 1778859157.277057
+  "SOL-USDT-SWAP|pump|social_surge": 1778859157.277057,
+  "TON-USDT-SWAP|pump|social_surge": 1778860070.7606025,
+  "MON-USDT-SWAP|pump|social_surge": 1778860070.7606025
 }
