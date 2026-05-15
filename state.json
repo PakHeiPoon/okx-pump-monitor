@@ -328,22 +328,22 @@
     "HYPE",
     "IRYS",
     "BTC",
-    "BILL",
     "LAB",
+    "BILL",
     "KISHU",
+    "ZEC",
     "ONDO",
     "PI",
-    "ETH",
-    "AI",
-    "LINK"
+    "SOL",
+    "ETH"
   ],
-  "ONDO-USDT-SWAP|pump|social_surge": 1778842041.6540477,
-  "AAVE-USDT-SWAP|pump|social_surge": 1778842041.6540477,
   "AI-USDT-SWAP|pump|social_surge": 1778842984.4585292,
   "UP-USDT-SWAP|pump|swap_top_gainers": 1778843875.7503657,
   "LAB-USDT-SWAP|pump|swap_top_gainers": 1778843875.7503657,
   "RKLB-USDT-SWAP|pump|funding_extreme": 1778843875.7503657,
   "PI-USDT-SWAP|pump|social_surge": 1778843875.7503657,
   "ETH-USDT-SWAP|pump|social_surge": 1778843875.7503657,
-  "LINK-USDT-SWAP|pump|social_surge": 1778843875.7503657
+  "LINK-USDT-SWAP|pump|social_surge": 1778843875.7503657,
+  "ZEC-USDT-SWAP|pump|social_surge": 1778844764.4519582,
+  "SOL-USDT-SWAP|pump|social_surge": 1778844764.4519582
 }
