@@ -320,31 +320,28 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "ZANO",
     "FIRO",
+    "ZANO",
     "HYPE",
-    "PENGU",
+    "BILL",
     "XRP",
     "CC",
-    "ONDO",
     "ZEC",
-    "BILL",
-    "VVV",
     "SOL",
+    "VVV",
     "SUI",
+    "LAB",
+    "AI",
+    "ONDO",
     "AERO",
-    "KISHU",
-    "ETH"
+    "PENGU"
   ],
-  "LAB-USDT-SWAP|pump|swap_top_gainers": 1778811474.6484368,
-  "AI-USDT-SWAP|pump|funding_extreme": 1778811474.6484368,
-  "PROS-USDT-SWAP|dump|funding_extreme": 1778811474.6484368,
-  "CC-USDT-SWAP|pump|social_surge": 1778811474.6484368,
-  "ONDO-USDT-SWAP|pump|social_surge": 1778811474.6484368,
-  "SUI-USDT-SWAP|pump|social_surge": 1778811474.6484368,
   "HBAR-USDT-SWAP|pump|volume_surge": 1778812378.824853,
   "AI-USDT-SWAP|pump|social_surge": 1778812378.824853,
   "ETH-USDT-SWAP|pump|social_surge": 1778812378.824853,
   "UP-USDT-SWAP|pump|funding_extreme": 1778813245.527631,
-  "SOL-USDT-SWAP|pump|social_surge": 1778813245.527631
+  "SOL-USDT-SWAP|pump|social_surge": 1778813245.527631,
+  "AI-USDT-SWAP|pump|funding_extreme": 1778814178.429573,
+  "UP-USDT-SWAP|dump|oi_surge": 1778814178.429573,
+  "LAB-USDT-SWAP|pump|social_surge": 1778814178.429573
 }
