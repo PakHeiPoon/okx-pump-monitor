@@ -321,28 +321,26 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
+    "LINK",
     "STORJ",
     "ASTEROID",
-    "HYPE",
-    "LINK",
     "XRP",
+    "HYPE",
     "PENGU",
-    "SIREN",
-    "SUI",
-    "ZEC",
-    "LAB",
-    "TAO",
-    "SOL",
     "RUNE",
+    "SIREN",
+    "SOL",
+    "ZEC",
     "BTC",
-    "VVV"
+    "SUI",
+    "MEGA",
+    "LAB",
+    "UNI"
   ],
-  "PENDLE-USDT-SWAP|pump|social_surge": 1778881677.3465655,
-  "LAB-USDT-SWAP|pump|social_surge": 1778881677.3465655,
-  "BTC-USDT-SWAP|pump|social_surge": 1778881677.3465655,
-  "SUI-USDT-SWAP|pump|social_surge": 1778881677.3465655,
-  "VIRTUAL-USDT-SWAP|pump|social_surge": 1778881677.3465655,
   "AGLD-USDT-SWAP|dump|perp_premium": 1778882545.6789463,
   "SOL-USDT-SWAP|pump|social_surge": 1778882545.6789463,
-  "ZEC-USDT-SWAP|pump|social_surge": 1778883471.4617796
+  "ZEC-USDT-SWAP|pump|social_surge": 1778883471.4617796,
+  "GPS-USDT-SWAP|pump|volume_surge": 1778884362.3159359,
+  "MEGA-USDT-SWAP|pump|social_surge": 1778884362.3159359,
+  "UNI-USDT-SWAP|pump|social_surge": 1778884362.3159359
 }
