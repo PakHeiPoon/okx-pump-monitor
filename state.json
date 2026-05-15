@@ -324,16 +324,16 @@
     "ZANO",
     "HYPE",
     "XRP",
-    "VVV",
-    "SOL",
     "BILL",
-    "BTC",
+    "VVV",
     "PENGU",
+    "SOL",
+    "BTC",
     "ZEC",
     "ONDO",
+    "LUNC",
+    "SUI",
     "LAB",
-    "TROLL",
-    "DOGE",
     "NAORIS"
   ],
   "OPG-USDT-SWAP|dump|volume_surge": 1778802468.6241014,
@@ -343,5 +343,7 @@
   "SOL-USDT-SWAP|pump|social_surge": 1778803393.9791112,
   "TRUTH-USDT-SWAP|pump|swap_top_gainers": 1778803913.0380495,
   "AI-USDT-SWAP|pump|funding_extreme": 1778803913.0380495,
-  "DOGE-USDT-SWAP|pump|social_surge": 1778803913.0380495
+  "DOGE-USDT-SWAP|pump|social_surge": 1778803913.0380495,
+  "AZTEC-USDT-SWAP|pump|swap_top_gainers": 1778804269.3299892,
+  "SUI-USDT-SWAP|pump|social_surge": 1778804269.3299892
 }
