@@ -323,19 +323,19 @@
   "_trending_last_seen": [
     "ZANO",
     "HYPE",
+    "BTC",
     "FIRO",
     "BILL",
-    "BTC",
-    "PENGU",
     "RUNE",
-    "IRYS",
-    "XRP",
+    "SUI",
     "MEGA",
-    "ZEC",
-    "ETH",
+    "XRP",
+    "IRYS",
     "VVV",
+    "ETH",
+    "ONDO",
     "TON",
-    "SOL"
+    "ZBCN"
   ],
   "LAB-USDT-SWAP|pump|swap_top_gainers": 1778854671.2063215,
   "UP-USDT-SWAP|pump|swap_top_gainers": 1778854671.2063215,
@@ -348,5 +348,6 @@
   "TRIA-USDT-SWAP|dump|volume_surge": 1778855831.6666274,
   "XRP-USDT-SWAP|pump|social_surge": 1778855831.6666274,
   "ZEC-USDT-SWAP|pump|social_surge": 1778855831.6666274,
-  "ETH-USDT-SWAP|pump|social_surge": 1778855831.6666274
+  "ETH-USDT-SWAP|pump|social_surge": 1778855831.6666274,
+  "ONDO-USDT-SWAP|pump|social_surge": 1778856469.445943
 }
