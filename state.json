@@ -323,21 +323,20 @@
   "_trending_last_seen": [
     "FIRO",
     "RUNE",
-    "PENGU",
     "ZANO",
-    "HYPE",
+    "PENGU",
     "IRYS",
+    "HYPE",
+    "BILL",
     "BTC",
     "LAB",
-    "BILL",
-    "KISHU",
     "ZEC",
-    "ONDO",
+    "KISHU",
     "PI",
-    "SOL",
-    "ETH"
+    "ETH",
+    "VVV",
+    "MON"
   ],
-  "AI-USDT-SWAP|pump|social_surge": 1778842984.4585292,
   "UP-USDT-SWAP|pump|swap_top_gainers": 1778843875.7503657,
   "LAB-USDT-SWAP|pump|swap_top_gainers": 1778843875.7503657,
   "RKLB-USDT-SWAP|pump|funding_extreme": 1778843875.7503657,
@@ -345,5 +344,7 @@
   "ETH-USDT-SWAP|pump|social_surge": 1778843875.7503657,
   "LINK-USDT-SWAP|pump|social_surge": 1778843875.7503657,
   "ZEC-USDT-SWAP|pump|social_surge": 1778844764.4519582,
-  "SOL-USDT-SWAP|pump|social_surge": 1778844764.4519582
+  "SOL-USDT-SWAP|pump|social_surge": 1778844764.4519582,
+  "NEIRO-USDT-SWAP|pump|volume_surge": 1778845680.4562824,
+  "MON-USDT-SWAP|pump|social_surge": 1778845680.4562824
 }
