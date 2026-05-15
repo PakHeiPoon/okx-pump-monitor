@@ -322,22 +322,21 @@
   ],
   "_trending_last_seen": [
     "STORJ",
-    "BILL",
-    "ASTEROID",
-    "XRP",
     "ZEC",
-    "LINK",
+    "ASTEROID",
+    "BILL",
     "PENGU",
     "HYPE",
-    "VVV",
-    "MON",
-    "SUI",
-    "LUNC",
     "KISHU",
+    "XRP",
+    "LINK",
+    "VVV",
+    "SUI",
     "AAVE",
-    "TON"
+    "SOL",
+    "ETH",
+    "NAORIS"
   ],
-  "CBRS-USDT-SWAP|dump|swap_top_gainers": 1778875381.022545,
   "BTC-USDT-SWAP|pump|social_surge": 1778876262.671685,
   "ZEC-USDT-SWAP|pump|social_surge": 1778876262.671685,
   "WLD-USDT-SWAP|dump|volume_surge": 1778877175.1252975,
@@ -354,5 +353,8 @@
   "DOGE-USDT-SWAP|dump|volume_surge": 1778877175.1252975,
   "MON-USDT-SWAP|pump|social_surge": 1778877175.1252975,
   "SUI-USDT-SWAP|pump|social_surge": 1778877175.1252975,
-  "AAVE-USDT-SWAP|pump|social_surge": 1778877175.1252975
+  "AAVE-USDT-SWAP|pump|social_surge": 1778877175.1252975,
+  "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778878044.2428303,
+  "SOL-USDT-SWAP|pump|social_surge": 1778878044.2428303,
+  "ETH-USDT-SWAP|pump|social_surge": 1778878044.2428303
 }
