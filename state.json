@@ -323,26 +323,26 @@
   "_trending_last_seen": [
     "ZANO",
     "HYPE",
-    "VVV",
     "PENGU",
-    "BTC",
+    "VVV",
     "MEGA",
+    "BTC",
     "LAB",
-    "ZEC",
     "SOL",
-    "AKT",
-    "RUNE",
+    "ZEC",
     "BILL",
     "AI",
     "TAO",
-    "KISHU"
+    "LUNC",
+    "POL",
+    "NEAR"
   ],
-  "ENA-USDT-SWAP|pump|volume_surge": 1778862753.9560199,
-  "PROS-USDT-SWAP|dump|oi_surge": 1778862753.9560199,
   "BOME-USDT-SWAP|dump|perp_premium": 1778863672.605749,
   "SOL-USDT-SWAP|pump|social_surge": 1778863672.605749,
   "MON-USDT-SWAP|pump|social_surge": 1778863672.605749,
   "AI-USDT-SWAP|pump|social_surge": 1778863672.605749,
   "UP-USDT-SWAP|pump|swap_top_gainers": 1778864584.818771,
-  "MSFT-USDT-SWAP|pump|longshort_ratio": 1778864584.818771
+  "MSFT-USDT-SWAP|pump|longshort_ratio": 1778864584.818771,
+  "POL-USDT-SWAP|pump|social_surge": 1778865473.6009743,
+  "NEAR-USDT-SWAP|pump|social_surge": 1778865473.6009743
 }
