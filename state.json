@@ -325,23 +325,18 @@
     "HYPE",
     "PENGU",
     "BTC",
-    "KISHU",
-    "BILL",
     "LAB",
-    "SOL",
+    "BILL",
+    "KISHU",
     "ZEC",
-    "PEAQ",
-    "MON",
+    "SOL",
+    "TROLL",
     "ETH",
     "XRP",
-    "AI",
-    "LUNC"
+    "VVV",
+    "LUNC",
+    "AI"
   ],
-  "AI-USDT-SWAP|pump|swap_top_gainers": 1778825876.4504397,
-  "LAB-USDT-SWAP|pump|swap_top_gainers": 1778825876.4504397,
-  "GPS-USDT-SWAP|dump|volume_surge": 1778825876.4504397,
-  "XRP-USDT-SWAP|pump|social_surge": 1778825876.4504397,
-  "SUI-USDT-SWAP|pump|social_surge": 1778825876.4504397,
   "UB-USDT-SWAP|dump|swap_top_gainers": 1778826759.794774,
   "UB-USDT-SWAP|dump|longshort_ratio": 1778826759.794774,
   "ICP-USDT-SWAP|pump|social_surge": 1778826759.794774,
@@ -349,5 +344,6 @@
   "BONK-USDT-SWAP|pump|oi_surge": 1778827665.1244524,
   "LAB-USDT-SWAP|dump|oi_surge": 1778827665.1244524,
   "MON-USDT-SWAP|pump|social_surge": 1778827665.1244524,
-  "ETH-USDT-SWAP|pump|social_surge": 1778827665.1244524
+  "ETH-USDT-SWAP|pump|social_surge": 1778827665.1244524,
+  "LAB-USDT-SWAP|pump|swap_top_gainers": 1778828549.6633928
 }
