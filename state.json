@@ -323,25 +323,27 @@
   "_trending_last_seen": [
     "LAB",
     "BTC",
-    "HYPE",
-    "PENGU",
     "BILL",
-    "SOL",
+    "PENGU",
+    "HYPE",
     "MEGA",
-    "VVV",
-    "ONDO",
     "STORJ",
+    "ONDO",
     "TON",
+    "SOL",
+    "VVV",
     "CGPT",
-    "ZEC",
+    "CC",
     "TAO",
-    "AERO"
+    "VIRTUAL"
   ],
-  "ONDO-USDT-SWAP|pump|social_surge": 1778867271.652964,
   "ADA-USDT-SWAP|pump|volume_surge": 1778868169.4035885,
   "UB-USDT-SWAP|dump|longshort_ratio": 1778868169.4035885,
   "BILL-USDT-SWAP|pump|social_surge": 1778868169.4035885,
   "AERO-USDT-SWAP|pump|social_surge": 1778868169.4035885,
   "TON-USDT-SWAP|pump|social_surge": 1778869078.9326403,
-  "TAO-USDT-SWAP|pump|social_surge": 1778869078.9326403
+  "TAO-USDT-SWAP|pump|social_surge": 1778869078.9326403,
+  "GMT-USDT-SWAP|dump|perp_premium": 1778869962.4293962,
+  "CC-USDT-SWAP|pump|social_surge": 1778869962.4293962,
+  "VIRTUAL-USDT-SWAP|pump|social_surge": 1778869962.4293962
 }
