@@ -321,25 +321,29 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "RUNE",
     "FIRO",
-    "ZANO",
+    "RUNE",
     "PENGU",
+    "ZANO",
     "HYPE",
     "IRYS",
-    "KISHU",
     "BTC",
     "BILL",
     "LAB",
+    "KISHU",
     "ONDO",
-    "SOL",
-    "VVV",
+    "PI",
+    "ETH",
     "AI",
-    "MEGA"
+    "LINK"
   ],
-  "RKLB-USDT-SWAP|pump|funding_extreme": 1778841162.3998785,
-  "ZEC-USDT-SWAP|pump|social_surge": 1778841162.3998785,
   "ONDO-USDT-SWAP|pump|social_surge": 1778842041.6540477,
   "AAVE-USDT-SWAP|pump|social_surge": 1778842041.6540477,
-  "AI-USDT-SWAP|pump|social_surge": 1778842984.4585292
+  "AI-USDT-SWAP|pump|social_surge": 1778842984.4585292,
+  "UP-USDT-SWAP|pump|swap_top_gainers": 1778843875.7503657,
+  "LAB-USDT-SWAP|pump|swap_top_gainers": 1778843875.7503657,
+  "RKLB-USDT-SWAP|pump|funding_extreme": 1778843875.7503657,
+  "PI-USDT-SWAP|pump|social_surge": 1778843875.7503657,
+  "ETH-USDT-SWAP|pump|social_surge": 1778843875.7503657,
+  "LINK-USDT-SWAP|pump|social_surge": 1778843875.7503657
 }
