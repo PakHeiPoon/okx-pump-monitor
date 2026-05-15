@@ -321,25 +321,28 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
+    "BILL",
     "ZANO",
     "LAB",
-    "BILL",
     "KISHU",
     "PENGU",
     "HYPE",
     "AI",
     "ZEC",
+    "MON",
     "ONDO",
     "BTC",
-    "MON",
-    "VVV",
-    "TAO",
-    "INJ",
-    "LUNC"
+    "LUNC",
+    "POLYX",
+    "XRP",
+    "VVV"
   ],
   "AI-USDT-SWAP|dump|funding_extreme": 1778833077.119724,
   "CBRS-USDT-SWAP|pump|funding_extreme": 1778833077.119724,
   "ZEC-USDT-SWAP|pump|social_surge": 1778833077.119724,
   "ONDO-USDT-SWAP|pump|social_surge": 1778833077.119724,
-  "INJ-USDT-SWAP|pump|social_surge": 1778833077.119724
+  "INJ-USDT-SWAP|pump|social_surge": 1778833077.119724,
+  "SUI-USDT-SWAP|dump|volume_surge": 1778833969.9866688,
+  "HBAR-USDT-SWAP|dump|volume_surge": 1778833969.9866688,
+  "XRP-USDT-SWAP|pump|social_surge": 1778833969.9866688
 }
