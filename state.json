@@ -321,21 +321,21 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
+    "ONDO",
+    "HYPE",
+    "PENGU",
     "FIRO",
     "VVV",
     "ASTEROID",
-    "PENGU",
-    "HYPE",
-    "ONDO",
-    "TROLL",
     "ETH",
     "CC",
     "JUP",
-    "DOGE",
     "BTC",
+    "TROLL",
+    "SOL",
     "TAO",
-    "ZEC",
-    "ICP"
+    "LAB",
+    "ZEC"
   ],
   "LAB-USDT-SWAP|dump|volume_surge": 1778971666.0676126,
   "ZEC-USDT-SWAP|pump|social_surge": 1778971666.0676126,
@@ -355,5 +355,8 @@
   "LAB-USDT-SWAP|dump|longshort_ratio": 1778973042.7674026,
   "ETH-USDT-SWAP|pump|social_surge": 1778973042.7674026,
   "JUP-USDT-SWAP|pump|social_surge": 1778973042.7674026,
-  "ICP-USDT-SWAP|pump|social_surge": 1778973042.7674026
+  "ICP-USDT-SWAP|pump|social_surge": 1778973042.7674026,
+  "PIPPIN-USDT-SWAP|pump|longshort_ratio": 1778973474.443666,
+  "SOL-USDT-SWAP|pump|social_surge": 1778973474.443666,
+  "LAB-USDT-SWAP|pump|social_surge": 1778973474.443666
 }
