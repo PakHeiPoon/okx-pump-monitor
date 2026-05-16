@@ -321,26 +321,26 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "KISHU",
     "BTC",
-    "STORJ",
     "PENGU",
-    "BILL",
     "CGPT",
+    "STORJ",
+    "KISHU",
     "HYPE",
-    "SUI",
-    "LAB",
-    "BNKR",
-    "SOL",
+    "BILL",
     "LINK",
+    "LAB",
+    "SOL",
+    "SUI",
+    "BNKR",
+    "TROLL",
     "ETH",
-    "VVV",
-    "TROLL"
+    "VVV"
   ],
-  "IMX-USDT-SWAP|pump|social_surge": 1778890674.7725265,
-  "NEAR-USDT-SWAP|pump|social_surge": 1778890674.7725265,
   "AAVE-USDT-SWAP|pump|social_surge": 1778891591.6082466,
   "ETH-USDT-SWAP|pump|social_surge": 1778891591.6082466,
   "HYPE-USDT-SWAP|pump|social_surge": 1778892452.3189363,
-  "SOL-USDT-SWAP|pump|social_surge": 1778892452.3189363
+  "SOL-USDT-SWAP|pump|social_surge": 1778892452.3189363,
+  "PIPPIN-USDT-SWAP|pump|volume_surge": 1778893363.3293118,
+  "BSB-USDT-SWAP|pump|longshort_ratio": 1778893363.3293118
 }
