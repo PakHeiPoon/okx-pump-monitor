@@ -324,23 +324,19 @@
     "ASTEROID",
     "PENGU",
     "BILL",
-    "SOL",
     "ZEC",
+    "SOL",
     "HYPE",
-    "VIRTUAL",
-    "AAVE",
     "BTC",
-    "ETH",
-    "LAB",
     "SUI",
     "MEGA",
+    "PI",
     "PENDLE",
-    "TAO"
+    "ETH",
+    "LAB",
+    "AAVE",
+    "VIRTUAL"
   ],
-  "HOME-USDT-SWAP|pump|swap_top_gainers": 1778921242.588829,
-  "LITE-USDT-SWAP|pump|longshort_ratio": 1778921242.588829,
-  "LINK-USDT-SWAP|pump|social_surge": 1778921242.588829,
-  "AAVE-USDT-SWAP|pump|social_surge": 1778921242.588829,
   "CHZ-USDT-SWAP|pump|volume_surge": 1778922148.0977588,
   "EDEN-USDT-SWAP|pump|oi_surge": 1778922148.0977588,
   "LAB-USDT-SWAP|dump|longshort_ratio": 1778922148.0977588,
@@ -351,5 +347,7 @@
   "HBAR-USDT-SWAP|dump|volume_surge": 1778923070.987415,
   "MSFT-USDT-SWAP|pump|longshort_ratio": 1778923070.987415,
   "SUI-USDT-SWAP|pump|social_surge": 1778923070.987415,
-  "PENDLE-USDT-SWAP|pump|social_surge": 1778923070.987415
+  "PENDLE-USDT-SWAP|pump|social_surge": 1778923070.987415,
+  "UB-USDT-SWAP|dump|swap_top_gainers": 1778923982.040782,
+  "PI-USDT-SWAP|pump|social_surge": 1778923982.040782
 }
