@@ -323,24 +323,20 @@
   "_trending_last_seen": [
     "ONDO",
     "HYPE",
-    "PENGU",
     "FIRO",
     "VVV",
+    "PENGU",
     "ASTEROID",
     "ETH",
-    "CC",
     "JUP",
-    "BTC",
-    "TROLL",
+    "CC",
+    "AERO",
     "SOL",
-    "TAO",
+    "TROLL",
+    "GITLAWB",
     "LAB",
-    "ZEC"
+    "ICP"
   ],
-  "LAB-USDT-SWAP|dump|volume_surge": 1778971666.0676126,
-  "ZEC-USDT-SWAP|pump|social_surge": 1778971666.0676126,
-  "BTC-USDT-SWAP|pump|social_surge": 1778971666.0676126,
-  "SHIB-USDT-SWAP|pump|social_surge": 1778971666.0676126,
   "OFC-USDT-SWAP|pump|swap_top_gainers": 1778972580.4211135,
   "WLFI-USDT-SWAP|dump|volume_surge": 1778972580.4211135,
   "RAVE-USDT-SWAP|dump|volume_surge": 1778972580.4211135,
@@ -358,5 +354,8 @@
   "ICP-USDT-SWAP|pump|social_surge": 1778973042.7674026,
   "PIPPIN-USDT-SWAP|pump|longshort_ratio": 1778973474.443666,
   "SOL-USDT-SWAP|pump|social_surge": 1778973474.443666,
-  "LAB-USDT-SWAP|pump|social_surge": 1778973474.443666
+  "LAB-USDT-SWAP|pump|social_surge": 1778973474.443666,
+  "LUNA-USDT-SWAP|pump|oi_surge": 1778974376.274323,
+  "LITE-USDT-SWAP|pump|longshort_ratio": 1778974376.274323,
+  "AERO-USDT-SWAP|pump|social_surge": 1778974376.274323
 }
