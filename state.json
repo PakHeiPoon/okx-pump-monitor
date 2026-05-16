@@ -325,23 +325,18 @@
     "ASTEROID",
     "BILL",
     "HYPE",
+    "SOL",
     "PENGU",
     "BNKR",
     "VVV",
-    "SOL",
-    "MEGA",
     "BTC",
-    "AI",
-    "KISHU",
+    "MEGA",
     "TROLL",
     "ZEC",
-    "SUI"
+    "ETH",
+    "AI",
+    "KISHU"
   ],
-  "GPS-USDT-SWAP|dump|swap_top_gainers": 1778911362.0075383,
-  "PROS-USDT-SWAP|pump|volume_surge": 1778911362.0075383,
-  "ONDO-USDT-SWAP|pump|volume_surge": 1778911362.0075383,
-  "PIPPIN-USDT-SWAP|pump|longshort_ratio": 1778911362.0075383,
-  "PI-USDT-SWAP|pump|social_surge": 1778911362.0075383,
   "LAB-USDT-SWAP|dump|swap_top_gainers": 1778912257.5257428,
   "PENGU-USDT-SWAP|pump|social_surge": 1778912257.5257428,
   "ICP-USDT-SWAP|pump|social_surge": 1778912257.5257428,
@@ -349,5 +344,7 @@
   "RECALL-USDT-SWAP|dump|oi_surge": 1778913179.2030215,
   "OL-USDT-SWAP|pump|perp_premium": 1778913179.2030215,
   "AI-USDT-SWAP|pump|social_surge": 1778913179.2030215,
-  "ZEC-USDT-SWAP|pump|social_surge": 1778913179.2030215
+  "ZEC-USDT-SWAP|pump|social_surge": 1778913179.2030215,
+  "PIPPIN-USDT-SWAP|pump|longshort_ratio": 1778913340.880022,
+  "ETH-USDT-SWAP|pump|social_surge": 1778913340.880022
 }
