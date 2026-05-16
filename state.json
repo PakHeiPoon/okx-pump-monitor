@@ -323,23 +323,20 @@
   "_trending_last_seen": [
     "BILL",
     "PENGU",
-    "SUI",
     "BTC",
     "ETH",
-    "LINK",
+    "SUI",
     "HYPE",
-    "TAO",
-    "PEPE",
+    "ZEC",
+    "LINK",
     "ETHFI",
-    "AAVE",
-    "MON",
     "GITLAWB",
-    "DOGE",
-    "SIREN"
+    "AAVE",
+    "OSMO",
+    "PEPE",
+    "LUNC",
+    "SOL"
   ],
-  "PIPPIN-USDT-SWAP|pump|longshort_ratio": 1778951794.4310231,
-  "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778951794.4310231,
-  "PENGU-USDT-SWAP|pump|social_surge": 1778951794.4310231,
   "LAYER-USDT-SWAP|dump|volume_surge": 1778952778.526441,
   "OPENAI-USDT-SWAP|pump|longshort_ratio": 1778952778.526441,
   "SOL-USDT-SWAP|pump|social_surge": 1778952778.526441,
@@ -351,5 +348,8 @@
   "PEPE-USDT-SWAP|pump|social_surge": 1778953667.053047,
   "ETHFI-USDT-SWAP|pump|social_surge": 1778953667.053047,
   "AAVE-USDT-SWAP|pump|social_surge": 1778953667.053047,
-  "MON-USDT-SWAP|pump|social_surge": 1778953667.053047
+  "MON-USDT-SWAP|pump|social_surge": 1778953667.053047,
+  "PUMP-USDT-SWAP|pump|volume_surge": 1778954567.178397,
+  "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778954567.178397,
+  "ZEC-USDT-SWAP|pump|social_surge": 1778954567.178397
 }
