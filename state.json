@@ -321,24 +321,22 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "LAB",
     "BTC",
-    "BILL",
+    "LAB",
     "HYPE",
+    "BILL",
     "PENGU",
-    "ASTEROID",
-    "MEGA",
     "ZEC",
-    "ICP",
-    "SOL",
     "ETH",
+    "ICP",
+    "ASTEROID",
     "SUI",
-    "AERO",
+    "MEGA",
     "TAO",
-    "TROLL"
+    "XRP",
+    "AERO",
+    "RUNE"
   ],
-  "TRUTH-USDT-SWAP|dump|volume_surge": 1778914948.469905,
-  "PI-USDT-SWAP|pump|social_surge": 1778914948.469905,
   "RAVE-USDT-SWAP|dump|swap_top_gainers": 1778915848.4781017,
   "UB-USDT-SWAP|pump|swap_top_gainers": 1778915848.4781017,
   "BERA-USDT-SWAP|dump|volume_surge": 1778915848.4781017,
@@ -358,5 +356,8 @@
   "MSFT-USDT-SWAP|pump|longshort_ratio": 1778916773.9453492,
   "ICP-USDT-SWAP|pump|social_surge": 1778916773.9453492,
   "AERO-USDT-SWAP|pump|social_surge": 1778916773.9453492,
-  "TAO-USDT-SWAP|pump|social_surge": 1778916773.9453492
+  "TAO-USDT-SWAP|pump|social_surge": 1778916773.9453492,
+  "BILL-USDT-SWAP|dump|swap_top_gainers": 1778917670.9915986,
+  "BILL-USDT-SWAP|dump|oi_surge": 1778917670.9915986,
+  "XRP-USDT-SWAP|pump|social_surge": 1778917670.9915986
 }
