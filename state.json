@@ -323,22 +323,20 @@
   "_trending_last_seen": [
     "BTC",
     "TAO",
-    "PENGU",
-    "KISHU",
-    "STORJ",
     "SOL",
-    "LINK",
-    "BILL",
-    "SUI",
-    "ONDO",
+    "STORJ",
+    "KISHU",
     "ZEC",
-    "RON",
     "AAVE",
+    "PENGU",
+    "LINK",
+    "SUI",
+    "BILL",
+    "RON",
     "LUNC",
-    "XRP"
+    "XRP",
+    "ONDO"
   ],
-  "TAO-USDT-SWAP|pump|social_surge": 1778894280.8461304,
-  "ONDO-USDT-SWAP|pump|social_surge": 1778894280.8461304,
   "ORDI-USDT-SWAP|dump|volume_surge": 1778895186.9096165,
   "SAHARA-USDT-SWAP|pump|volume_surge": 1778895186.9096165,
   "ZEC-USDT-SWAP|pump|social_surge": 1778895186.9096165,
@@ -346,5 +344,8 @@
   "LAB-USDT-SWAP|pump|swap_top_gainers": 1778896051.6020615,
   "EDGE-USDT-SWAP|dump|volume_surge": 1778896051.6020615,
   "AAVE-USDT-SWAP|pump|social_surge": 1778896051.6020615,
-  "XRP-USDT-SWAP|pump|social_surge": 1778896051.6020615
+  "XRP-USDT-SWAP|pump|social_surge": 1778896051.6020615,
+  "PROS-USDT-SWAP|pump|swap_top_gainers": 1778896977.4970825,
+  "WLD-USDT-SWAP|pump|volume_surge": 1778896977.4970825,
+  "PROS-USDT-SWAP|dump|funding_extreme": 1778896977.4970825
 }
