@@ -323,22 +323,25 @@
   "_trending_last_seen": [
     "STORJ",
     "BTC",
-    "BILL",
-    "KISHU",
-    "LINK",
-    "LAB",
     "SUI",
+    "KISHU",
+    "BILL",
     "BNKR",
-    "HYPE",
     "VVV",
     "LUNC",
+    "LAB",
+    "LINK",
     "PENGU",
-    "KAS",
-    "PEAQ",
-    "ADA"
+    "XRP",
+    "UNI",
+    "HYPE",
+    "SERV"
   ],
-  "RENDER-USDT-SWAP|pump|social_surge": 1778887042.675535,
   "SUI-USDT-SWAP|pump|social_surge": 1778887945.6394048,
   "UB-USDT-SWAP|dump|longshort_ratio": 1778888881.4011483,
-  "ADA-USDT-SWAP|pump|social_surge": 1778888881.4011483
+  "ADA-USDT-SWAP|pump|social_surge": 1778888881.4011483,
+  "H-USDT-SWAP|pump|volume_surge": 1778889781.2331252,
+  "DOGE-USDT-SWAP|dump|volume_surge": 1778889781.2331252,
+  "XRP-USDT-SWAP|pump|social_surge": 1778889781.2331252,
+  "UNI-USDT-SWAP|pump|social_surge": 1778889781.2331252
 }
