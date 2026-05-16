@@ -350,5 +350,7 @@
   "ZORA-USDT-SWAP|dump|perp_premium": 1778925589.5841763,
   "MSFT-USDT-SWAP|pump|longshort_ratio": 1778925589.5841763,
   "NEAR-USDT-SWAP|pump|social_surge": 1778925589.5841763,
-  "TON-USDT-SWAP|pump|social_surge": 1778925589.5841763
+  "TON-USDT-SWAP|pump|social_surge": 1778925589.5841763,
+  "MERL-USDT-SWAP|dump|volume_surge": 1778925749.6518402,
+  "EIGEN-USDT-SWAP|dump|perp_premium": 1778925749.6518402
 }
