@@ -322,24 +322,21 @@
   ],
   "_trending_last_seen": [
     "BTC",
-    "ASTEROID",
     "HYPE",
-    "BILL",
     "BNKR",
+    "BILL",
     "LAB",
+    "ASTEROID",
     "MEGA",
-    "PENGU",
+    "VVV",
     "MON",
-    "TON",
+    "TROLL",
     "SUI",
     "GITLAWB",
-    "TROLL",
-    "CHIP",
-    "SOL"
+    "SOL",
+    "PI",
+    "KISHU"
   ],
-  "PIPPIN-USDT-SWAP|pump|longshort_ratio": 1778908673.9101632,
-  "CHIP-USDT-SWAP|pump|social_surge": 1778908673.9101632,
-  "MEGA-USDT-SWAP|pump|social_surge": 1778908673.9101632,
   "ZEC-USDT-SWAP|pump|volume_surge": 1778909585.926678,
   "ENA-USDT-SWAP|dump|volume_surge": 1778909585.926678,
   "PROS-USDT-SWAP|dump|perp_premium": 1778909585.926678,
@@ -349,5 +346,10 @@
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1778910476.1130521,
   "TON-USDT-SWAP|pump|social_surge": 1778910476.1130521,
   "SUI-USDT-SWAP|pump|social_surge": 1778910476.1130521,
-  "SOL-USDT-SWAP|pump|social_surge": 1778910476.1130521
+  "SOL-USDT-SWAP|pump|social_surge": 1778910476.1130521,
+  "GPS-USDT-SWAP|dump|swap_top_gainers": 1778911362.0075383,
+  "PROS-USDT-SWAP|pump|volume_surge": 1778911362.0075383,
+  "ONDO-USDT-SWAP|pump|volume_surge": 1778911362.0075383,
+  "PIPPIN-USDT-SWAP|pump|longshort_ratio": 1778911362.0075383,
+  "PI-USDT-SWAP|pump|social_surge": 1778911362.0075383
 }
