@@ -321,27 +321,30 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
+    "TAO",
     "BILL",
     "BTC",
-    "TAO",
-    "MEGA",
     "SUI",
     "XRP",
     "VVV",
-    "LAB",
-    "SERV",
-    "PENGU",
+    "MEGA",
     "ONDO",
-    "VIRTUAL",
-    "OSMO",
+    "SOL",
+    "LINK",
+    "INJ",
+    "PI",
     "BNKR",
-    "ARRR"
+    "SERV",
+    "CFG"
   ],
-  "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778934774.8503437,
-  "SPACEX-USDT-SWAP|pump|longshort_ratio": 1778934774.8503437,
   "OPENAI-USDT-SWAP|pump|longshort_ratio": 1778935665.553278,
   "ONDO-USDT-SWAP|pump|social_surge": 1778935665.553278,
   "STABLE-USDT-SWAP|pump|swap_top_gainers": 1778936573.4261427,
   "LITE-USDT-SWAP|pump|longshort_ratio": 1778936573.4261427,
-  "VIRTUAL-USDT-SWAP|pump|social_surge": 1778936573.4261427
+  "VIRTUAL-USDT-SWAP|pump|social_surge": 1778936573.4261427,
+  "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778937481.0328925,
+  "SOL-USDT-SWAP|pump|social_surge": 1778937481.0328925,
+  "LINK-USDT-SWAP|pump|social_surge": 1778937481.0328925,
+  "INJ-USDT-SWAP|pump|social_surge": 1778937481.0328925,
+  "PI-USDT-SWAP|pump|social_surge": 1778937481.0328925
 }
