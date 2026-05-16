@@ -322,24 +322,21 @@
   ],
   "_trending_last_seen": [
     "BILL",
-    "SUI",
     "TAO",
-    "ZEC",
-    "PI",
-    "HYPE",
+    "SUI",
     "BTC",
+    "ZEC",
     "SOL",
-    "ETH",
-    "VVV",
-    "XRP",
+    "PI",
     "PENGU",
+    "HYPE",
     "RUNE",
-    "BNB",
-    "SHIB"
+    "SHIB",
+    "ETH",
+    "XRP",
+    "VVV",
+    "TON"
   ],
-  "RECALL-USDT-SWAP|pump|oi_surge": 1778941982.0241175,
-  "PIPPIN-USDT-SWAP|pump|longshort_ratio": 1778941982.0241175,
-  "XRP-USDT-SWAP|pump|social_surge": 1778941982.0241175,
   "HYPE-USDT-SWAP|pump|volume_surge": 1778942867.7033527,
   "CC-USDT-SWAP|pump|volume_surge": 1778942867.7033527,
   "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778942867.7033527,
@@ -349,5 +346,8 @@
   "LAB-USDT-SWAP|dump|longshort_ratio": 1778943774.7235584,
   "OPENAI-USDT-SWAP|pump|longshort_ratio": 1778943774.7235584,
   "BNB-USDT-SWAP|pump|social_surge": 1778943774.7235584,
-  "SHIB-USDT-SWAP|pump|social_surge": 1778943774.7235584
+  "SHIB-USDT-SWAP|pump|social_surge": 1778943774.7235584,
+  "TAO-USDT-SWAP|dump|volume_surge": 1778943981.2764547,
+  "PIPPIN-USDT-SWAP|pump|longshort_ratio": 1778943981.2764547,
+  "TON-USDT-SWAP|pump|social_surge": 1778943981.2764547
 }
