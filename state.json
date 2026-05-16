@@ -321,21 +321,21 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
+    "ASTEROID",
     "PENGU",
     "USDY",
-    "ASTEROID",
     "TROLL",
-    "BTC",
     "VVV",
-    "RENDER",
-    "SOL",
-    "ZEC",
-    "SHIB",
     "TAO",
-    "HYPE",
+    "SOL",
+    "RENDER",
     "ONDO",
+    "ETH",
+    "LINK",
+    "SHIB",
+    "GITLAWB",
     "SERV",
-    "LUNC"
+    "BTC"
   ],
   "PROS-USDT-SWAP|pump|funding_extreme": 1778968038.101247,
   "RKLB-USDT-SWAP|pump|funding_extreme": 1778968038.101247,
@@ -347,5 +347,9 @@
   "AI-USDT-SWAP|pump|volume_surge": 1778968974.5081627,
   "MRVL-USDT-SWAP|pump|funding_extreme": 1778968974.5081627,
   "NMR-USDT-SWAP|dump|perp_premium": 1778968974.5081627,
-  "OL-USDT-SWAP|dump|perp_premium": 1778968974.5081627
+  "OL-USDT-SWAP|dump|perp_premium": 1778968974.5081627,
+  "SAHARA-USDT-SWAP|pump|swap_top_gainers": 1778969513.494379,
+  "ONDO-USDT-SWAP|dump|volume_surge": 1778969513.494379,
+  "ETH-USDT-SWAP|pump|social_surge": 1778969513.494379,
+  "LINK-USDT-SWAP|pump|social_surge": 1778969513.494379
 }
