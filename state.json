@@ -322,26 +322,24 @@
   ],
   "_trending_last_seen": [
     "BTC",
-    "LAB",
     "ASTEROID",
-    "BILL",
-    "HYPE",
     "ZEC",
-    "PENGU",
-    "ETH",
     "SOL",
+    "HYPE",
+    "BILL",
     "XRP",
-    "ICP",
+    "ETH",
+    "LAB",
     "SUI",
     "TAO",
-    "MEGA",
-    "PENDLE"
+    "PENDLE",
+    "ICP",
+    "PENGU",
+    "MON"
   ],
-  "BILL-USDT-SWAP|dump|swap_top_gainers": 1778917670.9915986,
-  "BILL-USDT-SWAP|dump|oi_surge": 1778917670.9915986,
-  "XRP-USDT-SWAP|pump|social_surge": 1778917670.9915986,
   "H-USDT-SWAP|pump|volume_surge": 1778918586.3914058,
   "SOL-USDT-SWAP|pump|social_surge": 1778918586.3914058,
   "LAB-USDT-SWAP|dump|longshort_ratio": 1778919444.8978355,
-  "PENDLE-USDT-SWAP|pump|social_surge": 1778919444.8978355
+  "PENDLE-USDT-SWAP|pump|social_surge": 1778919444.8978355,
+  "MON-USDT-SWAP|pump|social_surge": 1778920227.539526
 }
