@@ -324,18 +324,18 @@
     "BTC",
     "VVV",
     "ASTEROID",
-    "HYPE",
-    "ZANO",
     "PENGU",
+    "HYPE",
+    "USDY",
+    "ZANO",
     "ONDO",
-    "FIRO",
     "TROLL",
     "QNT",
-    "GITLAWB",
-    "SUI",
+    "TAO",
     "ZEC",
-    "SOL",
-    "KTA"
+    "KTA",
+    "AKT",
+    "SERV"
   ],
   "SPACEX-USDT-SWAP|pump|longshort_ratio": 1778964465.851877,
   "OPENAI-USDT-SWAP|pump|longshort_ratio": 1778964465.851877,
@@ -345,5 +345,7 @@
   "RKLB-USDT-SWAP|pump|funding_extreme": 1778965379.7779207,
   "USO-USDT-SWAP|pump|funding_extreme": 1778965379.7779207,
   "PIPPIN-USDT-SWAP|pump|longshort_ratio": 1778965379.7779207,
-  "ZEC-USDT-SWAP|pump|social_surge": 1778965379.7779207
+  "ZEC-USDT-SWAP|pump|social_surge": 1778965379.7779207,
+  "MRVL-USDT-SWAP|pump|funding_extreme": 1778966266.212094,
+  "EDEN-USDT-SWAP|pump|oi_surge": 1778966266.212094
 }
