@@ -323,25 +323,25 @@
   "_trending_last_seen": [
     "BILL",
     "BTC",
-    "MEGA",
     "TAO",
-    "XRP",
-    "LAB",
+    "MEGA",
     "SUI",
-    "SOL",
-    "ETH",
-    "SERV",
+    "XRP",
     "VVV",
-    "ONDO",
+    "LAB",
+    "SERV",
     "PENGU",
+    "ONDO",
+    "VIRTUAL",
     "OSMO",
-    "BNKR"
+    "BNKR",
+    "ARRR"
   ],
-  "GMT-USDT-SWAP|dump|perp_premium": 1778933871.141381,
-  "LITE-USDT-SWAP|pump|longshort_ratio": 1778933871.141381,
-  "XRP-USDT-SWAP|pump|social_surge": 1778933871.141381,
   "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778934774.8503437,
   "SPACEX-USDT-SWAP|pump|longshort_ratio": 1778934774.8503437,
   "OPENAI-USDT-SWAP|pump|longshort_ratio": 1778935665.553278,
-  "ONDO-USDT-SWAP|pump|social_surge": 1778935665.553278
+  "ONDO-USDT-SWAP|pump|social_surge": 1778935665.553278,
+  "STABLE-USDT-SWAP|pump|swap_top_gainers": 1778936573.4261427,
+  "LITE-USDT-SWAP|pump|longshort_ratio": 1778936573.4261427,
+  "VIRTUAL-USDT-SWAP|pump|social_surge": 1778936573.4261427
 }
