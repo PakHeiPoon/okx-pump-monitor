@@ -331,16 +331,12 @@
     "SOL",
     "TAO",
     "BNKR",
-    "AKT",
     "BILL",
+    "LINK",
+    "AKT",
     "TROLL",
-    "MON",
     "ONDO"
   ],
-  "EDEN-USDT-SWAP|dump|funding_extreme": 1779047258.042436,
-  "MU-USDT-SWAP|pump|longshort_ratio": 1779047258.042436,
-  "TAO-USDT-SWAP|pump|social_surge": 1779047258.042436,
-  "INJ-USDT-SWAP|pump|social_surge": 1779047258.042436,
   "ZEC-USDT-SWAP|pump|volume_surge": 1779048143.4957824,
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1779048143.4957824,
   "ONDO-USDT-SWAP|pump|social_surge": 1779048143.4957824,
@@ -348,5 +344,9 @@
   "GMT-USDT-SWAP|dump|perp_premium": 1779048875.119242,
   "ZEC-USDT-SWAP|pump|social_surge": 1779048875.119242,
   "OL-USDT-SWAP|dump|perp_premium": 1779049066.2832856,
-  "MON-USDT-SWAP|pump|social_surge": 1779049066.2832856
+  "MON-USDT-SWAP|pump|social_surge": 1779049066.2832856,
+  "CBRS-USDT-SWAP|dump|volume_surge": 1779049977.9225564,
+  "EDEN-USDT-SWAP|dump|funding_extreme": 1779049977.9225564,
+  "CBRS-USDT-SWAP|pump|funding_extreme": 1779049977.9225564,
+  "LINK-USDT-SWAP|pump|social_surge": 1779049977.9225564
 }
