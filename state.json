@@ -328,22 +328,23 @@
     "GITLAWB",
     "VVV",
     "BTC",
-    "ASTEROID",
-    "BNKR",
     "SOL",
-    "BILL",
+    "BNKR",
+    "ASTEROID",
     "TAO",
-    "ONDO",
     "TROLL",
-    "AKT"
+    "AKT",
+    "BILL",
+    "ZEC"
   ],
-  "MU-USDT-SWAP|pump|funding_extreme": 1779046341.1511593,
-  "LINK-USDT-SWAP|pump|social_surge": 1779046341.1511593,
   "EDEN-USDT-SWAP|dump|funding_extreme": 1779047258.042436,
   "MU-USDT-SWAP|pump|longshort_ratio": 1779047258.042436,
   "TAO-USDT-SWAP|pump|social_surge": 1779047258.042436,
   "INJ-USDT-SWAP|pump|social_surge": 1779047258.042436,
   "ZEC-USDT-SWAP|pump|volume_surge": 1779048143.4957824,
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1779048143.4957824,
-  "ONDO-USDT-SWAP|pump|social_surge": 1779048143.4957824
+  "ONDO-USDT-SWAP|pump|social_surge": 1779048143.4957824,
+  "MU-USDT-SWAP|pump|funding_extreme": 1779048875.119242,
+  "GMT-USDT-SWAP|dump|perp_premium": 1779048875.119242,
+  "ZEC-USDT-SWAP|pump|social_surge": 1779048875.119242
 }
