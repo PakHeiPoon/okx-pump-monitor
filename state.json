@@ -323,19 +323,19 @@
   "_trending_last_seen": [
     "SERV",
     "PENGU",
-    "ZEC",
-    "VVV",
     "ASTEROID",
+    "ZEC",
     "HYPE",
     "SOL",
     "ONDO",
-    "BSB",
-    "LAB",
     "BNB",
+    "LAB",
+    "VVV",
+    "BSB",
     "XRP",
     "ETH",
-    "MEGA",
-    "SUI"
+    "BILL",
+    "MEGA"
   ],
   "VIRTUAL-USDT-SWAP|pump|social_surge": 1779001358.8733199,
   "APT-USDT-SWAP|pump|social_surge": 1779001358.8733199,
@@ -349,5 +349,6 @@
   "ONDO-USDT-SWAP|pump|social_surge": 1779002269.762761,
   "BSB-USDT-SWAP|pump|social_surge": 1779002269.762761,
   "XRP-USDT-SWAP|pump|social_surge": 1779002269.762761,
-  "MEGA-USDT-SWAP|pump|social_surge": 1779002269.762761
+  "MEGA-USDT-SWAP|pump|social_surge": 1779002269.762761,
+  "BILL-USDT-SWAP|pump|social_surge": 1779003174.3831685
 }
