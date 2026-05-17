@@ -329,13 +329,13 @@
     "VVV",
     "BTC",
     "SOL",
-    "BNKR",
-    "ASTEROID",
     "TAO",
-    "TROLL",
+    "BNKR",
     "AKT",
     "BILL",
-    "ZEC"
+    "TROLL",
+    "MON",
+    "ONDO"
   ],
   "EDEN-USDT-SWAP|dump|funding_extreme": 1779047258.042436,
   "MU-USDT-SWAP|pump|longshort_ratio": 1779047258.042436,
@@ -346,5 +346,7 @@
   "ONDO-USDT-SWAP|pump|social_surge": 1779048143.4957824,
   "MU-USDT-SWAP|pump|funding_extreme": 1779048875.119242,
   "GMT-USDT-SWAP|dump|perp_premium": 1779048875.119242,
-  "ZEC-USDT-SWAP|pump|social_surge": 1779048875.119242
+  "ZEC-USDT-SWAP|pump|social_surge": 1779048875.119242,
+  "OL-USDT-SWAP|dump|perp_premium": 1779049066.2832856,
+  "MON-USDT-SWAP|pump|social_surge": 1779049066.2832856
 }
