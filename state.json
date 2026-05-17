@@ -323,21 +323,20 @@
   "_trending_last_seen": [
     "BTC",
     "ASTEROID",
-    "BILL",
     "OSMO",
+    "BILL",
     "VVV",
-    "BNKR",
     "HYPE",
     "ONDO",
-    "SOL",
-    "TROLL",
-    "ORCA",
-    "FIL",
-    "LINK",
+    "BNKR",
+    "PENGU",
     "SUI",
-    "PENGU"
+    "FIL",
+    "LUNC",
+    "XRP",
+    "TROLL",
+    "PEPE"
   ],
-  "EIGEN-USDT-SWAP|dump|perp_premium": 1778979772.5659351,
   "OPENAI-USDT-SWAP|pump|longshort_ratio": 1778980668.1209497,
   "FIL-USDT-SWAP|pump|social_surge": 1778980668.1209497,
   "LINK-USDT-SWAP|pump|social_surge": 1778980668.1209497,
@@ -345,5 +344,7 @@
   "XRP-USDT-SWAP|dump|volume_surge": 1778981542.3131676,
   "SPACEX-USDT-SWAP|pump|longshort_ratio": 1778981542.3131676,
   "LLY-USDT-SWAP|dump|longshort_ratio": 1778981542.3131676,
-  "SUI-USDT-SWAP|pump|social_surge": 1778981542.3131676
+  "SUI-USDT-SWAP|pump|social_surge": 1778981542.3131676,
+  "PIPPIN-USDT-SWAP|pump|longshort_ratio": 1778982474.4272394,
+  "PEPE-USDT-SWAP|pump|social_surge": 1778982474.4272394
 }
