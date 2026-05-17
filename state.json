@@ -337,10 +337,6 @@
     "CFG",
     "NOS"
   ],
-  "APE-USDT-SWAP|pump|volume_surge": 1779007666.161656,
-  "RKLB-USDT-SWAP|pump|funding_extreme": 1779007666.161656,
-  "OPENAI-USDT-SWAP|pump|longshort_ratio": 1779007666.161656,
-  "PIPPIN-USDT-SWAP|pump|longshort_ratio": 1779007666.161656,
   "JELLYJELLY-USDT-SWAP|pump|swap_top_gainers": 1779008566.052056,
   "SPACEX-USDT-SWAP|pump|longshort_ratio": 1779008566.052056,
   "RAVE-USDT-SWAP|pump|longshort_ratio": 1779008566.052056,
@@ -352,5 +348,7 @@
   "SOL-USDT-SWAP|pump|social_surge": 1779009449.1366625,
   "ETH-USDT-SWAP|pump|social_surge": 1779009449.1366625,
   "PI-USDT-SWAP|pump|social_surge": 1779009449.1366625,
-  "LAB-USDT-SWAP|pump|social_surge": 1779009449.1366625
+  "LAB-USDT-SWAP|pump|social_surge": 1779009449.1366625,
+  "BILL-USDT-SWAP|pump|swap_top_gainers": 1779009694.5803602,
+  "OPENAI-USDT-SWAP|pump|longshort_ratio": 1779009694.5803602
 }
