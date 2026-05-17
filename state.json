@@ -323,24 +323,26 @@
   "_trending_last_seen": [
     "SERV",
     "ZEC",
-    "SOL",
-    "PENGU",
     "VVV",
     "BTC",
+    "SOL",
+    "PENGU",
+    "RUNE",
     "ONDO",
-    "STORJ",
-    "LINK",
     "BILL",
-    "AKT",
     "ETH",
-    "LTC",
-    "APT",
-    "DIEM"
+    "LAB",
+    "AERO",
+    "STORJ",
+    "HYPE",
+    "AKT"
   ],
-  "RKLB-USDT-SWAP|pump|funding_extreme": 1778997756.5656207,
-  "SPACEX-USDT-SWAP|pump|longshort_ratio": 1778997756.5656207,
-  "OPENAI-USDT-SWAP|pump|longshort_ratio": 1778997756.5656207,
   "APT-USDT-SWAP|pump|social_surge": 1778998670.709708,
   "UP-USDT-SWAP|pump|volume_surge": 1778999571.076958,
-  "LTC-USDT-SWAP|pump|social_surge": 1778999571.076958
+  "LTC-USDT-SWAP|pump|social_surge": 1778999571.076958,
+  "UP-USDT-SWAP|pump|swap_top_gainers": 1779000438.1991656,
+  "OPENAI-USDT-SWAP|pump|longshort_ratio": 1779000438.1991656,
+  "LAB-USDT-SWAP|pump|social_surge": 1779000438.1991656,
+  "AERO-USDT-SWAP|pump|social_surge": 1779000438.1991656,
+  "HYPE-USDT-SWAP|pump|social_surge": 1779000438.1991656
 }
