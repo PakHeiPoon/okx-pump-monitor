@@ -322,20 +322,20 @@
   ],
   "_trending_last_seen": [
     "HYPE",
+    "BTC",
     "VVV",
     "ONDO",
-    "BTC",
-    "PENGU",
     "ASTEROID",
     "BILL",
     "LAB",
-    "ETH",
+    "ZEC",
+    "DOGE",
     "GIGA",
+    "OPG",
     "OSMO",
-    "YFI",
-    "NAORIS",
     "SUI",
-    "CC"
+    "KISHU",
+    "NEAR"
   ],
   "UB-USDT-SWAP|pump|swap_top_gainers": 1778975278.64716,
   "RKLB-USDT-SWAP|pump|funding_extreme": 1778975278.64716,
@@ -350,5 +350,9 @@
   "YFI-USDT-SWAP|pump|social_surge": 1778976192.6094294,
   "WLFI-USDT-SWAP|dump|volume_surge": 1778976637.662235,
   "LLY-USDT-SWAP|dump|longshort_ratio": 1778976637.662235,
-  "CC-USDT-SWAP|pump|social_surge": 1778976637.662235
+  "CC-USDT-SWAP|pump|social_surge": 1778976637.662235,
+  "ZEC-USDT-SWAP|pump|social_surge": 1778977075.0613048,
+  "DOGE-USDT-SWAP|pump|social_surge": 1778977075.0613048,
+  "OPG-USDT-SWAP|pump|social_surge": 1778977075.0613048,
+  "NEAR-USDT-SWAP|pump|social_surge": 1778977075.0613048
 }
