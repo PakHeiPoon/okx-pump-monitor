@@ -323,24 +323,20 @@
   "_trending_last_seen": [
     "BTC",
     "VVV",
-    "ASTEROID",
-    "ONDO",
-    "SOL",
-    "PENGU",
-    "HYPE",
     "BILL",
+    "PENGU",
+    "SOL",
+    "ONDO",
+    "HYPE",
+    "ASTEROID",
     "LUNC",
     "DOGE",
     "NEAR",
     "ORCA",
-    "SUI",
+    "TROLL",
     "ZEC",
-    "XLM"
+    "PEPE"
   ],
-  "ZEC-USDT-SWAP|pump|social_surge": 1778977075.0613048,
-  "DOGE-USDT-SWAP|pump|social_surge": 1778977075.0613048,
-  "OPG-USDT-SWAP|pump|social_surge": 1778977075.0613048,
-  "NEAR-USDT-SWAP|pump|social_surge": 1778977075.0613048,
   "PIPPIN-USDT-SWAP|pump|longshort_ratio": 1778977967.9775686,
   "PENGU-USDT-SWAP|pump|social_surge": 1778977967.9775686,
   "SOL-USDT-SWAP|pump|social_surge": 1778977967.9775686,
@@ -350,5 +346,6 @@
   "ARKM-USDT-SWAP|dump|perp_premium": 1778978870.9743633,
   "SPACEX-USDT-SWAP|pump|longshort_ratio": 1778978870.9743633,
   "LLY-USDT-SWAP|dump|longshort_ratio": 1778978870.9743633,
-  "XLM-USDT-SWAP|pump|social_surge": 1778978870.9743633
+  "XLM-USDT-SWAP|pump|social_surge": 1778978870.9743633,
+  "EIGEN-USDT-SWAP|dump|perp_premium": 1778979772.5659351
 }
