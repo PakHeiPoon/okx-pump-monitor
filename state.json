@@ -323,22 +323,20 @@
   "_trending_last_seen": [
     "HYPE",
     "POD",
-    "VVV",
     "GITLAWB",
+    "VVV",
     "ZEC",
     "PENGU",
     "BTC",
-    "BILL",
     "SERV",
-    "ETH",
+    "BILL",
     "XRP",
-    "TAO",
-    "SUI",
     "BNKR",
-    "LINK"
+    "ETH",
+    "SUI",
+    "MON",
+    "XMR"
   ],
-  "ZEC-USDT-SWAP|pump|social_surge": 1779054469.0644712,
-  "ETH-USDT-SWAP|pump|social_surge": 1779054469.0644712,
   "ROBO-USDT-SWAP|dump|volume_surge": 1779055369.6018322,
   "XRP-USDT-SWAP|dump|volume_surge": 1779055369.6018322,
   "MU-USDT-SWAP|pump|funding_extreme": 1779055369.6018322,
@@ -352,5 +350,9 @@
   "LAB-USDT-SWAP|dump|swap_top_gainers": 1779056268.6880524,
   "UP-USDT-SWAP|dump|volume_surge": 1779056268.6880524,
   "XRP-USDT-SWAP|pump|social_surge": 1779056268.6880524,
-  "SUI-USDT-SWAP|pump|social_surge": 1779056268.6880524
+  "SUI-USDT-SWAP|pump|social_surge": 1779056268.6880524,
+  "LAB-USDT-SWAP|pump|swap_top_gainers": 1779057150.3018796,
+  "KAITO-USDT-SWAP|pump|volume_surge": 1779057150.3018796,
+  "EWY-USDT-SWAP|pump|funding_extreme": 1779057150.3018796,
+  "FLOW-USDT-SWAP|pump|perp_premium": 1779057150.3018796
 }
