@@ -321,29 +321,22 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "SERV",
     "ASTEROID",
-    "BILL",
+    "SERV",
     "VVV",
-    "MEGA",
+    "BILL",
     "HYPE",
-    "PENGU",
+    "MEGA",
+    "ONDO",
     "SUI",
     "TAO",
+    "LINK",
+    "CPOOL",
+    "PENGU",
     "POL",
-    "ONDO",
-    "ICP",
-    "SOL",
-    "OSMO",
-    "BTC"
+    "TROLL",
+    "KISHU"
   ],
-  "RKLB-USDT-SWAP|pump|funding_extreme": 1779004069.429039,
-  "OFC-USDT-SWAP|dump|oi_surge": 1779004069.429039,
-  "OFC-USDT-SWAP|dump|perp_premium": 1779004069.429039,
-  "SUI-USDT-SWAP|pump|social_surge": 1779004069.429039,
-  "NEAR-USDT-SWAP|pump|social_surge": 1779004069.429039,
-  "TAO-USDT-SWAP|pump|social_surge": 1779004069.429039,
-  "AI-USDT-SWAP|pump|social_surge": 1779004069.429039,
   "RAVE-USDT-SWAP|pump|volume_surge": 1779004946.7678087,
   "OPENAI-USDT-SWAP|pump|longshort_ratio": 1779004946.7678087,
   "MEGA-USDT-SWAP|pump|social_surge": 1779004946.7678087,
@@ -351,5 +344,6 @@
   "UB-USDT-SWAP|dump|volume_surge": 1779005853.0432029,
   "RAVE-USDT-SWAP|pump|longshort_ratio": 1779005853.0432029,
   "POL-USDT-SWAP|pump|social_surge": 1779005853.0432029,
-  "BTC-USDT-SWAP|pump|social_surge": 1779005853.0432029
+  "BTC-USDT-SWAP|pump|social_surge": 1779005853.0432029,
+  "LINK-USDT-SWAP|pump|social_surge": 1779006770.4700582
 }
