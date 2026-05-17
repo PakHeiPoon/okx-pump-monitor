@@ -321,25 +321,22 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
+    "ONDO",
     "HYPE",
     "VVV",
-    "ONDO",
     "BTC",
     "PENGU",
     "ASTEROID",
     "LAB",
     "AERO",
+    "SUI",
     "ETH",
     "BILL",
-    "RUNE",
     "OSMO",
-    "LINEA",
-    "NAORIS",
-    "CC"
+    "GIGA",
+    "RUNE",
+    "YFI"
   ],
-  "PIPPIN-USDT-SWAP|pump|longshort_ratio": 1778973474.443666,
-  "SOL-USDT-SWAP|pump|social_surge": 1778973474.443666,
-  "LAB-USDT-SWAP|pump|social_surge": 1778973474.443666,
   "LUNA-USDT-SWAP|pump|oi_surge": 1778974376.274323,
   "LITE-USDT-SWAP|pump|longshort_ratio": 1778974376.274323,
   "AERO-USDT-SWAP|pump|social_surge": 1778974376.274323,
@@ -348,5 +345,10 @@
   "OPENAI-USDT-SWAP|pump|longshort_ratio": 1778975278.64716,
   "BTC-USDT-SWAP|pump|social_surge": 1778975278.64716,
   "BILL-USDT-SWAP|pump|social_surge": 1778975278.64716,
-  "LINEA-USDT-SWAP|pump|social_surge": 1778975278.64716
+  "LINEA-USDT-SWAP|pump|social_surge": 1778975278.64716,
+  "PUMP-USDT-SWAP|pump|volume_surge": 1778976192.6094294,
+  "SPK-USDT-SWAP|dump|perp_premium": 1778976192.6094294,
+  "SPACEX-USDT-SWAP|pump|longshort_ratio": 1778976192.6094294,
+  "SUI-USDT-SWAP|pump|social_surge": 1778976192.6094294,
+  "YFI-USDT-SWAP|pump|social_surge": 1778976192.6094294
 }
