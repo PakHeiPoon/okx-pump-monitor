@@ -322,23 +322,21 @@
   ],
   "_trending_last_seen": [
     "VVV",
-    "ASTEROID",
     "SUI",
     "BILL",
     "SOL",
     "BTC",
-    "LAB",
     "SERV",
-    "ONDO",
-    "ETH",
     "PENGU",
+    "ASTEROID",
+    "LAB",
+    "ONDO",
+    "POD",
     "MEGA",
-    "KAS",
+    "CHIP",
     "PI",
-    "LUNC"
+    "ETH"
   ],
-  "BEAT-USDT-SWAP|dump|volume_surge": 1779025670.8454778,
-  "AIXBT-USDT-SWAP|dump|perp_premium": 1779025670.8454778,
   "WLFI-USDT-SWAP|dump|volume_surge": 1779026586.5505812,
   "EDEN-USDT-SWAP|dump|funding_extreme": 1779026586.5505812,
   "BILL-USDT-SWAP|pump|social_surge": 1779026586.5505812,
@@ -355,5 +353,9 @@
   "OL-USDT-SWAP|dump|perp_premium": 1779027468.2211902,
   "LAB-USDT-SWAP|dump|longshort_ratio": 1779027468.2211902,
   "ONDO-USDT-SWAP|pump|social_surge": 1779027468.2211902,
-  "MEGA-USDT-SWAP|pump|social_surge": 1779027468.2211902
+  "MEGA-USDT-SWAP|pump|social_surge": 1779027468.2211902,
+  "EDEN-USDT-SWAP|pump|oi_surge": 1779028369.6810956,
+  "SHELL-USDT-SWAP|pump|oi_surge": 1779028369.6810956,
+  "SPK-USDT-SWAP|dump|perp_premium": 1779028369.6810956,
+  "CHIP-USDT-SWAP|pump|social_surge": 1779028369.6810956
 }
