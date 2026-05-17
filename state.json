@@ -324,21 +324,19 @@
     "HYPE",
     "GITLAWB",
     "POD",
-    "BTC",
     "ZEC",
-    "PENGU",
+    "BTC",
     "VVV",
     "BILL",
+    "PENGU",
     "SOL",
-    "MON",
     "SUI",
-    "LINK",
+    "MON",
     "ETH",
-    "PI",
-    "SERV"
+    "BNKR",
+    "INJ",
+    "KAS"
   ],
-  "DRAM-USDT-SWAP|pump|longshort_ratio": 1779058077.232935,
-  "LINK-USDT-SWAP|pump|social_surge": 1779058077.232935,
   "PIPPIN-USDT-SWAP|dump|volume_surge": 1779058979.547153,
   "XRP-USDT-SWAP|pump|social_surge": 1779058979.547153,
   "HUMA-USDT-SWAP|dump|perp_premium": 1779059577.959528,
@@ -356,5 +354,9 @@
   "PIPPIN-USDT-SWAP|pump|oi_surge": 1779059872.6263628,
   "XAG-USDT-SWAP|pump|longshort_ratio": 1779059872.6263628,
   "ETH-USDT-SWAP|pump|social_surge": 1779059872.6263628,
-  "PI-USDT-SWAP|pump|social_surge": 1779059872.6263628
+  "PI-USDT-SWAP|pump|social_surge": 1779059872.6263628,
+  "STRK-USDT-SWAP|dump|volume_surge": 1779060746.5738423,
+  "ONDO-USDT-SWAP|dump|volume_surge": 1779060746.5738423,
+  "XTZ-USDT-SWAP|dump|perp_premium": 1779060746.5738423,
+  "BZ-USDT-SWAP|dump|longshort_ratio": 1779060746.5738423
 }
