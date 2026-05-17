@@ -346,5 +346,8 @@
   "ATOM-USDT-SWAP|pump|social_surge": 1779032862.354145,
   "SUI-USDT-SWAP|pump|social_surge": 1779032862.354145,
   "ETH-USDT-SWAP|pump|social_surge": 1779033532.9962509,
-  "LINK-USDT-SWAP|pump|social_surge": 1779033532.9962509
+  "LINK-USDT-SWAP|pump|social_surge": 1779033532.9962509,
+  "UB-USDT-SWAP|pump|volume_surge": 1779033781.2264445,
+  "PROS-USDT-SWAP|pump|volume_surge": 1779033781.2264445,
+  "DRAM-USDT-SWAP|pump|longshort_ratio": 1779033781.2264445
 }
