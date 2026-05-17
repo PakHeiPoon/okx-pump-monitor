@@ -324,22 +324,19 @@
     "SERV",
     "ASTEROID",
     "ZEC",
-    "HYPE",
-    "PENGU",
     "VVV",
+    "HYPE",
     "ETH",
-    "BTC",
+    "TAO",
     "SUI",
-    "ONDO",
+    "SUPRA",
+    "PENGU",
+    "BTC",
     "BILL",
     "SOL",
-    "SUPRA",
-    "TAO",
-    "XRP"
+    "MEGA",
+    "TON"
   ],
-  "BSB-USDT-SWAP|pump|swap_top_gainers": 1779014871.213351,
-  "TAO-USDT-SWAP|pump|social_surge": 1779014871.213351,
-  "MON-USDT-SWAP|pump|social_surge": 1779014871.213351,
   "BREV-USDT-SWAP|dump|perp_premium": 1779015782.1113458,
   "OPENAI-USDT-SWAP|pump|longshort_ratio": 1779015782.1113458,
   "ETH-USDT-SWAP|pump|social_surge": 1779015782.1113458,
@@ -347,5 +344,7 @@
   "HYPE-USDT-SWAP|pump|social_surge": 1779016635.9534962,
   "SUI-USDT-SWAP|pump|social_surge": 1779016635.9534962,
   "SOL-USDT-SWAP|pump|social_surge": 1779016635.9534962,
-  "XRP-USDT-SWAP|pump|social_surge": 1779016635.9534962
+  "XRP-USDT-SWAP|pump|social_surge": 1779016635.9534962,
+  "MEGA-USDT-SWAP|pump|social_surge": 1779017542.1269557,
+  "TON-USDT-SWAP|pump|social_surge": 1779017542.1269557
 }
