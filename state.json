@@ -323,19 +323,19 @@
   "_trending_last_seen": [
     "POD",
     "HYPE",
-    "VVV",
-    "BILL",
     "LINK",
-    "PENGU",
+    "VVV",
     "GITLAWB",
+    "BILL",
+    "PENGU",
     "SERV",
     "TAO",
-    "SIREN",
-    "BTC",
-    "TROLL",
     "SUI",
-    "VIRTUAL",
-    "ICP"
+    "SIREN",
+    "TROLL",
+    "ICP",
+    "FIL",
+    "BTC"
   ],
   "MU-USDT-SWAP|pump|funding_extreme": 1779050872.642663,
   "FLOW-USDT-SWAP|dump|perp_premium": 1779050872.642663,
@@ -346,5 +346,6 @@
   "BEAT-USDT-SWAP|pump|volume_surge": 1779051782.256656,
   "CHZ-USDT-SWAP|pump|volume_surge": 1779051782.256656,
   "SUI-USDT-SWAP|pump|social_surge": 1779051782.256656,
-  "VIRTUAL-USDT-SWAP|pump|social_surge": 1779051782.256656
+  "VIRTUAL-USDT-SWAP|pump|social_surge": 1779051782.256656,
+  "FIL-USDT-SWAP|pump|social_surge": 1779052640.509853
 }
