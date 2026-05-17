@@ -329,20 +329,21 @@
     "ZEC",
     "BTC",
     "BILL",
-    "SERV",
-    "BNKR",
     "SUI",
-    "LINK",
-    "XRP",
+    "SOL",
     "KAS",
-    "ASTEROID"
+    "LINK",
+    "MON",
+    "SERV",
+    "INJ"
   ],
-  "LAB-USDT-SWAP|pump|swap_top_gainers": 1779057150.3018796,
-  "KAITO-USDT-SWAP|pump|volume_surge": 1779057150.3018796,
-  "EWY-USDT-SWAP|pump|funding_extreme": 1779057150.3018796,
-  "FLOW-USDT-SWAP|pump|perp_premium": 1779057150.3018796,
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1779058077.232935,
   "LINK-USDT-SWAP|pump|social_surge": 1779058077.232935,
   "PIPPIN-USDT-SWAP|dump|volume_surge": 1779058979.547153,
-  "XRP-USDT-SWAP|pump|social_surge": 1779058979.547153
+  "XRP-USDT-SWAP|pump|social_surge": 1779058979.547153,
+  "HUMA-USDT-SWAP|dump|perp_premium": 1779059577.959528,
+  "ME-USDT-SWAP|dump|perp_premium": 1779059577.959528,
+  "SOL-USDT-SWAP|pump|social_surge": 1779059577.959528,
+  "MON-USDT-SWAP|pump|social_surge": 1779059577.959528,
+  "INJ-USDT-SWAP|pump|social_surge": 1779059577.959528
 }
