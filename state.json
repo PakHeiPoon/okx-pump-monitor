@@ -322,20 +322,20 @@
   ],
   "_trending_last_seen": [
     "VVV",
-    "PENGU",
     "ASTEROID",
-    "KAS",
+    "PENGU",
     "SUI",
-    "PI",
+    "KAS",
     "LUNC",
     "ETH",
     "OSMO",
     "BTC",
-    "ONDO",
     "LAB",
+    "PI",
+    "SOL",
+    "SERV",
     "TON",
-    "HYPE",
-    "SOL"
+    "POD"
   ],
   "OFC-USDT-SWAP|pump|volume_surge": 1779023859.517629,
   "ARB-USDT-SWAP|dump|volume_surge": 1779023859.517629,
@@ -348,5 +348,7 @@
   "ETH-USDT-SWAP|pump|social_surge": 1779024783.215747,
   "ZBT-USDT-SWAP|pump|volume_surge": 1779025290.213922,
   "RAVE-USDT-SWAP|pump|longshort_ratio": 1779025290.213922,
-  "BTC-USDT-SWAP|pump|social_surge": 1779025290.213922
+  "BTC-USDT-SWAP|pump|social_surge": 1779025290.213922,
+  "BEAT-USDT-SWAP|dump|volume_surge": 1779025670.8454778,
+  "AIXBT-USDT-SWAP|dump|perp_premium": 1779025670.8454778
 }
