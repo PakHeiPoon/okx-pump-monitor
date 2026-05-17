@@ -322,27 +322,25 @@
   ],
   "_trending_last_seen": [
     "SERV",
-    "PENGU",
     "ZEC",
-    "VVV",
     "SOL",
+    "PENGU",
+    "VVV",
     "BTC",
-    "PI",
-    "LINK",
     "ONDO",
+    "STORJ",
+    "LINK",
     "BILL",
     "AKT",
-    "DIEM",
     "ETH",
+    "LTC",
     "APT",
-    "KISHU"
+    "DIEM"
   ],
-  "CC-USDT-SWAP|pump|volume_surge": 1778996837.959076,
-  "AIXBT-USDT-SWAP|dump|volume_surge": 1778996837.959076,
-  "ZORA-USDT-SWAP|dump|perp_premium": 1778996837.959076,
-  "TAO-USDT-SWAP|pump|social_surge": 1778996837.959076,
   "RKLB-USDT-SWAP|pump|funding_extreme": 1778997756.5656207,
   "SPACEX-USDT-SWAP|pump|longshort_ratio": 1778997756.5656207,
   "OPENAI-USDT-SWAP|pump|longshort_ratio": 1778997756.5656207,
-  "APT-USDT-SWAP|pump|social_surge": 1778998670.709708
+  "APT-USDT-SWAP|pump|social_surge": 1778998670.709708,
+  "UP-USDT-SWAP|pump|volume_surge": 1778999571.076958,
+  "LTC-USDT-SWAP|pump|social_surge": 1778999571.076958
 }
