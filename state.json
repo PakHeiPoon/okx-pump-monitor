@@ -322,27 +322,25 @@
   ],
   "_trending_last_seen": [
     "POD",
-    "PENGU",
     "HYPE",
     "GITLAWB",
+    "PENGU",
     "VVV",
     "LINK",
-    "BILL",
-    "SERV",
+    "TAO",
     "SUI",
     "BTC",
-    "ONDO",
+    "TROLL",
+    "SERV",
+    "BILL",
+    "ZEC",
     "SOL",
-    "TAO",
-    "TON",
-    "FIL"
+    "ETH"
   ],
-  "BEAT-USDT-SWAP|pump|volume_surge": 1779051782.256656,
-  "CHZ-USDT-SWAP|pump|volume_surge": 1779051782.256656,
-  "SUI-USDT-SWAP|pump|social_surge": 1779051782.256656,
-  "VIRTUAL-USDT-SWAP|pump|social_surge": 1779051782.256656,
   "FIL-USDT-SWAP|pump|social_surge": 1779052640.509853,
   "ONDO-USDT-SWAP|pump|social_surge": 1779053541.8973396,
   "SOL-USDT-SWAP|pump|social_surge": 1779053541.8973396,
-  "TON-USDT-SWAP|pump|social_surge": 1779053541.8973396
+  "TON-USDT-SWAP|pump|social_surge": 1779053541.8973396,
+  "ZEC-USDT-SWAP|pump|social_surge": 1779054469.0644712,
+  "ETH-USDT-SWAP|pump|social_surge": 1779054469.0644712
 }
