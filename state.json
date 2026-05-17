@@ -345,5 +345,8 @@
   "GMT-USDT-SWAP|dump|perp_premium": 1779036478.9907265,
   "BILL-USDT-SWAP|pump|social_surge": 1779036478.9907265,
   "PROS-USDT-SWAP|pump|volume_surge": 1779037172.3843253,
-  "EDEN-USDT-SWAP|dump|funding_extreme": 1779037172.3843253
+  "EDEN-USDT-SWAP|dump|funding_extreme": 1779037172.3843253,
+  "CBRS-USDT-SWAP|pump|funding_extreme": 1779037391.8999252,
+  "MU-USDT-SWAP|pump|funding_extreme": 1779037391.8999252,
+  "DRAM-USDT-SWAP|pump|longshort_ratio": 1779037391.8999252
 }
