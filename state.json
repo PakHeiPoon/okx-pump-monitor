@@ -321,21 +321,21 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "PENGU",
     "VVV",
     "ASTEROID",
+    "PI",
+    "ONDO",
+    "PENGU",
     "HYPE",
+    "LAB",
+    "SERV",
+    "KAS",
     "BTC",
     "SOL",
-    "PI",
+    "TAO",
     "TON",
-    "ONDO",
-    "LAB",
-    "ADA",
-    "SERV",
-    "ETH",
-    "GITLAWB",
-    "SPACE"
+    "MEGA",
+    "XMR"
   ],
   "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779020266.2123628,
   "NEAR-USDT-SWAP|dump|volume_surge": 1779020266.2123628,
@@ -345,5 +345,9 @@
   "EDEN-USDT-SWAP|dump|funding_extreme": 1779021173.6476111,
   "EDEN-USDT-SWAP|pump|oi_surge": 1779021173.6476111,
   "SPACEX-USDT-SWAP|pump|longshort_ratio": 1779021173.6476111,
-  "SPACE-USDT-SWAP|pump|social_surge": 1779021173.6476111
+  "SPACE-USDT-SWAP|pump|social_surge": 1779021173.6476111,
+  "BSB-USDT-SWAP|pump|swap_top_gainers": 1779022071.5690153,
+  "ENA-USDT-SWAP|pump|volume_surge": 1779022071.5690153,
+  "TAO-USDT-SWAP|pump|social_surge": 1779022071.5690153,
+  "MEGA-USDT-SWAP|pump|social_surge": 1779022071.5690153
 }
