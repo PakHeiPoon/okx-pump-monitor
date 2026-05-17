@@ -321,25 +321,22 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "VVV",
-    "HYPE",
-    "BTC",
-    "SERV",
-    "PENGU",
-    "ETH",
     "ASTEROID",
-    "SOL",
-    "LAB",
+    "SERV",
+    "BTC",
+    "PENGU",
+    "HYPE",
     "ZEC",
+    "VVV",
+    "ETH",
+    "SOL",
+    "BONK",
+    "SUI",
     "MEGA",
-    "AVAX",
-    "GITLAWB",
-    "LINK",
-    "BILL"
+    "BILL",
+    "AERO",
+    "AKT"
   ],
-  "RAVE-USDT-SWAP|pump|longshort_ratio": 1779035574.4236956,
-  "BTC-USDT-SWAP|pump|social_surge": 1779035574.4236956,
-  "AVAX-USDT-SWAP|pump|social_surge": 1779035574.4236956,
   "UB-USDT-SWAP|pump|swap_top_gainers": 1779036478.9907265,
   "CHIP-USDT-SWAP|dump|perp_premium": 1779036478.9907265,
   "GMT-USDT-SWAP|dump|perp_premium": 1779036478.9907265,
@@ -348,5 +345,9 @@
   "EDEN-USDT-SWAP|dump|funding_extreme": 1779037172.3843253,
   "CBRS-USDT-SWAP|pump|funding_extreme": 1779037391.8999252,
   "MU-USDT-SWAP|pump|funding_extreme": 1779037391.8999252,
-  "DRAM-USDT-SWAP|pump|longshort_ratio": 1779037391.8999252
+  "DRAM-USDT-SWAP|pump|longshort_ratio": 1779037391.8999252,
+  "SSV-USDT-SWAP|dump|perp_premium": 1779038263.6937869,
+  "BONK-USDT-SWAP|pump|social_surge": 1779038263.6937869,
+  "SUI-USDT-SWAP|pump|social_surge": 1779038263.6937869,
+  "AERO-USDT-SWAP|pump|social_surge": 1779038263.6937869
 }
