@@ -337,10 +337,6 @@
     "AKT",
     "SIREN"
   ],
-  "UB-USDT-SWAP|pump|swap_top_gainers": 1778989671.5427563,
-  "AI-USDT-SWAP|pump|swap_top_gainers": 1778989671.5427563,
-  "SPACEX-USDT-SWAP|pump|longshort_ratio": 1778989671.5427563,
-  "LLY-USDT-SWAP|dump|longshort_ratio": 1778989671.5427563,
   "H-USDT-SWAP|pump|volume_surge": 1778990564.4578145,
   "PI-USDT-SWAP|pump|social_surge": 1778990564.4578145,
   "TAO-USDT-SWAP|pump|social_surge": 1778990564.4578145,
@@ -352,5 +348,7 @@
   "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778991468.1487415,
   "AERO-USDT-SWAP|pump|social_surge": 1778991468.1487415,
   "LAB-USDT-SWAP|pump|social_surge": 1778991468.1487415,
-  "SUI-USDT-SWAP|pump|social_surge": 1778991468.1487415
+  "SUI-USDT-SWAP|pump|social_surge": 1778991468.1487415,
+  "SPACEX-USDT-SWAP|pump|longshort_ratio": 1778991825.6337936,
+  "LLY-USDT-SWAP|dump|longshort_ratio": 1778991825.6337936
 }
