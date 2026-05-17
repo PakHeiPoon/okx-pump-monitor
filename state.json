@@ -321,24 +321,22 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "HYPE",
     "POD",
+    "HYPE",
     "VVV",
     "PENGU",
-    "SERV",
+    "LINK",
     "GITLAWB",
     "BILL",
-    "LINK",
-    "AKT",
-    "BTC",
-    "BNKR",
+    "SERV",
     "TAO",
-    "ONDO",
+    "BTC",
+    "SUI",
+    "MEGA",
     "ICP",
-    "MEGA"
+    "VIRTUAL",
+    "AKT"
   ],
-  "OL-USDT-SWAP|dump|perp_premium": 1779049066.2832856,
-  "MON-USDT-SWAP|pump|social_surge": 1779049066.2832856,
   "CBRS-USDT-SWAP|dump|volume_surge": 1779049977.9225564,
   "EDEN-USDT-SWAP|dump|funding_extreme": 1779049977.9225564,
   "CBRS-USDT-SWAP|pump|funding_extreme": 1779049977.9225564,
@@ -348,5 +346,9 @@
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1779050872.642663,
   "MU-USDT-SWAP|pump|longshort_ratio": 1779050872.642663,
   "ICP-USDT-SWAP|pump|social_surge": 1779050872.642663,
-  "MEGA-USDT-SWAP|pump|social_surge": 1779050872.642663
+  "MEGA-USDT-SWAP|pump|social_surge": 1779050872.642663,
+  "BEAT-USDT-SWAP|pump|volume_surge": 1779051782.256656,
+  "CHZ-USDT-SWAP|pump|volume_surge": 1779051782.256656,
+  "SUI-USDT-SWAP|pump|social_surge": 1779051782.256656,
+  "VIRTUAL-USDT-SWAP|pump|social_surge": 1779051782.256656
 }
