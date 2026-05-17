@@ -321,25 +321,22 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "PENGU",
     "VVV",
-    "ASTEROID",
-    "BILL",
-    "BTC",
     "OSMO",
+    "PENGU",
+    "BILL",
     "AERO",
+    "ASTEROID",
+    "ONDO",
     "HYPE",
+    "BTC",
     "BNKR",
     "ZEC",
     "TAO",
-    "ONDO",
+    "SUI",
     "VIRTUAL",
-    "AKT",
-    "XRP"
+    "AKT"
   ],
-  "OPENAI-USDT-SWAP|pump|longshort_ratio": 1778986056.3716464,
-  "AERO-USDT-SWAP|pump|social_surge": 1778986056.3716464,
-  "ZEC-USDT-SWAP|pump|social_surge": 1778986056.3716464,
   "BSB-USDT-SWAP|pump|swap_top_gainers": 1778986967.0593443,
   "SPACEX-USDT-SWAP|pump|longshort_ratio": 1778986967.0593443,
   "PENDLE-USDT-SWAP|pump|swap_top_gainers": 1778987840.925508,
@@ -347,5 +344,13 @@
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1778987840.925508,
   "TAO-USDT-SWAP|pump|social_surge": 1778987840.925508,
   "VIRTUAL-USDT-SWAP|pump|social_surge": 1778987840.925508,
-  "XRP-USDT-SWAP|pump|social_surge": 1778987840.925508
+  "XRP-USDT-SWAP|pump|social_surge": 1778987840.925508,
+  "LAB-USDT-SWAP|pump|swap_top_gainers": 1778988773.7751703,
+  "HOME-USDT-SWAP|pump|swap_top_gainers": 1778988773.7751703,
+  "PENGU-USDT-SWAP|dump|volume_surge": 1778988773.7751703,
+  "RKLB-USDT-SWAP|pump|funding_extreme": 1778988773.7751703,
+  "OPENAI-USDT-SWAP|pump|longshort_ratio": 1778988773.7751703,
+  "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778988773.7751703,
+  "LITE-USDT-SWAP|pump|longshort_ratio": 1778988773.7751703,
+  "SUI-USDT-SWAP|pump|social_surge": 1778988773.7751703
 }
