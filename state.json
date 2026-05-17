@@ -322,25 +322,21 @@
   ],
   "_trending_last_seen": [
     "VVV",
-    "PENGU",
     "SERV",
-    "AERO",
-    "BTC",
-    "ASTEROID",
-    "LAB",
-    "HYPE",
     "SOL",
+    "PENGU",
     "MEGA",
-    "ATOM",
+    "LAB",
+    "BTC",
     "ZEC",
     "SUI",
-    "BILL",
-    "MON"
+    "RON",
+    "ASTEROID",
+    "ETH",
+    "HYPE",
+    "AERO",
+    "LINK"
   ],
-  "SHELL-USDT-SWAP|dump|funding_extreme": 1779031073.0042324,
-  "DRAM-USDT-SWAP|pump|longshort_ratio": 1779031073.0042324,
-  "AAVE-USDT-SWAP|pump|social_surge": 1779031073.0042324,
-  "TAO-USDT-SWAP|pump|social_surge": 1779031073.0042324,
   "EDEN-USDT-SWAP|dump|funding_extreme": 1779031979.183496,
   "SOL-USDT-SWAP|pump|social_surge": 1779031979.183496,
   "ZEC-USDT-SWAP|pump|social_surge": 1779031979.183496,
@@ -348,5 +344,7 @@
   "HYPE-USDT-SWAP|pump|social_surge": 1779032862.354145,
   "MEGA-USDT-SWAP|pump|social_surge": 1779032862.354145,
   "ATOM-USDT-SWAP|pump|social_surge": 1779032862.354145,
-  "SUI-USDT-SWAP|pump|social_surge": 1779032862.354145
+  "SUI-USDT-SWAP|pump|social_surge": 1779032862.354145,
+  "ETH-USDT-SWAP|pump|social_surge": 1779033532.9962509,
+  "LINK-USDT-SWAP|pump|social_surge": 1779033532.9962509
 }
