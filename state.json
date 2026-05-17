@@ -321,24 +321,22 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "VVV",
     "OSMO",
+    "VVV",
     "PENGU",
     "BILL",
-    "AERO",
-    "ASTEROID",
     "ONDO",
-    "HYPE",
     "BTC",
-    "BNKR",
+    "AERO",
+    "AKT",
     "ZEC",
-    "TAO",
-    "SUI",
-    "VIRTUAL",
-    "AKT"
+    "ASTEROID",
+    "BNKR",
+    "KAS",
+    "LUNC",
+    "SERV",
+    "XRP"
   ],
-  "BSB-USDT-SWAP|pump|swap_top_gainers": 1778986967.0593443,
-  "SPACEX-USDT-SWAP|pump|longshort_ratio": 1778986967.0593443,
   "PENDLE-USDT-SWAP|pump|swap_top_gainers": 1778987840.925508,
   "AIXBT-USDT-SWAP|pump|oi_surge": 1778987840.925508,
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1778987840.925508,
@@ -352,5 +350,9 @@
   "OPENAI-USDT-SWAP|pump|longshort_ratio": 1778988773.7751703,
   "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1778988773.7751703,
   "LITE-USDT-SWAP|pump|longshort_ratio": 1778988773.7751703,
-  "SUI-USDT-SWAP|pump|social_surge": 1778988773.7751703
+  "SUI-USDT-SWAP|pump|social_surge": 1778988773.7751703,
+  "UB-USDT-SWAP|pump|swap_top_gainers": 1778989671.5427563,
+  "AI-USDT-SWAP|pump|swap_top_gainers": 1778989671.5427563,
+  "SPACEX-USDT-SWAP|pump|longshort_ratio": 1778989671.5427563,
+  "LLY-USDT-SWAP|dump|longshort_ratio": 1778989671.5427563
 }
