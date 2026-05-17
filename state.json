@@ -324,18 +324,18 @@
     "ASTEROID",
     "SERV",
     "PENGU",
-    "HYPE",
-    "VVV",
     "BTC",
-    "SOL",
+    "VVV",
+    "HYPE",
     "ONDO",
+    "SOL",
     "AI",
-    "MEGA",
     "ETH",
-    "PI",
     "LAB",
+    "VIRTUAL",
     "CFG",
-    "NOS"
+    "XRP",
+    "MEGA"
   ],
   "JELLYJELLY-USDT-SWAP|pump|swap_top_gainers": 1779008566.052056,
   "SPACEX-USDT-SWAP|pump|longshort_ratio": 1779008566.052056,
@@ -350,5 +350,7 @@
   "PI-USDT-SWAP|pump|social_surge": 1779009449.1366625,
   "LAB-USDT-SWAP|pump|social_surge": 1779009449.1366625,
   "BILL-USDT-SWAP|pump|swap_top_gainers": 1779009694.5803602,
-  "OPENAI-USDT-SWAP|pump|longshort_ratio": 1779009694.5803602
+  "OPENAI-USDT-SWAP|pump|longshort_ratio": 1779009694.5803602,
+  "PIPPIN-USDT-SWAP|pump|longshort_ratio": 1779010377.0461004,
+  "VIRTUAL-USDT-SWAP|pump|social_surge": 1779010377.0461004
 }
