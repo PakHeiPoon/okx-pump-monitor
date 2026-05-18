@@ -324,25 +324,20 @@
   "_trending_last_seen": [
     "ZANO",
     "HYPE",
-    "PENGU",
-    "BTC",
     "VVV",
-    "MEGA",
     "SOL",
-    "TAO",
+    "BTC",
+    "MEGA",
+    "PENGU",
     "MON",
-    "SUI",
-    "AAVE",
+    "PI",
     "AERO",
+    "TAO",
+    "SUI",
     "ZEC",
-    "BNKR",
-    "LIT"
+    "LFI",
+    "AAVE"
   ],
-  "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779124653.2030494,
-  "APR-USDT-SWAP|pump|swap_top_gainers": 1779124653.2030494,
-  "SPACEX-USDT-SWAP|pump|longshort_ratio": 1779124653.2030494,
-  "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1779124653.2030494,
-  "MON-USDT-SWAP|pump|social_surge": 1779124653.2030494,
   "AI-USDT-SWAP|pump|swap_top_gainers": 1779125592.1341252,
   "SPACE-USDT-SWAP|pump|volume_surge": 1779125592.1341252,
   "ONDO-USDT-SWAP|pump|volume_surge": 1779125592.1341252,
@@ -351,5 +346,7 @@
   "LIT-USDT-SWAP|pump|social_surge": 1779125592.1341252,
   "SUI-USDT-SWAP|pump|social_surge": 1779125592.1341252,
   "AAVE-USDT-SWAP|pump|social_surge": 1779126459.0142465,
-  "AERO-USDT-SWAP|pump|social_surge": 1779126459.0142465
+  "AERO-USDT-SWAP|pump|social_surge": 1779126459.0142465,
+  "AI-USDT-SWAP|dump|funding_extreme": 1779127318.7207205,
+  "PI-USDT-SWAP|pump|social_surge": 1779127318.7207205
 }
