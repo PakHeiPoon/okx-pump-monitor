@@ -321,25 +321,22 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "AI",
     "BTC",
+    "AI",
     "HYPE",
-    "POD",
     "VVV",
+    "POD",
     "ETH",
-    "BILL",
-    "XRP",
-    "SERV",
     "ZEC",
-    "LINK",
     "SUI",
+    "BILL",
     "SOL",
-    "ONDO",
-    "ASTEROID"
+    "LINK",
+    "ADA",
+    "WEMIX",
+    "SERV",
+    "LAB"
   ],
-  "WLFI-USDT-SWAP|dump|volume_surge": 1779075142.607548,
-  "GMT-USDT-SWAP|dump|perp_premium": 1779075142.607548,
-  "ETH-USDT-SWAP|pump|social_surge": 1779075142.607548,
   "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779076067.2316043,
   "OPENAI-USDT-SWAP|pump|longshort_ratio": 1779076067.2316043,
   "BILL-USDT-SWAP|pump|social_surge": 1779076067.2316043,
@@ -349,5 +346,8 @@
   "AI-USDT-SWAP|dump|funding_extreme": 1779076974.880157,
   "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1779076974.880157,
   "MU-USDT-SWAP|pump|longshort_ratio": 1779076974.880157,
-  "SOL-USDT-SWAP|pump|social_surge": 1779076974.880157
+  "SOL-USDT-SWAP|pump|social_surge": 1779076974.880157,
+  "ARB-USDT-SWAP|pump|volume_surge": 1779077868.5581658,
+  "ADA-USDT-SWAP|pump|social_surge": 1779077868.5581658,
+  "LAB-USDT-SWAP|pump|social_surge": 1779077868.5581658
 }
