@@ -111,6 +111,7 @@
     "GAS-USDT-SWAP",
     "GIGGLE-USDT-SWAP",
     "GLM-USDT-SWAP",
+    "GLW-USDT-SWAP",
     "GME-USDT-SWAP",
     "GMT-USDT-SWAP",
     "GMX-USDT-SWAP",
@@ -321,26 +322,22 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "TRAC",
     "HYPE",
+    "TRAC",
     "BILL",
     "VVV",
     "LINK",
+    "SOL",
     "ETH",
     "TAO",
-    "SOL",
+    "BTC",
     "ONDO",
     "ZEC",
-    "DOGE",
-    "POD",
-    "LAB",
     "OCT",
-    "BTC"
+    "GITLAWB",
+    "AVAX",
+    "POD"
   ],
-  "DRAM-USDT-SWAP|pump|longshort_ratio": 1779092268.4093015,
-  "TSM-USDT-SWAP|pump|longshort_ratio": 1779092268.4093015,
-  "LINK-USDT-SWAP|pump|social_surge": 1779092268.4093015,
-  "INJ-USDT-SWAP|pump|social_surge": 1779092268.4093015,
   "UP-USDT-SWAP|pump|swap_top_gainers": 1779093144.1424057,
   "MU-USDT-SWAP|pump|longshort_ratio": 1779093144.1424057,
   "OPENAI-USDT-SWAP|pump|longshort_ratio": 1779093144.1424057,
@@ -351,5 +348,10 @@
   "SPACEX-USDT-SWAP|pump|longshort_ratio": 1779093551.2297761,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779093551.2297761,
   "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1779094070.7805285,
-  "LAB-USDT-SWAP|pump|social_surge": 1779094070.7805285
+  "LAB-USDT-SWAP|pump|social_surge": 1779094070.7805285,
+  "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779094984.2321355,
+  "GLW-USDT-SWAP|pump|new_listings": 1779094984.2321355,
+  "DRAM-USDT-SWAP|pump|longshort_ratio": 1779094984.2321355,
+  "TSM-USDT-SWAP|pump|longshort_ratio": 1779094984.2321355,
+  "AVAX-USDT-SWAP|pump|social_surge": 1779094984.2321355
 }
