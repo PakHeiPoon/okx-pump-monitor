@@ -324,23 +324,20 @@
   "_trending_last_seen": [
     "ZANO",
     "HYPE",
-    "BTC",
-    "MEGA",
-    "TAO",
     "PENGU",
-    "MON",
-    "ZEC",
-    "LIT",
-    "BNKR",
+    "BTC",
+    "VVV",
+    "MEGA",
     "SOL",
-    "BILL",
+    "TAO",
+    "MON",
     "SUI",
-    "TON",
-    "POD"
+    "AAVE",
+    "AERO",
+    "ZEC",
+    "BNKR",
+    "LIT"
   ],
-  "LAB-USDT-SWAP|dump|longshort_ratio": 1779123802.0726438,
-  "TAO-USDT-SWAP|pump|social_surge": 1779123802.0726438,
-  "ZEC-USDT-SWAP|pump|social_surge": 1779123802.0726438,
   "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779124653.2030494,
   "APR-USDT-SWAP|pump|swap_top_gainers": 1779124653.2030494,
   "SPACEX-USDT-SWAP|pump|longshort_ratio": 1779124653.2030494,
@@ -352,5 +349,7 @@
   "KITE-USDT-SWAP|dump|longshort_ratio": 1779125592.1341252,
   "XAG-USDT-SWAP|pump|longshort_ratio": 1779125592.1341252,
   "LIT-USDT-SWAP|pump|social_surge": 1779125592.1341252,
-  "SUI-USDT-SWAP|pump|social_surge": 1779125592.1341252
+  "SUI-USDT-SWAP|pump|social_surge": 1779125592.1341252,
+  "AAVE-USDT-SWAP|pump|social_surge": 1779126459.0142465,
+  "AERO-USDT-SWAP|pump|social_surge": 1779126459.0142465
 }
