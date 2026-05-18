@@ -322,24 +322,22 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "HYPE",
     "TRAC",
+    "HYPE",
     "BILL",
     "VVV",
-    "SOL",
-    "ZEC",
-    "ETH",
-    "LINK",
-    "PI",
-    "MEGA",
-    "POD",
     "BTC",
+    "ETH",
+    "SOL",
+    "SERV",
+    "PI",
+    "MON",
+    "ZEC",
+    "POD",
+    "LAB",
     "AVAX",
-    "ONDO",
-    "LAB"
+    "OCT"
   ],
-  "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1779094070.7805285,
-  "LAB-USDT-SWAP|pump|social_surge": 1779094070.7805285,
   "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779094984.2321355,
   "GLW-USDT-SWAP|pump|new_listings": 1779094984.2321355,
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1779094984.2321355,
@@ -347,5 +345,10 @@
   "AVAX-USDT-SWAP|pump|social_surge": 1779094984.2321355,
   "EDEN-USDT-SWAP|dump|funding_extreme": 1779095838.2070727,
   "PI-USDT-SWAP|pump|social_surge": 1779095838.2070727,
-  "MEGA-USDT-SWAP|pump|social_surge": 1779095838.2070727
+  "MEGA-USDT-SWAP|pump|social_surge": 1779095838.2070727,
+  "UB-USDT-SWAP|pump|swap_top_gainers": 1779096773.7804933,
+  "AIXBT-USDT-SWAP|dump|perp_premium": 1779096773.7804933,
+  "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1779096773.7804933,
+  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779096773.7804933,
+  "MON-USDT-SWAP|pump|social_surge": 1779096773.7804933
 }
