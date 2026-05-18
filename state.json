@@ -329,14 +329,14 @@
     "ZEC",
     "TAO",
     "MEGA",
+    "BTC",
     "PI",
     "SOL",
-    "SUI",
-    "ONDO",
+    "POD",
     "AAVE",
-    "BTC",
-    "XAUT",
-    "POD"
+    "SUI",
+    "XRP",
+    "ONDO"
   ],
   "SPACE-USDT-SWAP|pump|swap_top_gainers": 1779104860.7319102,
   "DRAM-USDT-SWAP|pump|funding_extreme": 1779104860.7319102,
@@ -357,5 +357,8 @@
   "MU-USDT-SWAP|pump|funding_extreme": 1779106110.462156,
   "TSM-USDT-SWAP|pump|longshort_ratio": 1779106110.462156,
   "AAVE-USDT-SWAP|pump|social_surge": 1779106110.462156,
-  "BTC-USDT-SWAP|pump|social_surge": 1779106110.462156
+  "BTC-USDT-SWAP|pump|social_surge": 1779106110.462156,
+  "BILL-USDT-SWAP|pump|swap_top_gainers": 1779106640.8021576,
+  "MOODENG-USDT-SWAP|dump|volume_surge": 1779106640.8021576,
+  "XRP-USDT-SWAP|pump|social_surge": 1779106640.8021576
 }
