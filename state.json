@@ -330,18 +330,14 @@
     "VVV",
     "LINK",
     "LIT",
-    "VIRTUAL",
     "AERO",
+    "KITE",
     "AT",
-    "PROM",
     "BTC",
+    "PROM",
     "SOL",
     "LUNC"
   ],
-  "RKLB-USDT-SWAP|pump|funding_extreme": 1779144485.1292822,
-  "ARM-USDT-SWAP|pump|longshort_ratio": 1779144485.1292822,
-  "NFLX-USDT-SWAP|pump|longshort_ratio": 1779144485.1292822,
-  "AAVE-USDT-SWAP|pump|social_surge": 1779144485.1292822,
   "AT-USDT-SWAP|pump|swap_top_gainers": 1779145362.74073,
   "CBRS-USDT-SWAP|pump|volume_surge": 1779145362.74073,
   "LAB-USDT-SWAP|dump|longshort_ratio": 1779145362.74073,
@@ -355,5 +351,8 @@
   "AT-USDT-SWAP|pump|oi_surge": 1779146280.3172202,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779146280.3172202,
   "VIRTUAL-USDT-SWAP|pump|social_surge": 1779146280.3172202,
-  "AT-USDT-SWAP|pump|social_surge": 1779146280.3172202
+  "AT-USDT-SWAP|pump|social_surge": 1779146280.3172202,
+  "RKLB-USDT-SWAP|pump|funding_extreme": 1779147158.3374517,
+  "MMT-USDT-SWAP|dump|perp_premium": 1779147158.3374517,
+  "KITE-USDT-SWAP|pump|social_surge": 1779147158.3374517
 }
