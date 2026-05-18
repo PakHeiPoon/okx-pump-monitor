@@ -324,19 +324,19 @@
   "_trending_last_seen": [
     "ZANO",
     "ZEC",
-    "BTC",
     "RON",
-    "HYPE",
+    "BTC",
     "TAO",
+    "HYPE",
+    "PENGU",
     "VVV",
     "AAVE",
-    "TON",
-    "NOCK",
+    "TROLL",
     "ETH",
     "SUI",
     "PI",
     "AKT",
-    "PENGU"
+    "NOCK"
   ],
   "PI-USDT-SWAP|pump|volume_surge": 1779137274.24744,
   "XAG-USDT-SWAP|pump|longshort_ratio": 1779137274.24744,
@@ -347,5 +347,6 @@
   "ARM-USDT-SWAP|pump|longshort_ratio": 1779138170.9968061,
   "ONDO-USDT-SWAP|pump|volume_surge": 1779138882.1560187,
   "LAB-USDT-SWAP|dump|longshort_ratio": 1779138882.1560187,
-  "ETH-USDT-SWAP|pump|social_surge": 1779138882.1560187
+  "ETH-USDT-SWAP|pump|social_surge": 1779138882.1560187,
+  "ONDO-USDT-SWAP|pump|swap_top_gainers": 1779139072.162239
 }
