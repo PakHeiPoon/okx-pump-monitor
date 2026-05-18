@@ -323,24 +323,20 @@
   "_trending_last_seen": [
     "GITLAWB",
     "POD",
-    "PENGU",
     "ZEC",
-    "VVV",
+    "PENGU",
     "HYPE",
-    "AERO",
     "BTC",
+    "VVV",
+    "AERO",
+    "FIDA",
     "SOL",
+    "ETH",
     "SUI",
     "ONDO",
-    "ETH",
     "PI",
-    "MON",
-    "FIDA"
+    "BILL"
   ],
-  "STRK-USDT-SWAP|dump|volume_surge": 1779060746.5738423,
-  "ONDO-USDT-SWAP|dump|volume_surge": 1779060746.5738423,
-  "XTZ-USDT-SWAP|dump|perp_premium": 1779060746.5738423,
-  "BZ-USDT-SWAP|dump|longshort_ratio": 1779060746.5738423,
   "RAVE-USDT-SWAP|dump|swap_top_gainers": 1779061667.0917943,
   "BASED-USDT-SWAP|dump|swap_top_gainers": 1779061667.0917943,
   "LIGHT-USDT-SWAP|dump|swap_top_gainers": 1779061667.0917943,
@@ -354,5 +350,9 @@
   "BASED-USDT-SWAP|pump|swap_top_gainers": 1779062565.287329,
   "HUMA-USDT-SWAP|pump|swap_top_gainers": 1779062565.287329,
   "RLS-USDT-SWAP|dump|oi_surge": 1779062565.287329,
-  "XAG-USDT-SWAP|pump|longshort_ratio": 1779062565.287329
+  "XAG-USDT-SWAP|pump|longshort_ratio": 1779062565.287329,
+  "CHIP-USDT-SWAP|dump|perp_premium": 1779063168.9106028,
+  "BZ-USDT-SWAP|dump|longshort_ratio": 1779063168.9106028,
+  "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1779063168.9106028,
+  "BILL-USDT-SWAP|pump|social_surge": 1779063168.9106028
 }
