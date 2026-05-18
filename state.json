@@ -349,5 +349,8 @@
   "TAO-USDT-SWAP|pump|social_surge": 1779119279.4952888,
   "SOL-USDT-SWAP|pump|social_surge": 1779119279.4952888,
   "MEGA-USDT-SWAP|dump|volume_surge": 1779119907.4703882,
-  "TON-USDT-SWAP|pump|social_surge": 1779119907.4703882
+  "TON-USDT-SWAP|pump|social_surge": 1779119907.4703882,
+  "OFC-USDT-SWAP|pump|swap_top_gainers": 1779120158.402407,
+  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779120158.402407,
+  "BZ-USDT-SWAP|dump|longshort_ratio": 1779120158.402407
 }
