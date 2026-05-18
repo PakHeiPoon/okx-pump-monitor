@@ -324,23 +324,20 @@
   "_trending_last_seen": [
     "TRAC",
     "HYPE",
-    "BILL",
     "SOL",
+    "BILL",
     "PI",
-    "ETH",
-    "VVV",
-    "BTC",
-    "ZEC",
     "SERV",
+    "BTC",
+    "VVV",
+    "ETH",
+    "ZEC",
     "MON",
     "MEGA",
-    "LAB",
-    "OCT",
-    "LINK"
+    "AI",
+    "LIT",
+    "BSB"
   ],
-  "EDEN-USDT-SWAP|dump|funding_extreme": 1779095838.2070727,
-  "PI-USDT-SWAP|pump|social_surge": 1779095838.2070727,
-  "MEGA-USDT-SWAP|pump|social_surge": 1779095838.2070727,
   "UB-USDT-SWAP|pump|swap_top_gainers": 1779096773.7804933,
   "AIXBT-USDT-SWAP|dump|perp_premium": 1779096773.7804933,
   "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1779096773.7804933,
@@ -350,5 +347,10 @@
   "RKLB-USDT-SWAP|pump|funding_extreme": 1779097675.0327175,
   "TSM-USDT-SWAP|pump|longshort_ratio": 1779097675.0327175,
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1779097675.0327175,
-  "LINK-USDT-SWAP|pump|social_surge": 1779097675.0327175
+  "LINK-USDT-SWAP|pump|social_surge": 1779097675.0327175,
+  "EDEN-USDT-SWAP|dump|funding_extreme": 1779098560.6924305,
+  "CRCL-USDT-SWAP|pump|longshort_ratio": 1779098560.6924305,
+  "AI-USDT-SWAP|pump|social_surge": 1779098560.6924305,
+  "LIT-USDT-SWAP|pump|social_surge": 1779098560.6924305,
+  "BSB-USDT-SWAP|pump|social_surge": 1779098560.6924305
 }
