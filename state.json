@@ -325,18 +325,18 @@
     "ZANO",
     "HYPE",
     "PENGU",
-    "VVV",
     "BTC",
-    "RON",
     "ZEC",
-    "NOCK",
     "TAO",
-    "PUMP",
-    "SUI",
+    "NOCK",
+    "VVV",
+    "RON",
     "PI",
+    "AAVE",
+    "SUI",
     "ETH",
-    "LAB",
-    "POD"
+    "TON",
+    "KAS"
   ],
   "RECALL-USDT-SWAP|pump|swap_top_gainers": 1779135466.8608873,
   "SUI-USDT-SWAP|pump|volume_surge": 1779135466.8608873,
@@ -349,5 +349,9 @@
   "PUMP-USDT-SWAP|pump|social_surge": 1779135466.8608873,
   "BIO-USDT-SWAP|dump|funding_extreme": 1779136378.691404,
   "LAB-USDT-SWAP|dump|longshort_ratio": 1779136378.691404,
-  "PI-USDT-SWAP|pump|social_surge": 1779136378.691404
+  "PI-USDT-SWAP|pump|social_surge": 1779136378.691404,
+  "PI-USDT-SWAP|pump|volume_surge": 1779137274.24744,
+  "XAG-USDT-SWAP|pump|longshort_ratio": 1779137274.24744,
+  "AAVE-USDT-SWAP|pump|social_surge": 1779137274.24744,
+  "TON-USDT-SWAP|pump|social_surge": 1779137274.24744
 }
