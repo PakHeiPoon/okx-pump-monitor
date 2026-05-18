@@ -321,21 +321,21 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "AI",
     "BTC",
-    "HYPE",
+    "AI",
     "BILL",
+    "HYPE",
     "SOL",
-    "BNKR",
-    "SERV",
-    "ZEC",
+    "POD",
     "VVV",
-    "SUI",
+    "SERV",
+    "PENGU",
+    "ZEC",
+    "PI",
     "DOGE",
     "WEMIX",
     "PENDLE",
-    "POD",
-    "ADA"
+    "RENDER"
   ],
   "ARB-USDT-SWAP|pump|volume_surge": 1779077868.5581658,
   "ADA-USDT-SWAP|pump|social_surge": 1779077868.5581658,
@@ -349,5 +349,8 @@
   "AI-USDT-SWAP|dump|funding_extreme": 1779079433.024549,
   "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1779079433.024549,
   "DOGE-USDT-SWAP|pump|social_surge": 1779079433.024549,
-  "PENDLE-USDT-SWAP|pump|social_surge": 1779079433.024549
+  "PENDLE-USDT-SWAP|pump|social_surge": 1779079433.024549,
+  "PENGU-USDT-SWAP|pump|social_surge": 1779079640.743192,
+  "PI-USDT-SWAP|pump|social_surge": 1779079640.743192,
+  "RENDER-USDT-SWAP|pump|social_surge": 1779079640.743192
 }
