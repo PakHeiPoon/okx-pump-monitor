@@ -322,24 +322,22 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "TRAC",
-    "BTC",
-    "ZEC",
     "HYPE",
-    "MEGA",
+    "BTC",
+    "TRAC",
+    "ZEC",
     "PENGU",
     "BILL",
-    "VVV",
-    "SOL",
-    "TAO",
+    "MEGA",
     "ONDO",
+    "LINK",
     "PI",
+    "SOL",
+    "MON",
     "AAVE",
     "AI",
-    "LINK"
+    "CFG"
   ],
-  "CHIP-USDT-SWAP|dump|perp_premium": 1779114753.0092733,
-  "SUI-USDT-SWAP|pump|social_surge": 1779114753.0092733,
   "BSB-USDT-SWAP|pump|swap_top_gainers": 1779115680.5114365,
   "ZORA-USDT-SWAP|dump|perp_premium": 1779115680.5114365,
   "XAG-USDT-SWAP|pump|longshort_ratio": 1779115680.5114365,
@@ -351,5 +349,6 @@
   "BZ-USDT-SWAP|dump|longshort_ratio": 1779116579.9368312,
   "AAVE-USDT-SWAP|pump|social_surge": 1779116579.9368312,
   "AI-USDT-SWAP|pump|social_surge": 1779116579.9368312,
-  "LINK-USDT-SWAP|pump|social_surge": 1779116579.9368312
+  "LINK-USDT-SWAP|pump|social_surge": 1779116579.9368312,
+  "MON-USDT-SWAP|pump|social_surge": 1779117471.648412
 }
