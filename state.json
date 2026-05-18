@@ -323,18 +323,18 @@
   "_trending_last_seen": [
     "TRAC",
     "HYPE",
-    "VVV",
     "BILL",
-    "SOL",
-    "ONDO",
+    "VVV",
     "LINK",
     "ETH",
-    "DOGE",
     "TAO",
-    "POD",
-    "PI",
+    "SOL",
+    "ONDO",
     "ZEC",
-    "CFG",
+    "DOGE",
+    "POD",
+    "LAB",
+    "OCT",
     "BTC"
   ],
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1779092268.4093015,
@@ -349,5 +349,7 @@
   "DOT-USDT-SWAP|pump|social_surge": 1779093144.1424057,
   "BCH-USDT-SWAP|dump|volume_surge": 1779093551.2297761,
   "SPACEX-USDT-SWAP|pump|longshort_ratio": 1779093551.2297761,
-  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779093551.2297761
+  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779093551.2297761,
+  "ANTHROPIC-USDT-SWAP|pump|longshort_ratio": 1779094070.7805285,
+  "LAB-USDT-SWAP|pump|social_surge": 1779094070.7805285
 }
