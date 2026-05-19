@@ -79,6 +79,7 @@
     "CRO-USDT-SWAP",
     "CRV-USDT-SWAP",
     "CRWV-USDT-SWAP",
+    "CSCO-USDT-SWAP",
     "CVX-USDT-SWAP",
     "DASH-USDT-SWAP",
     "DOGE-USDT-SWAP",
@@ -325,21 +326,21 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
+    "ZANO",
     "PENGU",
     "HYPE",
     "NEAR",
-    "ZANO",
+    "VVV",
+    "RON",
+    "BTC",
     "ONDO",
     "TAO",
-    "RON",
-    "VVV",
-    "MON",
     "ZEC",
-    "ETH",
     "SOL",
     "TON",
-    "LIT",
-    "MEGA"
+    "MON",
+    "ETH",
+    "APT"
   ],
   "EDEN-USDT-SWAP|dump|funding_extreme": 1779182277.6043463,
   "ONT-USDT-SWAP|dump|perp_premium": 1779182277.6043463,
@@ -354,5 +355,8 @@
   "LIT-USDT-SWAP|pump|social_surge": 1779183185.6758516,
   "TRIA-USDT-SWAP|pump|volume_surge": 1779183516.4958642,
   "RAVE-USDT-SWAP|pump|longshort_ratio": 1779183516.4958642,
-  "MEGA-USDT-SWAP|pump|social_surge": 1779183516.4958642
+  "MEGA-USDT-SWAP|pump|social_surge": 1779183516.4958642,
+  "CSCO-USDT-SWAP|pump|new_listings": 1779184044.1811185,
+  "BTC-USDT-SWAP|pump|social_surge": 1779184044.1811185,
+  "APT-USDT-SWAP|pump|social_surge": 1779184044.1811185
 }
