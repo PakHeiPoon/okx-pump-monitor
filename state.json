@@ -330,18 +330,14 @@
     "VVV",
     "BTC",
     "NEAR",
+    "MON",
     "ZEC",
     "LIT",
     "SOL",
-    "AKT",
-    "MON",
-    "ICP",
-    "AERO"
+    "AERO",
+    "XRP",
+    "ETH"
   ],
-  "LAB-USDT-SWAP|dump|longshort_ratio": 1779148074.3884683,
-  "MON-USDT-SWAP|pump|social_surge": 1779148074.3884683,
-  "NEAR-USDT-SWAP|pump|social_surge": 1779148074.3884683,
-  "ZEC-USDT-SWAP|pump|social_surge": 1779148074.3884683,
   "F-USDT-SWAP|pump|volume_surge": 1779148984.5381987,
   "ANIME-USDT-SWAP|pump|volume_surge": 1779148984.5381987,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779148984.5381987,
@@ -351,5 +347,10 @@
   "ONT-USDT-SWAP|pump|oi_surge": 1779149879.757085,
   "ONT-USDT-SWAP|dump|perp_premium": 1779149879.757085,
   "SOL-USDT-SWAP|pump|social_surge": 1779149879.757085,
-  "ICP-USDT-SWAP|pump|social_surge": 1779149879.757085
+  "ICP-USDT-SWAP|pump|social_surge": 1779149879.757085,
+  "BASED-USDT-SWAP|pump|volume_surge": 1779150777.3306732,
+  "ONT-USDT-SWAP|dump|funding_extreme": 1779150777.3306732,
+  "ARM-USDT-SWAP|pump|longshort_ratio": 1779150777.3306732,
+  "XRP-USDT-SWAP|pump|social_surge": 1779150777.3306732,
+  "ETH-USDT-SWAP|pump|social_surge": 1779150777.3306732
 }
