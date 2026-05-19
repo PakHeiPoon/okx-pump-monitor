@@ -334,20 +334,14 @@
     "VVV",
     "ONDO",
     "BTC",
-    "PYTH",
     "XRP",
     "TON",
     "AAVE",
     "ETH",
     "SOL",
+    "PYTH",
     "SUI"
   ],
-  "ONT-USDT-SWAP|dump|perp_premium": 1779203877.022121,
-  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779203877.022121,
-  "PYTH-USDT-SWAP|pump|social_surge": 1779203877.022121,
-  "TAO-USDT-SWAP|pump|social_surge": 1779203877.022121,
-  "SUI-USDT-SWAP|pump|social_surge": 1779203877.022121,
-  "INJ-USDT-SWAP|pump|social_surge": 1779203877.022121,
   "LAB-USDT-SWAP|pump|swap_top_gainers": 1779204788.0502346,
   "ADA-USDT-SWAP|pump|volume_surge": 1779204788.0502346,
   "ONT-USDT-SWAP|dump|funding_extreme": 1779204788.0502346,
@@ -360,5 +354,8 @@
   "ENJ-USDT-SWAP|dump|funding_extreme": 1779205679.0940092,
   "XRP-USDT-SWAP|pump|social_surge": 1779205679.0940092,
   "TON-USDT-SWAP|pump|social_surge": 1779205679.0940092,
-  "SOL-USDT-SWAP|pump|social_surge": 1779205679.0940092
+  "SOL-USDT-SWAP|pump|social_surge": 1779205679.0940092,
+  "RLS-USDT-SWAP|pump|swap_top_gainers": 1779206535.656799,
+  "RAVE-USDT-SWAP|pump|volume_surge": 1779206535.656799,
+  "ONT-USDT-SWAP|dump|perp_premium": 1779206535.656799
 }
