@@ -342,18 +342,17 @@
     "ETH",
     "XRP"
   ],
-  "BSB-USDT-SWAP|dump|swap_top_gainers": 1779229040.1993515,
-  "WLD-USDT-SWAP|pump|volume_surge": 1779229040.1993515,
-  "HOME-USDT-SWAP|dump|funding_extreme": 1779229040.1993515,
-  "ENJ-USDT-SWAP|dump|funding_extreme": 1779229040.1993515,
-  "ONT-USDT-SWAP|dump|funding_extreme": 1779229040.1993515,
-  "LLY-USDT-SWAP|dump|longshort_ratio": 1779229040.1993515,
-  "BTC-USDT-SWAP|pump|social_surge": 1779229040.1993515,
-  "XRP-USDT-SWAP|pump|social_surge": 1779229040.1993515,
   "BSB-USDT-SWAP|pump|swap_top_gainers": 1779229968.037148,
   "ONT-USDT-SWAP|dump|volume_surge": 1779229968.037148,
   "XRP-USDT-SWAP|pump|volume_surge": 1779229968.037148,
   "RAVE-USDT-SWAP|pump|longshort_ratio": 1779229968.037148,
   "SPACEX-USDT-SWAP|pump|longshort_ratio": 1779229968.037148,
-  "MON-USDT-SWAP|pump|social_surge": 1779229968.037148
+  "MON-USDT-SWAP|pump|social_surge": 1779229968.037148,
+  "DOGE-USDT-SWAP|dump|volume_surge": 1779231175.5214038,
+  "HOME-USDT-SWAP|dump|funding_extreme": 1779231175.5214038,
+  "ENJ-USDT-SWAP|dump|funding_extreme": 1779231175.5214038,
+  "ONT-USDT-SWAP|dump|funding_extreme": 1779231175.5214038,
+  "ONT-USDT-SWAP|dump|perp_premium": 1779231175.5214038,
+  "LLY-USDT-SWAP|dump|longshort_ratio": 1779231175.5214038,
+  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779231175.5214038
 }
