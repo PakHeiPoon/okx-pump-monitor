@@ -326,26 +326,22 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "ZEST",
     "LIT",
+    "ZEST",
     "VVV",
     "HYPE",
-    "PENGU",
     "BTC",
+    "PENGU",
     "ZEC",
+    "LUNC",
     "DRV",
-    "ONDO",
     "TAO",
     "SUI",
-    "LUNC",
-    "XRP",
     "MON",
-    "META"
+    "KAS",
+    "BONK",
+    "CHZ"
   ],
-  "WLD-USDT-SWAP|dump|volume_surge": 1779231783.7361412,
-  "KAT-USDT-SWAP|dump|volume_surge": 1779231783.7361412,
-  "CL-USDT-SWAP|dump|longshort_ratio": 1779231783.7361412,
-  "BZ-USDT-SWAP|dump|longshort_ratio": 1779231783.7361412,
   "FOGO-USDT-SWAP|pump|swap_top_gainers": 1779232673.8937354,
   "RAVE-USDT-SWAP|pump|longshort_ratio": 1779232673.8937354,
   "SPACEX-USDT-SWAP|pump|longshort_ratio": 1779232673.8937354,
@@ -358,5 +354,11 @@
   "FOGO-USDT-SWAP|pump|oi_surge": 1779233580.7641912,
   "LLY-USDT-SWAP|dump|longshort_ratio": 1779233580.7641912,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779233580.7641912,
-  "MON-USDT-SWAP|pump|social_surge": 1779233580.7641912
+  "MON-USDT-SWAP|pump|social_surge": 1779233580.7641912,
+  "MON-USDT-SWAP|pump|volume_surge": 1779234444.8148835,
+  "PEPE-USDT-SWAP|dump|volume_surge": 1779234444.8148835,
+  "ONT-USDT-SWAP|dump|perp_premium": 1779234444.8148835,
+  "ME-USDT-SWAP|dump|perp_premium": 1779234444.8148835,
+  "BONK-USDT-SWAP|pump|social_surge": 1779234444.8148835,
+  "CHZ-USDT-SWAP|pump|social_surge": 1779234444.8148835
 }
