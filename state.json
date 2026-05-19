@@ -332,21 +332,16 @@
     "NEAR",
     "HYPE",
     "RON",
-    "VVV",
-    "BILL",
+    "TAO",
+    "AKT",
     "LAB",
-    "PI",
     "ETH",
-    "FET",
-    "BTC",
-    "PLAY",
-    "TAO"
+    "SOL",
+    "OCT",
+    "VVV",
+    "PI",
+    "TON"
   ],
-  "RAVE-USDT-SWAP|pump|volume_surge": 1779184984.141214,
-  "ONT-USDT-SWAP|dump|perp_premium": 1779184984.141214,
-  "BILL-USDT-SWAP|pump|social_surge": 1779184984.141214,
-  "CHIP-USDT-SWAP|pump|social_surge": 1779184984.141214,
-  "PI-USDT-SWAP|pump|social_surge": 1779184984.141214,
   "ONT-USDT-SWAP|dump|funding_extreme": 1779185872.886934,
   "RAVE-USDT-SWAP|pump|longshort_ratio": 1779185872.886934,
   "LAB-USDT-SWAP|pump|social_surge": 1779185872.886934,
@@ -355,5 +350,8 @@
   "ENJ-USDT-SWAP|dump|funding_extreme": 1779186782.0506039,
   "ENJ-USDT-SWAP|dump|perp_premium": 1779186782.0506039,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779186782.0506039,
-  "TAO-USDT-SWAP|pump|social_surge": 1779186782.0506039
+  "TAO-USDT-SWAP|pump|social_surge": 1779186782.0506039,
+  "ONT-USDT-SWAP|dump|perp_premium": 1779187680.5952086,
+  "SOL-USDT-SWAP|pump|social_surge": 1779187680.5952086,
+  "TON-USDT-SWAP|pump|social_surge": 1779187680.5952086
 }
