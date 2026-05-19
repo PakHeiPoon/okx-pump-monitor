@@ -332,15 +332,15 @@
     "LIT",
     "HYPE",
     "BTC",
-    "DRV",
     "ZEC",
-    "META",
-    "TIG",
-    "BNKR",
+    "DRV",
     "MON",
+    "XRP",
+    "LUNC",
     "ONDO",
-    "ETH",
-    "XRP"
+    "BNKR",
+    "TIG",
+    "META"
   ],
   "BSB-USDT-SWAP|pump|swap_top_gainers": 1779229968.037148,
   "ONT-USDT-SWAP|dump|volume_surge": 1779229968.037148,
@@ -354,5 +354,9 @@
   "ONT-USDT-SWAP|dump|funding_extreme": 1779231175.5214038,
   "ONT-USDT-SWAP|dump|perp_premium": 1779231175.5214038,
   "LLY-USDT-SWAP|dump|longshort_ratio": 1779231175.5214038,
-  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779231175.5214038
+  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779231175.5214038,
+  "WLD-USDT-SWAP|dump|volume_surge": 1779231783.7361412,
+  "KAT-USDT-SWAP|dump|volume_surge": 1779231783.7361412,
+  "CL-USDT-SWAP|dump|longshort_ratio": 1779231783.7361412,
+  "BZ-USDT-SWAP|dump|longshort_ratio": 1779231783.7361412
 }
