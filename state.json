@@ -327,20 +327,20 @@
   ],
   "_trending_last_seen": [
     "VVV",
-    "HYPE",
     "ZEST",
+    "HYPE",
     "PENGU",
-    "ONDO",
     "BTC",
+    "ONDO",
     "ZEC",
     "SOL",
+    "UNI",
+    "CFG",
     "BSB",
     "LIT",
-    "CFG",
+    "TON",
     "VIRTUAL",
-    "XRP",
-    "USDT",
-    "UNI"
+    "SUI"
   ],
   "BASED-USDT-SWAP|dump|volume_surge": 1779220038.0037181,
   "RAVE-USDT-SWAP|pump|longshort_ratio": 1779220038.0037181,
@@ -356,5 +356,7 @@
   "XPL-USDT-SWAP|pump|social_surge": 1779220974.0347648,
   "ENJ-USDT-SWAP|dump|funding_extreme": 1779221197.3543837,
   "HOME-USDT-SWAP|dump|funding_extreme": 1779221197.3543837,
-  "UNI-USDT-SWAP|pump|social_surge": 1779221197.3543837
+  "UNI-USDT-SWAP|pump|social_surge": 1779221197.3543837,
+  "TON-USDT-SWAP|pump|social_surge": 1779221878.2140512,
+  "SUI-USDT-SWAP|pump|social_surge": 1779221878.2140512
 }
