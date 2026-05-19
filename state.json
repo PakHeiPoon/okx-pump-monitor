@@ -326,25 +326,22 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "HYPE",
     "ONDO",
-    "PENGU",
-    "NEAR",
+    "HYPE",
     "TAO",
     "ZANO",
+    "BTC",
+    "NEAR",
+    "PENGU",
     "RON",
     "AKT",
     "ETH",
-    "VVV",
-    "BTC",
+    "TON",
+    "PI",
+    "SOL",
     "PENDLE",
-    "ZEC",
-    "MEGA",
-    "SOL"
+    "OCT"
   ],
-  "ONT-USDT-SWAP|dump|perp_premium": 1779187680.5952086,
-  "SOL-USDT-SWAP|pump|social_surge": 1779187680.5952086,
-  "TON-USDT-SWAP|pump|social_surge": 1779187680.5952086,
   "UB-USDT-SWAP|pump|swap_top_gainers": 1779188560.4926665,
   "RAVE-USDT-SWAP|pump|volume_surge": 1779188560.4926665,
   "ONT-USDT-SWAP|dump|funding_extreme": 1779188560.4926665,
@@ -358,5 +355,8 @@
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779189443.650795,
   "BTC-USDT-SWAP|pump|social_surge": 1779189443.650795,
   "ZEC-USDT-SWAP|pump|social_surge": 1779189443.650795,
-  "MEGA-USDT-SWAP|pump|social_surge": 1779189443.650795
+  "MEGA-USDT-SWAP|pump|social_surge": 1779189443.650795,
+  "ONT-USDT-SWAP|dump|perp_premium": 1779190366.2886157,
+  "TON-USDT-SWAP|pump|social_surge": 1779190366.2886157,
+  "PI-USDT-SWAP|pump|social_surge": 1779190366.2886157
 }
