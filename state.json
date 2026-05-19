@@ -333,19 +333,15 @@
     "ONDO",
     "BTC",
     "ZEC",
-    "LIT",
-    "BSB",
     "SOL",
-    "PI",
-    "XRP",
+    "BSB",
+    "LIT",
     "CFG",
     "VIRTUAL",
-    "XPL"
+    "XRP",
+    "USDT",
+    "UNI"
   ],
-  "BSB-USDT-SWAP|dump|swap_top_gainers": 1779219157.7757068,
-  "SUI-USDT-SWAP|dump|volume_surge": 1779219157.7757068,
-  "HOME-USDT-SWAP|dump|funding_extreme": 1779219157.7757068,
-  "ENJ-USDT-SWAP|dump|funding_extreme": 1779219157.7757068,
   "BASED-USDT-SWAP|dump|volume_surge": 1779220038.0037181,
   "RAVE-USDT-SWAP|pump|longshort_ratio": 1779220038.0037181,
   "BTC-USDT-SWAP|pump|social_surge": 1779220038.0037181,
@@ -357,5 +353,8 @@
   "ENJ-USDT-SWAP|dump|perp_premium": 1779220974.0347648,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779220974.0347648,
   "VIRTUAL-USDT-SWAP|pump|social_surge": 1779220974.0347648,
-  "XPL-USDT-SWAP|pump|social_surge": 1779220974.0347648
+  "XPL-USDT-SWAP|pump|social_surge": 1779220974.0347648,
+  "ENJ-USDT-SWAP|dump|funding_extreme": 1779221197.3543837,
+  "HOME-USDT-SWAP|dump|funding_extreme": 1779221197.3543837,
+  "UNI-USDT-SWAP|pump|social_surge": 1779221197.3543837
 }
