@@ -326,27 +326,22 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "ZANO",
     "RON",
+    "ZANO",
     "HYPE",
     "ONDO",
     "PENGU",
     "SUI",
+    "ZEC",
     "SOL",
     "ETH",
-    "ZEC",
     "UP",
     "VVV",
     "AVAX",
-    "BILL",
+    "INJ",
     "TAO",
-    "INJ"
+    "MEGA"
   ],
-  "ENJ-USDT-SWAP|dump|funding_extreme": 1779194884.8629036,
-  "TAO-USDT-SWAP|pump|social_surge": 1779194884.8629036,
-  "ETH-USDT-SWAP|pump|social_surge": 1779194884.8629036,
-  "UP-USDT-SWAP|pump|social_surge": 1779194884.8629036,
-  "WLFI-USDT-SWAP|pump|social_surge": 1779194884.8629036,
   "INTC-USDT-SWAP|dump|volume_surge": 1779195786.794089,
   "ONT-USDT-SWAP|dump|perp_premium": 1779195786.794089,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779195786.794089,
@@ -358,5 +353,10 @@
   "ENJ-USDT-SWAP|dump|perp_premium": 1779196678.361025,
   "NFLX-USDT-SWAP|pump|longshort_ratio": 1779196678.361025,
   "AVAX-USDT-SWAP|pump|social_surge": 1779196678.361025,
-  "INJ-USDT-SWAP|pump|social_surge": 1779196678.361025
+  "INJ-USDT-SWAP|pump|social_surge": 1779196678.361025,
+  "MU-USDT-SWAP|pump|volume_surge": 1779197587.814032,
+  "SNDK-USDT-SWAP|pump|volume_surge": 1779197587.814032,
+  "CHZ-USDT-SWAP|pump|volume_surge": 1779197587.814032,
+  "ENJ-USDT-SWAP|dump|funding_extreme": 1779197587.814032,
+  "MEGA-USDT-SWAP|pump|social_surge": 1779197587.814032
 }
