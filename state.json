@@ -330,20 +330,18 @@
     "ZEST",
     "HYPE",
     "ONDO",
-    "BTC",
-    "ZEC",
-    "SOL",
-    "BILL",
     "PENGU",
+    "ZEC",
+    "BILL",
+    "BTC",
+    "SOL",
+    "SUI",
     "AAVE",
     "LIT",
-    "LUNC",
     "POD",
     "BNKR",
-    "SUI"
+    "LUNC"
   ],
-  "TON-USDT-SWAP|pump|social_surge": 1779221878.2140512,
-  "SUI-USDT-SWAP|pump|social_surge": 1779221878.2140512,
   "BSB-USDT-SWAP|dump|swap_top_gainers": 1779222782.9394937,
   "KITE-USDT-SWAP|pump|volume_surge": 1779222782.9394937,
   "ONT-USDT-SWAP|dump|perp_premium": 1779222782.9394937,
@@ -355,5 +353,7 @@
   "HOME-USDT-SWAP|dump|funding_extreme": 1779223683.7191439,
   "ENJ-USDT-SWAP|dump|funding_extreme": 1779223683.7191439,
   "ONT-USDT-SWAP|dump|funding_extreme": 1779223683.7191439,
-  "BILL-USDT-SWAP|pump|social_surge": 1779223683.7191439
+  "BILL-USDT-SWAP|pump|social_surge": 1779223683.7191439,
+  "ENJ-USDT-SWAP|dump|perp_premium": 1779224563.6734438,
+  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779224563.6734438
 }
