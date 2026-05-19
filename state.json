@@ -322,28 +322,22 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "HYPE",
     "PENGU",
+    "HYPE",
     "BILL",
+    "RON",
+    "ETH",
     "MON",
     "ONDO",
-    "RON",
-    "BTC",
-    "ETH",
     "PI",
-    "TAO",
+    "BTC",
     "ZEC",
     "LINK",
+    "TAO",
     "OCT",
-    "RIVER",
-    "AVAX"
+    "SUI",
+    "XRP"
   ],
-  "ONT-USDT-SWAP|dump|volume_surge": 1779172346.6250508,
-  "ONT-USDT-SWAP|dump|funding_extreme": 1779172346.6250508,
-  "RAVE-USDT-SWAP|pump|longshort_ratio": 1779172346.6250508,
-  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779172346.6250508,
-  "TAO-USDT-SWAP|pump|social_surge": 1779172346.6250508,
-  "XRP-USDT-SWAP|pump|social_surge": 1779172346.6250508,
   "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779173239.4108772,
   "EDEN-USDT-SWAP|pump|oi_surge": 1779173239.4108772,
   "ETH-USDT-SWAP|pump|social_surge": 1779173239.4108772,
@@ -353,5 +347,10 @@
   "RKLB-USDT-SWAP|pump|funding_extreme": 1779174167.8088403,
   "BTC-USDT-SWAP|pump|social_surge": 1779174167.8088403,
   "RIVER-USDT-SWAP|pump|social_surge": 1779174167.8088403,
-  "AVAX-USDT-SWAP|pump|social_surge": 1779174167.8088403
+  "AVAX-USDT-SWAP|pump|social_surge": 1779174167.8088403,
+  "ONT-USDT-SWAP|dump|funding_extreme": 1779175075.787593,
+  "RAVE-USDT-SWAP|pump|longshort_ratio": 1779175075.787593,
+  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779175075.787593,
+  "SUI-USDT-SWAP|pump|social_surge": 1779175075.787593,
+  "XRP-USDT-SWAP|pump|social_surge": 1779175075.787593
 }
