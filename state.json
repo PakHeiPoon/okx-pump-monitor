@@ -328,19 +328,19 @@
   "_trending_last_seen": [
     "VVV",
     "PENGU",
+    "ZEC",
     "HYPE",
     "ZEST",
-    "ZEC",
-    "BNKR",
     "ONDO",
-    "ETH",
+    "BNKR",
     "EDEN",
-    "NEAR",
     "BSB",
+    "ETH",
+    "BTC",
+    "NEAR",
     "AKT",
-    "VIRTUAL",
-    "TAO",
-    "LIT"
+    "LIT",
+    "LFI"
   ],
   "BILL-USDT-SWAP|dump|volume_surge": 1779215546.8603709,
   "AI-USDT-SWAP|dump|volume_surge": 1779215546.8603709,
@@ -359,5 +359,7 @@
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779216477.6703734,
   "RAVE-USDT-SWAP|pump|longshort_ratio": 1779216477.6703734,
   "ETH-USDT-SWAP|pump|social_surge": 1779216477.6703734,
-  "NEAR-USDT-SWAP|pump|social_surge": 1779216477.6703734
+  "NEAR-USDT-SWAP|pump|social_surge": 1779216477.6703734,
+  "LAB-USDT-SWAP|pump|volume_surge": 1779217390.0162492,
+  "BTC-USDT-SWAP|pump|social_surge": 1779217390.0162492
 }
