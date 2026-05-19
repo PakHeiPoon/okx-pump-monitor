@@ -326,17 +326,17 @@
     "RON",
     "BILL",
     "ONDO",
-    "MON",
     "BTC",
     "HYPE",
-    "ETH",
+    "MON",
     "SOL",
-    "TON",
     "PI",
+    "TON",
     "MEGA",
-    "VVV",
     "SERV",
-    "SUI"
+    "ETH",
+    "SUI",
+    "LINK"
   ],
   "RKLB-USDT-SWAP|pump|funding_extreme": 1779168755.849526,
   "PI-USDT-SWAP|pump|social_surge": 1779168755.849526,
@@ -344,5 +344,7 @@
   "ONT-USDT-SWAP|dump|funding_extreme": 1779169674.9632118,
   "WLD-USDT-SWAP|dump|funding_extreme": 1779169674.9632118,
   "APR-USDT-SWAP|pump|swap_top_gainers": 1779169991.6022403,
-  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779169991.6022403
+  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779169991.6022403,
+  "XRP-USDT-SWAP|pump|volume_surge": 1779170581.5915787,
+  "LINK-USDT-SWAP|pump|social_surge": 1779170581.5915787
 }
