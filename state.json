@@ -338,14 +338,11 @@
     "SERV",
     "SUI"
   ],
-  "LAB-USDT-SWAP|dump|volume_surge": 1779167844.1988,
-  "ONT-USDT-SWAP|dump|perp_premium": 1779167844.1988,
-  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779167844.1988,
-  "SOL-USDT-SWAP|pump|social_surge": 1779167844.1988,
-  "MEGA-USDT-SWAP|pump|social_surge": 1779167844.1988,
   "RKLB-USDT-SWAP|pump|funding_extreme": 1779168755.849526,
   "PI-USDT-SWAP|pump|social_surge": 1779168755.849526,
   "SUI-USDT-SWAP|pump|social_surge": 1779168755.849526,
   "ONT-USDT-SWAP|dump|funding_extreme": 1779169674.9632118,
-  "WLD-USDT-SWAP|dump|funding_extreme": 1779169674.9632118
+  "WLD-USDT-SWAP|dump|funding_extreme": 1779169674.9632118,
+  "APR-USDT-SWAP|pump|swap_top_gainers": 1779169991.6022403,
+  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779169991.6022403
 }
