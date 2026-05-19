@@ -332,18 +332,16 @@
     "PENGU",
     "ZEC",
     "ONDO",
-    "ETH",
-    "EDEN",
+    "BTC",
     "LIT",
     "BSB",
-    "NEAR",
+    "SOL",
     "PI",
     "SERV",
-    "BNKR",
-    "XMR"
+    "ETH",
+    "XRP",
+    "CC"
   ],
-  "LAB-USDT-SWAP|pump|volume_surge": 1779217390.0162492,
-  "BTC-USDT-SWAP|pump|social_surge": 1779217390.0162492,
   "BSB-USDT-SWAP|pump|swap_top_gainers": 1779218239.412086,
   "LAB-USDT-SWAP|pump|swap_top_gainers": 1779218239.412086,
   "XRP-USDT-SWAP|dump|volume_surge": 1779218239.412086,
@@ -355,5 +353,11 @@
   "BSB-USDT-SWAP|dump|swap_top_gainers": 1779219157.7757068,
   "SUI-USDT-SWAP|dump|volume_surge": 1779219157.7757068,
   "HOME-USDT-SWAP|dump|funding_extreme": 1779219157.7757068,
-  "ENJ-USDT-SWAP|dump|funding_extreme": 1779219157.7757068
+  "ENJ-USDT-SWAP|dump|funding_extreme": 1779219157.7757068,
+  "BASED-USDT-SWAP|dump|volume_surge": 1779220038.0037181,
+  "RAVE-USDT-SWAP|pump|longshort_ratio": 1779220038.0037181,
+  "BTC-USDT-SWAP|pump|social_surge": 1779220038.0037181,
+  "SOL-USDT-SWAP|pump|social_surge": 1779220038.0037181,
+  "XRP-USDT-SWAP|pump|social_surge": 1779220038.0037181,
+  "CC-USDT-SWAP|pump|social_surge": 1779220038.0037181
 }
