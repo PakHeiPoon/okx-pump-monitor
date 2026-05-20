@@ -342,15 +342,6 @@
     "LUNC",
     "LINK"
   ],
-  "SNDK-USDT-SWAP|dump|volume_surge": 1779283983.541356,
-  "MU-USDT-SWAP|dump|volume_surge": 1779283983.541356,
-  "RKLB-USDT-SWAP|pump|volume_surge": 1779283983.541356,
-  "CHIP-USDT-SWAP|dump|funding_extreme": 1779283983.541356,
-  "NBIS-USDT-SWAP|dump|oi_surge": 1779283983.541356,
-  "SOXL-USDT-SWAP|pump|oi_surge": 1779283983.541356,
-  "CHIP-USDT-SWAP|dump|perp_premium": 1779283983.541356,
-  "BILL-USDT-SWAP|pump|social_surge": 1779283983.541356,
-  "PI-USDT-SWAP|pump|social_surge": 1779283983.541356,
   "ARM-USDT-SWAP|pump|swap_top_gainers": 1779284859.8914359,
   "MRVL-USDT-SWAP|pump|swap_top_gainers": 1779284859.8914359,
   "CBRS-USDT-SWAP|pump|swap_top_gainers": 1779284859.8914359,
@@ -361,5 +352,6 @@
   "TAO-USDT-SWAP|pump|social_surge": 1779284859.8914359,
   "UB-USDT-SWAP|pump|swap_top_gainers": 1779285786.0875905,
   "GLW-USDT-SWAP|pump|funding_extreme": 1779285786.0875905,
-  "LINK-USDT-SWAP|pump|social_surge": 1779285786.0875905
+  "LINK-USDT-SWAP|pump|social_surge": 1779285786.0875905,
+  "CHIP-USDT-SWAP|dump|funding_extreme": 1779285940.45831
 }
