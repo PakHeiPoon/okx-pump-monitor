@@ -328,23 +328,20 @@
   "_trending_last_seen": [
     "MANIFEST",
     "NEX",
+    "PENGU",
     "ZEC",
     "HYPE",
     "VVV",
-    "UDS",
-    "PENGU",
-    "XMR",
     "BTC",
+    "ONDO",
     "FIDA",
+    "XMR",
     "TAO",
-    "SOL",
     "EDEN",
-    "SUI",
-    "LAB"
+    "BILL",
+    "LAB",
+    "SOL"
   ],
-  "H-USDT-SWAP|pump|swap_top_gainers": 1779310983.2365162,
-  "PENDLE-USDT-SWAP|dump|perp_premium": 1779310983.2365162,
-  "LAB-USDT-SWAP|dump|longshort_ratio": 1779310983.2365162,
   "BSB-USDT-SWAP|pump|swap_top_gainers": 1779311879.9748943,
   "ARM-USDT-SWAP|pump|volume_surge": 1779311879.9748943,
   "YB-USDT-SWAP|pump|perp_premium": 1779311879.9748943,
@@ -356,5 +353,7 @@
   "TAO-USDT-SWAP|pump|social_surge": 1779312387.3253584,
   "SOL-USDT-SWAP|pump|social_surge": 1779312387.3253584,
   "EDEN-USDT-SWAP|pump|social_surge": 1779312387.3253584,
-  "LAB-USDT-SWAP|pump|social_surge": 1779312387.3253584
+  "LAB-USDT-SWAP|pump|social_surge": 1779312387.3253584,
+  "PROS-USDT-SWAP|dump|funding_extreme": 1779313647.3444088,
+  "BILL-USDT-SWAP|pump|social_surge": 1779313647.3444088
 }
