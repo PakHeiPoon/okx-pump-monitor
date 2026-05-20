@@ -328,25 +328,26 @@
   "_trending_last_seen": [
     "HYPE",
     "VVV",
-    "LIT",
-    "GITLAWB",
     "PENGU",
     "ZEST",
-    "LUNC",
+    "LIT",
+    "GITLAWB",
     "SERV",
-    "ZEC",
+    "LUNC",
+    "AKT",
     "ETH",
+    "LINK",
     "BTC",
     "SUI",
-    "RENDER",
-    "TIG",
-    "AERO"
+    "ZEC",
+    "SOL"
   ],
-  "UB-USDT-SWAP|dump|volume_surge": 1779276781.70942,
   "RENDER-USDT-SWAP|pump|social_surge": 1779277677.050099,
   "CHIP-USDT-SWAP|dump|funding_extreme": 1779278590.6551723,
   "LITE-USDT-SWAP|pump|funding_extreme": 1779278590.6551723,
   "CHIP-USDT-SWAP|dump|perp_premium": 1779278590.6551723,
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1779278590.6551723,
-  "AERO-USDT-SWAP|pump|social_surge": 1779278590.6551723
+  "AERO-USDT-SWAP|pump|social_surge": 1779278590.6551723,
+  "LINK-USDT-SWAP|pump|social_surge": 1779279462.922422,
+  "SOL-USDT-SWAP|pump|social_surge": 1779279462.922422
 }
