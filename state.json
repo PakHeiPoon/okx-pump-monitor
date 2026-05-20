@@ -342,13 +342,10 @@
     "LAB",
     "RENDER"
   ],
-  "TAO-USDT-SWAP|pump|social_surge": 1779315447.0835876,
-  "DASH-USDT-SWAP|pump|social_surge": 1779315447.0835876,
-  "JTO-USDT-SWAP|pump|social_surge": 1779315447.0835876,
-  "LAB-USDT-SWAP|pump|social_surge": 1779315447.0835876,
   "PROS-USDT-SWAP|dump|funding_extreme": 1779316345.9671721,
   "BSB-USDT-SWAP|dump|swap_top_gainers": 1779317258.7893748,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779317258.7893748,
   "AERO-USDT-SWAP|pump|social_surge": 1779317258.7893748,
-  "RENDER-USDT-SWAP|pump|social_surge": 1779317258.7893748
+  "RENDER-USDT-SWAP|pump|social_surge": 1779317258.7893748,
+  "SAHARA-USDT-SWAP|dump|volume_surge": 1779317623.1037164
 }
