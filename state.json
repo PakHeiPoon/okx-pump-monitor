@@ -327,20 +327,20 @@
   ],
   "_trending_last_seen": [
     "NEX",
-    "HYPE",
-    "PENGU",
-    "ZEC",
     "FIDD",
+    "PENGU",
+    "HYPE",
+    "ZEC",
     "VVV",
     "MANIFEST",
     "LIT",
     "BTC",
-    "JTO",
-    "CC",
-    "CHIP",
-    "META",
+    "ONDO",
     "LAB",
-    "ETH"
+    "ZEST",
+    "JTO",
+    "PEPE",
+    "MON"
   ],
   "SHIB-USDT-SWAP|pump|volume_surge": 1779300174.9315674,
   "ADA-USDT-SWAP|dump|volume_surge": 1779300174.9315674,
@@ -354,5 +354,11 @@
   "CHIP-USDT-SWAP|pump|social_surge": 1779301064.470189,
   "META-USDT-SWAP|pump|social_surge": 1779301064.470189,
   "LAB-USDT-SWAP|pump|social_surge": 1779301064.470189,
-  "ETH-USDT-SWAP|pump|social_surge": 1779301064.470189
+  "ETH-USDT-SWAP|pump|social_surge": 1779301064.470189,
+  "BSB-USDT-SWAP|pump|swap_top_gainers": 1779301966.6009512,
+  "KAITO-USDT-SWAP|pump|swap_top_gainers": 1779301966.6009512,
+  "SHIB-USDT-SWAP|dump|volume_surge": 1779301966.6009512,
+  "ONDO-USDT-SWAP|pump|social_surge": 1779301966.6009512,
+  "PEPE-USDT-SWAP|pump|social_surge": 1779301966.6009512,
+  "MON-USDT-SWAP|pump|social_surge": 1779301966.6009512
 }
