@@ -326,26 +326,22 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "PENGU",
     "LIT",
+    "VVV",
+    "HYPE",
     "BTC",
+    "PENGU",
     "ONDO",
     "CC",
-    "VVV",
-    "ZEC",
+    "ZEST",
     "PI",
-    "SOL",
-    "SUI",
-    "MON",
-    "KAS",
-    "ALGO",
+    "AAVE",
     "LAB",
-    "KITE"
+    "SUI",
+    "RON",
+    "BILL",
+    "SEI"
   ],
-  "XRP-USDT-SWAP|pump|volume_surge": 1779240781.012906,
-  "SPACEX-USDT-SWAP|pump|longshort_ratio": 1779240781.012906,
-  "TON-USDT-SWAP|pump|social_surge": 1779240781.012906,
-  "CC-USDT-SWAP|pump|social_surge": 1779240781.012906,
   "RIVER-USDT-SWAP|pump|swap_top_gainers": 1779241670.4495277,
   "ENJ-USDT-SWAP|dump|funding_extreme": 1779241670.4495277,
   "LLY-USDT-SWAP|dump|longshort_ratio": 1779241670.4495277,
@@ -356,5 +352,11 @@
   "SUI-USDT-SWAP|pump|social_surge": 1779242583.3397932,
   "ALGO-USDT-SWAP|pump|social_surge": 1779242583.3397932,
   "LAB-USDT-SWAP|pump|social_surge": 1779242583.3397932,
-  "KITE-USDT-SWAP|pump|social_surge": 1779242583.3397932
+  "KITE-USDT-SWAP|pump|social_surge": 1779242583.3397932,
+  "DRAM-USDT-SWAP|pump|longshort_ratio": 1779243474.5447874,
+  "SPACEX-USDT-SWAP|pump|longshort_ratio": 1779243474.5447874,
+  "HYPE-USDT-SWAP|pump|social_surge": 1779243474.5447874,
+  "AAVE-USDT-SWAP|pump|social_surge": 1779243474.5447874,
+  "BILL-USDT-SWAP|pump|social_surge": 1779243474.5447874,
+  "SEI-USDT-SWAP|pump|social_surge": 1779243474.5447874
 }
