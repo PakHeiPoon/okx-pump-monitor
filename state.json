@@ -329,20 +329,19 @@
     "HYPE",
     "VVV",
     "PENGU",
-    "LIT",
-    "ZEST",
     "ZEC",
+    "ZEST",
+    "LIT",
     "BTC",
-    "GITLAWB",
-    "ONDO",
     "SOL",
-    "ETH",
     "PEAQ",
     "TAO",
-    "SUI",
-    "NEXO"
+    "ONDO",
+    "ETH",
+    "GITLAWB",
+    "NEXO",
+    "DRV"
   ],
-  "SUI-USDT-SWAP|pump|social_surge": 1779286653.5724666,
   "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779287579.4617734,
   "ARM-USDT-SWAP|pump|oi_surge": 1779287579.4617734,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779287579.4617734,
@@ -350,5 +349,6 @@
   "AT-USDT-SWAP|pump|swap_top_gainers": 1779288483.3785117,
   "CHIP-USDT-SWAP|dump|funding_extreme": 1779288483.3785117,
   "SOL-USDT-SWAP|pump|social_surge": 1779288483.3785117,
-  "TAO-USDT-SWAP|pump|social_surge": 1779288483.3785117
+  "TAO-USDT-SWAP|pump|social_surge": 1779288483.3785117,
+  "DRAM-USDT-SWAP|pump|longshort_ratio": 1779289388.058137
 }
