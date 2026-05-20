@@ -326,26 +326,22 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
+    "UDS",
     "FIDD",
     "MANIFEST",
-    "PENGU",
     "NEX",
+    "PENGU",
     "ZEC",
-    "UDS",
     "HYPE",
-    "VVV",
     "BSB",
+    "VVV",
     "CC",
+    "TAO",
     "SOL",
-    "LIT",
     "DASH",
-    "ONDO",
-    "BTC"
+    "BTC",
+    "LIT"
   ],
-  "BSB-USDT-SWAP|dump|oi_surge": 1779303793.598226,
-  "BSB-USDT-SWAP|pump|liquidations": 1779303793.598226,
-  "CC-USDT-SWAP|pump|social_surge": 1779303793.598226,
-  "TAO-USDT-SWAP|pump|social_surge": 1779303793.598226,
   "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779304675.4279056,
   "BSB-USDT-SWAP|pump|swap_top_gainers": 1779304675.4279056,
   "BEAT-USDT-SWAP|pump|swap_top_gainers": 1779304675.4279056,
@@ -357,5 +353,6 @@
   "ZEN-USDT-SWAP|pump|swap_top_gainers": 1779305587.6609836,
   "TIA-USDT-SWAP|pump|swap_top_gainers": 1779305587.6609836,
   "BSB-USDT-SWAP|pump|funding_extreme": 1779305587.6609836,
-  "BTC-USDT-SWAP|pump|social_surge": 1779305587.6609836
+  "BTC-USDT-SWAP|pump|social_surge": 1779305587.6609836,
+  "TAO-USDT-SWAP|pump|social_surge": 1779306172.1229696
 }
