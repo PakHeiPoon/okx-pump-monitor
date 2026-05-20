@@ -330,17 +330,17 @@
     "LIT",
     "HYPE",
     "PENGU",
+    "EDEN",
     "VVV",
     "SOL",
-    "EDEN",
     "TAO",
-    "PEPE",
     "PLUME",
     "ONDO",
-    "AAVE",
-    "BILL",
+    "NEAR",
+    "PEPE",
     "TON",
-    "AKT"
+    "AKT",
+    "BILL"
   ],
   "ARM-USDT-SWAP|pump|longshort_ratio": 1779250667.688735,
   "TON-USDT-SWAP|pump|social_surge": 1779250667.688735,
@@ -357,5 +357,9 @@
   "UP-USDT-SWAP|pump|swap_top_gainers": 1779251873.7843428,
   "SUI-USDT-SWAP|dump|volume_surge": 1779251873.7843428,
   "OPENAI-USDT-SWAP|pump|longshort_ratio": 1779251873.7843428,
-  "BILL-USDT-SWAP|pump|social_surge": 1779251873.7843428
+  "BILL-USDT-SWAP|pump|social_surge": 1779251873.7843428,
+  "WLFI-USDT-SWAP|pump|volume_surge": 1779252466.364926,
+  "BASED-USDT-SWAP|pump|volume_surge": 1779252466.364926,
+  "LLY-USDT-SWAP|dump|longshort_ratio": 1779252466.364926,
+  "NEAR-USDT-SWAP|pump|social_surge": 1779252466.364926
 }
