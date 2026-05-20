@@ -328,18 +328,18 @@
   "_trending_last_seen": [
     "MANIFEST",
     "ZEC",
-    "HYPE",
     "NEX",
+    "HYPE",
     "VVV",
-    "PENGU",
     "ETH",
-    "LIT",
-    "BTC",
-    "ONDO",
+    "PENGU",
     "DASH",
-    "JTO",
-    "AERO",
+    "ONDO",
     "LAB",
+    "LIT",
+    "JTO",
+    "TROLL",
+    "KTA",
     "RENDER"
   ],
   "PROS-USDT-SWAP|dump|funding_extreme": 1779316345.9671721,
@@ -347,5 +347,8 @@
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779317258.7893748,
   "AERO-USDT-SWAP|pump|social_surge": 1779317258.7893748,
   "RENDER-USDT-SWAP|pump|social_surge": 1779317258.7893748,
-  "SAHARA-USDT-SWAP|dump|volume_surge": 1779317623.1037164
+  "SAHARA-USDT-SWAP|dump|volume_surge": 1779317623.1037164,
+  "BSB-USDT-SWAP|pump|swap_top_gainers": 1779318182.6968992,
+  "ASTER-USDT-SWAP|pump|volume_surge": 1779318182.6968992,
+  "OL-USDT-SWAP|dump|perp_premium": 1779318182.6968992
 }
