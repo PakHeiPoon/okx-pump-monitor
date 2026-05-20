@@ -335,19 +335,20 @@
     "BTC",
     "LIT",
     "MEGA",
-    "MON",
-    "ONDO",
-    "TAO",
+    "ZEST",
     "SOL",
-    "ETH",
-    "ZEST"
+    "ONDO",
+    "AERO",
+    "DASH",
+    "TAO"
   ],
-  "BSB-USDT-SWAP|pump|swap_top_gainers": 1779297517.5910046,
-  "HYPE-USDT-SWAP|pump|volume_surge": 1779297517.5910046,
-  "SOL-USDT-SWAP|pump|social_surge": 1779297517.5910046,
   "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779298245.4760025,
   "IMX-USDT-SWAP|dump|perp_premium": 1779298245.4760025,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779298245.4760025,
   "MEGA-USDT-SWAP|pump|social_surge": 1779298245.4760025,
-  "ETH-USDT-SWAP|pump|social_surge": 1779298245.4760025
+  "ETH-USDT-SWAP|pump|social_surge": 1779298245.4760025,
+  "SHIB-USDT-SWAP|pump|volume_surge": 1779300174.9315674,
+  "ADA-USDT-SWAP|dump|volume_surge": 1779300174.9315674,
+  "AERO-USDT-SWAP|pump|social_surge": 1779300174.9315674,
+  "DASH-USDT-SWAP|pump|social_surge": 1779300174.9315674
 }
