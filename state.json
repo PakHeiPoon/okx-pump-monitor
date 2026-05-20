@@ -328,19 +328,19 @@
   "_trending_last_seen": [
     "PENGU",
     "HYPE",
-    "VVV",
     "ZEST",
+    "VVV",
     "GITLAWB",
+    "SERV",
+    "HBAR",
+    "LIT",
     "ZEC",
     "BTC",
     "ETH",
-    "HBAR",
-    "LIT",
-    "SUI",
-    "TRX",
-    "CC",
     "ONDO",
-    "INJ"
+    "LUNC",
+    "SUI",
+    "TIG"
   ],
   "TRUTH-USDT-SWAP|pump|swap_top_gainers": 1779274976.5316434,
   "INTC-USDT-SWAP|pump|volume_surge": 1779274976.5316434,
@@ -356,5 +356,6 @@
   "TRX-USDT-SWAP|pump|social_surge": 1779275856.87356,
   "ONDO-USDT-SWAP|pump|social_surge": 1779275856.87356,
   "INJ-USDT-SWAP|pump|social_surge": 1779275856.87356,
-  "CHIP-USDT-SWAP|dump|perp_premium": 1779276135.9487956
+  "CHIP-USDT-SWAP|dump|perp_premium": 1779276135.9487956,
+  "UB-USDT-SWAP|dump|volume_surge": 1779276781.70942
 }
