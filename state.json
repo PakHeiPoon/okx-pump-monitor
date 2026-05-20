@@ -328,19 +328,19 @@
   "_trending_last_seen": [
     "VVV",
     "ZEST",
-    "PENGU",
     "LIT",
+    "PENGU",
     "HYPE",
     "ONDO",
     "ZEC",
     "PI",
-    "ETH",
     "TAO",
+    "ETH",
     "CFG",
-    "SUI",
+    "SERV",
+    "XMR",
     "AKT",
-    "LINK",
-    "BTC"
+    "AERO"
   ],
   "SOXL-USDT-SWAP|pump|oi_surge": 1779263247.056875,
   "ARM-USDT-SWAP|pump|longshort_ratio": 1779263247.056875,
@@ -354,5 +354,6 @@
   "MU-USDT-SWAP|pump|longshort_ratio": 1779264558.5319939,
   "TAO-USDT-SWAP|pump|social_surge": 1779264558.5319939,
   "LINK-USDT-SWAP|pump|social_surge": 1779264558.5319939,
-  "BTC-USDT-SWAP|pump|social_surge": 1779264558.5319939
+  "BTC-USDT-SWAP|pump|social_surge": 1779264558.5319939,
+  "ONE-USDT-SWAP|dump|perp_premium": 1779265048.3568645
 }
