@@ -332,19 +332,16 @@
     "LIT",
     "HYPE",
     "ONDO",
-    "PI",
     "ZEC",
+    "PI",
     "ETH",
-    "DRV",
-    "SOL",
+    "TAO",
+    "CFG",
     "SUI",
     "AKT",
-    "AERO",
-    "CC"
+    "LINK",
+    "BTC"
   ],
-  "SPACE-USDT-SWAP|pump|swap_top_gainers": 1779262387.4791582,
-  "MON-USDT-SWAP|pump|social_surge": 1779262387.4791582,
-  "SOL-USDT-SWAP|pump|social_surge": 1779262387.4791582,
   "SOXL-USDT-SWAP|pump|oi_surge": 1779263247.056875,
   "ARM-USDT-SWAP|pump|longshort_ratio": 1779263247.056875,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779263247.056875,
@@ -353,5 +350,9 @@
   "SUI-USDT-SWAP|pump|social_surge": 1779263247.056875,
   "INJ-USDT-SWAP|pump|social_surge": 1779263247.056875,
   "AERO-USDT-SWAP|pump|social_surge": 1779264165.2937732,
-  "CC-USDT-SWAP|pump|social_surge": 1779264165.2937732
+  "CC-USDT-SWAP|pump|social_surge": 1779264165.2937732,
+  "MU-USDT-SWAP|pump|longshort_ratio": 1779264558.5319939,
+  "TAO-USDT-SWAP|pump|social_surge": 1779264558.5319939,
+  "LINK-USDT-SWAP|pump|social_surge": 1779264558.5319939,
+  "BTC-USDT-SWAP|pump|social_surge": 1779264558.5319939
 }
