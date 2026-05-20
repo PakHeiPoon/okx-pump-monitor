@@ -331,18 +331,17 @@
     "HYPE",
     "ZEC",
     "VVV",
+    "LIT",
     "ZEST",
+    "BTC",
     "ONDO",
     "TAO",
-    "LIT",
-    "BTC",
     "PEAQ",
-    "NEXO",
     "NEAR",
-    "PENDLE",
-    "SOL"
+    "DRV",
+    "NEXO",
+    "POD"
   ],
-  "DRAM-USDT-SWAP|pump|longshort_ratio": 1779289388.058137,
   "XPL-USDT-SWAP|pump|volume_surge": 1779290263.7075663,
   "NEAR-USDT-SWAP|pump|volume_surge": 1779290263.7075663,
   "PUMP-USDT-SWAP|pump|volume_surge": 1779290263.7075663,
@@ -365,5 +364,11 @@
   "NEAR-USDT-SWAP|pump|social_surge": 1779290263.7075663,
   "PENDLE-USDT-SWAP|pump|social_surge": 1779290263.7075663,
   "H-USDT-SWAP|pump|swap_top_gainers": 1779291152.6242957,
-  "CHIP-USDT-SWAP|dump|funding_extreme": 1779291152.6242957
+  "CHIP-USDT-SWAP|dump|funding_extreme": 1779291152.6242957,
+  "BSB-USDT-SWAP|pump|swap_top_gainers": 1779292074.330158,
+  "RLS-USDT-SWAP|dump|swap_top_gainers": 1779292074.330158,
+  "STABLE-USDT-SWAP|pump|swap_top_gainers": 1779292074.330158,
+  "RAY-USDT-SWAP|pump|volume_surge": 1779292074.330158,
+  "UB-USDT-SWAP|dump|volume_surge": 1779292074.330158,
+  "RLS-USDT-SWAP|dump|oi_surge": 1779292074.330158
 }
