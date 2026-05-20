@@ -335,16 +335,13 @@
     "HYPE",
     "ETH",
     "LUNC",
+    "SUI",
     "TAO",
     "RON",
-    "LAB",
-    "CHIP",
     "BNKR",
-    "ZEC"
+    "ZEC",
+    "BTC"
   ],
-  "ENA-USDT-SWAP|dump|volume_surge": 1779256073.9611073,
-  "APT-USDT-SWAP|pump|social_surge": 1779256073.9611073,
-  "KITE-USDT-SWAP|pump|social_surge": 1779256073.9611073,
   "APR-USDT-SWAP|pump|swap_top_gainers": 1779256984.1682525,
   "MU-USDT-SWAP|pump|volume_surge": 1779256984.1682525,
   "ONDO-USDT-SWAP|pump|social_surge": 1779256984.1682525,
@@ -357,5 +354,6 @@
   "TAO-USDT-SWAP|pump|social_surge": 1779257870.0736632,
   "LAB-USDT-SWAP|pump|social_surge": 1779257870.0736632,
   "CHIP-USDT-SWAP|pump|social_surge": 1779257870.0736632,
-  "ZEC-USDT-SWAP|pump|social_surge": 1779257870.0736632
+  "ZEC-USDT-SWAP|pump|social_surge": 1779257870.0736632,
+  "BTC-USDT-SWAP|pump|social_surge": 1779258764.7751522
 }
