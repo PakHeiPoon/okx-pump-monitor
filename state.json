@@ -335,18 +335,17 @@
     "VVV",
     "BTC",
     "BSB",
-    "EDEN",
-    "ICP",
-    "LIT",
     "SUI",
+    "ICP",
     "SOL",
-    "FIDA"
+    "LIT",
+    "FIDA",
+    "EDEN"
   ],
-  "JTO-USDT-SWAP|pump|swap_top_gainers": 1779308279.580126,
-  "BSB-USDT-SWAP|pump|funding_extreme": 1779308279.580126,
-  "YB-USDT-SWAP|dump|perp_premium": 1779308279.580126,
-  "LIT-USDT-SWAP|pump|social_surge": 1779308279.580126,
   "BSB-USDT-SWAP|dump|swap_top_gainers": 1779309187.7180457,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779310045.4444232,
-  "SUI-USDT-SWAP|pump|social_surge": 1779310045.4444232
+  "SUI-USDT-SWAP|pump|social_surge": 1779310045.4444232,
+  "H-USDT-SWAP|pump|swap_top_gainers": 1779310983.2365162,
+  "PENDLE-USDT-SWAP|dump|perp_premium": 1779310983.2365162,
+  "LAB-USDT-SWAP|dump|longshort_ratio": 1779310983.2365162
 }
