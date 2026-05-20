@@ -326,28 +326,30 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "HYPE",
-    "VVV",
     "PENGU",
-    "ZEST",
+    "VVV",
+    "HYPE",
     "LIT",
+    "ZEST",
     "GITLAWB",
+    "ONDO",
     "SERV",
-    "LUNC",
-    "AKT",
     "ETH",
-    "LINK",
-    "BTC",
-    "SUI",
     "ZEC",
-    "SOL"
+    "LUNC",
+    "AAVE",
+    "AKT",
+    "BTC",
+    "PI"
   ],
-  "RENDER-USDT-SWAP|pump|social_surge": 1779277677.050099,
   "CHIP-USDT-SWAP|dump|funding_extreme": 1779278590.6551723,
   "LITE-USDT-SWAP|pump|funding_extreme": 1779278590.6551723,
   "CHIP-USDT-SWAP|dump|perp_premium": 1779278590.6551723,
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1779278590.6551723,
   "AERO-USDT-SWAP|pump|social_surge": 1779278590.6551723,
   "LINK-USDT-SWAP|pump|social_surge": 1779279462.922422,
-  "SOL-USDT-SWAP|pump|social_surge": 1779279462.922422
+  "SOL-USDT-SWAP|pump|social_surge": 1779279462.922422,
+  "ONDO-USDT-SWAP|pump|social_surge": 1779280379.6896951,
+  "AAVE-USDT-SWAP|pump|social_surge": 1779280379.6896951,
+  "PI-USDT-SWAP|pump|social_surge": 1779280379.6896951
 }
