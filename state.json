@@ -327,24 +327,21 @@
   ],
   "_trending_last_seen": [
     "VVV",
-    "HYPE",
     "LIT",
-    "PENGU",
-    "ZEST",
-    "ONDO",
     "ZEC",
+    "ZEST",
+    "HYPE",
+    "PENGU",
+    "ONDO",
     "BTC",
-    "GITLAWB",
-    "ETH",
-    "XRP",
+    "SOL",
+    "PLAY",
     "SERV",
-    "AKT",
-    "TRX",
-    "SOL"
+    "PEAQ",
+    "GITLAWB",
+    "INJ",
+    "AKT"
   ],
-  "ONDO-USDT-SWAP|pump|social_surge": 1779280379.6896951,
-  "AAVE-USDT-SWAP|pump|social_surge": 1779280379.6896951,
-  "PI-USDT-SWAP|pump|social_surge": 1779280379.6896951,
   "CHIP-USDT-SWAP|dump|funding_extreme": 1779281254.6311207,
   "LITE-USDT-SWAP|pump|funding_extreme": 1779281254.6311207,
   "CHIP-USDT-SWAP|dump|perp_premium": 1779281254.6311207,
@@ -354,5 +351,7 @@
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779282189.84723,
   "XRP-USDT-SWAP|pump|social_surge": 1779282189.84723,
   "TRX-USDT-SWAP|pump|social_surge": 1779282189.84723,
-  "SOL-USDT-SWAP|pump|social_surge": 1779282189.84723
+  "SOL-USDT-SWAP|pump|social_surge": 1779282189.84723,
+  "INTC-USDT-SWAP|dump|volume_surge": 1779283089.929757,
+  "OFC-USDT-SWAP|dump|volume_surge": 1779283089.929757
 }
