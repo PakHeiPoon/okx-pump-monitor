@@ -332,15 +332,15 @@
     "LIT",
     "ZEST",
     "ZEC",
+    "ETH",
     "ONDO",
-    "PEAQ",
-    "PI",
-    "POD",
     "BTC",
-    "SOL",
-    "TAO",
+    "PI",
     "LUNC",
-    "LINK"
+    "LINK",
+    "GITLAWB",
+    "SUI",
+    "DIEM"
   ],
   "ARM-USDT-SWAP|pump|swap_top_gainers": 1779284859.8914359,
   "MRVL-USDT-SWAP|pump|swap_top_gainers": 1779284859.8914359,
@@ -353,5 +353,6 @@
   "UB-USDT-SWAP|pump|swap_top_gainers": 1779285786.0875905,
   "GLW-USDT-SWAP|pump|funding_extreme": 1779285786.0875905,
   "LINK-USDT-SWAP|pump|social_surge": 1779285786.0875905,
-  "CHIP-USDT-SWAP|dump|funding_extreme": 1779285940.45831
+  "CHIP-USDT-SWAP|dump|funding_extreme": 1779285940.45831,
+  "SUI-USDT-SWAP|pump|social_surge": 1779286653.5724666
 }
