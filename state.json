@@ -329,21 +329,19 @@
     "NEX",
     "PENGU",
     "HYPE",
+    "MANIFEST",
     "ZEC",
     "VVV",
     "LIT",
-    "ZEST",
     "ONDO",
-    "TAO",
+    "ZEST",
     "BTC",
-    "NEAR",
+    "SOL",
     "PEAQ",
     "AAVE",
-    "DRV",
-    "MANIFEST"
+    "NEAR",
+    "TAO"
   ],
-  "H-USDT-SWAP|pump|swap_top_gainers": 1779291152.6242957,
-  "CHIP-USDT-SWAP|dump|funding_extreme": 1779291152.6242957,
   "BSB-USDT-SWAP|pump|swap_top_gainers": 1779292074.330158,
   "RLS-USDT-SWAP|dump|swap_top_gainers": 1779292074.330158,
   "STABLE-USDT-SWAP|pump|swap_top_gainers": 1779292074.330158,
@@ -352,5 +350,9 @@
   "RLS-USDT-SWAP|dump|oi_surge": 1779292074.330158,
   "LAB-USDT-SWAP|pump|swap_top_gainers": 1779292989.8168304,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779292989.8168304,
-  "AAVE-USDT-SWAP|pump|social_surge": 1779292989.8168304
+  "AAVE-USDT-SWAP|pump|social_surge": 1779292989.8168304,
+  "BERA-USDT-SWAP|pump|swap_top_gainers": 1779293868.987488,
+  "CHIP-USDT-SWAP|dump|funding_extreme": 1779293868.987488,
+  "PROVE-USDT-SWAP|dump|perp_premium": 1779293868.987488,
+  "SOL-USDT-SWAP|pump|social_surge": 1779293868.987488
 }
