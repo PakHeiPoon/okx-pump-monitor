@@ -342,13 +342,6 @@
     "ONDO",
     "INJ"
   ],
-  "SPACE-USDT-SWAP|dump|swap_top_gainers": 1779274046.3239148,
-  "SPACE-USDT-SWAP|dump|oi_surge": 1779274046.3239148,
-  "CHIP-USDT-SWAP|dump|perp_premium": 1779274046.3239148,
-  "LAB-USDT-SWAP|pump|social_surge": 1779274046.3239148,
-  "ZEC-USDT-SWAP|pump|social_surge": 1779274046.3239148,
-  "SOL-USDT-SWAP|pump|social_surge": 1779274046.3239148,
-  "TAO-USDT-SWAP|pump|social_surge": 1779274046.3239148,
   "TRUTH-USDT-SWAP|pump|swap_top_gainers": 1779274976.5316434,
   "INTC-USDT-SWAP|pump|volume_surge": 1779274976.5316434,
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1779274976.5316434,
@@ -362,5 +355,6 @@
   "HBAR-USDT-SWAP|pump|social_surge": 1779275856.87356,
   "TRX-USDT-SWAP|pump|social_surge": 1779275856.87356,
   "ONDO-USDT-SWAP|pump|social_surge": 1779275856.87356,
-  "INJ-USDT-SWAP|pump|social_surge": 1779275856.87356
+  "INJ-USDT-SWAP|pump|social_surge": 1779275856.87356,
+  "CHIP-USDT-SWAP|dump|perp_premium": 1779276135.9487956
 }
