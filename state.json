@@ -327,25 +327,21 @@
   ],
   "_trending_last_seen": [
     "LIT",
+    "VVV",
     "ZEST",
     "HYPE",
-    "VVV",
     "PENGU",
-    "EDEN",
-    "AI",
     "ETH",
-    "SOL",
-    "ZEC",
-    "BILL",
+    "AI",
+    "RON",
+    "APT",
     "CHIP",
+    "SOL",
+    "LUNC",
+    "KITE",
     "BTC",
-    "ASTER",
-    "RON"
+    "ZEC"
   ],
-  "BASED-USDT-SWAP|pump|swap_top_gainers": 1779253375.3888886,
-  "WLD-USDT-SWAP|dump|volume_surge": 1779253375.3888886,
-  "XRP-USDT-SWAP|pump|volume_surge": 1779253375.3888886,
-  "CHIP-USDT-SWAP|pump|social_surge": 1779253375.3888886,
   "RLS-USDT-SWAP|pump|swap_top_gainers": 1779254271.119599,
   "FOGO-USDT-SWAP|pump|swap_top_gainers": 1779254271.119599,
   "BIO-USDT-SWAP|pump|volume_surge": 1779254271.119599,
@@ -360,5 +356,8 @@
   "LLY-USDT-SWAP|dump|longshort_ratio": 1779255184.1880126,
   "ETH-USDT-SWAP|pump|social_surge": 1779255184.1880126,
   "BTC-USDT-SWAP|pump|social_surge": 1779255184.1880126,
-  "ASTER-USDT-SWAP|pump|social_surge": 1779255184.1880126
+  "ASTER-USDT-SWAP|pump|social_surge": 1779255184.1880126,
+  "ENA-USDT-SWAP|dump|volume_surge": 1779256073.9611073,
+  "APT-USDT-SWAP|pump|social_surge": 1779256073.9611073,
+  "KITE-USDT-SWAP|pump|social_surge": 1779256073.9611073
 }
