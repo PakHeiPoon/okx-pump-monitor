@@ -338,14 +338,10 @@
     "TAO",
     "ONDO",
     "EDEN",
-    "ETH",
     "SUI",
+    "TIG",
     "ASTER"
   ],
-  "PROS-USDT-SWAP|dump|perp_premium": 1779326273.4571471,
-  "NEAR-USDT-SWAP|pump|social_surge": 1779326273.4571471,
-  "LINK-USDT-SWAP|pump|social_surge": 1779326273.4571471,
-  "VIRTUAL-USDT-SWAP|pump|social_surge": 1779326273.4571471,
   "PROS-USDT-SWAP|dump|funding_extreme": 1779327150.151547,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779327150.151547,
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1779327150.151547,
@@ -354,5 +350,6 @@
   "ADA-USDT-SWAP|pump|social_surge": 1779327150.151547,
   "EDEN-USDT-SWAP|pump|social_surge": 1779327150.151547,
   "TAO-USDT-SWAP|pump|social_surge": 1779328081.2408276,
-  "ONDO-USDT-SWAP|pump|social_surge": 1779328081.2408276
+  "ONDO-USDT-SWAP|pump|social_surge": 1779328081.2408276,
+  "TON-USDT-SWAP|dump|volume_surge": 1779328985.4570398
 }
