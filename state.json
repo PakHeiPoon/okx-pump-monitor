@@ -333,18 +333,17 @@
     "SOL",
     "PENGU",
     "VVV",
-    "NEX",
     "PEAQ",
+    "NEX",
     "NEAR",
     "LIT",
     "ONDO",
+    "LINK",
     "ZEC",
     "XMR",
-    "RAIL",
-    "LINK",
-    "MON"
+    "AKT",
+    "RAIL"
   ],
-  "LIT-USDT-SWAP|pump|social_surge": 1779403679.897635,
   "PROVE-USDT-SWAP|dump|funding_extreme": 1779404591.1595087,
   "LINK-USDT-SWAP|pump|social_surge": 1779404591.1595087,
   "TON-USDT-SWAP|pump|social_surge": 1779404591.1595087,
@@ -353,5 +352,7 @@
   "CFX-USDT-SWAP|pump|volume_surge": 1779405474.7741923,
   "RIVER-USDT-SWAP|pump|longshort_ratio": 1779405474.7741923,
   "ZEC-USDT-SWAP|pump|social_surge": 1779405474.7741923,
-  "MON-USDT-SWAP|pump|social_surge": 1779405474.7741923
+  "MON-USDT-SWAP|pump|social_surge": 1779405474.7741923,
+  "BEAT-USDT-SWAP|pump|swap_top_gainers": 1779406382.0276663,
+  "QCOM-USDT-SWAP|pump|oi_surge": 1779406382.0276663
 }
