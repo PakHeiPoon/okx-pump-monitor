@@ -335,20 +335,15 @@
     "NEX",
     "LIT",
     "ASTER",
+    "PEAQ",
     "VVV",
-    "NEAR",
     "BILL",
     "BTC",
-    "PEAQ",
     "TAO",
-    "FIDA",
-    "ZEST"
+    "NEAR",
+    "MEGA",
+    "ONDO"
   ],
-  "EDEN-USDT-SWAP|dump|swap_top_gainers": 1779369534.2849574,
-  "MRVL-USDT-SWAP|pump|swap_top_gainers": 1779369534.2849574,
-  "BAND-USDT-SWAP|dump|perp_premium": 1779369534.2849574,
-  "BTC-USDT-SWAP|pump|social_surge": 1779369534.2849574,
-  "USELESS-USDT-SWAP|pump|social_surge": 1779369534.2849574,
   "YB-USDT-SWAP|pump|swap_top_gainers": 1779370456.7988656,
   "LIT-USDT-SWAP|pump|swap_top_gainers": 1779370456.7988656,
   "GRASS-USDT-SWAP|pump|volume_surge": 1779370456.7988656,
@@ -365,5 +360,12 @@
   "ARM-USDT-SWAP|pump|swap_top_gainers": 1779371361.460697,
   "NBIS-USDT-SWAP|pump|oi_surge": 1779371361.460697,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779371361.460697,
-  "TAO-USDT-SWAP|pump|social_surge": 1779371361.460697
+  "TAO-USDT-SWAP|pump|social_surge": 1779371361.460697,
+  "BSB-USDT-SWAP|pump|swap_top_gainers": 1779372255.4427872,
+  "USAR-USDT-SWAP|pump|swap_top_gainers": 1779372255.4427872,
+  "ASTER-USDT-SWAP|pump|swap_top_gainers": 1779372255.4427872,
+  "SOXL-USDT-SWAP|pump|oi_surge": 1779372255.4427872,
+  "BAND-USDT-SWAP|dump|perp_premium": 1779372255.4427872,
+  "MEGA-USDT-SWAP|pump|social_surge": 1779372255.4427872,
+  "ONDO-USDT-SWAP|pump|social_surge": 1779372255.4427872
 }
