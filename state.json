@@ -331,24 +331,23 @@
     "HYPE",
     "SOL",
     "VVV",
-    "ZEC",
     "NEX",
     "GRASS",
-    "PENGU",
-    "TAO",
+    "ZEC",
     "MON",
     "SUI",
-    "ONDO",
+    "PENGU",
     "MEGA",
-    "PI",
+    "TAO",
+    "ONDO",
     "LIT",
-    "ASTER"
+    "ASTER",
+    "PI"
   ],
-  "RKLB-USDT-SWAP|pump|oi_surge": 1779387460.9260228,
-  "AERO-USDT-SWAP|pump|social_surge": 1779387460.9260228,
-  "GRASS-USDT-SWAP|pump|social_surge": 1779387460.9260228,
   "AI-USDT-SWAP|dump|volume_surge": 1779389255.4802933,
   "PROVE-USDT-SWAP|dump|funding_extreme": 1779389255.4802933,
   "ONDO-USDT-SWAP|pump|social_surge": 1779389255.4802933,
-  "ASTER-USDT-SWAP|pump|social_surge": 1779389255.4802933
+  "ASTER-USDT-SWAP|pump|social_surge": 1779389255.4802933,
+  "PROVE-USDT-SWAP|dump|perp_premium": 1779390191.2869937,
+  "RIVER-USDT-SWAP|pump|longshort_ratio": 1779390191.2869937
 }
