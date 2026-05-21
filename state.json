@@ -333,22 +333,17 @@
     "NEX",
     "LIT",
     "ZEC",
+    "MANIFEST",
     "ASTER",
     "BTC",
     "SUI",
-    "MANIFEST",
-    "PROVE",
-    "KNTQ",
-    "ONDO",
     "VVV",
+    "ONDO",
     "NEAR",
-    "ETH"
+    "PROVE",
+    "ETH",
+    "EDEN"
   ],
-  "AVNT-USDT-SWAP|pump|swap_top_gainers": 1779355071.1075695,
-  "BLEND-USDT-SWAP|pump|swap_top_gainers": 1779355071.1075695,
-  "HBAR-USDT-SWAP|pump|volume_surge": 1779355071.1075695,
-  "URNM-USDT-SWAP|pump|new_listings": 1779355071.1075695,
-  "PROVE-USDT-SWAP|pump|social_surge": 1779355071.1075695,
   "TURBO-USDT-SWAP|pump|volume_surge": 1779355991.6969876,
   "AVNT-USDT-SWAP|pump|oi_surge": 1779355991.6969876,
   "ONDO-USDT-SWAP|pump|social_surge": 1779355991.6969876,
@@ -356,5 +351,8 @@
   "PROVE-USDT-SWAP|dump|funding_extreme": 1779356872.4780262,
   "PROVE-USDT-SWAP|dump|perp_premium": 1779356872.4780262,
   "AVNT-USDT-SWAP|dump|perp_premium": 1779356872.4780262,
-  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779356872.4780262
+  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779356872.4780262,
+  "H-USDT-SWAP|dump|volume_surge": 1779357783.0353887,
+  "BLEND-USDT-SWAP|dump|funding_extreme": 1779357783.0353887,
+  "EDEN-USDT-SWAP|pump|social_surge": 1779357783.0353887
 }
