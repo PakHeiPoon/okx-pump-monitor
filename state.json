@@ -336,11 +336,11 @@
     "LIT",
     "PI",
     "ASTER",
-    "TAO",
     "ONDO",
-    "SERV",
     "ETH",
-    "CARDS"
+    "CARDS",
+    "SERV",
+    "TAO"
   ],
   "ZAMA-USDT-SWAP|pump|volume_surge": 1779350593.4503338,
   "CBRS-USDT-SWAP|pump|volume_surge": 1779350593.4503338,
@@ -352,5 +352,6 @@
   "ETH-USDT-SWAP|pump|social_surge": 1779351444.3759356,
   "OFC-USDT-SWAP|dump|volume_surge": 1779351867.2654192,
   "PROVE-USDT-SWAP|dump|funding_extreme": 1779351867.2654192,
-  "ARKM-USDT-SWAP|dump|perp_premium": 1779351867.2654192
+  "ARKM-USDT-SWAP|dump|perp_premium": 1779351867.2654192,
+  "PROS-USDT-SWAP|dump|funding_extreme": 1779352392.659667
 }
