@@ -329,28 +329,25 @@
   ],
   "_trending_last_seen": [
     "HYPE",
+    "PENGU",
     "MANIFEST",
+    "VVV",
     "ZEC",
     "NEX",
-    "VVV",
     "MEGA",
-    "PENGU",
     "LIT",
-    "SUI",
     "BTC",
-    "MON",
-    "AERO",
+    "SOL",
+    "SUI",
+    "ETH",
     "TAO",
-    "CC",
-    "PROVE"
+    "MON",
+    "GEOD"
   ],
-  "H-USDT-SWAP|pump|swap_top_gainers": 1779382996.264661,
-  "YB-USDT-SWAP|pump|perp_premium": 1779382996.264661,
-  "SUI-USDT-SWAP|pump|social_surge": 1779382996.264661,
-  "MON-USDT-SWAP|pump|social_surge": 1779382996.264661,
-  "PROVE-USDT-SWAP|pump|social_surge": 1779382996.264661,
   "PROVE-USDT-SWAP|dump|funding_extreme": 1779383857.0075147,
   "GRASS-USDT-SWAP|pump|oi_surge": 1779383857.0075147,
   "CC-USDT-SWAP|pump|social_surge": 1779383857.0075147,
-  "AERO-USDT-SWAP|pump|social_surge": 1779384747.1143546
+  "AERO-USDT-SWAP|pump|social_surge": 1779384747.1143546,
+  "SOL-USDT-SWAP|pump|social_surge": 1779385675.4529035,
+  "ETH-USDT-SWAP|pump|social_surge": 1779385675.4529035
 }
