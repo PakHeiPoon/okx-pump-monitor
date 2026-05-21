@@ -329,25 +329,21 @@
   ],
   "_trending_last_seen": [
     "HYPE",
+    "MANIFEST",
     "ZEC",
     "PENGU",
     "NEX",
     "LIT",
-    "VVV",
     "MEGA",
+    "VVV",
     "ASTER",
-    "PEAQ",
-    "FIDA",
-    "XMR",
-    "NEAR",
     "ONDO",
     "BTC",
-    "BILL"
+    "PEAQ",
+    "XMR",
+    "FIDA",
+    "TAO"
   ],
-  "ARM-USDT-SWAP|pump|swap_top_gainers": 1779371361.460697,
-  "NBIS-USDT-SWAP|pump|oi_surge": 1779371361.460697,
-  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779371361.460697,
-  "TAO-USDT-SWAP|pump|social_surge": 1779371361.460697,
   "BSB-USDT-SWAP|pump|swap_top_gainers": 1779372255.4427872,
   "USAR-USDT-SWAP|pump|swap_top_gainers": 1779372255.4427872,
   "ASTER-USDT-SWAP|pump|swap_top_gainers": 1779372255.4427872,
@@ -359,5 +355,8 @@
   "H-USDT-SWAP|pump|swap_top_gainers": 1779373045.8723125,
   "PROVE-USDT-SWAP|dump|funding_extreme": 1779373045.8723125,
   "BLEND-USDT-SWAP|dump|funding_extreme": 1779373045.8723125,
-  "PROVE-USDT-SWAP|dump|perp_premium": 1779373045.8723125
+  "PROVE-USDT-SWAP|dump|perp_premium": 1779373045.8723125,
+  "KAITO-USDT-SWAP|dump|perp_premium": 1779373833.9903212,
+  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779373833.9903212,
+  "TAO-USDT-SWAP|pump|social_surge": 1779373833.9903212
 }
