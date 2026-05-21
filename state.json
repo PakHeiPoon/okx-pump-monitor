@@ -337,23 +337,23 @@
     "ASTER",
     "SOL",
     "TAO",
-    "ETH",
+    "PI",
     "PEAQ",
     "LIT",
-    "NEAR",
-    "PI",
-    "LUNC"
+    "BTC",
+    "USELESS",
+    "ETH"
   ],
-  "SUI-USDT-SWAP|dump|volume_surge": 1779366848.0479171,
-  "BICO-USDT-SWAP|dump|perp_premium": 1779366848.0479171,
-  "GLM-USDT-SWAP|pump|perp_premium": 1779366848.0479171,
-  "ETH-USDT-SWAP|pump|social_surge": 1779366848.0479171,
-  "PI-USDT-SWAP|pump|social_surge": 1779366848.0479171,
   "PROVE-USDT-SWAP|dump|funding_extreme": 1779367739.7748816,
   "BLEND-USDT-SWAP|dump|funding_extreme": 1779367739.7748816,
   "PROVE-USDT-SWAP|dump|perp_premium": 1779367739.7748816,
   "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779368567.8384237,
   "BSB-USDT-SWAP|pump|swap_top_gainers": 1779368567.8384237,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779368567.8384237,
-  "NEAR-USDT-SWAP|pump|social_surge": 1779368567.8384237
+  "NEAR-USDT-SWAP|pump|social_surge": 1779368567.8384237,
+  "EDEN-USDT-SWAP|dump|swap_top_gainers": 1779369534.2849574,
+  "MRVL-USDT-SWAP|pump|swap_top_gainers": 1779369534.2849574,
+  "BAND-USDT-SWAP|dump|perp_premium": 1779369534.2849574,
+  "BTC-USDT-SWAP|pump|social_surge": 1779369534.2849574,
+  "USELESS-USDT-SWAP|pump|social_surge": 1779369534.2849574
 }
