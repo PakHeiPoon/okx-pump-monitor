@@ -330,19 +330,19 @@
   "_trending_last_seen": [
     "HYPE",
     "GRASS",
-    "ZEC",
-    "NEX",
     "PENGU",
+    "NEX",
     "VVV",
     "ONDO",
+    "ZEC",
     "SOL",
+    "AERO",
     "LIT",
-    "BTC",
     "NEAR",
     "MON",
-    "BILL",
-    "AERO",
-    "INJ"
+    "BTC",
+    "CC",
+    "KAS"
   ],
   "PROVE-USDT-SWAP|dump|perp_premium": 1779392845.7227788,
   "RIVER-USDT-SWAP|pump|longshort_ratio": 1779392845.7227788,
@@ -353,5 +353,6 @@
   "PROVE-USDT-SWAP|dump|funding_extreme": 1779393751.2895176,
   "YB-USDT-SWAP|dump|perp_premium": 1779393751.2895176,
   "AERO-USDT-SWAP|pump|social_surge": 1779393751.2895176,
-  "INJ-USDT-SWAP|pump|social_surge": 1779393751.2895176
+  "INJ-USDT-SWAP|pump|social_surge": 1779393751.2895176,
+  "CC-USDT-SWAP|pump|social_surge": 1779394649.789638
 }
