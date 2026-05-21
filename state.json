@@ -331,18 +331,18 @@
     "HYPE",
     "GRASS",
     "PENGU",
-    "PEAQ",
     "NEAR",
+    "PEAQ",
     "SOL",
     "VVV",
-    "ONDO",
     "NEX",
+    "ONDO",
+    "AERO",
     "PLUME",
-    "BTC",
     "SUI",
     "XRP",
-    "AERO",
-    "TAO"
+    "LIT",
+    "XMR"
   ],
   "PROVE-USDT-SWAP|pump|swap_top_gainers": 1779401878.9097111,
   "PROVE-USDT-SWAP|dump|funding_extreme": 1779401878.9097111,
@@ -353,5 +353,6 @@
   "BTC-USDT-SWAP|pump|social_surge": 1779402756.9710405,
   "PROVE-USDT-SWAP|dump|perp_premium": 1779403398.9793468,
   "PLUME-USDT-SWAP|pump|social_surge": 1779403398.9793468,
-  "SUI-USDT-SWAP|pump|social_surge": 1779403398.9793468
+  "SUI-USDT-SWAP|pump|social_surge": 1779403398.9793468,
+  "LIT-USDT-SWAP|pump|social_surge": 1779403679.897635
 }
