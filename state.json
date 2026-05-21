@@ -329,18 +329,18 @@
     "MANIFEST",
     "HYPE",
     "PENGU",
-    "NEX",
     "ZEC",
+    "NEX",
     "VVV",
-    "SOL",
     "BTC",
-    "ONDO",
-    "LIT",
+    "SOL",
     "BILL",
-    "AVAX",
-    "TAO",
+    "LIT",
+    "ONDO",
+    "SUI",
     "CFG",
-    "SUI"
+    "AVAX",
+    "TRX"
   ],
   "BTC-USDT-SWAP|pump|social_surge": 1779320870.4123473,
   "SUI-USDT-SWAP|pump|social_surge": 1779320870.4123473,
@@ -349,5 +349,7 @@
   "BILL-USDT-SWAP|pump|social_surge": 1779321786.6986566,
   "TAO-USDT-SWAP|pump|social_surge": 1779321786.6986566,
   "AVAX-USDT-SWAP|pump|social_surge": 1779321786.6986566,
-  "PROS-USDT-SWAP|pump|volume_surge": 1779322053.1197267
+  "PROS-USDT-SWAP|pump|volume_surge": 1779322053.1197267,
+  "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779322659.5585332,
+  "TRX-USDT-SWAP|pump|social_surge": 1779322659.5585332
 }
