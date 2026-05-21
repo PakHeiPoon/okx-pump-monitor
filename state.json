@@ -326,8 +326,8 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "MANIFEST",
     "PENGU",
+    "MANIFEST",
     "HYPE",
     "NEX",
     "ZEC",
@@ -335,16 +335,13 @@
     "NEAR",
     "TON",
     "VVV",
-    "SUI",
-    "ASTER",
-    "BTC",
-    "ADA",
+    "TAO",
+    "ONDO",
+    "EDEN",
     "ETH",
-    "EDEN"
+    "SUI",
+    "ASTER"
   ],
-  "BSB-USDT-SWAP|pump|swap_top_gainers": 1779325371.5943897,
-  "TRUTH-USDT-SWAP|pump|swap_top_gainers": 1779325371.5943897,
-  "ETH-USDT-SWAP|pump|social_surge": 1779325371.5943897,
   "PROS-USDT-SWAP|dump|perp_premium": 1779326273.4571471,
   "NEAR-USDT-SWAP|pump|social_surge": 1779326273.4571471,
   "LINK-USDT-SWAP|pump|social_surge": 1779326273.4571471,
@@ -355,5 +352,7 @@
   "TON-USDT-SWAP|pump|social_surge": 1779327150.151547,
   "SUI-USDT-SWAP|pump|social_surge": 1779327150.151547,
   "ADA-USDT-SWAP|pump|social_surge": 1779327150.151547,
-  "EDEN-USDT-SWAP|pump|social_surge": 1779327150.151547
+  "EDEN-USDT-SWAP|pump|social_surge": 1779327150.151547,
+  "TAO-USDT-SWAP|pump|social_surge": 1779328081.2408276,
+  "ONDO-USDT-SWAP|pump|social_surge": 1779328081.2408276
 }
