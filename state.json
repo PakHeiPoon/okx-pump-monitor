@@ -330,19 +330,18 @@
     "PENGU",
     "HYPE",
     "MANIFEST",
-    "ZEC",
     "LIT",
-    "NEAR",
+    "ZEC",
     "ONDO",
-    "VVV",
-    "AKT",
     "SUI",
-    "PLUME",
+    "BTC",
+    "NEAR",
+    "AKT",
+    "PURR",
     "ETH",
-    "TAO",
-    "PURR"
+    "PLUME",
+    "PI"
   ],
-  "TON-USDT-SWAP|dump|volume_surge": 1779328985.4570398,
   "BSB-USDT-SWAP|dump|swap_top_gainers": 1779329855.8887327,
   "TRUTH-USDT-SWAP|pump|swap_top_gainers": 1779329855.8887327,
   "GIGGLE-USDT-SWAP|pump|volume_surge": 1779329855.8887327,
@@ -355,5 +354,7 @@
   "BSB-USDT-SWAP|pump|swap_top_gainers": 1779330780.4832644,
   "BICO-USDT-SWAP|dump|perp_premium": 1779330780.4832644,
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1779330780.4832644,
-  "PLUME-USDT-SWAP|pump|social_surge": 1779330780.4832644
+  "PLUME-USDT-SWAP|pump|social_surge": 1779330780.4832644,
+  "BTC-USDT-SWAP|pump|social_surge": 1779331670.6042387,
+  "PI-USDT-SWAP|pump|social_surge": 1779331670.6042387
 }
