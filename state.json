@@ -330,19 +330,19 @@
   "_trending_last_seen": [
     "HYPE",
     "GRASS",
-    "PENGU",
     "NEAR",
-    "SOL",
+    "PENGU",
     "VVV",
     "LIT",
     "ZEC",
     "NEX",
-    "AERO",
-    "MON",
     "PLUME",
+    "CC",
+    "SOL",
     "BTC",
-    "TAO",
-    "CC"
+    "TON",
+    "TROLL",
+    "LUNC"
   ],
   "BEAT-USDT-SWAP|pump|volume_surge": 1779396481.3824532,
   "PROVE-USDT-SWAP|dump|funding_extreme": 1779396481.3824532,
@@ -353,5 +353,7 @@
   "XPL-USDT-SWAP|pump|volume_surge": 1779397976.1210563,
   "PROVE-USDT-SWAP|dump|perp_premium": 1779397976.1210563,
   "RIVER-USDT-SWAP|pump|longshort_ratio": 1779397976.1210563,
-  "CC-USDT-SWAP|pump|social_surge": 1779397976.1210563
+  "CC-USDT-SWAP|pump|social_surge": 1779397976.1210563,
+  "RAVE-USDT-SWAP|pump|volume_surge": 1779398262.477479,
+  "TON-USDT-SWAP|pump|social_surge": 1779398262.477479
 }
