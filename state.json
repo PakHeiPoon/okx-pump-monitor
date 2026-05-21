@@ -328,23 +328,20 @@
   "_trending_last_seen": [
     "HYPE",
     "PENGU",
-    "NEX",
     "ZEC",
+    "NEX",
     "ONDO",
     "BTC",
+    "VVV",
+    "DASH",
     "LIT",
-    "KNTQ",
     "SOL",
     "NEAR",
-    "DASH",
-    "VVV",
-    "XRP",
-    "RON",
-    "CC"
+    "XMR",
+    "KNTQ",
+    "EDEN",
+    "XRP"
   ],
-  "BSB-USDT-SWAP|dump|swap_top_gainers": 1779333458.6526566,
-  "BASED-USDT-SWAP|dump|volume_surge": 1779333458.6526566,
-  "SUI-USDT-SWAP|pump|social_surge": 1779333458.6526566,
   "DASH-USDT-SWAP|pump|swap_top_gainers": 1779334372.8898027,
   "SPACE-USDT-SWAP|pump|volume_surge": 1779334372.8898027,
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1779334372.8898027,
@@ -354,5 +351,7 @@
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779335267.7242832,
   "DASH-USDT-SWAP|pump|social_surge": 1779335267.7242832,
   "XRP-USDT-SWAP|pump|social_surge": 1779335267.7242832,
-  "CC-USDT-SWAP|pump|social_surge": 1779335267.7242832
+  "CC-USDT-SWAP|pump|social_surge": 1779335267.7242832,
+  "BSB-USDT-SWAP|pump|swap_top_gainers": 1779336170.4404082,
+  "YB-USDT-SWAP|dump|perp_premium": 1779336170.4404082
 }
