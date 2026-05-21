@@ -333,18 +333,17 @@
     "ZEC",
     "NEX",
     "VVV",
-    "LIT",
     "MEGA",
-    "PENGU",
+    "LIT",
     "BTC",
+    "PENGU",
     "ETH",
-    "SOL",
     "TAO",
     "SUI",
+    "CC",
     "MON",
     "PROVE"
   ],
-  "PROVE-USDT-SWAP|dump|funding_extreme": 1779381178.8705597,
   "CHIP-USDT-SWAP|dump|perp_premium": 1779382070.4002419,
   "MORPHO-USDT-SWAP|dump|perp_premium": 1779382070.4002419,
   "ONDO-USDT-SWAP|pump|social_surge": 1779382070.4002419,
@@ -353,5 +352,8 @@
   "YB-USDT-SWAP|pump|perp_premium": 1779382996.264661,
   "SUI-USDT-SWAP|pump|social_surge": 1779382996.264661,
   "MON-USDT-SWAP|pump|social_surge": 1779382996.264661,
-  "PROVE-USDT-SWAP|pump|social_surge": 1779382996.264661
+  "PROVE-USDT-SWAP|pump|social_surge": 1779382996.264661,
+  "PROVE-USDT-SWAP|dump|funding_extreme": 1779383857.0075147,
+  "GRASS-USDT-SWAP|pump|oi_surge": 1779383857.0075147,
+  "CC-USDT-SWAP|pump|social_surge": 1779383857.0075147
 }
