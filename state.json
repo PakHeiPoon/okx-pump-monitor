@@ -330,24 +330,26 @@
   "_trending_last_seen": [
     "HYPE",
     "SOL",
-    "VVV",
-    "NEX",
     "GRASS",
     "ZEC",
-    "MON",
-    "SUI",
     "PENGU",
-    "MEGA",
-    "TAO",
-    "ONDO",
+    "NEX",
+    "VVV",
+    "MON",
     "LIT",
     "ASTER",
-    "PI"
+    "MEGA",
+    "NEAR",
+    "SUI",
+    "ONDO",
+    "WLD"
   ],
   "AI-USDT-SWAP|dump|volume_surge": 1779389255.4802933,
   "PROVE-USDT-SWAP|dump|funding_extreme": 1779389255.4802933,
   "ONDO-USDT-SWAP|pump|social_surge": 1779389255.4802933,
   "ASTER-USDT-SWAP|pump|social_surge": 1779389255.4802933,
   "PROVE-USDT-SWAP|dump|perp_premium": 1779390191.2869937,
-  "RIVER-USDT-SWAP|pump|longshort_ratio": 1779390191.2869937
+  "RIVER-USDT-SWAP|pump|longshort_ratio": 1779390191.2869937,
+  "NEAR-USDT-SWAP|pump|social_surge": 1779391071.936366,
+  "WLD-USDT-SWAP|pump|social_surge": 1779391071.936366
 }
