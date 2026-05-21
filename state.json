@@ -326,27 +326,22 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "HYPE",
-    "NEX",
     "PENGU",
+    "NEX",
+    "HYPE",
     "ZEC",
     "VVV",
-    "LIT",
     "TAO",
     "SUI",
     "SOL",
-    "DASH",
-    "ASTER",
     "PEAQ",
-    "AERO",
-    "LINK",
-    "MEGA"
+    "MEGA",
+    "DASH",
+    "ONDO",
+    "ZEST",
+    "LIT",
+    "CFG"
   ],
-  "CHZ-USDT-SWAP|dump|volume_surge": 1779341580.9401958,
-  "ENA-USDT-SWAP|dump|volume_surge": 1779341580.9401958,
-  "ADA-USDT-SWAP|dump|volume_surge": 1779341580.9401958,
-  "ICP-USDT-SWAP|pump|social_surge": 1779341580.9401958,
-  "PLUME-USDT-SWAP|pump|social_surge": 1779341580.9401958,
   "JELLYJELLY-USDT-SWAP|pump|swap_top_gainers": 1779342474.2027776,
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1779342474.2027776,
   "DASH-USDT-SWAP|pump|social_surge": 1779342474.2027776,
@@ -354,5 +349,6 @@
   "NEAR-USDT-SWAP|pump|social_surge": 1779342474.2027776,
   "LINK-USDT-SWAP|pump|social_surge": 1779342474.2027776,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779343354.9108536,
-  "MEGA-USDT-SWAP|pump|social_surge": 1779343354.9108536
+  "MEGA-USDT-SWAP|pump|social_surge": 1779343354.9108536,
+  "ONDO-USDT-SWAP|pump|social_surge": 1779344244.4986682
 }
