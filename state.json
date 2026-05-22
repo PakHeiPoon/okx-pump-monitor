@@ -331,18 +331,18 @@
     "NEAR",
     "HYPE",
     "GRASS",
-    "NEX",
-    "VVV",
     "FET",
-    "BTC",
+    "NEX",
     "PENGU",
-    "ETH",
-    "MEGA",
+    "RAIL",
+    "VVV",
     "ZEC",
-    "NXPC",
+    "BTC",
+    "SOL",
     "PEAQ",
+    "NXPC",
     "PI",
-    "SUI"
+    "ETH"
   ],
   "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779427976.0835955,
   "RIVER-USDT-SWAP|pump|longshort_ratio": 1779427976.0835955,
@@ -352,5 +352,6 @@
   "BILL-USDT-SWAP|pump|social_surge": 1779427976.0835955,
   "ZAMA-USDT-SWAP|pump|volume_surge": 1779428875.8418005,
   "PI-USDT-SWAP|pump|social_surge": 1779428875.8418005,
-  "PROVE-USDT-SWAP|dump|funding_extreme": 1779429121.222058
+  "PROVE-USDT-SWAP|dump|funding_extreme": 1779429121.222058,
+  "RIVER-USDT-SWAP|pump|volume_surge": 1779429769.3946507
 }
