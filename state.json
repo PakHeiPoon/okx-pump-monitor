@@ -334,19 +334,16 @@
     "GENIUS",
     "ZEC",
     "ONDO",
-    "NEX",
-    "GRASS",
     "VVV",
-    "SUI",
-    "RAIL",
+    "GRASS",
+    "NEX",
     "BSB",
-    "OPG",
-    "SOL",
-    "WLD"
+    "RAIL",
+    "SUI",
+    "WLD",
+    "XRP",
+    "DOGE"
   ],
-  "LPT-USDT-SWAP|dump|funding_extreme": 1779470301.9022238,
-  "INJ-USDT-SWAP|pump|social_surge": 1779470301.9022238,
-  "STABLE-USDT-SWAP|pump|social_surge": 1779470301.9022238,
   "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779471164.5311098,
   "SOXL-USDT-SWAP|dump|volume_surge": 1779471164.5311098,
   "RECALL-USDT-SWAP|dump|volume_surge": 1779471164.5311098,
@@ -361,5 +358,8 @@
   "EIGEN-USDT-SWAP|dump|perp_premium": 1779472058.8193219,
   "ATH-USDT-SWAP|dump|perp_premium": 1779472058.8193219,
   "BSB-USDT-SWAP|pump|social_surge": 1779472058.8193219,
-  "WLD-USDT-SWAP|pump|social_surge": 1779472058.8193219
+  "WLD-USDT-SWAP|pump|social_surge": 1779472058.8193219,
+  "SYRUP-USDT-SWAP|dump|longshort_ratio": 1779472984.668991,
+  "XRP-USDT-SWAP|pump|social_surge": 1779472984.668991,
+  "DOGE-USDT-SWAP|pump|social_surge": 1779472984.668991
 }
