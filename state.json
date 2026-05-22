@@ -333,21 +333,20 @@
     "PENGU",
     "ONDO",
     "VVV",
-    "BTC",
     "GRASS",
-    "ZEC",
+    "BTC",
     "AKT",
-    "BEAT",
     "LIT",
-    "NEX",
-    "VIRTUAL",
+    "BEAT",
     "GENIUS",
-    "RAIL"
+    "RAIL",
+    "PUMP",
+    "ZEC",
+    "BSB"
   ],
-  "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779459471.330989,
-  "AI-USDT-SWAP|dump|volume_surge": 1779459471.330989,
-  "QCOM-USDT-SWAP|pump|oi_surge": 1779459471.330989,
-  "LIT-USDT-SWAP|pump|social_surge": 1779459471.330989,
   "BEAT-USDT-SWAP|pump|social_surge": 1779460349.8627331,
-  "BEAT-USDT-SWAP|dump|swap_top_gainers": 1779461255.1994364
+  "BEAT-USDT-SWAP|dump|swap_top_gainers": 1779461255.1994364,
+  "RIVER-USDT-SWAP|pump|longshort_ratio": 1779462189.754509,
+  "PUMP-USDT-SWAP|pump|social_surge": 1779462189.754509,
+  "BSB-USDT-SWAP|pump|social_surge": 1779462189.754509
 }
