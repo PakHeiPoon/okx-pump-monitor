@@ -336,13 +336,13 @@
     "ONDO",
     "BTC",
     "SOL",
-    "PLUME",
     "NEX",
-    "TAO",
-    "LIT",
     "BILL",
-    "ADA",
-    "TROLL"
+    "LIT",
+    "TROLL",
+    "ROBO",
+    "TAO",
+    "SUI"
   ],
   "AI-USDT-SWAP|pump|swap_top_gainers": 1779488243.361335,
   "PLUME-USDT-SWAP|pump|social_surge": 1779488243.361335,
@@ -354,5 +354,6 @@
   "TSLA-USDT-SWAP|pump|longshort_ratio": 1779489171.154372,
   "PENGU-USDT-SWAP|pump|social_surge": 1779489171.154372,
   "KITE-USDT-SWAP|pump|swap_top_gainers": 1779489863.428384,
-  "UB-USDT-SWAP|dump|volume_surge": 1779489863.428384
+  "UB-USDT-SWAP|dump|volume_surge": 1779489863.428384,
+  "ROBO-USDT-SWAP|pump|social_surge": 1779490074.575051
 }
