@@ -330,9 +330,9 @@
   "_trending_last_seen": [
     "NEAR",
     "HYPE",
+    "VVV",
     "ONDO",
     "ZEC",
-    "VVV",
     "PENGU",
     "NEX",
     "SOL",
@@ -352,5 +352,7 @@
   "BILL-USDT-SWAP|pump|social_surge": 1779485547.102315,
   "BTC-USDT-SWAP|pump|social_surge": 1779486227.8314865,
   "ETH-USDT-SWAP|pump|social_surge": 1779486227.8314865,
-  "AERO-USDT-SWAP|pump|social_surge": 1779486227.8314865
+  "AERO-USDT-SWAP|pump|social_surge": 1779486227.8314865,
+  "WLFI-USDT-SWAP|pump|volume_surge": 1779486457.6383014,
+  "LAB-USDT-SWAP|dump|longshort_ratio": 1779486457.6383014
 }
