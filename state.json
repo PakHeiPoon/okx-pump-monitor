@@ -331,22 +331,19 @@
     "NEAR",
     "HYPE",
     "GENIUS",
-    "VVV",
     "PENGU",
+    "VVV",
     "OPG",
-    "POL",
     "BTC",
     "GRASS",
-    "ONDO",
-    "SUI",
-    "WLD",
     "ZEC",
+    "SOL",
+    "POL",
     "EDEN",
-    "SOL"
+    "NEX",
+    "ONDO",
+    "LIT"
   ],
-  "NBIS-USDT-SWAP|pump|funding_extreme": 1779444179.6515956,
-  "LPT-USDT-SWAP|dump|perp_premium": 1779444179.6515956,
-  "GRASS-USDT-SWAP|pump|social_surge": 1779444179.6515956,
   "DASH-USDT-SWAP|dump|volume_surge": 1779445053.970428,
   "PEPE-USDT-SWAP|dump|volume_surge": 1779445053.970428,
   "LPT-USDT-SWAP|dump|funding_extreme": 1779445053.970428,
@@ -360,5 +357,8 @@
   "ARM-USDT-SWAP|dump|funding_extreme": 1779445985.4144478,
   "ARKM-USDT-SWAP|dump|perp_premium": 1779445985.4144478,
   "RIVER-USDT-SWAP|pump|longshort_ratio": 1779445985.4144478,
-  "SOL-USDT-SWAP|pump|social_surge": 1779445985.4144478
+  "SOL-USDT-SWAP|pump|social_surge": 1779445985.4144478,
+  "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779446878.6177342,
+  "HOME-USDT-SWAP|pump|swap_top_gainers": 1779446878.6177342,
+  "LIT-USDT-SWAP|pump|social_surge": 1779446878.6177342
 }
