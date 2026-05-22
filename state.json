@@ -331,22 +331,19 @@
     "PENGU",
     "NEAR",
     "HYPE",
-    "GENIUS",
     "VVV",
+    "GENIUS",
     "OPG",
-    "NEX",
-    "EDEN",
-    "BTC",
     "ZEC",
-    "AKT",
+    "EDEN",
+    "NEX",
+    "BTC",
     "SOL",
-    "LIT",
     "BILL",
-    "MEGA"
+    "AKT",
+    "INJ",
+    "LIT"
   ],
-  "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779446878.6177342,
-  "HOME-USDT-SWAP|pump|swap_top_gainers": 1779446878.6177342,
-  "LIT-USDT-SWAP|pump|social_surge": 1779446878.6177342,
   "UB-USDT-SWAP|dump|swap_top_gainers": 1779447787.1876948,
   "CHZ-USDT-SWAP|dump|volume_surge": 1779447787.1876948,
   "LPT-USDT-SWAP|dump|funding_extreme": 1779447787.1876948,
@@ -356,5 +353,7 @@
   "BSB-USDT-SWAP|pump|swap_top_gainers": 1779448678.7837255,
   "UB-USDT-SWAP|pump|swap_top_gainers": 1779448678.7837255,
   "ARM-USDT-SWAP|dump|funding_extreme": 1779448678.7837255,
-  "PROVE-USDT-SWAP|dump|perp_premium": 1779448678.7837255
+  "PROVE-USDT-SWAP|dump|perp_premium": 1779448678.7837255,
+  "LIT-USDT-SWAP|dump|volume_surge": 1779449547.5061295,
+  "INJ-USDT-SWAP|pump|social_surge": 1779449547.5061295
 }
