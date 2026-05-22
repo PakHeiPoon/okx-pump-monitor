@@ -331,20 +331,19 @@
     "NEAR",
     "HYPE",
     "PENGU",
-    "FET",
-    "GRASS",
     "NEX",
-    "RAIL",
+    "GRASS",
     "VVV",
-    "BTC",
-    "ZEST",
     "ZEC",
+    "FET",
+    "RAIL",
+    "TAO",
+    "ZEST",
+    "BTC",
     "SOL",
-    "FIDA",
-    "MON",
-    "MEGA"
+    "LUNC",
+    "EDEN"
   ],
-  "RIVER-USDT-SWAP|pump|volume_surge": 1779429769.3946507,
   "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779430658.800935,
   "PROVE-USDT-SWAP|dump|perp_premium": 1779430658.800935,
   "QCOM-USDT-SWAP|pump|longshort_ratio": 1779430658.800935,
@@ -353,5 +352,7 @@
   "PROVE-USDT-SWAP|dump|funding_extreme": 1779431546.4537468,
   "GLW-USDT-SWAP|pump|funding_extreme": 1779431546.4537468,
   "CHIP-USDT-SWAP|dump|perp_premium": 1779431546.4537468,
-  "MEGA-USDT-SWAP|pump|social_surge": 1779431546.4537468
+  "MEGA-USDT-SWAP|pump|social_surge": 1779431546.4537468,
+  "TAO-USDT-SWAP|pump|social_surge": 1779432449.4824698,
+  "EDEN-USDT-SWAP|pump|social_surge": 1779432449.4824698
 }
