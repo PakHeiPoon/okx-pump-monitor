@@ -344,18 +344,11 @@
     "RAIL",
     "LIT"
   ],
-  "BEAT-USDT-SWAP|pump|swap_top_gainers": 1779472058.8193219,
-  "BSB-USDT-SWAP|pump|swap_top_gainers": 1779472058.8193219,
-  "BILL-USDT-SWAP|pump|swap_top_gainers": 1779472058.8193219,
-  "SAHARA-USDT-SWAP|pump|swap_top_gainers": 1779472058.8193219,
-  "EIGEN-USDT-SWAP|dump|perp_premium": 1779472058.8193219,
-  "ATH-USDT-SWAP|dump|perp_premium": 1779472058.8193219,
-  "BSB-USDT-SWAP|pump|social_surge": 1779472058.8193219,
-  "WLD-USDT-SWAP|pump|social_surge": 1779472058.8193219,
   "SYRUP-USDT-SWAP|dump|longshort_ratio": 1779472984.668991,
   "XRP-USDT-SWAP|pump|social_surge": 1779472984.668991,
   "DOGE-USDT-SWAP|pump|social_surge": 1779472984.668991,
   "SOL-USDT-SWAP|pump|social_surge": 1779473875.9902446,
   "ETH-USDT-SWAP|pump|social_surge": 1779473875.9902446,
-  "LIT-USDT-SWAP|pump|social_surge": 1779473875.9902446
+  "LIT-USDT-SWAP|pump|social_surge": 1779473875.9902446,
+  "BSB-USDT-SWAP|pump|swap_top_gainers": 1779474396.41443
 }
