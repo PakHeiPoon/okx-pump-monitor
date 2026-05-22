@@ -330,25 +330,20 @@
   "_trending_last_seen": [
     "NEAR",
     "HYPE",
-    "VVV",
-    "NEX",
     "GRASS",
+    "VVV",
     "PENGU",
+    "NEX",
     "ZEC",
     "RAIL",
-    "OPG",
-    "BTC",
-    "ETH",
-    "CC",
     "LIT",
+    "BTC",
+    "OPG",
     "TAO",
-    "ICP"
+    "ETH",
+    "EDGE",
+    "ONDO"
   ],
-  "XRP-USDT-SWAP|pump|volume_surge": 1779418067.562698,
-  "ADA-USDT-SWAP|pump|volume_surge": 1779418067.562698,
-  "ENA-USDT-SWAP|pump|volume_surge": 1779418067.562698,
-  "PLUME-USDT-SWAP|pump|social_surge": 1779418067.562698,
-  "TAO-USDT-SWAP|pump|social_surge": 1779418067.562698,
   "FOGO-USDT-SWAP|pump|swap_top_gainers": 1779418982.8685582,
   "PROVE-USDT-SWAP|dump|funding_extreme": 1779418982.8685582,
   "PROVE-USDT-SWAP|dump|perp_premium": 1779418982.8685582,
@@ -358,5 +353,8 @@
   "ETH-USDT-SWAP|pump|social_surge": 1779418982.8685582,
   "SUI-USDT-SWAP|pump|social_surge": 1779418982.8685582,
   "OPG-USDT-SWAP|pump|longshort_ratio": 1779419879.3495488,
-  "ICP-USDT-SWAP|pump|social_surge": 1779419879.3495488
+  "ICP-USDT-SWAP|pump|social_surge": 1779419879.3495488,
+  "SAHARA-USDT-SWAP|pump|swap_top_gainers": 1779420777.9734807,
+  "EDGE-USDT-SWAP|pump|social_surge": 1779420777.9734807,
+  "ONDO-USDT-SWAP|pump|social_surge": 1779420777.9734807
 }
