@@ -329,23 +329,21 @@
   ],
   "_trending_last_seen": [
     "VVV",
-    "NEAR",
     "GRASS",
     "HYPE",
+    "NEAR",
     "PENGU",
     "NEX",
     "ZEC",
-    "PEAQ",
-    "AERO",
-    "AI",
-    "XAUT",
-    "BTC",
-    "LIT",
     "SOL",
-    "SUI"
+    "PLUME",
+    "BTC",
+    "AERO",
+    "PEAQ",
+    "CC",
+    "XAUT",
+    "AI"
   ],
-  "BILL-USDT-SWAP|pump|swap_top_gainers": 1779412669.6078336,
-  "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779412669.6078336,
   "QCOM-USDT-SWAP|pump|longshort_ratio": 1779413579.9140828,
   "AI-USDT-SWAP|pump|social_surge": 1779413579.9140828,
   "XRP-USDT-SWAP|dump|volume_surge": 1779413840.6290412,
@@ -353,5 +351,10 @@
   "RIVER-USDT-SWAP|pump|longshort_ratio": 1779413840.6290412,
   "AERO-USDT-SWAP|pump|social_surge": 1779413840.6290412,
   "BTC-USDT-SWAP|pump|social_surge": 1779413840.6290412,
-  "UB-USDT-SWAP|pump|swap_top_gainers": 1779414457.953872
+  "UB-USDT-SWAP|pump|swap_top_gainers": 1779414457.953872,
+  "OPG-USDT-SWAP|pump|swap_top_gainers": 1779415392.5007188,
+  "OL-USDT-SWAP|pump|volume_surge": 1779415392.5007188,
+  "OPG-USDT-SWAP|pump|oi_surge": 1779415392.5007188,
+  "PLUME-USDT-SWAP|pump|social_surge": 1779415392.5007188,
+  "CC-USDT-SWAP|pump|social_surge": 1779415392.5007188
 }
