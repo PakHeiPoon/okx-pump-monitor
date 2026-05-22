@@ -335,20 +335,20 @@
     "GENIUS",
     "ONDO",
     "NEX",
-    "RENDER",
-    "BTC",
-    "EDEN",
-    "TAO",
     "PEAQ",
     "OPG",
+    "TAO",
+    "RENDER",
     "ZEC",
-    "ETH"
+    "BTC",
+    "ETH",
+    "EDEN"
   ],
-  "BTC-USDT-SWAP|pump|social_surge": 1779452272.095119,
   "OPG-USDT-SWAP|dump|funding_extreme": 1779453186.9443643,
   "LPT-USDT-SWAP|dump|funding_extreme": 1779453186.9443643,
   "OPG-USDT-SWAP|pump|longshort_ratio": 1779453186.9443643,
   "RIVER-USDT-SWAP|pump|longshort_ratio": 1779453186.9443643,
   "TAO-USDT-SWAP|pump|social_surge": 1779453186.9443643,
-  "ETH-USDT-SWAP|pump|social_surge": 1779454057.5675533
+  "ETH-USDT-SWAP|pump|social_surge": 1779454057.5675533,
+  "ALLO-USDT-SWAP|pump|swap_top_gainers": 1779454986.9753628
 }
