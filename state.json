@@ -328,25 +328,22 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
+    "VVV",
     "NEAR",
     "HYPE",
-    "VVV",
-    "ONDO",
-    "ZEC",
     "PENGU",
+    "ZEC",
+    "ONDO",
     "NEX",
-    "SOL",
     "TAO",
-    "MON",
     "BTC",
-    "ETH",
-    "AKT",
+    "SOL",
     "AERO",
-    "MEGA"
+    "MON",
+    "UTYA",
+    "LIT",
+    "BILL"
   ],
-  "MON-USDT-SWAP|pump|social_surge": 1779484662.1464584,
-  "MEGA-USDT-SWAP|pump|social_surge": 1779484662.1464584,
-  "ETHFI-USDT-SWAP|pump|social_surge": 1779484662.1464584,
   "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779485547.102315,
   "TSLA-USDT-SWAP|pump|longshort_ratio": 1779485547.102315,
   "BILL-USDT-SWAP|pump|social_surge": 1779485547.102315,
@@ -354,5 +351,8 @@
   "ETH-USDT-SWAP|pump|social_surge": 1779486227.8314865,
   "AERO-USDT-SWAP|pump|social_surge": 1779486227.8314865,
   "WLFI-USDT-SWAP|pump|volume_surge": 1779486457.6383014,
-  "LAB-USDT-SWAP|dump|longshort_ratio": 1779486457.6383014
+  "LAB-USDT-SWAP|dump|longshort_ratio": 1779486457.6383014,
+  "TON-USDT-SWAP|pump|volume_surge": 1779487372.240735,
+  "ADA-USDT-SWAP|pump|volume_surge": 1779487372.240735,
+  "LIT-USDT-SWAP|pump|social_surge": 1779487372.240735
 }
