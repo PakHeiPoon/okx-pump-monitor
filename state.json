@@ -330,22 +330,20 @@
   "_trending_last_seen": [
     "NEAR",
     "PENGU",
-    "OPG",
-    "GRASS",
     "HYPE",
+    "GRASS",
+    "OPG",
     "GENIUS",
-    "VVV",
     "ZEC",
+    "VVV",
     "SUI",
-    "NEX",
-    "PI",
     "ONDO",
+    "NEX",
     "TAO",
-    "RAIL",
-    "OCT"
+    "FET",
+    "PI",
+    "FIDA"
   ],
-  "BEAT-USDT-SWAP|pump|swap_top_gainers": 1779436072.7089403,
-  "PI-USDT-SWAP|pump|social_surge": 1779436072.7089403,
   "SNDK-USDT-SWAP|dump|volume_surge": 1779436968.6187081,
   "SOXL-USDT-SWAP|dump|volume_surge": 1779436968.6187081,
   "GLW-USDT-SWAP|pump|funding_extreme": 1779436968.6187081,
@@ -355,5 +353,6 @@
   "PUMP-USDT-SWAP|pump|volume_surge": 1779437873.6063251,
   "2Z-USDT-SWAP|pump|volume_surge": 1779437873.6063251,
   "CHZ-USDT-SWAP|pump|volume_surge": 1779437873.6063251,
-  "TAO-USDT-SWAP|pump|social_surge": 1779437873.6063251
+  "TAO-USDT-SWAP|pump|social_surge": 1779437873.6063251,
+  "WLFI-USDT-SWAP|dump|volume_surge": 1779438779.7054968
 }
