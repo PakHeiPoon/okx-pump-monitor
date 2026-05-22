@@ -330,19 +330,19 @@
   "_trending_last_seen": [
     "NEAR",
     "HYPE",
-    "NEX",
     "VVV",
+    "NEX",
     "GRASS",
-    "OPG",
     "PENGU",
     "ZEC",
     "RAIL",
+    "OPG",
+    "BTC",
+    "ETH",
     "CC",
     "LIT",
     "TAO",
-    "ETH",
-    "SUI",
-    "BTC"
+    "ICP"
   ],
   "XRP-USDT-SWAP|pump|volume_surge": 1779418067.562698,
   "ADA-USDT-SWAP|pump|volume_surge": 1779418067.562698,
@@ -356,5 +356,7 @@
   "SPACEX-USDT-SWAP|pump|longshort_ratio": 1779418982.8685582,
   "QCOM-USDT-SWAP|pump|longshort_ratio": 1779418982.8685582,
   "ETH-USDT-SWAP|pump|social_surge": 1779418982.8685582,
-  "SUI-USDT-SWAP|pump|social_surge": 1779418982.8685582
+  "SUI-USDT-SWAP|pump|social_surge": 1779418982.8685582,
+  "OPG-USDT-SWAP|pump|longshort_ratio": 1779419879.3495488,
+  "ICP-USDT-SWAP|pump|social_surge": 1779419879.3495488
 }
