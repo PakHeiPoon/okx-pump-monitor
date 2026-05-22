@@ -332,20 +332,18 @@
     "GRASS",
     "PEAQ",
     "VVV",
-    "PENGU",
     "NEX",
-    "SOL",
+    "PENGU",
     "TAO",
-    "NEAR",
-    "CHIP",
-    "BTC",
+    "SOL",
     "SUI",
-    "FET",
+    "LIT",
     "TON",
-    "XMR"
+    "NEAR",
+    "MON",
+    "CFG",
+    "RENDER"
   ],
-  "CHIP-USDT-SWAP|pump|social_surge": 1779407271.6983662,
-  "MEGA-USDT-SWAP|pump|social_surge": 1779407271.6983662,
   "PROVE-USDT-SWAP|dump|volume_surge": 1779408169.6930828,
   "SNDK-USDT-SWAP|dump|volume_surge": 1779408169.6930828,
   "SOXL-USDT-SWAP|pump|volume_surge": 1779408169.6930828,
@@ -358,5 +356,8 @@
   "RKLB-USDT-SWAP|dump|oi_surge": 1779409055.7763238,
   "BTC-USDT-SWAP|pump|social_surge": 1779409055.7763238,
   "SUI-USDT-SWAP|pump|social_surge": 1779409055.7763238,
-  "TON-USDT-SWAP|pump|social_surge": 1779409055.7763238
+  "TON-USDT-SWAP|pump|social_surge": 1779409055.7763238,
+  "LIT-USDT-SWAP|pump|social_surge": 1779409946.755132,
+  "MON-USDT-SWAP|pump|social_surge": 1779409946.755132,
+  "RENDER-USDT-SWAP|pump|social_surge": 1779409946.755132
 }
