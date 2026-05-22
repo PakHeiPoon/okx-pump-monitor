@@ -331,21 +331,19 @@
     "VVV",
     "NEAR",
     "ZEC",
-    "HYPE",
     "ONDO",
+    "HYPE",
+    "NEX",
+    "BTC",
     "SOL",
     "TAO",
+    "PENGU",
     "PLUME",
-    "BTC",
-    "NEX",
     "LIT",
-    "BILL",
-    "ADA",
     "SUI",
-    "INJ"
+    "BILL",
+    "ADA"
   ],
-  "WLFI-USDT-SWAP|pump|volume_surge": 1779486457.6383014,
-  "LAB-USDT-SWAP|dump|longshort_ratio": 1779486457.6383014,
   "TON-USDT-SWAP|pump|volume_surge": 1779487372.240735,
   "ADA-USDT-SWAP|pump|volume_surge": 1779487372.240735,
   "LIT-USDT-SWAP|pump|social_surge": 1779487372.240735,
@@ -353,5 +351,9 @@
   "PLUME-USDT-SWAP|pump|social_surge": 1779488243.361335,
   "ADA-USDT-SWAP|pump|social_surge": 1779488243.361335,
   "SUI-USDT-SWAP|pump|social_surge": 1779488243.361335,
-  "INJ-USDT-SWAP|pump|social_surge": 1779488243.361335
+  "INJ-USDT-SWAP|pump|social_surge": 1779488243.361335,
+  "BILL-USDT-SWAP|pump|swap_top_gainers": 1779489171.154372,
+  "LAB-USDT-SWAP|dump|longshort_ratio": 1779489171.154372,
+  "TSLA-USDT-SWAP|pump|longshort_ratio": 1779489171.154372,
+  "PENGU-USDT-SWAP|pump|social_surge": 1779489171.154372
 }
