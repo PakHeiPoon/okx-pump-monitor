@@ -333,16 +333,16 @@
     "GRASS",
     "HYPE",
     "PENGU",
-    "ZEC",
     "NEX",
+    "ZEC",
     "PEAQ",
     "AERO",
-    "SUI",
-    "LUNC",
-    "BTC",
     "AI",
+    "XAUT",
+    "BTC",
     "LIT",
-    "SOL"
+    "SOL",
+    "SUI"
   ],
   "BILL-USDT-SWAP|pump|swap_top_gainers": 1779412669.6078336,
   "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779412669.6078336,
@@ -352,5 +352,6 @@
   "PROVE-USDT-SWAP|dump|funding_extreme": 1779413840.6290412,
   "RIVER-USDT-SWAP|pump|longshort_ratio": 1779413840.6290412,
   "AERO-USDT-SWAP|pump|social_surge": 1779413840.6290412,
-  "BTC-USDT-SWAP|pump|social_surge": 1779413840.6290412
+  "BTC-USDT-SWAP|pump|social_surge": 1779413840.6290412,
+  "UB-USDT-SWAP|pump|swap_top_gainers": 1779414457.953872
 }
