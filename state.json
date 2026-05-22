@@ -344,12 +344,6 @@
     "GENIUS",
     "INJ"
   ],
-  "BSB-USDT-SWAP|pump|swap_top_gainers": 1779456766.7739913,
-  "SNDK-USDT-SWAP|dump|volume_surge": 1779456766.7739913,
-  "AMD-USDT-SWAP|pump|volume_surge": 1779456766.7739913,
-  "PUMP-USDT-SWAP|pump|volume_surge": 1779456766.7739913,
-  "PEPE-USDT-SWAP|pump|volume_surge": 1779456766.7739913,
-  "SHIB-USDT-SWAP|pump|volume_surge": 1779456766.7739913,
   "UB-USDT-SWAP|pump|swap_top_gainers": 1779457674.5659568,
   "USAR-USDT-SWAP|pump|swap_top_gainers": 1779457674.5659568,
   "QCOM-USDT-SWAP|pump|swap_top_gainers": 1779457674.5659568,
@@ -375,5 +369,9 @@
   "CHZ-USDT-SWAP|dump|volume_surge": 1779458584.8766272,
   "SOXL-USDT-SWAP|pump|oi_surge": 1779458584.8766272,
   "UB-USDT-SWAP|dump|oi_surge": 1779458584.8766272,
-  "INJ-USDT-SWAP|pump|social_surge": 1779458584.8766272
+  "INJ-USDT-SWAP|pump|social_surge": 1779458584.8766272,
+  "UB-USDT-SWAP|dump|swap_top_gainers": 1779458785.7055647,
+  "CBRS-USDT-SWAP|dump|swap_top_gainers": 1779458785.7055647,
+  "ACT-USDT-SWAP|dump|volume_surge": 1779458785.7055647,
+  "RIVER-USDT-SWAP|pump|longshort_ratio": 1779458785.7055647
 }
