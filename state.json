@@ -331,21 +331,19 @@
     "NEAR",
     "HYPE",
     "PENGU",
+    "GRASS",
     "VVV",
     "ONDO",
-    "GRASS",
     "ZEC",
     "TAO",
     "BSB",
+    "BTC",
+    "GENIUS",
+    "SOL",
     "MON",
     "RAIL",
-    "BTC",
-    "BILL",
-    "KNTQ",
-    "ETH"
+    "PI"
   ],
-  "OL-USDT-SWAP|pump|perp_premium": 1779464840.6223176,
-  "RIVER-USDT-SWAP|pump|longshort_ratio": 1779464840.6223176,
   "BILL-USDT-SWAP|pump|swap_top_gainers": 1779465783.6427138,
   "AI-USDT-SWAP|dump|volume_surge": 1779465783.6427138,
   "LPT-USDT-SWAP|dump|funding_extreme": 1779465783.6427138,
@@ -356,5 +354,10 @@
   "XPL-USDT-SWAP|dump|volume_surge": 1779466673.2953238,
   "GLW-USDT-SWAP|pump|funding_extreme": 1779466673.2953238,
   "RECALL-USDT-SWAP|pump|oi_surge": 1779466673.2953238,
-  "BSB-USDT-SWAP|pump|social_surge": 1779466673.2953238
+  "BSB-USDT-SWAP|pump|social_surge": 1779466673.2953238,
+  "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779467596.2228084,
+  "ALLO-USDT-SWAP|dump|perp_premium": 1779467596.2228084,
+  "RIVER-USDT-SWAP|pump|longshort_ratio": 1779467596.2228084,
+  "SOL-USDT-SWAP|pump|social_surge": 1779467596.2228084,
+  "PI-USDT-SWAP|pump|social_surge": 1779467596.2228084
 }
