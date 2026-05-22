@@ -329,25 +329,21 @@
   ],
   "_trending_last_seen": [
     "NEAR",
-    "VVV",
     "HYPE",
+    "VVV",
     "GRASS",
-    "NEX",
     "PENGU",
-    "SUI",
-    "ZEC",
+    "NEX",
     "BTC",
-    "ZEST",
-    "LINK",
+    "SUI",
+    "MEGA",
+    "FET",
     "OCT",
-    "LIT",
+    "ZEC",
+    "ZEST",
     "MON",
-    "NXPC"
+    "CFG"
   ],
-  "ENA-USDT-SWAP|pump|volume_surge": 1779423473.3217413,
-  "OPG-USDT-SWAP|pump|longshort_ratio": 1779423473.3217413,
-  "SPACEX-USDT-SWAP|pump|longshort_ratio": 1779423473.3217413,
-  "PI-USDT-SWAP|pump|social_surge": 1779423473.3217413,
   "PROVE-USDT-SWAP|dump|funding_extreme": 1779424385.295376,
   "SUI-USDT-SWAP|pump|social_surge": 1779424385.295376,
   "MON-USDT-SWAP|pump|social_surge": 1779424385.295376,
@@ -355,5 +351,7 @@
   "QCOM-USDT-SWAP|pump|longshort_ratio": 1779425273.4857984,
   "ZEC-USDT-SWAP|pump|social_surge": 1779425273.4857984,
   "LINK-USDT-SWAP|pump|social_surge": 1779425273.4857984,
-  "LIT-USDT-SWAP|pump|social_surge": 1779425273.4857984
+  "LIT-USDT-SWAP|pump|social_surge": 1779425273.4857984,
+  "PROVE-USDT-SWAP|dump|perp_premium": 1779426189.2640326,
+  "MEGA-USDT-SWAP|pump|social_surge": 1779426189.2640326
 }
