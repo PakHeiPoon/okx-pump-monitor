@@ -333,20 +333,17 @@
     "NEAR",
     "HYPE",
     "PENGU",
-    "BTC",
     "VVV",
+    "BTC",
     "SUI",
     "LUNC",
-    "SOL",
-    "TAO",
     "MEGA",
+    "TAO",
+    "SOL",
+    "ZEC",
     "ONDO",
-    "SERV",
-    "PEAQ"
+    "SERV"
   ],
-  "HOME-USDT-SWAP|pump|swap_top_gainers": 1779551276.4167855,
-  "SPACEX-USDT-SWAP|pump|longshort_ratio": 1779551276.4167855,
-  "AXS-USDT-SWAP|pump|social_surge": 1779551276.4167855,
   "BSB-USDT-SWAP|pump|funding_extreme": 1779552146.637592,
   "GMT-USDT-SWAP|dump|funding_extreme": 1779552146.637592,
   "LIT-USDT-SWAP|pump|social_surge": 1779552146.637592,
@@ -357,5 +354,9 @@
   "GMT-USDT-SWAP|dump|perp_premium": 1779553067.7770913,
   "RAVE-USDT-SWAP|pump|longshort_ratio": 1779553067.7770913,
   "TAO-USDT-SWAP|pump|social_surge": 1779553067.7770913,
-  "ONDO-USDT-SWAP|pump|social_surge": 1779553067.7770913
+  "ONDO-USDT-SWAP|pump|social_surge": 1779553067.7770913,
+  "ME-USDT-SWAP|pump|swap_top_gainers": 1779553981.3830154,
+  "ME-USDT-SWAP|pump|oi_surge": 1779553981.3830154,
+  "ME-USDT-SWAP|dump|perp_premium": 1779553981.3830154,
+  "ZEC-USDT-SWAP|pump|social_surge": 1779553981.3830154
 }
