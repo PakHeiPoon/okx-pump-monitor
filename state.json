@@ -330,21 +330,20 @@
   "_trending_last_seen": [
     "UDS",
     "NEAR",
-    "HYPE",
-    "BTC",
-    "VVV",
-    "ZEC",
     "ETH",
+    "VVV",
+    "HYPE",
+    "ZEC",
     "PENGU",
     "BILL",
+    "BTC",
     "RON",
-    "ASTER",
-    "KITE",
-    "WLFI",
+    "PUMP",
+    "PI",
     "SOL",
-    "AERO"
+    "AERO",
+    "OCT"
   ],
-  "GMT-USDT-SWAP|dump|perp_premium": 1779516182.1703172,
   "BEAT-USDT-SWAP|dump|swap_top_gainers": 1779517074.889108,
   "STABLE-USDT-SWAP|dump|funding_extreme": 1779517074.889108,
   "RIVER-USDT-SWAP|pump|longshort_ratio": 1779517074.889108,
@@ -358,5 +357,9 @@
   "KITE-USDT-SWAP|pump|social_surge": 1779517976.8544297,
   "WLFI-USDT-SWAP|pump|social_surge": 1779517976.8544297,
   "SOL-USDT-SWAP|pump|social_surge": 1779517976.8544297,
-  "AERO-USDT-SWAP|pump|social_surge": 1779517976.8544297
+  "AERO-USDT-SWAP|pump|social_surge": 1779517976.8544297,
+  "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779518837.8853805,
+  "GMT-USDT-SWAP|dump|perp_premium": 1779518837.8853805,
+  "PUMP-USDT-SWAP|pump|social_surge": 1779518837.8853805,
+  "PI-USDT-SWAP|pump|social_surge": 1779518837.8853805
 }
