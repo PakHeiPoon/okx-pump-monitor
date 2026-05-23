@@ -330,24 +330,20 @@
   "_trending_last_seen": [
     "CVX",
     "ERG",
-    "PENGU",
     "NEAR",
+    "PENGU",
+    "VVV",
+    "RAIL",
     "HYPE",
     "AKT",
-    "VVV",
     "BTC",
-    "GRASS",
-    "RAIL",
     "TAO",
-    "ATH",
-    "STRK",
-    "ZEC",
-    "SUI"
+    "GRASS",
+    "ASTEROID",
+    "SUI",
+    "NEX",
+    "ATH"
   ],
-  "ME-USDT-SWAP|dump|funding_extreme": 1779561145.9465487,
-  "GMT-USDT-SWAP|dump|perp_premium": 1779561145.9465487,
-  "ATH-USDT-SWAP|pump|social_surge": 1779561145.9465487,
-  "GRASS-USDT-SWAP|pump|social_surge": 1779561145.9465487,
   "USELESS-USDT-SWAP|pump|swap_top_gainers": 1779561965.6709566,
   "BSB-USDT-SWAP|pump|funding_extreme": 1779561965.6709566,
   "GMT-USDT-SWAP|dump|funding_extreme": 1779561965.6709566,
@@ -356,5 +352,7 @@
   "RAVE-USDT-SWAP|pump|funding_extreme": 1779562981.8294282,
   "YB-USDT-SWAP|dump|perp_premium": 1779562981.8294282,
   "RAVE-USDT-SWAP|pump|longshort_ratio": 1779562981.8294282,
-  "SUI-USDT-SWAP|pump|social_surge": 1779562981.8294282
+  "SUI-USDT-SWAP|pump|social_surge": 1779562981.8294282,
+  "ME-USDT-SWAP|dump|funding_extreme": 1779563869.4651663,
+  "GMT-USDT-SWAP|dump|perp_premium": 1779563869.4651663
 }
