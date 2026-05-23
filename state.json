@@ -330,10 +330,10 @@
   "_trending_last_seen": [
     "CVX",
     "ERG",
-    "PENGU",
     "NEAR",
-    "RAIL",
+    "PENGU",
     "HYPE",
+    "RAIL",
     "VVV",
     "GRASS",
     "BTC",
@@ -344,13 +344,6 @@
     "ONDO",
     "AKT"
   ],
-  "BSB-USDT-SWAP|pump|funding_extreme": 1779565668.8779151,
-  "BILL-USDT-SWAP|dump|oi_surge": 1779565668.8779151,
-  "BREV-USDT-SWAP|dump|perp_premium": 1779565668.8779151,
-  "RAVE-USDT-SWAP|pump|longshort_ratio": 1779565668.8779151,
-  "MEGA-USDT-SWAP|pump|social_surge": 1779565668.8779151,
-  "ME-USDT-SWAP|dump|funding_extreme": 1779566132.2887561,
-  "GMT-USDT-SWAP|dump|perp_premium": 1779566132.2887561,
   "XRP-USDT-SWAP|dump|volume_surge": 1779566574.498393,
   "ARB-USDT-SWAP|dump|volume_surge": 1779566574.498393,
   "BICO-USDT-SWAP|dump|perp_premium": 1779566574.498393,
@@ -359,5 +352,11 @@
   "GMT-USDT-SWAP|dump|funding_extreme": 1779567469.0645385,
   "ETH-USDT-SWAP|pump|social_surge": 1779567469.0645385,
   "SOL-USDT-SWAP|pump|social_surge": 1779567469.0645385,
-  "ONDO-USDT-SWAP|pump|social_surge": 1779567469.0645385
+  "ONDO-USDT-SWAP|pump|social_surge": 1779567469.0645385,
+  "CL-USDT-SWAP|dump|volume_surge": 1779568375.108602,
+  "BZ-USDT-SWAP|dump|volume_surge": 1779568375.108602,
+  "GMT-USDT-SWAP|dump|perp_premium": 1779568375.108602,
+  "BOME-USDT-SWAP|pump|perp_premium": 1779568375.108602,
+  "RAVE-USDT-SWAP|pump|longshort_ratio": 1779568375.108602,
+  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779568375.108602
 }
