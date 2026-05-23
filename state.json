@@ -334,15 +334,15 @@
     "BTC",
     "VVV",
     "HYPE",
-    "SUI",
+    "ZEC",
     "TAO",
-    "PENGU",
+    "SOL",
     "LUNC",
     "SERV",
-    "SOL",
-    "PI",
-    "PEAQ",
-    "MEGA"
+    "ONDO",
+    "SUI",
+    "MEGA",
+    "WLD"
   ],
   "RAVE-USDT-SWAP|pump|swap_top_gainers": 1779553067.7770913,
   "UB-USDT-SWAP|pump|funding_extreme": 1779553067.7770913,
@@ -360,5 +360,6 @@
   "BCH-USDT-SWAP|pump|volume_surge": 1779554511.2861404,
   "BSB-USDT-SWAP|pump|funding_extreme": 1779554511.2861404,
   "GMT-USDT-SWAP|dump|funding_extreme": 1779554511.2861404,
-  "PI-USDT-SWAP|pump|social_surge": 1779554511.2861404
+  "PI-USDT-SWAP|pump|social_surge": 1779554511.2861404,
+  "WLD-USDT-SWAP|pump|social_surge": 1779554871.536754
 }
