@@ -329,19 +329,19 @@
   ],
   "_trending_last_seen": [
     "UDS",
-    "VVV",
     "NEAR",
-    "HYPE",
-    "PENGU",
     "NEX",
+    "VVV",
+    "HYPE",
     "BTC",
+    "BEAT",
     "PI",
     "MON",
-    "BEAT",
+    "ZEC",
+    "PENGU",
     "ONDO",
     "SOL",
     "TAO",
-    "ZEC",
     "LUNC"
   ],
   "UNI-USDT-SWAP|pump|volume_surge": 1779505352.3227441,
@@ -352,5 +352,7 @@
   "RIVER-USDT-SWAP|pump|longshort_ratio": 1779506250.4165294,
   "SOL-USDT-SWAP|pump|social_surge": 1779506250.4165294,
   "TAO-USDT-SWAP|pump|social_surge": 1779506250.4165294,
-  "ZEC-USDT-SWAP|pump|social_surge": 1779506250.4165294
+  "ZEC-USDT-SWAP|pump|social_surge": 1779506250.4165294,
+  "EDEN-USDT-SWAP|dump|swap_top_gainers": 1779507155.107527,
+  "GRASS-USDT-SWAP|pump|swap_top_gainers": 1779507155.107527
 }
