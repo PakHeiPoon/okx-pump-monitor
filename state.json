@@ -332,17 +332,17 @@
     "PENGU",
     "NEAR",
     "RAIL",
-    "BTC",
     "HYPE",
+    "BTC",
     "ONDO",
     "VVV",
     "ETH",
     "GRASS",
+    "AERO",
     "TAO",
     "XRP",
     "SUI",
-    "ADA",
-    "MEGA"
+    "ADA"
   ],
   "GMT-USDT-SWAP|dump|funding_extreme": 1779574676.7614603,
   "SOXL-USDT-SWAP|pump|funding_extreme": 1779574676.7614603,
@@ -356,5 +356,7 @@
   "TAO-USDT-SWAP|pump|social_surge": 1779575584.5782955,
   "XRP-USDT-SWAP|pump|social_surge": 1779575584.5782955,
   "GMT-USDT-SWAP|dump|perp_premium": 1779575955.852361,
-  "MEGA-USDT-SWAP|pump|social_surge": 1779575955.852361
+  "MEGA-USDT-SWAP|pump|social_surge": 1779575955.852361,
+  "BREV-USDT-SWAP|dump|perp_premium": 1779576450.4031823,
+  "AERO-USDT-SWAP|pump|social_surge": 1779576450.4031823
 }
