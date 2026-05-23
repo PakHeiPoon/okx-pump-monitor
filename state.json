@@ -330,19 +330,19 @@
   "_trending_last_seen": [
     "CVX",
     "ERG",
-    "NEAR",
     "PENGU",
+    "NEAR",
     "RAIL",
-    "VVV",
     "HYPE",
-    "GRASS",
+    "VVV",
     "BTC",
-    "SUI",
+    "GRASS",
+    "POL",
+    "TIG",
     "LUNC",
-    "TAO",
-    "NEX",
-    "MEGA",
-    "NIL"
+    "SUI",
+    "NIL",
+    "PHA"
   ],
   "GMT-USDT-SWAP|dump|funding_extreme": 1779564747.3827794,
   "DOGE-USDT-SWAP|pump|social_surge": 1779564747.3827794,
@@ -353,5 +353,9 @@
   "RAVE-USDT-SWAP|pump|longshort_ratio": 1779565668.8779151,
   "MEGA-USDT-SWAP|pump|social_surge": 1779565668.8779151,
   "ME-USDT-SWAP|dump|funding_extreme": 1779566132.2887561,
-  "GMT-USDT-SWAP|dump|perp_premium": 1779566132.2887561
+  "GMT-USDT-SWAP|dump|perp_premium": 1779566132.2887561,
+  "XRP-USDT-SWAP|dump|volume_surge": 1779566574.498393,
+  "ARB-USDT-SWAP|dump|volume_surge": 1779566574.498393,
+  "BICO-USDT-SWAP|dump|perp_premium": 1779566574.498393,
+  "POL-USDT-SWAP|pump|social_surge": 1779566574.498393
 }
