@@ -332,17 +332,17 @@
     "RAIL",
     "HYPE",
     "BTC",
-    "NEAR",
     "PENGU",
+    "NEAR",
     "ONDO",
+    "SOL",
     "VVV",
     "TAO",
     "SUI",
-    "AERO",
-    "ETH",
-    "SOL",
-    "POL",
-    "DOG"
+    "OPG",
+    "ZEC",
+    "AAVE",
+    "POL"
   ],
   "SOXL-USDT-SWAP|pump|funding_extreme": 1779578260.5101364,
   "RAVE-USDT-SWAP|pump|longshort_ratio": 1779578260.5101364,
@@ -356,5 +356,7 @@
   "SUI-USDT-SWAP|pump|social_surge": 1779579151.2775874,
   "HYPE-USDT-SWAP|dump|volume_surge": 1779579841.6153276,
   "GMT-USDT-SWAP|dump|funding_extreme": 1779579841.6153276,
-  "ICX-USDT-SWAP|dump|perp_premium": 1779579841.6153276
+  "ICX-USDT-SWAP|dump|perp_premium": 1779579841.6153276,
+  "OPG-USDT-SWAP|pump|social_surge": 1779580071.7948756,
+  "AAVE-USDT-SWAP|pump|social_surge": 1779580071.7948756
 }
