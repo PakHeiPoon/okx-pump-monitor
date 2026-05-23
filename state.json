@@ -329,23 +329,21 @@
   ],
   "_trending_last_seen": [
     "UDS",
-    "NEAR",
-    "NEX",
-    "VVV",
-    "HYPE",
     "BTC",
-    "BEAT",
-    "PI",
-    "MON",
+    "NEAR",
+    "VVV",
     "ZEC",
     "PENGU",
+    "HYPE",
+    "NEX",
+    "PI",
+    "MON",
+    "BEAT",
     "ONDO",
     "SOL",
-    "TAO",
-    "LUNC"
+    "LUNC",
+    "KTA"
   ],
-  "UNI-USDT-SWAP|pump|volume_surge": 1779505352.3227441,
-  "PI-USDT-SWAP|pump|social_surge": 1779505352.3227441,
   "PROVE-USDT-SWAP|pump|volume_surge": 1779506250.4165294,
   "SAHARA-USDT-SWAP|pump|volume_surge": 1779506250.4165294,
   "STABLE-USDT-SWAP|dump|funding_extreme": 1779506250.4165294,
@@ -354,5 +352,8 @@
   "TAO-USDT-SWAP|pump|social_surge": 1779506250.4165294,
   "ZEC-USDT-SWAP|pump|social_surge": 1779506250.4165294,
   "EDEN-USDT-SWAP|dump|swap_top_gainers": 1779507155.107527,
-  "GRASS-USDT-SWAP|pump|swap_top_gainers": 1779507155.107527
+  "GRASS-USDT-SWAP|pump|swap_top_gainers": 1779507155.107527,
+  "BILL-USDT-SWAP|pump|swap_top_gainers": 1779508075.8867211,
+  "XRP-USDT-SWAP|pump|volume_surge": 1779508075.8867211,
+  "COMP-USDT-SWAP|dump|perp_premium": 1779508075.8867211
 }
