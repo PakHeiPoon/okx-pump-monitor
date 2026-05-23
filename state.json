@@ -331,18 +331,18 @@
     "UDS",
     "ERG",
     "HYPE",
-    "NEAR",
-    "VVV",
     "SUI",
+    "VVV",
     "BTC",
+    "NEAR",
     "NEX",
+    "MON",
     "SOL",
     "TAO",
-    "MON",
     "ZEC",
     "GENIUS",
     "SERV",
-    "ZEST"
+    "OPG"
   ],
   "BILL-USDT-SWAP|pump|swap_top_gainers": 1779541376.2549531,
   "TON-USDT-SWAP|pump|volume_surge": 1779541376.2549531,
@@ -362,5 +362,7 @@
   "BSB-USDT-SWAP|pump|funding_extreme": 1779542275.076903,
   "GMT-USDT-SWAP|dump|perp_premium": 1779542275.076903,
   "RIVER-USDT-SWAP|pump|longshort_ratio": 1779542275.076903,
-  "ZEC-USDT-SWAP|pump|social_surge": 1779542275.076903
+  "ZEC-USDT-SWAP|pump|social_surge": 1779542275.076903,
+  "UB-USDT-SWAP|pump|funding_extreme": 1779543160.6334367,
+  "OPG-USDT-SWAP|pump|social_surge": 1779543160.6334367
 }
