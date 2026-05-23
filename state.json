@@ -336,15 +336,14 @@
     "BEAT",
     "ETH",
     "NEX",
-    "MON",
     "TON",
-    "LIT",
+    "PENGU",
     "XRP",
     "BSB",
     "GRASS",
-    "PENGU"
+    "DASH",
+    "EDEN"
   ],
-  "LAB-USDT-SWAP|dump|longshort_ratio": 1779500867.1696525,
   "BSB-USDT-SWAP|dump|swap_top_gainers": 1779501792.2636871,
   "ETH-USDT-SWAP|pump|social_surge": 1779501792.2636871,
   "MON-USDT-SWAP|pump|social_surge": 1779501792.2636871,
@@ -354,5 +353,8 @@
   "GMT-USDT-SWAP|pump|oi_surge": 1779502668.1478808,
   "XRP-USDT-SWAP|pump|social_surge": 1779502668.1478808,
   "BSB-USDT-SWAP|pump|social_surge": 1779502668.1478808,
-  "GRASS-USDT-SWAP|pump|social_surge": 1779502668.1478808
+  "GRASS-USDT-SWAP|pump|social_surge": 1779502668.1478808,
+  "STABLE-USDT-SWAP|dump|funding_extreme": 1779503543.0763736,
+  "DASH-USDT-SWAP|pump|social_surge": 1779503543.0763736,
+  "EDEN-USDT-SWAP|pump|social_surge": 1779503543.0763736
 }
