@@ -335,17 +335,15 @@
     "NEX",
     "SUI",
     "VVV",
-    "BTC",
-    "ONDO",
-    "BSB",
-    "ZEC",
-    "PI",
     "TAO",
+    "ONDO",
+    "PI",
+    "BTC",
+    "PENGU",
+    "BSB",
     "BEAT",
-    "PENGU"
+    "ZEC"
   ],
-  "BSB-USDT-SWAP|dump|swap_top_gainers": 1779533285.1327362,
-  "BEAT-USDT-SWAP|pump|social_surge": 1779533285.1327362,
   "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779534178.685686,
   "XRP-USDT-SWAP|pump|volume_surge": 1779534178.685686,
   "TSLA-USDT-SWAP|pump|longshort_ratio": 1779534178.685686,
@@ -354,5 +352,7 @@
   "PI-USDT-SWAP|pump|social_surge": 1779534178.685686,
   "BSB-USDT-SWAP|pump|swap_top_gainers": 1779535072.7139454,
   "BSB-USDT-SWAP|pump|funding_extreme": 1779535072.7139454,
-  "GMT-USDT-SWAP|dump|funding_extreme": 1779535072.7139454
+  "GMT-USDT-SWAP|dump|funding_extreme": 1779535072.7139454,
+  "SPACE-USDT-SWAP|pump|swap_top_gainers": 1779535970.530422,
+  "SPACE-USDT-SWAP|pump|oi_surge": 1779535970.530422
 }
