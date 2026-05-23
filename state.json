@@ -329,20 +329,20 @@
   ],
   "_trending_last_seen": [
     "UDS",
-    "HYPE",
     "NEAR",
-    "SOL",
+    "HYPE",
     "NEX",
+    "SOL",
     "PENGU",
-    "SUI",
+    "ONDO",
     "VVV",
     "BTC",
-    "TAO",
-    "ONDO",
-    "ETH",
+    "SUI",
     "PI",
-    "MON",
-    "LIT"
+    "TAO",
+    "ETH",
+    "LIT",
+    "MON"
   ],
   "BSB-USDT-SWAP|pump|swap_top_gainers": 1779535072.7139454,
   "BSB-USDT-SWAP|pump|funding_extreme": 1779535072.7139454,
@@ -353,5 +353,6 @@
   "MET-USDT-SWAP|dump|perp_premium": 1779536296.9506052,
   "ETH-USDT-SWAP|pump|social_surge": 1779536296.9506052,
   "MON-USDT-SWAP|pump|social_surge": 1779536296.9506052,
-  "LIT-USDT-SWAP|pump|social_surge": 1779536296.9506052
+  "LIT-USDT-SWAP|pump|social_surge": 1779536296.9506052,
+  "TSLA-USDT-SWAP|pump|longshort_ratio": 1779536868.4479928
 }
