@@ -344,8 +344,6 @@
     "MEGA",
     "NIL"
   ],
-  "ME-USDT-SWAP|dump|funding_extreme": 1779563869.4651663,
-  "GMT-USDT-SWAP|dump|perp_premium": 1779563869.4651663,
   "GMT-USDT-SWAP|dump|funding_extreme": 1779564747.3827794,
   "DOGE-USDT-SWAP|pump|social_surge": 1779564747.3827794,
   "ZEC-USDT-SWAP|pump|social_surge": 1779564747.3827794,
@@ -353,5 +351,7 @@
   "BILL-USDT-SWAP|dump|oi_surge": 1779565668.8779151,
   "BREV-USDT-SWAP|dump|perp_premium": 1779565668.8779151,
   "RAVE-USDT-SWAP|pump|longshort_ratio": 1779565668.8779151,
-  "MEGA-USDT-SWAP|pump|social_surge": 1779565668.8779151
+  "MEGA-USDT-SWAP|pump|social_surge": 1779565668.8779151,
+  "ME-USDT-SWAP|dump|funding_extreme": 1779566132.2887561,
+  "GMT-USDT-SWAP|dump|perp_premium": 1779566132.2887561
 }
