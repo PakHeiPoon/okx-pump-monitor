@@ -329,24 +329,21 @@
   ],
   "_trending_last_seen": [
     "UDS",
-    "NEAR",
     "HYPE",
-    "NEX",
+    "NEAR",
     "SOL",
     "PENGU",
-    "ONDO",
-    "VVV",
     "BTC",
-    "SUI",
+    "NEX",
+    "VVV",
     "PI",
-    "TAO",
+    "MON",
+    "AI",
+    "ONDO",
     "ETH",
-    "LIT",
-    "MON"
+    "TRUMP",
+    "LIT"
   ],
-  "BSB-USDT-SWAP|pump|swap_top_gainers": 1779535072.7139454,
-  "BSB-USDT-SWAP|pump|funding_extreme": 1779535072.7139454,
-  "GMT-USDT-SWAP|dump|funding_extreme": 1779535072.7139454,
   "SPACE-USDT-SWAP|pump|swap_top_gainers": 1779535970.530422,
   "SPACE-USDT-SWAP|pump|oi_surge": 1779535970.530422,
   "USELESS-USDT-SWAP|pump|swap_top_gainers": 1779536296.9506052,
@@ -354,5 +351,9 @@
   "ETH-USDT-SWAP|pump|social_surge": 1779536296.9506052,
   "MON-USDT-SWAP|pump|social_surge": 1779536296.9506052,
   "LIT-USDT-SWAP|pump|social_surge": 1779536296.9506052,
-  "TSLA-USDT-SWAP|pump|longshort_ratio": 1779536868.4479928
+  "TSLA-USDT-SWAP|pump|longshort_ratio": 1779536868.4479928,
+  "BSB-USDT-SWAP|dump|swap_top_gainers": 1779537778.074144,
+  "BSB-USDT-SWAP|pump|funding_extreme": 1779537778.074144,
+  "AI-USDT-SWAP|pump|social_surge": 1779537778.074144,
+  "TRUMP-USDT-SWAP|pump|social_surge": 1779537778.074144
 }
