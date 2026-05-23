@@ -330,26 +330,20 @@
   "_trending_last_seen": [
     "UDS",
     "HYPE",
-    "NEAR",
     "BTC",
-    "VVV",
+    "NEAR",
     "ZEC",
+    "VVV",
     "GRASS",
-    "NEX",
-    "MEGA",
     "SOL",
+    "NEX",
     "GMT",
+    "MEGA",
     "ETH",
-    "PENGU",
+    "TAO",
     "PI",
-    "TON"
+    "LINK"
   ],
-  "GMT-USDT-SWAP|dump|funding_extreme": 1779524284.526438,
-  "AI-USDT-SWAP|dump|oi_surge": 1779524284.526438,
-  "GMT-USDT-SWAP|dump|perp_premium": 1779524284.526438,
-  "ZEC-USDT-SWAP|pump|social_surge": 1779524284.526438,
-  "AERO-USDT-SWAP|pump|social_surge": 1779524284.526438,
-  "TON-USDT-SWAP|pump|social_surge": 1779524284.526438,
   "BEAT-USDT-SWAP|pump|swap_top_gainers": 1779525150.313998,
   "MET-USDT-SWAP|dump|perp_premium": 1779525150.313998,
   "LIT-USDT-SWAP|pump|social_surge": 1779525150.313998,
@@ -359,5 +353,8 @@
   "SOL-USDT-SWAP|pump|social_surge": 1779526066.0111923,
   "GMT-USDT-SWAP|pump|social_surge": 1779526066.0111923,
   "ETH-USDT-SWAP|pump|social_surge": 1779526066.0111923,
-  "PI-USDT-SWAP|pump|social_surge": 1779526066.0111923
+  "PI-USDT-SWAP|pump|social_surge": 1779526066.0111923,
+  "GMT-USDT-SWAP|dump|funding_extreme": 1779526974.9330654,
+  "TAO-USDT-SWAP|pump|social_surge": 1779526974.9330654,
+  "LINK-USDT-SWAP|pump|social_surge": 1779526974.9330654
 }
