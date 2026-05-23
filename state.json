@@ -330,23 +330,20 @@
   "_trending_last_seen": [
     "UDS",
     "HYPE",
-    "SOL",
     "NEAR",
-    "SUI",
-    "PENGU",
+    "SOL",
     "NEX",
-    "ZEC",
-    "BTC",
-    "BSB",
-    "ONDO",
+    "SUI",
     "VVV",
-    "INJ",
+    "BTC",
+    "ONDO",
+    "BSB",
+    "ZEC",
     "PI",
-    "TAO"
+    "TAO",
+    "BEAT",
+    "PENGU"
   ],
-  "GMT-USDT-SWAP|dump|funding_extreme": 1779532346.1833324,
-  "BSB-USDT-SWAP|pump|social_surge": 1779532346.1833324,
-  "PEPE-USDT-SWAP|pump|social_surge": 1779532346.1833324,
   "BSB-USDT-SWAP|dump|swap_top_gainers": 1779533285.1327362,
   "BEAT-USDT-SWAP|pump|social_surge": 1779533285.1327362,
   "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779534178.685686,
@@ -354,5 +351,8 @@
   "TSLA-USDT-SWAP|pump|longshort_ratio": 1779534178.685686,
   "ONDO-USDT-SWAP|pump|social_surge": 1779534178.685686,
   "INJ-USDT-SWAP|pump|social_surge": 1779534178.685686,
-  "PI-USDT-SWAP|pump|social_surge": 1779534178.685686
+  "PI-USDT-SWAP|pump|social_surge": 1779534178.685686,
+  "BSB-USDT-SWAP|pump|swap_top_gainers": 1779535072.7139454,
+  "BSB-USDT-SWAP|pump|funding_extreme": 1779535072.7139454,
+  "GMT-USDT-SWAP|dump|funding_extreme": 1779535072.7139454
 }
