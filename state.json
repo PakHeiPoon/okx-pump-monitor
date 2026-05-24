@@ -335,19 +335,15 @@
     "ZEC",
     "VVV",
     "NEAR",
-    "SERV",
     "ETH",
+    "SERV",
+    "LINK",
     "BTC",
     "TAO",
     "SOL",
     "BILL",
-    "LINK",
-    "AKT"
+    "NEX"
   ],
-  "BSB-USDT-SWAP|pump|swap_top_gainers": 1779625055.5553842,
-  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779625055.5553842,
-  "LTC-USDT-SWAP|pump|social_surge": 1779625055.5553842,
-  "SOL-USDT-SWAP|pump|social_surge": 1779625055.5553842,
   "TRUST-USDT-SWAP|pump|swap_top_gainers": 1779625976.2982411,
   "PIPPIN-USDT-SWAP|dump|volume_surge": 1779625976.2982411,
   "TRUST-USDT-SWAP|pump|oi_surge": 1779625976.2982411,
@@ -356,5 +352,8 @@
   "UB-USDT-SWAP|pump|swap_top_gainers": 1779626878.6220818,
   "ETH-USDT-SWAP|pump|social_surge": 1779626878.6220818,
   "BILL-USDT-SWAP|pump|social_surge": 1779626878.6220818,
-  "LINK-USDT-SWAP|pump|social_surge": 1779626878.6220818
+  "LINK-USDT-SWAP|pump|social_surge": 1779626878.6220818,
+  "VIRTUAL-USDT-SWAP|pump|volume_surge": 1779627777.7828395,
+  "TAO-USDT-SWAP|dump|volume_surge": 1779627777.7828395,
+  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779627777.7828395
 }
