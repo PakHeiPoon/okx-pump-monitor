@@ -328,28 +328,30 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "PENGU",
     "HYPE",
+    "PENGU",
     "NEAR",
-    "VVV",
     "RAIL",
-    "GRASS",
     "ZEC",
-    "NIL",
-    "ONDO",
-    "OCT",
-    "AKT",
+    "GRASS",
+    "VVV",
     "SERV",
+    "NIL",
+    "OCT",
+    "ONDO",
     "BILL",
-    "BTC",
-    "PLUME"
+    "ASTEROID",
+    "MEGA",
+    "BSB"
   ],
-  "INJ-USDT-SWAP|pump|social_surge": 1779645784.5777154,
-  "TRUTH-USDT-SWAP|pump|swap_top_gainers": 1779646413.893801,
-  "ME-USDT-SWAP|dump|perp_premium": 1779646413.893801,
   "BILL-USDT-SWAP|pump|social_surge": 1779646670.9407997,
   "PLUME-USDT-SWAP|pump|social_surge": 1779646670.9407997,
   "UB-USDT-SWAP|pump|funding_extreme": 1779647558.5603886,
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1779647558.5603886,
-  "BTC-USDT-SWAP|pump|social_surge": 1779647558.5603886
+  "BTC-USDT-SWAP|pump|social_surge": 1779647558.5603886,
+  "BEAT-USDT-SWAP|pump|swap_top_gainers": 1779648469.8094904,
+  "ME-USDT-SWAP|dump|perp_premium": 1779648469.8094904,
+  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779648469.8094904,
+  "MEGA-USDT-SWAP|pump|social_surge": 1779648469.8094904,
+  "BSB-USDT-SWAP|pump|social_surge": 1779648469.8094904
 }
