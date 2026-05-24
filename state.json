@@ -334,20 +334,16 @@
     "VVV",
     "NEAR",
     "GRASS",
-    "PENGU",
+    "TAO",
     "TIA",
     "CFG",
-    "UB",
-    "TAO",
     "LIT",
+    "NIL",
     "MEGA",
-    "PEAQ",
-    "MON"
+    "MON",
+    "SUPER",
+    "BTC"
   ],
-  "STABLE-USDT-SWAP|dump|funding_extreme": 1779661038.2509682,
-  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779661038.2509682,
-  "SPACEX-USDT-SWAP|pump|longshort_ratio": 1779661038.2509682,
-  "RENDER-USDT-SWAP|pump|social_surge": 1779661038.2509682,
   "BILL-USDT-SWAP|pump|swap_top_gainers": 1779661954.6614115,
   "TAO-USDT-SWAP|pump|social_surge": 1779661954.6614115,
   "BILL-USDT-SWAP|pump|social_surge": 1779661954.6614115,
@@ -358,5 +354,7 @@
   "TIA-USDT-SWAP|pump|social_surge": 1779662867.5610337,
   "UB-USDT-SWAP|pump|social_surge": 1779662867.5610337,
   "LIT-USDT-SWAP|pump|social_surge": 1779662867.5610337,
-  "MON-USDT-SWAP|pump|social_surge": 1779662867.5610337
+  "MON-USDT-SWAP|pump|social_surge": 1779662867.5610337,
+  "STABLE-USDT-SWAP|dump|funding_extreme": 1779663777.9812434,
+  "EWJ-USDT-SWAP|pump|funding_extreme": 1779663777.9812434
 }
