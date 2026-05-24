@@ -328,27 +328,28 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "RAIL",
     "HYPE",
     "VVV",
-    "PENGU",
+    "RAIL",
     "NEAR",
     "OCT",
     "ZEC",
+    "PENGU",
     "GRASS",
     "SERV",
-    "TAO",
-    "ONDO",
     "BTC",
+    "SUI",
+    "ONDO",
     "AKT",
-    "AERO",
-    "SUI"
+    "LTC",
+    "SOL"
   ],
-  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779622354.4513571,
-  "ONDO-USDT-SWAP|pump|social_surge": 1779622354.4513571,
-  "SUI-USDT-SWAP|pump|social_surge": 1779622354.4513571,
   "TRUST-USDT-SWAP|dump|oi_surge": 1779623269.7483,
   "LIT-USDT-SWAP|pump|social_surge": 1779623269.7483,
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1779624165.4064112,
-  "AERO-USDT-SWAP|pump|social_surge": 1779624165.4064112
+  "AERO-USDT-SWAP|pump|social_surge": 1779624165.4064112,
+  "BSB-USDT-SWAP|pump|swap_top_gainers": 1779625055.5553842,
+  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779625055.5553842,
+  "LTC-USDT-SWAP|pump|social_surge": 1779625055.5553842,
+  "SOL-USDT-SWAP|pump|social_surge": 1779625055.5553842
 }
