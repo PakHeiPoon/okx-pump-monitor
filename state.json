@@ -329,26 +329,21 @@
   ],
   "_trending_last_seen": [
     "HYPE",
-    "RAIL",
     "NEAR",
+    "RAIL",
     "VVV",
     "ZEC",
     "PENGU",
+    "BTC",
     "GRASS",
     "SOL",
     "LINK",
     "NIL",
     "ONDO",
     "SERV",
-    "BTC",
     "TAO",
-    "DOT"
+    "ETH"
   ],
-  "BEAT-USDT-SWAP|pump|swap_top_gainers": 1779648469.8094904,
-  "ME-USDT-SWAP|dump|perp_premium": 1779648469.8094904,
-  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779648469.8094904,
-  "MEGA-USDT-SWAP|pump|social_surge": 1779648469.8094904,
-  "BSB-USDT-SWAP|pump|social_surge": 1779648469.8094904,
   "BEAT-USDT-SWAP|dump|swap_top_gainers": 1779649382.6260478,
   "SOL-USDT-SWAP|pump|social_surge": 1779649382.6260478,
   "TAO-USDT-SWAP|pump|social_surge": 1779649382.6260478,
@@ -361,5 +356,8 @@
   "ONE-USDT-SWAP|dump|perp_premium": 1779650280.3603048,
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1779650280.3603048,
   "LINK-USDT-SWAP|pump|social_surge": 1779650280.3603048,
-  "DOT-USDT-SWAP|pump|social_surge": 1779650280.3603048
+  "DOT-USDT-SWAP|pump|social_surge": 1779650280.3603048,
+  "BSB-USDT-SWAP|pump|swap_top_gainers": 1779651144.7640655,
+  "FOGO-USDT-SWAP|dump|perp_premium": 1779651144.7640655,
+  "ETH-USDT-SWAP|pump|social_surge": 1779651144.7640655
 }
