@@ -335,19 +335,19 @@
     "VVV",
     "GRASS",
     "BTC",
-    "ZEC",
     "AKT",
+    "OCT",
+    "ZEC",
     "PLUME",
     "TAO",
-    "SERV",
-    "CC",
-    "OCT",
-    "FET"
+    "FET",
+    "ONDO",
+    "SUI"
   ],
-  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779619670.7994652,
-  "PLUME-USDT-SWAP|pump|social_surge": 1779619670.7994652,
-  "TAO-USDT-SWAP|pump|social_surge": 1779619670.7994652,
   "WLD-USDT-SWAP|pump|volume_surge": 1779620584.215626,
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1779620584.215626,
-  "TRUST-USDT-SWAP|pump|oi_surge": 1779621466.8565857
+  "TRUST-USDT-SWAP|pump|oi_surge": 1779621466.8565857,
+  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779622354.4513571,
+  "ONDO-USDT-SWAP|pump|social_surge": 1779622354.4513571,
+  "SUI-USDT-SWAP|pump|social_surge": 1779622354.4513571
 }
