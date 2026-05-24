@@ -328,24 +328,22 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "RAIL",
-    "GRASS",
-    "HYPE",
-    "NEAR",
     "PENGU",
+    "GRASS",
+    "RAIL",
+    "NEAR",
+    "HYPE",
     "ZEC",
     "BTC",
-    "AI",
     "VVV",
     "PI",
-    "SERV",
+    "AI",
+    "ONDO",
+    "FET",
+    "JTO",
     "PLUME",
-    "LINK",
-    "DOGE",
-    "IOTA"
+    "AERO"
   ],
-  "BICO-USDT-SWAP|pump|swap_top_gainers": 1779603443.6009786,
-  "PLUME-USDT-SWAP|pump|social_surge": 1779603443.6009786,
   "BEAT-USDT-SWAP|pump|swap_top_gainers": 1779604382.9526708,
   "ME-USDT-SWAP|pump|volume_surge": 1779604382.9526708,
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1779604382.9526708,
@@ -356,5 +354,9 @@
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779605280.1334658,
   "LINK-USDT-SWAP|pump|social_surge": 1779605280.1334658,
   "DOGE-USDT-SWAP|pump|social_surge": 1779605280.1334658,
-  "IOTA-USDT-SWAP|pump|social_surge": 1779605280.1334658
+  "IOTA-USDT-SWAP|pump|social_surge": 1779605280.1334658,
+  "BSB-USDT-SWAP|pump|funding_extreme": 1779606165.230372,
+  "ONDO-USDT-SWAP|pump|social_surge": 1779606165.230372,
+  "JTO-USDT-SWAP|pump|social_surge": 1779606165.230372,
+  "AERO-USDT-SWAP|pump|social_surge": 1779606165.230372
 }
