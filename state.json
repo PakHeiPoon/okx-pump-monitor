@@ -331,18 +331,18 @@
     "HYPE",
     "NEAR",
     "VVV",
-    "PENGU",
     "OCT",
+    "PENGU",
     "RAIL",
     "GRASS",
-    "BTC",
-    "ONDO",
-    "PI",
-    "ASTER",
-    "UNI",
     "LIT",
-    "MON",
-    "TAO"
+    "ONDO",
+    "SOL",
+    "LTC",
+    "TAO",
+    "PI",
+    "UNI",
+    "BTC"
   ],
   "YB-USDT-SWAP|pump|swap_top_gainers": 1779641271.6789224,
   "EDEN-USDT-SWAP|pump|swap_top_gainers": 1779641271.6789224,
@@ -358,5 +358,7 @@
   "LITE-USDT-SWAP|pump|funding_extreme": 1779642885.8487957,
   "ME-USDT-SWAP|dump|perp_premium": 1779642885.8487957,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779642885.8487957,
-  "MON-USDT-SWAP|pump|social_surge": 1779642885.8487957
+  "MON-USDT-SWAP|pump|social_surge": 1779642885.8487957,
+  "SOL-USDT-SWAP|pump|social_surge": 1779643069.389732,
+  "LTC-USDT-SWAP|pump|social_surge": 1779643069.389732
 }
