@@ -344,17 +344,11 @@
     "LIT",
     "PI"
   ],
-  "UB-USDT-SWAP|pump|funding_extreme": 1779632271.6193268,
-  "SOXL-USDT-SWAP|pump|funding_extreme": 1779632271.6193268,
-  "LITE-USDT-SWAP|pump|funding_extreme": 1779632271.6193268,
-  "GMT-USDT-SWAP|dump|perp_premium": 1779632271.6193268,
-  "PI-USDT-SWAP|pump|social_surge": 1779632271.6193268,
-  "ONDO-USDT-SWAP|pump|social_surge": 1779632271.6193268,
-  "BILL-USDT-SWAP|pump|social_surge": 1779632271.6193268,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779633160.2785742,
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1779633160.2785742,
   "LTC-USDT-SWAP|pump|social_surge": 1779633160.2785742,
   "SOL-USDT-SWAP|pump|social_surge": 1779634062.214079,
   "TAO-USDT-SWAP|pump|social_surge": 1779634062.214079,
-  "LIT-USDT-SWAP|pump|social_surge": 1779634062.214079
+  "LIT-USDT-SWAP|pump|social_surge": 1779634062.214079,
+  "UB-USDT-SWAP|pump|funding_extreme": 1779634254.999878
 }
