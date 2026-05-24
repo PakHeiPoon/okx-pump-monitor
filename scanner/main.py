@@ -116,18 +116,26 @@ def main():
                 print(f"  ✓ {s.inst_id} [{s.direction}] {arrow}{s.chg_pct}% "
                       f"vol={s.vol_usdt:.0f}U conf={tag}")
 
-            # 4. 实时通知（飞书）
-            notifiers = [
-                FeishuNotifier(config.feishu_webhook),
-                # V2.7: 邮件汇总走独立 workflow，不在此处实时调用
-            ]
-            for n in notifiers:
-                try:
-                    n.send(fresh_signals)
-                except Exception as e:
-                    print(f"  [{n.name}] notify FAILED: {e}")
+            # 4. 实时通知（飞书）—— V2.18 mute 检查：用户 @ 机器人发 mute 时跳过飞书
+            #    但仍写 supabase + heartbeat，cron + 回测 + dashboard 完全不受影响
+            muted = supabase.is_muted_now()
+            if muted:
+                state_row = supabase.fetch_mute_state() or {}
+                print(f"  [mute] active until {state_row.get('muted_until')} "
+                      f"by {state_row.get('muted_by')}, skipping Feishu push "
+                      f"({len(fresh_signals)} signals still persisted to supabase)")
+            else:
+                notifiers = [
+                    FeishuNotifier(config.feishu_webhook),
+                    # V2.7: 邮件汇总走独立 workflow，不在此处实时调用
+                ]
+                for n in notifiers:
+                    try:
+                        n.send(fresh_signals)
+                    except Exception as e:
+                        print(f"  [{n.name}] notify FAILED: {e}")
 
-            # 5. 持久化（Supabase）
+            # 5. 持久化（Supabase）—— 无论是否 mute 都写
             supabase.insert_signals(fresh_signals)
     finally:
         # 6. heartbeat — 不论成功失败都写一条，watchdog 用

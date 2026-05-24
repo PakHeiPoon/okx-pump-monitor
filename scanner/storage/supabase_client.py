@@ -229,6 +229,40 @@ class SupabaseClient:
             print(f"[supabase] fetch_latest_heartbeat FAILED: {e}")
             return None
 
+    # ============ mute_state (V2.18 飞书静音) ============
+    def fetch_mute_state(self):
+        """返回 dict {muted_until, muted_at, muted_by, reason, updated_at} 或 None。
+        callback 写入，scanner 推送前读。Supabase 未配置时返回 None（fail-open）。"""
+        if not self.enabled:
+            return None
+        try:
+            r = requests.get(
+                f"{self.url}/rest/v1/mute_state",
+                headers={**self._headers_read, "Accept": "application/json"},
+                params={"select": "*", "id": "eq.1", "limit": "1"},
+                timeout=5,
+            )
+            r.raise_for_status()
+            rows = r.json()
+            return rows[0] if rows else None
+        except Exception as e:
+            print(f"[supabase] fetch_mute_state FAILED: {e}")
+            return None
+
+    def is_muted_now(self) -> bool:
+        """便捷判定：当前是否在静音期。读 mute_state.muted_until 与当前 UTC 比。"""
+        state = self.fetch_mute_state()
+        if not state:
+            return False
+        muted_until = state.get("muted_until")
+        if not muted_until:
+            return False
+        try:
+            until_dt = datetime.fromisoformat(muted_until.replace("Z", "+00:00"))
+        except (ValueError, TypeError):
+            return False
+        return datetime.now(timezone.utc) < until_dt
+
     # ============ liquidations (V2.8 monitor) ============
     def insert_liquidations(self, rows):
         """rows: list[dict(inst_id, side, price, sz, notional_usd, ts(iso))]."""

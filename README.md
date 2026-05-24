@@ -174,6 +174,74 @@ gh workflow run scan-realtime.yml
 
 ---
 
+## 飞书 @ 机器人静音控制（V2.18+）
+
+群里 @ 机器人发指令，**暂停 Feishu 推送但 cron 扫描 + 回测继续**。
+30 min 自动恢复，无需手动 unmute。
+
+### 支持的命令
+
+```
+mute            → 静音 30min（默认）
+mute 1h         → 静音 1 小时
+mute 90m        → 静音 90 分钟
+静音 2小时       → 静音 2 小时
+unmute          → 立即恢复
+取消静音         → 立即恢复
+status / 状态    → 查看当前静音状态
+help / 帮助      → 显示完整帮助
+```
+
+### 配置步骤（一次性，~10min）
+
+1. **建飞书应用**：<https://open.feishu.cn/app> → 创建企业自建应用 → 起名（如 `okx-pump-bot`）
+
+2. **开启机器人**：左侧"添加应用能力" → 机器人 → 启用
+
+3. **加权限**：左侧"权限管理" → 搜索并添加：
+   - `im:message`（接消息）
+   - `im:message:send_as_bot`（回复消息）
+
+4. **配回调 URL**：左侧"事件订阅" → 配置 Request URL：
+   ```
+   https://okx-pump-monitor.vercel.app/api/feishu/callback
+   ```
+   保存时飞书会发 challenge，我们的路由自动 echo。
+
+5. **订阅事件**：同页面下方"消息事件" → 添加 `接收消息 v2.0`（im.message.receive_v1）
+
+6. **拿 4 个 secret**（飞书应用 → 凭证与基础信息）：
+   - `App ID` → 配 Vercel env `LARK_APP_ID`
+   - `App Secret` → 配 Vercel env `LARK_APP_SECRET`
+   - 事件订阅页"Verification Token" → 配 Vercel env `LARK_VERIFY_TOKEN`
+   - （可选）"Encrypt Key" → 配 Vercel env `LARK_ENCRYPT_KEY`（开启加密时才填）
+
+   ```bash
+   printf "<App ID>" | vercel env add LARK_APP_ID production
+   printf "<App Secret>" | vercel env add LARK_APP_SECRET production
+   printf "<Verification Token>" | vercel env add LARK_VERIFY_TOKEN production
+   ```
+
+7. **把机器人拉进群**：飞书机器人发布 → 版本管理 → 创建版本（个人内测无需审核） →
+   在 ok 预警群里点 + → 添加机器人 → 找到你的应用 → 加入
+
+8. **测试**：群里发 `@bot help`，机器人应该回帮助文档。
+
+### 工作原理
+
+- callback 路由收到 @ 消息 → 解析命令 → 更新 supabase `mute_state` 表 → 通过飞书 reply API 回确认
+- `scanner.main` 和 `scanner.realtime` 每轮推送前查 `is_muted_now()` → muted=true 时跳 Feishu 但仍写 supabase
+- `mute_state.muted_until` 是绝对时间戳，到期自动失效，**无需 cron 主动解锁**
+
+### 兜底 unmute
+
+如果机器人配置坏了发不出命令，直接去 Supabase SQL Editor：
+```sql
+update public.mute_state set muted_until = null where id = 1;
+```
+
+---
+
 ## 调参（环境变量）
 
 均通过 `.github/workflows/scan.yml` 或 `scan-realtime.yml` 的 `env:` 配置：

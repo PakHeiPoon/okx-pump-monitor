@@ -76,8 +76,15 @@ def main():
             for s in fresh_signals:
                 print(f"  ✓ {s.inst_id} V-bottom +{s.chg_pct}% (drop {s.meta.get('drop_pct')}%)")
 
-            # 通知 + 持久化
-            FeishuNotifier(config.feishu_webhook).send(fresh_signals)
+            # V2.18 mute 检查
+            muted = supabase.is_muted_now()
+            if muted:
+                state_row = supabase.fetch_mute_state() or {}
+                print(f"  [mute] active until {state_row.get('muted_until')} "
+                      f"by {state_row.get('muted_by')}, skipping Feishu "
+                      f"({len(fresh_signals)} signals still persisted)")
+            else:
+                FeishuNotifier(config.feishu_webhook).send(fresh_signals)
             supabase.insert_signals(fresh_signals)
     finally:
         duration_ms = int((time.time() - started_at_ts) * 1000)
