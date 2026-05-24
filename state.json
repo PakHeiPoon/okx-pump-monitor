@@ -335,21 +335,24 @@
     "HYPE",
     "VVV",
     "SOL",
-    "ZEC",
     "ONDO",
+    "ZEC",
     "POD",
+    "SUI",
     "LIT",
-    "TAO",
-    "BILL",
-    "TIG",
-    "CC"
+    "LINK",
+    "LINEA",
+    "TIG"
   ],
-  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779590872.1076863,
-  "ONDO-USDT-SWAP|pump|social_surge": 1779590872.1076863,
   "STRK-USDT-SWAP|dump|volume_surge": 1779591758.0935555,
   "LIT-USDT-SWAP|pump|social_surge": 1779591758.0935555,
   "BILL-USDT-SWAP|pump|social_surge": 1779591758.0935555,
   "BSB-USDT-SWAP|pump|funding_extreme": 1779592658.8270333,
   "FOGO-USDT-SWAP|dump|perp_premium": 1779592658.8270333,
-  "CC-USDT-SWAP|pump|social_surge": 1779592658.8270333
+  "CC-USDT-SWAP|pump|social_surge": 1779592658.8270333,
+  "SOXL-USDT-SWAP|pump|funding_extreme": 1779593577.764283,
+  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779593577.764283,
+  "SUI-USDT-SWAP|pump|social_surge": 1779593577.764283,
+  "LINK-USDT-SWAP|pump|social_surge": 1779593577.764283,
+  "LINEA-USDT-SWAP|pump|social_surge": 1779593577.764283
 }
