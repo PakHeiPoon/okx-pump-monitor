@@ -328,24 +328,22 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "RAIL",
     "NEAR",
     "GRASS",
+    "RAIL",
     "HYPE",
     "PENGU",
     "NEX",
     "VVV",
+    "LTC",
+    "POD",
     "ZEC",
-    "PI",
-    "BNKR",
+    "TAO",
     "LUNC",
-    "MON",
-    "SOL",
-    "ICP",
-    "POD"
+    "CC",
+    "BNKR",
+    "MON"
   ],
-  "MON-USDT-SWAP|pump|social_surge": 1779598044.2806253,
-  "ZEC-USDT-SWAP|pump|social_surge": 1779598044.2806253,
   "SOXL-USDT-SWAP|pump|funding_extreme": 1779598973.6582158,
   "BSB-USDT-SWAP|pump|funding_extreme": 1779598973.6582158,
   "GMT-USDT-SWAP|dump|perp_premium": 1779598973.6582158,
@@ -353,5 +351,11 @@
   "PUMP-USDT-SWAP|pump|social_surge": 1779598973.6582158,
   "CL-USDT-SWAP|pump|volume_surge": 1779599850.4815671,
   "ME-USDT-SWAP|dump|funding_extreme": 1779599850.4815671,
-  "ICP-USDT-SWAP|pump|social_surge": 1779599850.4815671
+  "ICP-USDT-SWAP|pump|social_surge": 1779599850.4815671,
+  "WLD-USDT-SWAP|pump|volume_surge": 1779600785.8813808,
+  "CHZ-USDT-SWAP|pump|volume_surge": 1779600785.8813808,
+  "NIGHT-USDT-SWAP|pump|volume_surge": 1779600785.8813808,
+  "LTC-USDT-SWAP|pump|social_surge": 1779600785.8813808,
+  "TAO-USDT-SWAP|pump|social_surge": 1779600785.8813808,
+  "CC-USDT-SWAP|pump|social_surge": 1779600785.8813808
 }
