@@ -344,11 +344,6 @@
     "XRP",
     "NIL"
   ],
-  "UB-USDT-SWAP|pump|funding_extreme": 1779616062.900058,
-  "DRAM-USDT-SWAP|pump|longshort_ratio": 1779616062.900058,
-  "ONDO-USDT-SWAP|pump|social_surge": 1779616062.900058,
-  "ETH-USDT-SWAP|pump|social_surge": 1779616062.900058,
-  "XRP-USDT-SWAP|pump|social_surge": 1779616062.900058,
   "USELESS-USDT-SWAP|dump|volume_surge": 1779616988.5403643,
   "PUMP-USDT-SWAP|dump|volume_surge": 1779616988.5403643,
   "BZ-USDT-SWAP|pump|volume_surge": 1779616988.5403643,
@@ -363,5 +358,6 @@
   "ME-USDT-SWAP|dump|funding_extreme": 1779617870.181185,
   "AI-USDT-SWAP|dump|oi_surge": 1779617870.181185,
   "GMT-USDT-SWAP|dump|perp_premium": 1779617870.181185,
-  "MORPHO-USDT-SWAP|pump|social_surge": 1779617870.181185
+  "MORPHO-USDT-SWAP|pump|social_surge": 1779617870.181185,
+  "DRAM-USDT-SWAP|pump|longshort_ratio": 1779618230.3696344
 }
