@@ -335,17 +335,15 @@
     "VVV",
     "BTC",
     "PENGU",
+    "ONDO",
     "KAS",
     "DASH",
-    "ONDO",
     "SOL",
     "NIL",
-    "PYTH",
     "JUP",
-    "WLD"
+    "GRASS",
+    "LINK"
   ],
-  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779652066.3673675,
-  "INJ-USDT-SWAP|pump|social_surge": 1779652066.3673675,
   "MORPHO-USDT-SWAP|dump|volume_surge": 1779652978.8803325,
   "ASTER-USDT-SWAP|dump|volume_surge": 1779652978.8803325,
   "CHZ-USDT-SWAP|dump|volume_surge": 1779652978.8803325,
@@ -363,5 +361,9 @@
   "DASH-USDT-SWAP|pump|social_surge": 1779653858.0608606,
   "PYTH-USDT-SWAP|pump|social_surge": 1779653858.0608606,
   "JUP-USDT-SWAP|pump|social_surge": 1779653858.0608606,
-  "WLD-USDT-SWAP|pump|social_surge": 1779653858.0608606
+  "WLD-USDT-SWAP|pump|social_surge": 1779653858.0608606,
+  "BILL-USDT-SWAP|pump|swap_top_gainers": 1779654762.2046921,
+  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779654762.2046921,
+  "GRASS-USDT-SWAP|pump|social_surge": 1779654762.2046921,
+  "LINK-USDT-SWAP|pump|social_surge": 1779654762.2046921
 }
