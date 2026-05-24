@@ -329,28 +329,27 @@
   ],
   "_trending_last_seen": [
     "PENGU",
-    "GIGA",
-    "GRASS",
     "HYPE",
+    "GRASS",
+    "GIGA",
     "NEAR",
     "VVV",
     "SOL",
     "LINK",
     "ONDO",
+    "TAO",
+    "RAIL",
     "SERV",
     "ZEC",
     "LIT",
-    "TROLL",
-    "PI",
-    "KAS"
+    "BTC"
   ],
-  "BSB-USDT-SWAP|pump|funding_extreme": 1779592658.8270333,
-  "FOGO-USDT-SWAP|dump|perp_premium": 1779592658.8270333,
-  "CC-USDT-SWAP|pump|social_surge": 1779592658.8270333,
   "SOXL-USDT-SWAP|pump|funding_extreme": 1779593577.764283,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779593577.764283,
   "SUI-USDT-SWAP|pump|social_surge": 1779593577.764283,
   "LINK-USDT-SWAP|pump|social_surge": 1779593577.764283,
   "LINEA-USDT-SWAP|pump|social_surge": 1779593577.764283,
-  "PI-USDT-SWAP|pump|social_surge": 1779594453.65398
+  "PI-USDT-SWAP|pump|social_surge": 1779594453.65398,
+  "TAO-USDT-SWAP|pump|social_surge": 1779595354.0280871,
+  "BTC-USDT-SWAP|pump|social_surge": 1779595354.0280871
 }
