@@ -330,19 +330,19 @@
   "_trending_last_seen": [
     "PENGU",
     "HYPE",
-    "VVV",
     "NEAR",
     "RAIL",
+    "VVV",
     "GRASS",
-    "OCT",
     "NIL",
     "SERV",
     "ZEC",
-    "LIT",
-    "TON",
+    "AKT",
+    "OCT",
     "ONDO",
+    "BILL",
     "SUI",
-    "INJ"
+    "PLUME"
   ],
   "UB-USDT-SWAP|pump|funding_extreme": 1779644870.9980938,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779644870.9980938,
@@ -352,5 +352,7 @@
   "SUI-USDT-SWAP|pump|social_surge": 1779644870.9980938,
   "INJ-USDT-SWAP|pump|social_surge": 1779645784.5777154,
   "TRUTH-USDT-SWAP|pump|swap_top_gainers": 1779646413.893801,
-  "ME-USDT-SWAP|dump|perp_premium": 1779646413.893801
+  "ME-USDT-SWAP|dump|perp_premium": 1779646413.893801,
+  "BILL-USDT-SWAP|pump|social_surge": 1779646670.9407997,
+  "PLUME-USDT-SWAP|pump|social_surge": 1779646670.9407997
 }
