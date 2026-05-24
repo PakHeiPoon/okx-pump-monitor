@@ -329,19 +329,19 @@
   ],
   "_trending_last_seen": [
     "HYPE",
-    "ZEC",
     "RAIL",
+    "ZEC",
     "PENGU",
     "NEAR",
     "VVV",
-    "BTC",
     "LINK",
-    "ONDO",
-    "SERV",
+    "BTC",
     "GRASS",
-    "TAO",
-    "KAS",
+    "SERV",
+    "ONDO",
     "NIL",
+    "TAO",
+    "INJ",
     "SOL"
   ],
   "BSB-USDT-SWAP|dump|swap_top_gainers": 1779650280.3603048,
@@ -357,5 +357,7 @@
   "ETH-USDT-SWAP|pump|social_surge": 1779651144.7640655,
   "BEAT-USDT-SWAP|pump|swap_top_gainers": 1779651763.9926047,
   "ADA-USDT-SWAP|pump|volume_surge": 1779651763.9926047,
-  "STABLE-USDT-SWAP|dump|funding_extreme": 1779651763.9926047
+  "STABLE-USDT-SWAP|dump|funding_extreme": 1779651763.9926047,
+  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779652066.3673675,
+  "INJ-USDT-SWAP|pump|social_surge": 1779652066.3673675
 }
