@@ -337,12 +337,12 @@
     "BTC",
     "ZEC",
     "LIT",
-    "ONDO",
     "SERV",
+    "USDR",
     "ETH",
     "MORPHO",
-    "XRP",
-    "NIL"
+    "CC",
+    "PUMP"
   ],
   "USELESS-USDT-SWAP|dump|volume_surge": 1779616988.5403643,
   "PUMP-USDT-SWAP|dump|volume_surge": 1779616988.5403643,
@@ -359,5 +359,9 @@
   "AI-USDT-SWAP|dump|oi_surge": 1779617870.181185,
   "GMT-USDT-SWAP|dump|perp_premium": 1779617870.181185,
   "MORPHO-USDT-SWAP|pump|social_surge": 1779617870.181185,
-  "DRAM-USDT-SWAP|pump|longshort_ratio": 1779618230.3696344
+  "DRAM-USDT-SWAP|pump|longshort_ratio": 1779618230.3696344,
+  "TRUST-USDT-SWAP|pump|swap_top_gainers": 1779618755.466336,
+  "TRUST-USDT-SWAP|pump|oi_surge": 1779618755.466336,
+  "CC-USDT-SWAP|pump|social_surge": 1779618755.466336,
+  "PUMP-USDT-SWAP|pump|social_surge": 1779618755.466336
 }
