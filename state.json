@@ -328,28 +328,27 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "ZIG",
-    "HYPE",
-    "PENGU",
     "ESPORTS",
+    "HYPE",
+    "ZIG",
+    "ZEC",
     "NEAR",
     "VVV",
-    "ZEC",
     "XAN",
     "BTC",
+    "PENGU",
     "NIL",
     "RAIL",
     "SUI",
     "ICP",
-    "GRASS",
-    "TAO"
+    "TAO",
+    "MEGA"
   ],
-  "BTC-USDT-SWAP|pump|social_surge": 1779709650.6190803,
-  "TAO-USDT-SWAP|pump|social_surge": 1779709650.6190803,
   "TRIA-USDT-SWAP|dump|volume_surge": 1779711440.0370975,
   "SOXL-USDT-SWAP|pump|funding_extreme": 1779711440.0370975,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779711440.0370975,
   "SUI-USDT-SWAP|pump|social_surge": 1779711440.0370975,
   "ICP-USDT-SWAP|pump|social_surge": 1779711440.0370975,
-  "GRASS-USDT-SWAP|pump|social_surge": 1779711440.0370975
+  "GRASS-USDT-SWAP|pump|social_surge": 1779711440.0370975,
+  "MEGA-USDT-SWAP|pump|social_surge": 1779712363.7086155
 }
