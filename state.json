@@ -328,29 +328,28 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "HYPE",
     "PENGU",
+    "HYPE",
     "RAIL",
     "NEAR",
     "XAN",
     "VVV",
     "ZEC",
-    "PHA",
     "ETH",
+    "NEX",
+    "AKT",
+    "ONDO",
     "OCT",
-    "BILL",
-    "LIT",
+    "NIL",
     "SOL",
-    "XRP",
-    "ONDO"
+    "PHA"
   ],
-  "ADA-USDT-SWAP|pump|volume_surge": 1779698850.0909946,
-  "LITE-USDT-SWAP|pump|funding_extreme": 1779698850.0909946,
-  "ZEC-USDT-SWAP|pump|social_surge": 1779698850.0909946,
-  "LIT-USDT-SWAP|pump|social_surge": 1779698850.0909946,
   "BSB-USDT-SWAP|pump|swap_top_gainers": 1779700658.698213,
   "LA-USDT-SWAP|dump|funding_extreme": 1779700658.698213,
   "SOXL-USDT-SWAP|pump|funding_extreme": 1779700658.698213,
   "XRP-USDT-SWAP|pump|social_surge": 1779700658.698213,
-  "ONDO-USDT-SWAP|pump|social_surge": 1779700658.698213
+  "ONDO-USDT-SWAP|pump|social_surge": 1779700658.698213,
+  "API3-USDT-SWAP|pump|swap_top_gainers": 1779701561.177409,
+  "MORPHO-USDT-SWAP|pump|volume_surge": 1779701561.177409,
+  "LITE-USDT-SWAP|pump|funding_extreme": 1779701561.177409
 }
