@@ -330,25 +330,25 @@
   "_trending_last_seen": [
     "NEAR",
     "SLX",
-    "HYPE",
     "TON",
     "PENGU",
     "VVV",
-    "ZIG",
+    "HYPE",
     "RAIL",
-    "BTC",
-    "NIL",
-    "TAO",
     "PHA",
-    "ZEC",
+    "BTC",
+    "RENDER",
+    "TAO",
+    "NIL",
     "TIA",
+    "ZEC",
     "SUI"
   ],
-  "BSB-USDT-SWAP|pump|swap_top_gainers": 1779733040.4534504,
   "GRASS-USDT-SWAP|pump|swap_top_gainers": 1779733957.5516152,
   "AI-USDT-SWAP|dump|volume_surge": 1779733957.5516152,
   "SYRUP-USDT-SWAP|dump|longshort_ratio": 1779733957.5516152,
   "UB-USDT-SWAP|dump|longshort_ratio": 1779734852.4780536,
   "TIA-USDT-SWAP|pump|social_surge": 1779734852.4780536,
-  "SUI-USDT-SWAP|pump|social_surge": 1779734852.4780536
+  "SUI-USDT-SWAP|pump|social_surge": 1779734852.4780536,
+  "RENDER-USDT-SWAP|pump|social_surge": 1779735748.8329284
 }
