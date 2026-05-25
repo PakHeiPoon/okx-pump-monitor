@@ -334,17 +334,16 @@
     "RAIL",
     "XAN",
     "BILL",
+    "OCT",
     "VVV",
+    "ETH",
+    "ZEC",
     "ONDO",
     "GRASS",
-    "ETH",
-    "AKT",
-    "TAO",
-    "OCT",
     "NIL",
-    "AVAX"
+    "AVAX",
+    "BTC"
   ],
-  "LITE-USDT-SWAP|pump|funding_extreme": 1779684440.1464863,
   "SOON-USDT-SWAP|pump|swap_top_gainers": 1779685385.569634,
   "APR-USDT-SWAP|pump|swap_top_gainers": 1779685385.569634,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779685385.569634,
@@ -354,5 +353,8 @@
   "SOXL-USDT-SWAP|pump|funding_extreme": 1779686270.6939998,
   "ONDO-USDT-SWAP|pump|social_surge": 1779686270.6939998,
   "GRASS-USDT-SWAP|pump|social_surge": 1779686270.6939998,
-  "ETH-USDT-SWAP|pump|social_surge": 1779686270.6939998
+  "ETH-USDT-SWAP|pump|social_surge": 1779686270.6939998,
+  "OPG-USDT-SWAP|pump|swap_top_gainers": 1779687143.8187,
+  "LITE-USDT-SWAP|pump|funding_extreme": 1779687143.8187,
+  "ZEC-USDT-SWAP|pump|social_surge": 1779687143.8187
 }
