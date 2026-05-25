@@ -344,7 +344,6 @@
     "XRP",
     "ETH"
   ],
-  "CC-USDT-SWAP|pump|social_surge": 1779746550.6602788,
   "RESOLV-USDT-SWAP|pump|swap_top_gainers": 1779747457.0714047,
   "GRASS-USDT-SWAP|pump|social_surge": 1779747457.0714047,
   "XPL-USDT-SWAP|dump|volume_surge": 1779748361.5372143,
@@ -365,5 +364,7 @@
   "PEPE-USDT-SWAP|dump|volume_surge": 1779748361.5372143,
   "SYRUP-USDT-SWAP|dump|longshort_ratio": 1779748361.5372143,
   "AAVE-USDT-SWAP|pump|social_surge": 1779748361.5372143,
-  "XRP-USDT-SWAP|pump|social_surge": 1779748361.5372143
+  "XRP-USDT-SWAP|pump|social_surge": 1779748361.5372143,
+  "MEGA-USDT-SWAP|dump|volume_surge": 1779748559.2248642,
+  "ROBO-USDT-SWAP|dump|volume_surge": 1779748559.2248642
 }
