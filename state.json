@@ -329,22 +329,26 @@
   ],
   "_trending_last_seen": [
     "SLX",
-    "PHA",
-    "HYPE",
     "ZIG",
+    "HYPE",
+    "PHA",
     "NEAR",
     "PENGU",
     "ZEC",
     "VVV",
-    "INJ",
+    "RAIL",
     "TAO",
     "XAN",
-    "BTC",
-    "RAIL",
-    "OCT",
-    "PENDLE"
+    "SOL",
+    "GRASS",
+    "MORPHO",
+    "BTC"
   ],
-  "BSB-USDT-SWAP|pump|swap_top_gainers": 1779715052.81109,
   "PENDLE-USDT-SWAP|pump|social_surge": 1779715982.396634,
-  "BTC-USDT-SWAP|pump|social_surge": 1779716854.9232738
+  "BTC-USDT-SWAP|pump|social_surge": 1779716854.9232738,
+  "BILL-USDT-SWAP|dump|swap_top_gainers": 1779717631.3752651,
+  "BSB-USDT-SWAP|pump|swap_top_gainers": 1779717631.3752651,
+  "SOL-USDT-SWAP|pump|social_surge": 1779717631.3752651,
+  "GRASS-USDT-SWAP|pump|social_surge": 1779717631.3752651,
+  "MORPHO-USDT-SWAP|pump|social_surge": 1779717631.3752651
 }
