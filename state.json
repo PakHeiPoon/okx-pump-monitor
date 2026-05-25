@@ -332,19 +332,18 @@
     "NEAR",
     "HYPE",
     "ZIG",
-    "PENGU",
     "PHA",
     "ZEC",
+    "PENGU",
     "VVV",
+    "RENDER",
     "TAO",
     "RAIL",
-    "RENDER",
-    "MORPHO",
+    "SOL",
     "AKT",
-    "GRASS",
-    "OCT"
+    "BTC",
+    "AERO"
   ],
-  "BTC-USDT-SWAP|pump|social_surge": 1779716854.9232738,
   "BILL-USDT-SWAP|dump|swap_top_gainers": 1779717631.3752651,
   "BSB-USDT-SWAP|pump|swap_top_gainers": 1779717631.3752651,
   "SOL-USDT-SWAP|pump|social_surge": 1779717631.3752651,
@@ -353,5 +352,8 @@
   "AZTEC-USDT-SWAP|pump|swap_top_gainers": 1779718641.4575152,
   "HMSTR-USDT-SWAP|pump|swap_top_gainers": 1779718641.4575152,
   "HMSTR-USDT-SWAP|pump|oi_surge": 1779718641.4575152,
-  "RENDER-USDT-SWAP|pump|social_surge": 1779718641.4575152
+  "RENDER-USDT-SWAP|pump|social_surge": 1779718641.4575152,
+  "JELLYJELLY-USDT-SWAP|pump|swap_top_gainers": 1779719547.6351838,
+  "BTC-USDT-SWAP|pump|social_surge": 1779719547.6351838,
+  "AERO-USDT-SWAP|pump|social_surge": 1779719547.6351838
 }
