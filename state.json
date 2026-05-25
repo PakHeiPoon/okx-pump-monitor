@@ -331,21 +331,19 @@
     "HYPE",
     "ZEC",
     "NEAR",
-    "VVV",
-    "SUI",
     "RAIL",
-    "BTC",
+    "SUI",
     "PENGU",
+    "VVV",
+    "BTC",
     "KAS",
-    "MEGA",
     "ONDO",
-    "LINK",
     "LUNC",
     "XRP",
-    "SUPER"
+    "MEGA",
+    "LINK",
+    "HBAR"
   ],
-  "BEAT-USDT-SWAP|pump|swap_top_gainers": 1779668272.0063531,
-  "AVAX-USDT-SWAP|pump|social_surge": 1779668272.0063531,
   "JUP-USDT-SWAP|dump|volume_surge": 1779669175.2004812,
   "TRUTH-USDT-SWAP|pump|oi_surge": 1779669175.2004812,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779669175.2004812,
@@ -356,5 +354,9 @@
   "MEGA-USDT-SWAP|pump|social_surge": 1779670078.6335542,
   "ONDO-USDT-SWAP|pump|social_surge": 1779670078.6335542,
   "LINK-USDT-SWAP|pump|social_surge": 1779670078.6335542,
-  "XRP-USDT-SWAP|pump|social_surge": 1779670078.6335542
+  "XRP-USDT-SWAP|pump|social_surge": 1779670078.6335542,
+  "FOGO-USDT-SWAP|dump|volume_surge": 1779670988.6142716,
+  "DRAM-USDT-SWAP|pump|funding_extreme": 1779670988.6142716,
+  "GRASS-USDT-SWAP|dump|perp_premium": 1779670988.6142716,
+  "HBAR-USDT-SWAP|pump|social_surge": 1779670988.6142716
 }
