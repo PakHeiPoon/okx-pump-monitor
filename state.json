@@ -330,21 +330,20 @@
   "_trending_last_seen": [
     "NEAR",
     "HYPE",
-    "PENGU",
-    "ZEC",
     "PHA",
-    "VVV",
     "ZIG",
+    "ZEC",
     "XAN",
+    "PENGU",
+    "VVV",
+    "INJ",
     "BTC",
-    "SUI",
     "TAO",
-    "ICP",
     "NIL",
-    "LINK",
-    "INJ"
+    "ICP",
+    "SUI",
+    "PLUME"
   ],
-  "MEGA-USDT-SWAP|pump|social_surge": 1779712363.7086155,
   "PENGU-USDT-SWAP|dump|volume_surge": 1779713271.8904881,
   "XRP-USDT-SWAP|dump|volume_surge": 1779713271.8904881,
   "PEPE-USDT-SWAP|dump|volume_surge": 1779713271.8904881,
@@ -352,5 +351,6 @@
   "LINK-USDT-SWAP|pump|social_surge": 1779713271.8904881,
   "UB-USDT-SWAP|pump|funding_extreme": 1779714187.4502592,
   "TAO-USDT-SWAP|pump|social_surge": 1779714187.4502592,
-  "INJ-USDT-SWAP|pump|social_surge": 1779714187.4502592
+  "INJ-USDT-SWAP|pump|social_surge": 1779714187.4502592,
+  "BSB-USDT-SWAP|pump|swap_top_gainers": 1779715052.81109
 }
