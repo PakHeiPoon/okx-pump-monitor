@@ -330,22 +330,20 @@
   "_trending_last_seen": [
     "NEAR",
     "PLLD",
-    "CARDS",
     "HYPE",
-    "GRASS",
+    "CARDS",
     "PENGU",
+    "GRASS",
     "SLX",
-    "VVV",
     "BTC",
-    "ZEC",
-    "XRP",
-    "TON",
     "FET",
-    "CC",
-    "NIL"
+    "VVV",
+    "ZEC",
+    "ETH",
+    "TON",
+    "INJ",
+    "CC"
   ],
-  "RESOLV-USDT-SWAP|pump|swap_top_gainers": 1779747457.0714047,
-  "GRASS-USDT-SWAP|pump|social_surge": 1779747457.0714047,
   "XPL-USDT-SWAP|dump|volume_surge": 1779748361.5372143,
   "ICP-USDT-SWAP|dump|volume_surge": 1779748361.5372143,
   "PLUME-USDT-SWAP|dump|volume_surge": 1779748361.5372143,
@@ -367,5 +365,8 @@
   "XRP-USDT-SWAP|pump|social_surge": 1779748361.5372143,
   "MEGA-USDT-SWAP|dump|volume_surge": 1779748559.2248642,
   "ROBO-USDT-SWAP|dump|volume_surge": 1779748559.2248642,
-  "SNX-USDT-SWAP|dump|volume_surge": 1779749275.569393
+  "SNX-USDT-SWAP|dump|volume_surge": 1779749275.569393,
+  "WLFI-USDT-SWAP|dump|volume_surge": 1779750177.8001838,
+  "ETH-USDT-SWAP|pump|social_surge": 1779750177.8001838,
+  "INJ-USDT-SWAP|pump|social_surge": 1779750177.8001838
 }
