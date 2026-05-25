@@ -335,18 +335,15 @@
     "XAN",
     "ZEC",
     "VVV",
-    "RENDER",
     "NIL",
+    "RENDER",
+    "BTC",
     "AKT",
     "MORPHO",
-    "CC",
-    "ASTER",
-    "HBAR",
-    "RAIL"
+    "RAIL",
+    "TAO",
+    "OCT"
   ],
-  "PLUME-USDT-SWAP|dump|volume_surge": 1779706989.7775285,
-  "XRP-USDT-SWAP|dump|volume_surge": 1779706989.7775285,
-  "ADA-USDT-SWAP|dump|volume_surge": 1779706989.7775285,
   "BSB-USDT-SWAP|pump|swap_top_gainers": 1779707871.262189,
   "RENDER-USDT-SWAP|pump|social_surge": 1779707871.262189,
   "XRP-USDT-SWAP|pump|volume_surge": 1779708758.4693773,
@@ -355,5 +352,7 @@
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779708758.4693773,
   "MORPHO-USDT-SWAP|pump|social_surge": 1779708758.4693773,
   "CC-USDT-SWAP|pump|social_surge": 1779708758.4693773,
-  "HBAR-USDT-SWAP|pump|social_surge": 1779708758.4693773
+  "HBAR-USDT-SWAP|pump|social_surge": 1779708758.4693773,
+  "BTC-USDT-SWAP|pump|social_surge": 1779709650.6190803,
+  "TAO-USDT-SWAP|pump|social_surge": 1779709650.6190803
 }
