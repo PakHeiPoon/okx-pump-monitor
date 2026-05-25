@@ -332,17 +332,17 @@
     "RAIL",
     "ZEC",
     "NEAR",
-    "PENGU",
     "VVV",
-    "XMR",
-    "HBAR",
+    "PENGU",
     "BTC",
-    "ETH",
-    "GRASS",
     "FET",
+    "ONDO",
+    "ETH",
     "MON",
-    "PI",
-    "NEX"
+    "KAS",
+    "GRASS",
+    "TAO",
+    "LUNC"
   ],
   "GRASS-USDT-SWAP|pump|social_surge": 1779673651.310875,
   "RAVE-USDT-SWAP|pump|longshort_ratio": 1779674169.317698,
@@ -350,5 +350,10 @@
   "XPT-USDT-SWAP|pump|longshort_ratio": 1779674169.317698,
   "BTC-USDT-SWAP|pump|social_surge": 1779674169.317698,
   "ETH-USDT-SWAP|pump|social_surge": 1779674169.317698,
-  "MON-USDT-SWAP|pump|social_surge": 1779674169.317698
+  "MON-USDT-SWAP|pump|social_surge": 1779674169.317698,
+  "ARB-USDT-SWAP|pump|volume_surge": 1779674585.3973308,
+  "UB-USDT-SWAP|pump|funding_extreme": 1779674585.3973308,
+  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779674585.3973308,
+  "ONDO-USDT-SWAP|pump|social_surge": 1779674585.3973308,
+  "TAO-USDT-SWAP|pump|social_surge": 1779674585.3973308
 }
