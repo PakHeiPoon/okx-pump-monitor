@@ -329,25 +329,21 @@
   ],
   "_trending_last_seen": [
     "NEAR",
+    "HYPE",
     "ZIG",
     "SLX",
-    "HYPE",
+    "TON",
     "PENGU",
     "VVV",
-    "TON",
-    "ZEC",
     "FET",
+    "ZEC",
+    "BTC",
     "RENDER",
-    "ONDO",
+    "RAIL",
+    "SUI",
     "SOL",
-    "ETH",
-    "GRASS",
-    "SUI"
+    "SERV"
   ],
-  "BABY-USDT-SWAP|pump|swap_top_gainers": 1779728550.9766154,
-  "PUMP-USDT-SWAP|pump|volume_surge": 1779728550.9766154,
-  "ONDO-USDT-SWAP|pump|social_surge": 1779728550.9766154,
-  "AZTEC-USDT-SWAP|pump|social_surge": 1779728550.9766154,
   "BSB-USDT-SWAP|pump|swap_top_gainers": 1779729447.640961,
   "TON-USDT-SWAP|pump|swap_top_gainers": 1779729447.640961,
   "BILL-USDT-SWAP|dump|swap_top_gainers": 1779730355.8791358,
@@ -355,5 +351,9 @@
   "OFC-USDT-SWAP|pump|volume_surge": 1779730355.8791358,
   "SOL-USDT-SWAP|pump|social_surge": 1779730355.8791358,
   "GRASS-USDT-SWAP|pump|social_surge": 1779730355.8791358,
-  "SUI-USDT-SWAP|pump|social_surge": 1779730355.8791358
+  "SUI-USDT-SWAP|pump|social_surge": 1779730355.8791358,
+  "BSB-USDT-SWAP|dump|swap_top_gainers": 1779731274.1148465,
+  "SYRUP-USDT-SWAP|dump|longshort_ratio": 1779731274.1148465,
+  "UB-USDT-SWAP|dump|longshort_ratio": 1779731274.1148465,
+  "BTC-USDT-SWAP|pump|social_surge": 1779731274.1148465
 }
