@@ -331,18 +331,18 @@
     "PENGU",
     "XAN",
     "RAIL",
-    "NEAR",
-    "ONDO",
     "VVV",
     "HYPE",
+    "NEAR",
+    "ONDO",
     "ZEC",
     "TON",
-    "MON",
     "DEXE",
+    "MON",
     "AKT",
-    "PI",
-    "GRASS",
-    "PLUME"
+    "SERV",
+    "BTC",
+    "SUI"
   ],
   "PENGU-USDT-SWAP|pump|social_surge": 1779688964.7113426,
   "TON-USDT-SWAP|pump|social_surge": 1779688964.7113426,
@@ -352,5 +352,6 @@
   "SOXL-USDT-SWAP|pump|funding_extreme": 1779690416.5444634,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779690416.5444634,
   "MON-USDT-SWAP|pump|social_surge": 1779690416.5444634,
-  "GRASS-USDT-SWAP|pump|social_surge": 1779690416.5444634
+  "GRASS-USDT-SWAP|pump|social_surge": 1779690416.5444634,
+  "SUI-USDT-SWAP|pump|social_surge": 1779690761.7765086
 }
