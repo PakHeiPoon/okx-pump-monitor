@@ -328,21 +328,21 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "ESPORTS",
-    "HYPE",
-    "ZIG",
-    "ZEC",
     "NEAR",
-    "VVV",
-    "XAN",
-    "BTC",
+    "HYPE",
+    "ZEC",
     "PENGU",
+    "XAN",
+    "VVV",
+    "ZIG",
     "NIL",
-    "RAIL",
+    "BTC",
+    "PHA",
     "SUI",
     "ICP",
-    "TAO",
-    "MEGA"
+    "PLUME",
+    "LINK",
+    "RAIL"
   ],
   "TRIA-USDT-SWAP|dump|volume_surge": 1779711440.0370975,
   "SOXL-USDT-SWAP|pump|funding_extreme": 1779711440.0370975,
@@ -350,5 +350,10 @@
   "SUI-USDT-SWAP|pump|social_surge": 1779711440.0370975,
   "ICP-USDT-SWAP|pump|social_surge": 1779711440.0370975,
   "GRASS-USDT-SWAP|pump|social_surge": 1779711440.0370975,
-  "MEGA-USDT-SWAP|pump|social_surge": 1779712363.7086155
+  "MEGA-USDT-SWAP|pump|social_surge": 1779712363.7086155,
+  "PENGU-USDT-SWAP|dump|volume_surge": 1779713271.8904881,
+  "XRP-USDT-SWAP|dump|volume_surge": 1779713271.8904881,
+  "PEPE-USDT-SWAP|dump|volume_surge": 1779713271.8904881,
+  "PLUME-USDT-SWAP|pump|social_surge": 1779713271.8904881,
+  "LINK-USDT-SWAP|pump|social_surge": 1779713271.8904881
 }
