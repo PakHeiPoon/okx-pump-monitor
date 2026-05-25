@@ -333,20 +333,17 @@
     "XAN",
     "RAIL",
     "SOL",
-    "NEX",
     "VVV",
-    "PENGU",
-    "MON",
-    "PI",
-    "CC",
-    "AAVE",
     "ETH",
+    "PI",
+    "PHA",
+    "ZEC",
     "BILL",
-    "TON"
+    "PENGU",
+    "LIT",
+    "NEX",
+    "CC"
   ],
-  "BIO-USDT-SWAP|dump|volume_surge": 1779696189.5715706,
-  "LITE-USDT-SWAP|pump|funding_extreme": 1779696189.5715706,
-  "ZEC-USDT-SWAP|pump|social_surge": 1779696189.5715706,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779697076.0794785,
   "AAVE-USDT-SWAP|pump|social_surge": 1779697076.0794785,
   "CC-USDT-SWAP|pump|social_surge": 1779697076.0794785,
@@ -354,5 +351,9 @@
   "SOXL-USDT-SWAP|pump|funding_extreme": 1779697979.065747,
   "MON-USDT-SWAP|pump|social_surge": 1779697979.065747,
   "PI-USDT-SWAP|pump|social_surge": 1779697979.065747,
-  "TON-USDT-SWAP|pump|social_surge": 1779697979.065747
+  "TON-USDT-SWAP|pump|social_surge": 1779697979.065747,
+  "ADA-USDT-SWAP|pump|volume_surge": 1779698850.0909946,
+  "LITE-USDT-SWAP|pump|funding_extreme": 1779698850.0909946,
+  "ZEC-USDT-SWAP|pump|social_surge": 1779698850.0909946,
+  "LIT-USDT-SWAP|pump|social_surge": 1779698850.0909946
 }
