@@ -355,5 +355,8 @@
   "ZEN-USDT-SWAP|dump|volume_surge": 1779706702.0350742,
   "LITE-USDT-SWAP|pump|funding_extreme": 1779706702.0350742,
   "ZEC-USDT-SWAP|dump|longshort_ratio": 1779706702.0350742,
-  "OFC-USDT-SWAP|pump|longshort_ratio": 1779706702.0350742
+  "OFC-USDT-SWAP|pump|longshort_ratio": 1779706702.0350742,
+  "PLUME-USDT-SWAP|dump|volume_surge": 1779706989.7775285,
+  "XRP-USDT-SWAP|dump|volume_surge": 1779706989.7775285,
+  "ADA-USDT-SWAP|dump|volume_surge": 1779706989.7775285
 }
