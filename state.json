@@ -328,26 +328,28 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "NEAR",
-    "HYPE",
     "SLX",
+    "NEAR",
+    "VVV",
+    "HYPE",
+    "PENGU",
     "RAIL",
     "TON",
-    "VVV",
-    "PENGU",
-    "ZEC",
     "PEAQ",
-    "GRASS",
     "RENDER",
-    "FET",
-    "GITLAWB",
-    "ONDO",
-    "NEX"
+    "ZEC",
+    "SUI",
+    "PUMP",
+    "AKT",
+    "CC",
+    "ERA"
   ],
-  "FOGO-USDT-SWAP|dump|perp_premium": 1779738468.2037516,
-  "ZEC-USDT-SWAP|pump|social_surge": 1779738468.2037516,
-  "PENGU-USDT-SWAP|pump|social_surge": 1779738468.2037516,
   "HOME-USDT-SWAP|pump|swap_top_gainers": 1779739251.6500754,
   "SYRUP-USDT-SWAP|dump|longshort_ratio": 1779739251.6500754,
-  "WLD-USDT-SWAP|pump|swap_top_gainers": 1779740236.9174342
+  "WLD-USDT-SWAP|pump|swap_top_gainers": 1779740236.9174342,
+  "WLFI-USDT-SWAP|dump|volume_surge": 1779741183.2112005,
+  "PEPE-USDT-SWAP|dump|volume_surge": 1779741183.2112005,
+  "SUI-USDT-SWAP|pump|social_surge": 1779741183.2112005,
+  "PUMP-USDT-SWAP|pump|social_surge": 1779741183.2112005,
+  "CC-USDT-SWAP|pump|social_surge": 1779741183.2112005
 }
