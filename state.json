@@ -328,30 +328,29 @@
     "ZRX-USDT-SWAP"
   ],
   "_trending_last_seen": [
-    "SLX",
     "NEAR",
+    "SLX",
     "ZIG",
-    "HYPE",
     "VVV",
-    "ZEC",
+    "HYPE",
     "PENGU",
-    "FET",
-    "ETH",
+    "ZEC",
     "TON",
-    "AAVE",
-    "SOL",
+    "FET",
     "ONDO",
-    "AZTEC",
-    "RENDER"
+    "RENDER",
+    "ETH",
+    "AAVE",
+    "PHA",
+    "POND"
   ],
-  "BSB-USDT-SWAP|pump|swap_top_gainers": 1779726772.9092846,
-  "FOGO-USDT-SWAP|pump|volume_surge": 1779726772.9092846,
-  "OPG-USDT-SWAP|pump|volume_surge": 1779726772.9092846,
   "WLFI-USDT-SWAP|dump|volume_surge": 1779727638.3071468,
   "ADA-USDT-SWAP|pump|volume_surge": 1779727638.3071468,
   "SYRUP-USDT-SWAP|dump|longshort_ratio": 1779727638.3071468,
   "BABY-USDT-SWAP|pump|swap_top_gainers": 1779728550.9766154,
   "PUMP-USDT-SWAP|pump|volume_surge": 1779728550.9766154,
   "ONDO-USDT-SWAP|pump|social_surge": 1779728550.9766154,
-  "AZTEC-USDT-SWAP|pump|social_surge": 1779728550.9766154
+  "AZTEC-USDT-SWAP|pump|social_surge": 1779728550.9766154,
+  "BSB-USDT-SWAP|pump|swap_top_gainers": 1779729447.640961,
+  "TON-USDT-SWAP|pump|swap_top_gainers": 1779729447.640961
 }
