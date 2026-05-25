@@ -331,22 +331,20 @@
     "SLX",
     "PHA",
     "HYPE",
-    "NEAR",
     "ZIG",
+    "NEAR",
     "PENGU",
-    "VVV",
     "ZEC",
+    "VVV",
     "INJ",
+    "TAO",
     "XAN",
+    "BTC",
     "RAIL",
     "OCT",
-    "PENDLE",
-    "TAO",
-    "SUI"
+    "PENDLE"
   ],
-  "UB-USDT-SWAP|pump|funding_extreme": 1779714187.4502592,
-  "TAO-USDT-SWAP|pump|social_surge": 1779714187.4502592,
-  "INJ-USDT-SWAP|pump|social_surge": 1779714187.4502592,
   "BSB-USDT-SWAP|pump|swap_top_gainers": 1779715052.81109,
-  "PENDLE-USDT-SWAP|pump|social_surge": 1779715982.396634
+  "PENDLE-USDT-SWAP|pump|social_surge": 1779715982.396634,
+  "BTC-USDT-SWAP|pump|social_surge": 1779716854.9232738
 }
