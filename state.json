@@ -329,25 +329,21 @@
   ],
   "_trending_last_seen": [
     "PENGU",
-    "NEAR",
     "HYPE",
-    "RAIL",
     "VVV",
+    "RAIL",
+    "NEAR",
     "USDR",
     "ONDO",
     "LIT",
+    "ASTEROID",
     "MON",
-    "BTC",
-    "XRP",
-    "AI",
     "MEGA",
+    "BTC",
     "ZEC",
-    "PI"
+    "PI",
+    "NEX"
   ],
-  "BSB-USDT-SWAP|pump|swap_top_gainers": 1779678186.1385148,
-  "ZEC-USDT-SWAP|dump|longshort_ratio": 1779678186.1385148,
-  "OFC-USDT-SWAP|pump|longshort_ratio": 1779678186.1385148,
-  "ONDO-USDT-SWAP|pump|social_surge": 1779678186.1385148,
   "MON-USDT-SWAP|pump|social_surge": 1779679069.6317222,
   "MEGA-USDT-SWAP|pump|social_surge": 1779679069.6317222,
   "UB-USDT-SWAP|pump|swap_top_gainers": 1779679985.033244,
@@ -358,5 +354,7 @@
   "DRAM-USDT-SWAP|pump|longshort_ratio": 1779679985.033244,
   "RAVE-USDT-SWAP|pump|longshort_ratio": 1779679985.033244,
   "PENGU-USDT-SWAP|pump|social_surge": 1779679985.033244,
-  "PI-USDT-SWAP|pump|social_surge": 1779679985.033244
+  "PI-USDT-SWAP|pump|social_surge": 1779679985.033244,
+  "OFC-USDT-SWAP|pump|longshort_ratio": 1779680866.172106,
+  "SPACEX-USDT-SWAP|pump|longshort_ratio": 1779680866.172106
 }
