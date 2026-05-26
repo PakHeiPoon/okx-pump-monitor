@@ -333,24 +333,24 @@
     "ONDO",
     "HYPE",
     "GRASS",
-    "SLX",
     "FET",
     "PENGU",
+    "ZEC",
     "CARDS",
     "VVV",
-    "ZEC",
+    "SLX",
     "SUI",
+    "RENDER",
     "NIL",
-    "LINK",
-    "RENDER"
+    "XRP"
   ],
-  "SAHARA-USDT-SWAP|pump|volume_surge": 1779753762.562592,
-  "EIGEN-USDT-SWAP|dump|perp_premium": 1779753762.562592,
-  "RENDER-USDT-SWAP|dump|perp_premium": 1779753762.562592,
   "RVN-USDT-SWAP|pump|oi_surge": 1779754637.694662,
   "RENDER-USDT-SWAP|pump|social_surge": 1779754637.694662,
   "GRASS-USDT-SWAP|pump|swap_top_gainers": 1779755558.4960215,
   "TRUST-USDT-SWAP|pump|oi_surge": 1779755558.4960215,
   "SYRUP-USDT-SWAP|dump|longshort_ratio": 1779755558.4960215,
-  "SUI-USDT-SWAP|pump|social_surge": 1779755558.4960215
+  "SUI-USDT-SWAP|pump|social_surge": 1779755558.4960215,
+  "MEGA-USDT-SWAP|dump|volume_surge": 1779756450.3565152,
+  "SOON-USDT-SWAP|pump|oi_surge": 1779756450.3565152,
+  "XRP-USDT-SWAP|pump|social_surge": 1779756450.3565152
 }
