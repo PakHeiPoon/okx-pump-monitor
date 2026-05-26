@@ -330,24 +330,25 @@
   "_trending_last_seen": [
     "NEAR",
     "HYPE",
-    "SLX",
-    "PENGU",
+    "FET",
     "CARDS",
     "GRASS",
-    "FET",
+    "SLX",
     "PLLD",
-    "ETH",
+    "ONDO",
+    "PENGU",
     "BTC",
     "LINK",
+    "VVV",
     "ZEC",
-    "AKT",
-    "ONDO",
-    "VVV"
+    "PEAQ",
+    "ETH"
   ],
-  "SYRUP-USDT-SWAP|dump|longshort_ratio": 1779751067.1046534,
-  "MORPHO-USDT-SWAP|pump|social_surge": 1779751067.1046534,
   "ONDO-USDT-SWAP|dump|volume_surge": 1779751973.376514,
   "PEPE-USDT-SWAP|pump|volume_surge": 1779751973.376514,
   "ONDO-USDT-SWAP|pump|social_surge": 1779751973.376514,
-  "LINK-USDT-SWAP|pump|social_surge": 1779751973.376514
+  "LINK-USDT-SWAP|pump|social_surge": 1779751973.376514,
+  "SAHARA-USDT-SWAP|pump|volume_surge": 1779753762.562592,
+  "EIGEN-USDT-SWAP|dump|perp_premium": 1779753762.562592,
+  "RENDER-USDT-SWAP|dump|perp_premium": 1779753762.562592
 }
