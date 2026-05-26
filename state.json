@@ -336,17 +336,14 @@
     "RAIL",
     "ZEC",
     "VVV",
-    "CARDS",
     "SOL",
     "TAO",
-    "XRP",
-    "PUMP",
+    "CARDS",
+    "RENDER",
     "ZEST",
-    "NIL"
+    "OCT",
+    "PUMP"
   ],
-  "ZEC-USDT-SWAP|pump|social_surge": 1779764568.422436,
-  "XRP-USDT-SWAP|pump|social_surge": 1779764568.422436,
-  "BILL-USDT-SWAP|pump|social_surge": 1779764568.422436,
   "MMT-USDT-SWAP|pump|swap_top_gainers": 1779765452.6895397,
   "MMT-USDT-SWAP|dump|funding_extreme": 1779765452.6895397,
   "RESOLV-USDT-SWAP|dump|perp_premium": 1779765452.6895397,
@@ -354,5 +351,7 @@
   "SOL-USDT-SWAP|pump|social_surge": 1779765452.6895397,
   "MMT-USDT-SWAP|pump|oi_surge": 1779766342.845003,
   "MMT-USDT-SWAP|dump|perp_premium": 1779766342.845003,
-  "TAO-USDT-SWAP|pump|social_surge": 1779766342.845003
+  "TAO-USDT-SWAP|pump|social_surge": 1779766342.845003,
+  "GMX-USDT-SWAP|dump|perp_premium": 1779767267.052702,
+  "RENDER-USDT-SWAP|pump|social_surge": 1779767267.052702
 }
