@@ -1,11 +1,9 @@
 name: OKX Realtime Scanner (flush_reversal)
 
-# V2.10：高频 monitor 专用 workflow。当前只跑 FlushReversalMonitor，5min 粒度。
-# 主 scanner（scan.yml）继续 15min，其他 11 个 monitor 不变。
-#
-# 反弹形态窗口 10-60min，5min 检测延迟足够抓到反弹早段。如果将来要做到 1min
-# 实时，最佳路径是升级 Vercel Pro + 把这个 workflow 迁到 Vercel Cron（不需要
-# state.json git commit 因为 realtime 可以接受偶尔丢冷却）。
+# V2.10：高频 monitor 专用 workflow，5min 粒度跑 FlushReversalMonitor。
+# V2.19：state-realtime.json 改走 GH Actions cache，不再 commit 回 main。
+#         这样 Vercel 永远不会被 cron commit 触发 deployment（即便 ignore
+#         build step 会 cancel，cancelled deploy 仍占 Hobby 100/day 配额）。
 
 on:
   schedule:
@@ -21,7 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 3
     permissions:
-      contents: write   # 写 state-realtime.json 回仓库
+      contents: read
+      actions: write
     steps:
       - uses: actions/checkout@v6
 
@@ -33,12 +32,20 @@ jobs:
       - name: Install deps
         run: pip install -r requirements.txt
 
+      # V2.19：state-realtime.json 从 GH Actions cache 恢复
+      - name: Restore realtime state
+        uses: actions/cache/restore@v4
+        with:
+          path: state-realtime.json
+          key: scanner-state-realtime-${{ github.run_id }}
+          restore-keys: |
+            scanner-state-realtime-
+
       - name: Run realtime scanner
         env:
           FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
-          # flush_reversal 阈值（如要调可在仓库 Variables 配，否则用代码默认值）
           FLUSH_LOOKBACK_MIN: '30'
           FLUSH_MIN_DROP_PCT: '8.0'
           FLUSH_PEAK_TROUGH_MAX_MIN: '15'
@@ -48,14 +55,9 @@ jobs:
           FLUSH_TOP_N: '60'
         run: python -m scanner.realtime
 
-      - name: Persist realtime state
-        run: |
-          if [[ -n $(git status -s state-realtime.json) ]]; then
-            git config user.name "github-actions"
-            git config user.email "actions@github.com"
-            # rebase 先，避免和 scan.yml 同时 push 冲突
-            git pull --rebase origin main || true
-            git add state-realtime.json
-            git commit -m "update state-realtime [skip ci]" || true
-            git push || true
-          fi
+      - name: Save realtime state
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: state-realtime.json
+          key: scanner-state-realtime-${{ github.run_id }}
