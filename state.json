@@ -330,23 +330,20 @@
   "_trending_last_seen": [
     "BONK",
     "ONDO",
+    "SLX",
     "NEAR",
     "VVV",
-    "SLX",
-    "NIL",
+    "HYPE",
     "CARDS",
-    "FET",
+    "NIL",
     "BTC",
-    "ZEC",
-    "LIT",
+    "CC",
     "MEGA",
-    "GIGA",
-    "GALA",
-    "HYPE"
+    "KTA",
+    "FET",
+    "SOL",
+    "RENDER"
   ],
-  "DOGE-USDT-SWAP|pump|volume_surge": 1779760071.9913793,
-  "SYRUP-USDT-SWAP|dump|longshort_ratio": 1779760071.9913793,
-  "BTC-USDT-SWAP|pump|social_surge": 1779760071.9913793,
   "MMT-USDT-SWAP|pump|swap_top_gainers": 1779760962.6060328,
   "RVN-USDT-SWAP|dump|funding_extreme": 1779760962.6060328,
   "MMT-USDT-SWAP|dump|perp_premium": 1779760962.6060328,
@@ -355,5 +352,10 @@
   "MEGA-USDT-SWAP|pump|social_surge": 1779760962.6060328,
   "TAO-USDT-SWAP|pump|social_surge": 1779760962.6060328,
   "GALA-USDT-SWAP|pump|social_surge": 1779761839.6591804,
-  "HYPE-USDT-SWAP|pump|social_surge": 1779761839.6591804
+  "HYPE-USDT-SWAP|pump|social_surge": 1779761839.6591804,
+  "MMT-USDT-SWAP|dump|funding_extreme": 1779762744.7763088,
+  "SYRUP-USDT-SWAP|dump|longshort_ratio": 1779762744.7763088,
+  "CC-USDT-SWAP|pump|social_surge": 1779762744.7763088,
+  "SOL-USDT-SWAP|pump|social_surge": 1779762744.7763088,
+  "RENDER-USDT-SWAP|pump|social_surge": 1779762744.7763088
 }
