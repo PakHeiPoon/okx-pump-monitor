@@ -330,26 +330,25 @@
   "_trending_last_seen": [
     "BONK",
     "ONDO",
-    "HYPE",
     "NEAR",
+    "HYPE",
     "SLX",
     "RAIL",
     "POND",
     "CARDS",
-    "TON",
+    "RENDER",
     "TAO",
+    "OCT",
+    "TON",
     "ZEC",
     "VVV",
-    "SOL",
-    "RENDER",
-    "OCT"
+    "SOL"
   ],
-  "MMT-USDT-SWAP|pump|oi_surge": 1779766342.845003,
-  "MMT-USDT-SWAP|dump|perp_premium": 1779766342.845003,
-  "TAO-USDT-SWAP|pump|social_surge": 1779766342.845003,
   "GMX-USDT-SWAP|dump|perp_premium": 1779767267.052702,
   "RENDER-USDT-SWAP|pump|social_surge": 1779767267.052702,
   "OKB-USDT-SWAP|pump|volume_surge": 1779768148.6222067,
   "MMT-USDT-SWAP|dump|funding_extreme": 1779768148.6222067,
-  "TON-USDT-SWAP|pump|social_surge": 1779768148.6222067
+  "TON-USDT-SWAP|pump|social_surge": 1779768148.6222067,
+  "OKB-USDT-SWAP|pump|swap_top_gainers": 1779769068.7366784,
+  "MMT-USDT-SWAP|dump|perp_premium": 1779769068.7366784
 }
