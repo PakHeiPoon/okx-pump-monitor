@@ -330,22 +330,20 @@
   "_trending_last_seen": [
     "BONK",
     "NEAR",
-    "ONDO",
+    "BTC",
     "SLX",
+    "ONDO",
+    "WLD",
     "HYPE",
     "POND",
-    "WLD",
-    "BTC",
-    "RAIL",
     "OKB",
     "RENDER",
+    "RAIL",
+    "ETH",
+    "MON",
     "ZEC",
-    "TON",
-    "TAO",
-    "MON"
+    "XRP"
   ],
-  "OKB-USDT-SWAP|pump|swap_top_gainers": 1779769068.7366784,
-  "MMT-USDT-SWAP|dump|perp_premium": 1779769068.7366784,
   "BSB-USDT-SWAP|pump|swap_top_gainers": 1779769980.7967086,
   "CHIP-USDT-SWAP|dump|volume_surge": 1779769980.7967086,
   "BTC-USDT-SWAP|pump|social_surge": 1779769980.7967086,
@@ -355,5 +353,8 @@
   "MMT-USDT-SWAP|dump|funding_extreme": 1779770870.2650406,
   "OKB-USDT-SWAP|pump|social_surge": 1779770870.2650406,
   "ZEC-USDT-SWAP|pump|social_surge": 1779770870.2650406,
-  "MON-USDT-SWAP|pump|social_surge": 1779770870.2650406
+  "MON-USDT-SWAP|pump|social_surge": 1779770870.2650406,
+  "MMT-USDT-SWAP|dump|perp_premium": 1779771785.7465606,
+  "ETH-USDT-SWAP|pump|social_surge": 1779771785.7465606,
+  "XRP-USDT-SWAP|pump|social_surge": 1779771785.7465606
 }
