@@ -333,25 +333,23 @@
     "NEAR",
     "PENGU",
     "SLX",
-    "HYPE",
     "FET",
-    "GRASS",
     "VVV",
+    "HYPE",
+    "GRASS",
     "NIL",
+    "GIGA",
     "ZEC",
     "AKT",
-    "OCT",
-    "WLD",
-    "ETH"
+    "PENDLE",
+    "OCT"
   ],
-  "GRASS-USDT-SWAP|pump|swap_top_gainers": 1779755558.4960215,
-  "TRUST-USDT-SWAP|pump|oi_surge": 1779755558.4960215,
-  "SYRUP-USDT-SWAP|dump|longshort_ratio": 1779755558.4960215,
-  "SUI-USDT-SWAP|pump|social_surge": 1779755558.4960215,
   "MEGA-USDT-SWAP|dump|volume_surge": 1779756450.3565152,
   "SOON-USDT-SWAP|pump|oi_surge": 1779756450.3565152,
   "XRP-USDT-SWAP|pump|social_surge": 1779756450.3565152,
   "SOON-USDT-SWAP|dump|swap_top_gainers": 1779757348.8939824,
   "WLD-USDT-SWAP|pump|social_surge": 1779757348.8939824,
-  "ETH-USDT-SWAP|pump|social_surge": 1779757348.8939824
+  "ETH-USDT-SWAP|pump|social_surge": 1779757348.8939824,
+  "TRUTH-USDT-SWAP|dump|oi_surge": 1779758237.6056306,
+  "PENDLE-USDT-SWAP|pump|social_surge": 1779758237.6056306
 }
