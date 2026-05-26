@@ -330,26 +330,27 @@
   "_trending_last_seen": [
     "BONK",
     "ONDO",
-    "SLX",
     "NEAR",
+    "SLX",
     "HYPE",
     "CARDS",
-    "NIL",
-    "VVV",
-    "CC",
-    "MEGA",
     "RAIL",
-    "BTC",
+    "NIL",
+    "ZEC",
+    "VVV",
     "KTA",
-    "OCT",
-    "SOL"
+    "XRP",
+    "RENDER",
+    "FET",
+    "BILL"
   ],
-  "GALA-USDT-SWAP|pump|social_surge": 1779761839.6591804,
-  "HYPE-USDT-SWAP|pump|social_surge": 1779761839.6591804,
   "MMT-USDT-SWAP|dump|funding_extreme": 1779762744.7763088,
   "SYRUP-USDT-SWAP|dump|longshort_ratio": 1779762744.7763088,
   "CC-USDT-SWAP|pump|social_surge": 1779762744.7763088,
   "SOL-USDT-SWAP|pump|social_surge": 1779762744.7763088,
   "RENDER-USDT-SWAP|pump|social_surge": 1779762744.7763088,
-  "MMT-USDT-SWAP|dump|perp_premium": 1779763657.7772026
+  "MMT-USDT-SWAP|dump|perp_premium": 1779763657.7772026,
+  "ZEC-USDT-SWAP|pump|social_surge": 1779764568.422436,
+  "XRP-USDT-SWAP|pump|social_surge": 1779764568.422436,
+  "BILL-USDT-SWAP|pump|social_surge": 1779764568.422436
 }
