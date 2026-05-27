@@ -21,12 +21,14 @@
  */
 import { NextRequest, NextResponse } from "next/server";
 
-export const runtime = "nodejs";
+// V2.21: 切到 Edge Runtime
+//   - Edge cold start < 100ms (Node ~1.5s)
+//   - preferredRegion 在 Edge runtime 真正生效（Node runtime 不生效）
+//   - 全球 30+ region 就近响应
+//   - 飞书 SAVE URL 的 3s timeout 不再是瓶颈
+export const runtime = "edge";
 export const dynamic = "force-dynamic";
-export const maxDuration = 30;
-// Hobby plan: 单 region。SIN1 (新加坡) 距离飞书中国机房 ≈ 30-50ms RTT。
-// 备选 'hkg1' (香港) 更近但 Vercel hobby 不一定支持。
-export const preferredRegion = ["sin1"];
+export const preferredRegion = ["hkg1", "sin1", "icn1"];   // 港 → 新 → 首尔（亚太就近）
 
 // ============ Fast path: URL verification challenge ============
 // 飞书 SAVE Request URL 时 3s timeout 极严。这条路径必须最快：
@@ -62,7 +64,7 @@ async function fullDispatch(rawBody: string, body: unknown, req: NextRequest): P
   const sig = req.headers.get("x-lark-signature");
   const ts = req.headers.get("x-lark-request-timestamp") ?? "";
   const nonce = req.headers.get("x-lark-request-nonce") ?? "";
-  if (sig && !verifySignature(rawBody, ts, nonce, sig)) {
+  if (sig && !(await verifySignature(rawBody, ts, nonce, sig))) {
     console.warn("[feishu/callback] signature verify failed");
     return NextResponse.json({ error: "bad signature" }, { status: 401 });
   }

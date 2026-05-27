@@ -1,6 +1,7 @@
 import "server-only";
 
-import crypto from "node:crypto";
+// V2.21: 不再 import node:crypto（Edge runtime 不支持）。改用 Web Crypto API
+// (crypto.subtle)。Edge + Node runtime 都兼容。
 
 /**
  * 飞书应用机器人侧 SDK 简版。仅实现本项目需要的子集：
@@ -19,13 +20,13 @@ export function verifyToken(payloadToken: string | undefined): boolean {
   return payloadToken === expected;
 }
 
-// 仅在用户在飞书开放平台开启了"加密 key"时才会用到。这里实现以备用。
-export function verifySignature(
+// 仅在用户在飞书开放平台开启了"加密 key"时才会用到。Edge-safe Web Crypto 实现。
+export async function verifySignature(
   body: string,
   timestamp: string,
   nonce: string,
   signatureHeader: string | null,
-): boolean {
+): Promise<boolean> {
   const encryptKey = (process.env.LARK_ENCRYPT_KEY ?? "").trim();
   if (!encryptKey) {
     // 未开启加密 → 不做签名校验（飞书在不加密模式下不发签名）
@@ -33,8 +34,12 @@ export function verifySignature(
   }
   if (!signatureHeader) return false;
   const raw = `${timestamp}${nonce}${encryptKey}${body}`;
-  const hash = crypto.createHash("sha256").update(raw).digest("hex");
-  return hash === signatureHeader;
+  const data = new TextEncoder().encode(raw);
+  const buf = await crypto.subtle.digest("SHA-256", data);
+  const hex = Array.from(new Uint8Array(buf))
+    .map((b) => b.toString(16).padStart(2, "0"))
+    .join("");
+  return hex === signatureHeader;
 }
 
 // ============ tenant_access_token cache ============
