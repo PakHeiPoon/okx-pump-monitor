@@ -1,119 +1,97 @@
 /**
  * Feishu (Lark) 应用机器人事件回调端点。
  *
- * 配置位置：飞书开放平台 → 你的应用 → 事件订阅 → Request URL
- *   设为：https://okx-pump-monitor.vercel.app/api/feishu/callback
+ * V2.20: 性能优化
+ *   - preferredRegion = ['hkg1', 'sin1']：function 部署到香港/新加坡，
+ *     大幅缩短跨境 RTT（IAD1 ≈ 250ms → SIN1 ≈ 30ms 到飞书机房）
+ *   - challenge fast path：URL verification 不走 lib/feishu.ts 的 heavy
+ *     imports（Supabase / tenant token cache），直接 inline 解析 + echo，
+ *     大幅减少 cold start 时长
+ *   - lazy import：实际业务 dispatch 才动态 import @/lib/feishu，避免
+ *     无关请求拖慢 challenge 路径
  *
- * 支持的事件：
- *   1. url_verification          (首次配置时飞书发 challenge → 我们 echo 回去)
- *   2. im.message.receive_v1     (用户在群里 @ 机器人发消息)
+ * 配置位置：飞书开放平台 → 你的应用 → 事件与回调 → 回调配置 → Request URL
+ *   https://okx-pump-monitor.vercel.app/api/feishu/callback
  *
  * 支持的命令（消息文本去 @ 后）：
  *   mute / 静音 [Nh|Nm]   → 静音 N 时长（默认 30min）
  *   unmute / 取消静音      → 立即恢复
  *   status / 状态          → 查看当前状态
  *   help / 帮助            → 显示帮助
- *
- * 安全：
- *   - LARK_VERIFY_TOKEN 必须配（payload 里 token 比对）
- *   - LARK_ENCRYPT_KEY 可选（飞书侧开启加密时才用，本路由会自动签名校验）
  */
 import { NextRequest, NextResponse } from "next/server";
-
-import {
-  HELP_TEXT,
-  fetchMuteState,
-  formatMuteStatus,
-  logEvent,
-  parseCommand,
-  replyToMessage,
-  setMuteState,
-  verifySignature,
-  verifyToken,
-} from "@/lib/feishu";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 export const maxDuration = 30;
+// Hobby plan: 单 region。SIN1 (新加坡) 距离飞书中国机房 ≈ 30-50ms RTT。
+// 备选 'hkg1' (香港) 更近但 Vercel hobby 不一定支持。
+export const preferredRegion = ["sin1"];
 
-interface LarkChallengeBody {
-  type: "url_verification";
-  challenge: string;
-  token: string;
-}
-
-interface LarkEventEnvelope {
-  schema?: string;
-  header?: {
-    event_id?: string;
-    event_type?: string;
-    token?: string;
-    create_time?: string;
-    tenant_key?: string;
-    app_id?: string;
-  };
-  event?: LarkMessageEvent;
-}
-
-interface LarkMessageEvent {
-  sender?: {
-    sender_id?: {
-      open_id?: string;
-      union_id?: string;
-      user_id?: string;
-    };
-    sender_type?: string;
-  };
-  message?: {
-    message_id?: string;
-    chat_id?: string;
-    chat_type?: string;
-    message_type?: string;
-    content?: string;            // JSON string: {"text":"@_user_1 mute 1h"}
-    mentions?: Array<{
-      key: string;
-      id?: { open_id?: string; user_id?: string };
-      name?: string;
-    }>;
-  };
-}
-
-function stripMentions(content: string | undefined): string {
-  if (!content) return "";
-  try {
-    const parsed = JSON.parse(content) as { text?: string };
-    const text = parsed.text ?? "";
-    // 飞书 @ 用户在 text 里渲染为 @_user_1 / @_user_2 等占位符，去掉
-    return text.replace(/@_user_\d+/g, "").replace(/\s+/g, " ").trim();
-  } catch {
-    return content;
+// ============ Fast path: URL verification challenge ============
+// 飞书 SAVE Request URL 时 3s timeout 极严。这条路径必须最快：
+//   - 不 import lib/feishu（含 supabase / crypto）
+//   - 直接读 env + token 校验 + echo
+function tryFastChallenge(body: unknown): NextResponse | null {
+  if (!body || typeof body !== "object") return null;
+  const b = body as { type?: string; challenge?: string; token?: string };
+  if (b.type !== "url_verification") return null;
+  const expected = (process.env.LARK_VERIFY_TOKEN ?? "").trim();
+  if (!expected || b.token !== expected) {
+    return NextResponse.json({ error: "invalid verification token" }, { status: 401 });
   }
+  return NextResponse.json({ challenge: b.challenge ?? "" });
 }
 
-interface ChallengeHandlerResult {
-  type: "challenge";
-  response: NextResponse;
-}
+// ============ Lazy-imported full dispatch ============
+async function fullDispatch(rawBody: string, body: unknown, req: NextRequest): Promise<NextResponse> {
+  // Dynamic import so URL verification path doesn't load these
+  const {
+    HELP_TEXT,
+    fetchMuteState,
+    formatMuteStatus,
+    logEvent,
+    parseCommand,
+    replyToMessage,
+    setMuteState,
+    verifySignature,
+    verifyToken,
+  } = await import("@/lib/feishu");
 
-function handleChallenge(body: LarkChallengeBody): ChallengeHandlerResult {
-  // 飞书 setup 阶段 challenge —— 这里同时校验 token（防止有人乱发请求）
-  if (!verifyToken(body.token)) {
-    return {
-      type: "challenge",
-      response: NextResponse.json(
-        { error: "invalid verification token" },
-        { status: 401 },
-      ),
+  // 2. Signature check (仅当 Encrypt Key 启用时)
+  const sig = req.headers.get("x-lark-signature");
+  const ts = req.headers.get("x-lark-request-timestamp") ?? "";
+  const nonce = req.headers.get("x-lark-request-nonce") ?? "";
+  if (sig && !verifySignature(rawBody, ts, nonce, sig)) {
+    console.warn("[feishu/callback] signature verify failed");
+    return NextResponse.json({ error: "bad signature" }, { status: 401 });
+  }
+
+  interface LarkEventEnvelope {
+    schema?: string;
+    header?: { event_type?: string; token?: string };
+    event?: {
+      sender?: { sender_id?: { open_id?: string } };
+      message?: {
+        message_id?: string;
+        chat_id?: string;
+        message_type?: string;
+        content?: string;
+      };
     };
   }
-  return {
-    type: "challenge",
-    response: NextResponse.json({ challenge: body.challenge }),
-  };
-}
+  const envelope = body as LarkEventEnvelope;
 
-async function dispatch(env: LarkEventEnvelope, ip: string): Promise<string> {
-  const ev = env.event;
+  // 2.5 Token check
+  const eventToken = envelope.header?.token;
+  if (eventToken && !verifyToken(eventToken)) {
+    console.warn("[feishu/callback] event token verify failed");
+    return NextResponse.json({ error: "bad token" }, { status: 401 });
+  }
+
+  // 3. Dispatch
+  const ip = req.headers.get("x-forwarded-for") ?? "unknown";
+  const ev = envelope.event;
   const msg = ev?.message;
   const messageId = msg?.message_id;
   const chatId = msg?.chat_id;
@@ -121,18 +99,18 @@ async function dispatch(env: LarkEventEnvelope, ip: string): Promise<string> {
 
   if (!messageId) {
     await logEvent({
-      event_type: env.header?.event_type ?? "unknown",
+      event_type: envelope.header?.event_type ?? "unknown",
       response: "no message_id",
       ip,
     });
-    return "no message_id";
+    return NextResponse.json({ ok: true, cmd: "no_message_id" });
   }
 
   if (msg?.message_type !== "text") {
     const reply = "🤖 我只懂文字命令哦，试试 `mute` / `unmute` / `status` / `help`";
     await replyToMessage(messageId, reply);
     await logEvent({
-      event_type: env.header?.event_type ?? "unknown",
+      event_type: envelope.header?.event_type ?? "unknown",
       message_id: messageId,
       chat_id: chatId,
       sender_open_id: sender,
@@ -141,10 +119,18 @@ async function dispatch(env: LarkEventEnvelope, ip: string): Promise<string> {
       response: reply,
       ip,
     });
-    return "non_text";
+    return NextResponse.json({ ok: true, cmd: "non_text" });
   }
 
-  const raw = stripMentions(msg.content);
+  // 去 @ 占位符
+  let raw = "";
+  try {
+    const parsed = JSON.parse(msg.content ?? "") as { text?: string };
+    raw = (parsed.text ?? "").replace(/@_user_\d+/g, "").replace(/\s+/g, " ").trim();
+  } catch {
+    raw = msg.content ?? "";
+  }
+
   const cmd = parseCommand(raw);
   let reply: string;
   let cmdKey: string;
@@ -152,10 +138,7 @@ async function dispatch(env: LarkEventEnvelope, ip: string): Promise<string> {
   switch (cmd.kind) {
     case "mute": {
       const until = new Date(Date.now() + cmd.minutes * 60_000);
-      const reason =
-        cmd.minutes % 60 === 0
-          ? `${cmd.minutes / 60}h`
-          : `${cmd.minutes}min`;
+      const reason = cmd.minutes % 60 === 0 ? `${cmd.minutes / 60}h` : `${cmd.minutes}min`;
       const ok = await setMuteState(until.toISOString(), reason, sender ?? "?");
       reply = ok
         ? `🔇 已静音 ${reason}，到 ${formatCstShort(until)} CST 自动恢复\n  · cron + 回测继续跑\n  · 回复 \`unmute\` 可立即取消`
@@ -190,7 +173,7 @@ async function dispatch(env: LarkEventEnvelope, ip: string): Promise<string> {
 
   await replyToMessage(messageId, reply);
   await logEvent({
-    event_type: env.header?.event_type ?? "im.message.receive_v1",
+    event_type: envelope.header?.event_type ?? "im.message.receive_v1",
     message_id: messageId,
     chat_id: chatId,
     sender_open_id: sender,
@@ -199,7 +182,7 @@ async function dispatch(env: LarkEventEnvelope, ip: string): Promise<string> {
     response: reply,
     ip,
   });
-  return cmdKey;
+  return NextResponse.json({ ok: true, cmd: cmdKey });
 }
 
 function formatCstShort(d: Date): string {
@@ -209,10 +192,7 @@ function formatCstShort(d: Date): string {
 }
 
 export async function POST(req: NextRequest): Promise<NextResponse> {
-  const ip =
-    req.headers.get("x-forwarded-for") ??
-    req.headers.get("x-real-ip") ??
-    "unknown";
+  const t0 = Date.now();
   const rawBody = await req.text();
   let body: unknown;
   try {
@@ -220,38 +200,20 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
   } catch {
     return NextResponse.json({ error: "bad json" }, { status: 400 });
   }
-  const obj = body as { type?: string; challenge?: string; token?: string };
 
-  // 1. URL verification（首次配置）
-  if (obj.type === "url_verification") {
-    console.log("[feishu/callback] URL verification challenge received");
-    const out = handleChallenge(body as LarkChallengeBody);
-    return out.response;
+  // ===== FAST PATH: URL verification challenge =====
+  // 飞书 3s timeout 严格，这条路径绝不能 import 任何 heavy lib
+  const fast = tryFastChallenge(body);
+  if (fast) {
+    console.log(`[feishu/callback] fast challenge elapsed=${Date.now() - t0}ms`);
+    return fast;
   }
 
-  // 2. Signature check（仅当 Encrypt Key 启用时；未启用走 token 校验）
-  const sig = req.headers.get("x-lark-signature");
-  const ts = req.headers.get("x-lark-request-timestamp") ?? "";
-  const nonce = req.headers.get("x-lark-request-nonce") ?? "";
-  if (sig && !verifySignature(rawBody, ts, nonce, sig)) {
-    console.warn("[feishu/callback] signature verify failed");
-    return NextResponse.json({ error: "bad signature" }, { status: 401 });
-  }
-
-  // 2.5 Token check（事件 envelope 里 header.token）
-  const envelope = body as LarkEventEnvelope;
-  const eventToken = envelope.header?.token;
-  if (eventToken && !verifyToken(eventToken)) {
-    console.warn("[feishu/callback] event token verify failed");
-    return NextResponse.json({ error: "bad token" }, { status: 401 });
-  }
-
-  // 3. Event dispatch
+  // ===== SLOW PATH: actual event dispatch =====
   try {
-    const cmdKey = await dispatch(envelope, ip);
-    console.log(`[feishu/callback] dispatched cmd=${cmdKey}`);
-    // 飞书要求 200 + 任意 JSON body
-    return NextResponse.json({ ok: true, cmd: cmdKey });
+    const res = await fullDispatch(rawBody, body, req);
+    console.log(`[feishu/callback] dispatch elapsed=${Date.now() - t0}ms`);
+    return res;
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : String(err);
     console.error(`[feishu/callback] dispatch error: ${msg}`);
@@ -259,11 +221,11 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
   }
 }
 
-// GET fallback — 浏览器直接打开时显示提示，不让用户以为页面挂了
+// GET fallback for browser visit
 export function GET(): NextResponse {
   return NextResponse.json({
     service: "feishu-callback",
     method: "POST only",
-    setup: "https://open.feishu.cn → 你的应用 → 事件订阅",
+    setup: "https://open.feishu.cn → 你的应用 → 事件与回调 → 回调配置",
   });
 }
