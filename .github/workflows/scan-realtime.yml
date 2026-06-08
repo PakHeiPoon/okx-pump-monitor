@@ -53,6 +53,17 @@ jobs:
           FLUSH_VOL_MULTIPLIER: '3.0'
           FLUSH_REQUIRE_24H_GAINER_PCT: '5.0'
           FLUSH_TOP_N: '60'
+          # V2.22: SlowFlushReversal —— 抓 30min-4h 的慢洗 V 反弹（ALLO 6/7 那种）
+          SLOW_FLUSH_LOOKBACK_BARS: '96'
+          SLOW_FLUSH_MIN_DROP_PCT: '25.0'
+          SLOW_FLUSH_PEAK_TROUGH_MIN_BARS: '6'
+          SLOW_FLUSH_PEAK_TROUGH_MAX_BARS: '60'
+          SLOW_FLUSH_MIN_BASE_BARS: '6'
+          SLOW_FLUSH_MIN_RECOVERY_PCT: '20.0'
+          SLOW_FLUSH_MAX_RECOVERY_PCT: '60.0'
+          SLOW_FLUSH_VOL_MULTIPLIER: '1.2'
+          SLOW_FLUSH_REQUIRE_24H_GAINER_PCT: '20.0'
+          SLOW_FLUSH_TOP_N: '40'
         run: python -m scanner.realtime
 
       - name: Save realtime state

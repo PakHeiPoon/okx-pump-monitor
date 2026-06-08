@@ -22,6 +22,7 @@ from .config import load
 from . import state as state_mod
 from . import fusion as fusion_mod
 from .monitors.flush_reversal import FlushReversalMonitor
+from .monitors.slow_flush_reversal import SlowFlushReversalMonitor
 from .notifiers.feishu import FeishuNotifier
 from .storage.supabase_client import SupabaseClient
 
@@ -34,7 +35,7 @@ def main():
     started_at_dt = datetime.now(timezone.utc)
     started_at_ts = time.time()
     now_str = datetime.now(CST).strftime("%Y-%m-%d %H:%M:%S")
-    print(f"[{now_str}] realtime scanner start — flush_reversal only")
+    print(f"[{now_str}] realtime scanner start — flush_reversal + slow_flush_reversal")
 
     supabase = SupabaseClient(config.supabase_url, config.supabase_service_key)
     state = state_mod.prune_expired(
@@ -49,6 +50,7 @@ def main():
     try:
         monitors = [
             FlushReversalMonitor(config),
+            SlowFlushReversalMonitor(config),
         ]
         monitors_run = len(monitors)
         for m in monitors:

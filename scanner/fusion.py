@@ -33,7 +33,7 @@ def fuse(signals, time_bucket_min: int = 5):
         groups[(s.inst_id, bucket)].append(s)
 
     for (inst_id, bucket), group in groups.items():
-        distinct_sources = list({s.source for s in group})
+        distinct_sources = list({s.source for s in group}) 
         confidence = min(5, len(distinct_sources))
         # primary = |chg_pct| 最大的（最显著的那条作为代表）
         primary = max(group, key=lambda s: abs(s.chg_pct))
@@ -54,3 +54,4 @@ def fuse(signals, time_bucket_min: int = 5):
 def primary_signals(signals):
     """从已 fuse 的 signals 列表里抽出 primary（每组一条）。Feishu 推送时用。"""
     return [s for s in signals if s.meta.get("fusion_primary", True)]
+ 

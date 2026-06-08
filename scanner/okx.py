@@ -64,6 +64,17 @@ def fetch_1m_candles(inst_id: str, limit: int):
     return r.json().get("data", [])
 
 
+def fetch_candles(inst_id: str, bar: str, limit: int):
+    """通用 K 线（最新在前）。bar 可选: 1m/5m/15m/30m/1H/4H/1D 等。"""
+    r = requests.get(
+        f"{OKX_BASE}/api/v5/market/candles",
+        params={"instId": inst_id, "bar": bar, "limit": limit},
+        timeout=10,
+    )
+    r.raise_for_status()
+    return r.json().get("data", [])
+
+
 def display_name(inst_id: str) -> str:
     """BTC-USDT-SWAP → BTC-USDT"""
     return inst_id[:-5] if inst_id.endswith("-SWAP") else inst_id
