@@ -1,0 +1,36 @@
+# Caddy 反代 + 自动 Let's Encrypt TLS 配置
+#
+# 部署时把 {DOMAIN} 替换成你的域名。
+# 无域名场景用 sslip.io：124-156-170-240.sslip.io  (Let's Encrypt 也认)
+
+{DOMAIN} {
+    # 让 Caddy 自动签 + 续 Let's Encrypt
+    encode gzip
+
+    # 反代到 uvicorn
+    reverse_proxy 127.0.0.1:8000 {
+        # 飞书重试超时容忍
+        transport http {
+            dial_timeout 2s
+            response_header_timeout 8s
+        }
+        # 透传真实 IP
+        header_up X-Real-IP {remote_host}
+        header_up X-Forwarded-For {remote_host}
+        header_up X-Forwarded-Proto {scheme}
+    }
+
+    # 拒绝 GET / 等无关路径，只放 callback 和健康检查
+    @disallow {
+        not path /feishu/callback /healthz /feishu/callback/
+    }
+    respond @disallow 404
+
+    log {
+        output file /var/log/caddy/feishu-callback.log {
+            roll_size 10mb
+            roll_keep 5
+        }
+        format json
+    }
+}
