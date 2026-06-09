@@ -1,48 +1,35 @@
-import { Settings } from "lucide-react";
-
-import { RoutePlaceholder } from "@/components/route-placeholder";
+import { MutePanel } from "@/components/mute-panel";
 
 export const metadata = {
   title: "Settings · OKX Pump Monitor",
 };
 
-export default function SettingsPage() {
+export const dynamic = "force-dynamic";
+
+export default function SettingsPage(): React.JSX.Element {
   return (
-    <RoutePlaceholder
-      icon={Settings}
-      title="Settings"
-      tagline="Watchlist / Breakout / Price alerts / 通道路由"
-      description="把目前散落在首页 header 的 Watchlist / Breakout / PriceAlert manager 集中管理，再加上通知通道偏好（高置信走 push / 中走飞书 / 低只入库）和币种黑名单。"
-      upcoming={[
-        {
-          label: "通知通道分级路由",
-          detail:
-            "按信号融合分（1-5 ★）决定推送目标：5★ → 浏览器 push + 声音；3-4★ → 飞书；1-2★ → 只写库。",
-          eta: "Tier 2",
-        },
-        {
-          label: "Watchlist / Breakout / PriceAlert（迁移）",
-          detail:
-            "把现在首页 header 上的 3 个 manager 迁到这里，首页只保留盯盘场景。",
-          eta: "Tier 1",
-        },
-        {
-          label: "币种黑名单 + 降权",
-          detail:
-            "新上架币种 24h 内自动降权（防 pump-and-dump），meme 垃圾币加入永久黑名单。",
-          eta: "Tier 3",
-        },
-        {
-          label: "宏观事件 mute 窗口",
-          detail:
-            "FOMC / CPI 等高波动事件前后 15 分钟自动屏蔽普通信号，只保留高置信。",
-          eta: "Tier 3",
-        },
-      ]}
-      backendDeps={[
-        "user_preferences 表（新建）",
-        "通道路由层",
-      ]}
-    />
+    <main className="mx-auto max-w-3xl px-4 py-6 md:px-6 md:py-8">
+      <div className="mb-6">
+        <h1 className="text-foreground text-xl font-semibold tracking-tight">
+          Settings
+        </h1>
+        <p className="text-muted-foreground mt-1 text-sm">
+          飞书推送控制 · cron 与回测在静音期间继续运行
+        </p>
+      </div>
+
+      <MutePanel />
+
+      <div className="text-muted-foreground mt-8 text-xs space-y-1">
+        <p>
+          V2.24: mute 控制从飞书 @bot 改到这里。原因：企业 admin 没启用自建应用，
+          飞书的 im.message.receive_v1 事件不能推到 callback。
+        </p>
+        <p>
+          后端：POST /api/mute 写 supabase.mute_state（id=1 单行表）。
+          scanner 每轮扫描前 fetch_mute_state 决定是否推飞书。
+        </p>
+      </div>
+    </main>
   );
 }
