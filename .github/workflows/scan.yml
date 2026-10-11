@@ -1,41 +1,63 @@
-name: One-time encrypted scanner runtime transfer
+name: OKX Pump Scanner
 
 on:
-  workflow_dispatch:
+  schedule:
+    # 每15分钟跑一次（cron语法是UTC时间，但*/15对所有时区一样）
+    - cron: '*/15 * * * *'
+  workflow_dispatch:   # 允许手动触发测试
 
-permissions:
-  contents: read
+# 防止上一次没跑完时新一轮又启动
+concurrency:
+  group: scan
+  cancel-in-progress: false
 
 jobs:
-  transfer:
+  scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 4
+    permissions:
+      contents: read   # V2.19：不再写回 repo，只读 checkout 即可
+      actions: write   # 写 GH Actions cache
     steps:
       - uses: actions/checkout@v6
-      - name: Encrypt existing scanner configuration
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      # V2.19：state.json 从 GH Actions cache 恢复（不再 git commit）。
+      # 这样 cron 永远不推 main，Vercel 永远不被触发，配额永远不烧。
+      - name: Restore scanner state
+        uses: actions/cache/restore@v4
+        with:
+          path: state.json
+          key: scanner-state-${{ github.run_id }}
+          restore-keys: |
+            scanner-state-
+
+      - name: Run scanner
         env:
           FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
           ETHERSCAN_KEY: ${{ secrets.ETHERSCAN_KEY }}
-          CRON_SECRET: ${{ secrets.CRON_SECRET }}
-        run: |
-          python3 - <<'PY'
-          import json, os, subprocess
-          names = ['FEISHU_WEBHOOK', 'SUPABASE_URL', 'SUPABASE_SERVICE_KEY', 'ETHERSCAN_KEY', 'CRON_SECRET']
-          values = {name: os.environ.get(name, '') for name in names}
-          missing = [name for name in names[:3] if not values[name]]
-          if missing:
-              raise SystemExit('Missing required keys: ' + ', '.join(missing))
-          subprocess.run([
-              'openssl', 'cms', '-encrypt', '-binary', '-aes-256-gcm',
-              '-outform', 'DER', '-out', 'scanner-runtime.cms',
-              'scripts/ops/runtime-transfer-cert.pem',
-          ], input=json.dumps(values).encode(), check=True)
-          print('Runtime encrypted; plaintext configuration was never written to disk.')
-          PY
-      - uses: actions/upload-artifact@v4
+          LUNARCRUSH_KEY: ${{ secrets.LUNARCRUSH_KEY }}
+          TOP_N: '50'
+          PUMP_THRESHOLD: '3.0'
+          DUMP_THRESHOLD: '5.0'
+          MIN_VOL_USDT: '50000'
+          LOOKBACK_BARS: '16'
+        run: python -m scanner.main
+
+      # 总是保存（每个 run unique key 保证 save 不被 skip）。
+      # restore-keys 前缀匹配机制让下次 cron 拿到这次的 state。
+      - name: Save scanner state
+        if: always()
+        uses: actions/cache/save@v4
         with:
-          name: encrypted-scanner-runtime
-          path: scanner-runtime.cms
-          retention-days: 1
+          path: state.json
+          key: scanner-state-${{ github.run_id }}

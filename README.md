@@ -8,6 +8,8 @@
 
 Dashboard：<https://okx-pump-monitor.vercel.app>
 
+自建定时运行：见 [本机 systemd 扫描与告警调度](docs/local-runtime.md)。主扫描每 15 分钟、实时扫描每 5 分钟、健康检查每 10 分钟直接在服务器运行，配置和状态保存在 git 忽略的 `.runtime/`。
+
 ---
 
 ## 项目定位
